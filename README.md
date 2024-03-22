@@ -10,8 +10,9 @@
 
 
 #
-¡Hola a todos!
-
+```python
+ print("¡Hola a todos!")
+```
 Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biomédicas"*. Este espacio está destinado a ser nuestra plataforma de colaboración y aprendizaje durante el curso.
 
 
@@ -53,4 +54,5 @@ Contenido de Participantes
 ## Docentes del curso
 
 Contenido de Docentes del curso
+
 
