@@ -1,1 +1,1 @@
-# intro-senales-biomedicas
+# Introducción a señales biomédicas
