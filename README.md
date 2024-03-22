@@ -31,6 +31,8 @@ Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biom
 
 Contenido de ¿Qué es una bioseñal?
 
+[Bioseñal](https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg)
+
 ## Materiales
 
 Contenido de Materiales
