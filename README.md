@@ -26,14 +26,15 @@ Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biom
 - [Contenido del curso](#contenido-del-curso)
 - [Participantes](#participantes)
 - [Docentes del curso](#docentes-del-curso)
+- [Referencia Bibliográfica](#referencia-bibliográfica)
 
 ## ¿Qué es una bioseñal?
 
 Contenido de ¿Qué es una bioseñal?
 
-![Imagen de bioseñal](https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg)
-*Extraído de [Psicoactiva.com, 2024. https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg (accessed Mar. 28, 2024).
-‌]*
+<img src="https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg" alt="Imagen de bioseñal" width="400" height="250">
+
+ *Imagen extraído de [1]*
 
 ## Materiales
 
@@ -53,10 +54,41 @@ Contenido de Contenido del curso
 
 ## Participantes
 
-Contenido de Participantes
+**Isabel Leon Luna**
+
+Información sobre Isabel.
+
+
+**Claudia Camacho Grimaldi**
+
+Información sobre Claudia.
+
+
+**Andrea Razuri Madrid**
+
+Información sobre Andrea.
+
+
+**Johanni Bohorquez Gutierrez**
+
+Información sobre Johanni.
+
+**Jaime Arista Cutipa**
+
+Información sobre Jaime.
+
+
+
 
 ## Docentes del curso
+| Cargo | Nombre | Correo electrónico |
+|-------|--------|--------------------|
+| Mg.   | De la Cruz Rodriguez U. Lewis | umbert.de.la.cruz@upch.pe |
+| Mg.   | Meza Rodriguez Moises | moises.meza@upch.pe |
+| Ing.  | Venancio Huerta Julissa E. | julissa.venancio@upch.pe |
+| Lic.  | Cáceres del Aguila José A. | jose.caceres.d@upch.pe |
 
-Contenido de Docentes del curso
 
-
+## Referencia Bibliográfica
+*[1]Psicoactiva.com, 2024. https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg (accessed Mar. 22, 2024).
+‌*
