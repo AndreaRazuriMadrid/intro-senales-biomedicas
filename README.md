@@ -16,13 +16,12 @@ print("¡Hola a todos!")
 Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biomédicas"*. Este espacio está destinado a ser nuestra plataforma de colaboración y aprendizaje durante el curso.
 
 
-
 ## Tabla de contenidos
 
-- [¿Qué es una bioseñal?](pagina1.md#qué-es-una-bioseñal)
-- [Materiales](pagina2.md#materiales)
-- [Metodología](pagina3.md#metodología)
-- [Temática del proyecto](pagina4.md#temática-del-proyecto)
-- [Contenido del curso](pagina5.md#contenido-del-curso)
-- [Participantes](pagina6.md#participantes)
-- [Docentes del curso](pagina7.md#docentes-del-curso)
+- [¿Qué es una bioseñal?](pagina1.md#qué-es-una-bioseñal){:target="_blank"}
+- [Materiales](pagina2.md#materiales){:target="_blank"}
+- [Metodología](pagina3.md#metodología){:target="_blank"}
+- [Temática del proyecto](pagina4.md#temática-del-proyecto){:target="_blank"}
+- [Contenido del curso](pagina5.md#contenido-del-curso){:target="_blank"}
+- [Participantes](pagina6.md#participantes){:target="_blank"}
+- [Docentes del curso](pagina7.md#docentes-del-curso){:target="_blank"}
