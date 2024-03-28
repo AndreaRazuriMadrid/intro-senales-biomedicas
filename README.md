@@ -16,12 +16,45 @@ print("¡Hola a todos!")
 Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biomédicas"*. Este espacio está destinado a ser nuestra plataforma de colaboración y aprendizaje durante el curso.
 
 
-## Tabla de contenidos
 
-- [¿Qué es una bioseñal?](pagina1.md#qué-es-una-bioseñal){:target="_blank"}
-- [Materiales](pagina2.md#materiales){:target="_blank"}
-- [Metodología](pagina3.md#metodología){:target="_blank"}
-- [Temática del proyecto](pagina4.md#temática-del-proyecto){:target="_blank"}
-- [Contenido del curso](pagina5.md#contenido-del-curso){:target="_blank"}
-- [Participantes](pagina6.md#participantes){:target="_blank"}
-- [Docentes del curso](pagina7.md#docentes-del-curso){:target="_blank"}
+## Tabla de contenidos:
+
+- [¿Qué es una bioseñal?](#qué-es-una-bioseñal)
+- [Materiales](#materiales)
+- [Metodología](#metodología)
+- [Temática del proyecto](#temática-del-proyecto)
+- [Contenido del curso](#contenido-del-curso)
+- [Participantes](#participantes)
+- [Docentes del curso](#docentes-del-curso)
+
+## ¿Qué es una bioseñal?
+
+Contenido de ¿Qué es una bioseñal?
+
+![Imagen de bioseñal](https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg)
+
+## Materiales
+
+Contenido de Materiales
+
+## Metodología
+
+Contenido de Metodología
+
+## Temática del proyecto
+
+Contenido de Temática del proyecto
+
+## Contenido del curso
+
+Contenido de Contenido del curso
+
+## Participantes
+
+Contenido de Participantes
+
+## Docentes del curso
+
+Contenido de Docentes del curso
+
+
