@@ -34,7 +34,7 @@ Contenido de ¿Qué es una bioseñal?
 
 <img src="https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg" alt="Imagen de bioseñal" width="400" height="250">
 
- *Imagen extraído de [1]*
+ *Imagen extraída de [1]*
 
 ## Materiales
 
@@ -54,28 +54,28 @@ Contenido de Contenido del curso
 
 ## Participantes
 
-**Isabel Leon Luna**
+- **Isabel Leon Luna**
 
-Información sobre Isabel.
-
-
-**Claudia Camacho Grimaldi**
-
-Información sobre Claudia.
+    Información sobre Isabel.
 
 
-**Andrea Razuri Madrid**
+- **Claudia Camacho Grimaldi**
 
-Información sobre Andrea.
+    Información sobre Claudia.
 
 
-**Johanni Bohorquez Gutierrez**
+- **Andrea Razuri Madrid**
 
-Información sobre Johanni.
+    Información sobre Andrea.
 
-**Jaime Arista Cutipa**
 
-Información sobre Jaime.
+- **Johanni Bohorquez Gutierrez**
+
+    Información sobre Johanni.
+
+- **Jaime Arista Cutipa**
+
+    Información sobre Jaime.
 
 
 
