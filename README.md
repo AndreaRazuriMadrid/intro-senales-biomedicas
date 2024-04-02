@@ -34,7 +34,7 @@ Contenido de ¿Qué es una bioseñal?
 
 <img src="https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg" alt="Imagen de bioseñal" width="400" height="250">
 
- *Imagen extraída de [1]*
+ *Fig. 1 .Imagen de sondas cerebrales[1]*
 
 ## Materiales
 
@@ -59,28 +59,41 @@ Contenido de Temática del proyecto
 
     Estudiante de Ingeniería biomédica de séptimo ciclo, con enfoque de interés en Señales e imágenes biomédicas junto a Ingeniería clínica. Comprometida con el desarrollo y la creación de dispositivos médicos que mejoren la calidad de vida de los pacientes. Actualmente, pasante del laboratorio de innovación y desarrollo (LID).
 
-<img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/05cc23ed-9a1e-4a47-8e3d-319379f490fd" alt="pic Isabel" width="170" height="200">
+<div style="text-align:center;">
+  <img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/05cc23ed-9a1e-4a47-8e3d-319379f490fd" alt="pic Isabel" width="170" height="200">
+</div>
+
 
 - **Claudia Camacho Grimaldi**
 
      Estudiante de Ingeniería Biomédica de Noveno y noveno ciclo de Ingeniería Biomédica de la Universidad Peruana Cayetano Heredia y la Pontificia Universidad Católica del Perú. Tengo inclinación por Ingeniería Clínica y Señales e Imágenes.
-<img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/474a4ec4-6298-4ad7-a8d2-8726d8cced19" alt="pic Claudia" width="170" height="200">
+     
+<div style="text-align:center;">
+    <img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/474a4ec4-6298-4ad7-a8d2-8726d8cced19" alt="pic Claudia" width="170" height="200">
+</div>
 
 - **Andrea Razuri Madrid**
 
     Estudiante de séptimo ciclo de la carrera de Ingeniería Biomédica con enfoque en Ingeniería Clínica. Apasionada por la tecnología aplicada en el ámbito de la salud, me interesa especialmente la interfaz entre la ingeniería y la medicina.
+<div style="text-align:center;">
 <img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/dd614266-5f6c-4db9-9ee6-1f44a24dc814" alt="pic Andrea" width="170" height="200">
+</div>
+
 
 - **Johanni Bohorquez Gutierrez**
 
     Estudiante de Ingeniería biomédica con especial interés en Ingeniería molecular y clínica. Entusiasta por la innovación y el desarrollo de tecnología médica, así como el desarrollo de proyectos relacionados a biosensores. Dispuesta a afrontar todo tipo de desafíos, proactiva y con capacidad de liderazgo. Excelente capacidad de organización y facilidad para el trabajo en equipo.
+<div style="text-align:center;">
 <img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/e8053a46-8b84-4b17-8335-123cfef1df27" alt="pic Johanni" width="170" height="200">
+</div>
 
 - **Jaime Arista Cutipa**
 
     Estudiante de ing. biomédica interesado en las ramas de ingeniería clínica y ciencia de materiales. Me interesa el desarrollo de materiales y sus posibles usos como en biosensores y la implementación de equipamiento médico en centros de salud.
-<img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/83811243-e453-47f8-bf5f-989a6523ed14" alt="pic Jaime" width="190" height="200">
 
+<div style="text-align:center;">
+<img src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/155942125/83811243-e453-47f8-bf5f-989a6523ed14" alt="pic Jaime" width="190" height="200">
+</div>
 
 ## Docentes del curso
 | Cargo | Nombre | Correo electrónico |
