@@ -87,26 +87,28 @@ y sus posibles usos como en biosensores y la implementación de equipamiento mé
 
 - **Isabel Leon Luna**
 
-    Información sobre Isabel.
+    Estudiante de Ingeniería biomédica de séptimo ciclo, con enfoque de interés en Señales e imágenes biomédicas junto a Ingeniería clínica. Comprometida con el desarrollo y la creación de dispositivos médicos que mejoren la calidad de vida de los pacientes. Actualmente, pasante del laboratorio de innovación y desarrollo (LID).
+
 
 
 - **Claudia Camacho Grimaldi**
 
-    Información sobre Claudia.
+     Estudiante de Ingeniería Biomédica de Noveno y noveno ciclo de Ingeniería Biomédica de la Universidad Peruana Cayetano Heredia y la Pontificia Universidad Católica del Perú. Tengo inclinación por Ingeniería Clínica y Señales e Imágenes.
+
 
 
 - **Andrea Razuri Madrid**
 
-    Información sobre Andrea.
+    Estudiante de séptimo ciclo de la carrera de Ingeniería Biomédica con enfoque en Ingeniería Clínica. Apasionada por la tecnología aplicada en el ámbito de la salud, me interesa especialmente la interfaz entre la ingeniería y la medicina.
 
 
 - **Johanni Bohorquez Gutierrez**
 
-    Información sobre Johanni.
+    Estudiante de Ingeniería biomédica con especial interés en Ingeniería molecular y clínica. Entusiasta por la innovación y el desarrollo de tecnología médica, así como el desarrollo de proyectos relacionados a biosensores. Dispuesta a afrontar todo tipo de desafíos, proactiva y con capacidad de liderazgo. Excelente capacidad de organización y facilidad para el trabajo en equipo.
 
 - **Jaime Arista Cutipa**
 
-    Información sobre Jaime.
+    Estudiante de ing. biomédica interesado en las ramas de ingeniería clínica y ciencia de materiales. Me interesa el desarrollo de materiales y sus posibles usos como en biosensores y la implementación de equipamiento médico en centros de salud.
 
 
 
