@@ -20,10 +20,9 @@ Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biom
 ## Tabla de contenidos:
 
 - [¿Qué es una bioseñal?](#qué-es-una-bioseñal)
-- [Materiales](#materiales)
-- [Metodología](#metodología)
-- [Temática del proyecto](#temática-del-proyecto)
-- [Contenido del curso](#contenido-del-curso)
+- [Resumen](#resumen)
+- [Motivación](#motivación)
+- [Principales hallazgos](#principales-hallazgos)
 - [Participantes](#participantes)
 - [Docentes del curso](#docentes-del-curso)
 - [Referencia Bibliográfica](#referencia-bibliográfica)
@@ -36,22 +35,19 @@ Contenido de ¿Qué es una bioseñal?
 
  *Fig. 1 .Imagen de sondas cerebrales [1]*
 
-## Materiales
 
-Contenido de Materiales
-
-## Metodología
-
-Contenido de Metodología
-
-## Temática del proyecto
+## Resumen
 
 Contenido de Temática del proyecto
 
-## Contenido del curso
+## Motivación
+
+Contenido 
 
 
+## Principales hallazgos
 
+Contenido
 
 ## Participantes
 
