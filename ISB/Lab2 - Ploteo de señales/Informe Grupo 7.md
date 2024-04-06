@@ -97,7 +97,7 @@ Se añadió un condensador de 470μF.
 - La reducción del voltaje de operación de 3V a 1V ha resultado en una mejora en la claridad de la onda sinusoidal, aunque aún presenta una variación de 400mV respecto a la señal original, lo que indica que pueden ser necesarios ajustes adicionales o la consideración de otros factores que puedan estar afectando la señal.
 - El uso de un capacitor de 470uF como filtro pasa-baja ha demostrado su eficacia en la reducción de la amplitud de la señal, pero también ha atenuado la señal deseada, lo que sugiere la necesidad de un equilibrio entre la filtración de ruido y la preservación de la señal.
 - Cambiar a un capacitor de menor valor, como 10uF, podría convertir el sistema en un filtro pasa-alta, lo que podría ser más adecuado dependiendo de las características de la señal que se desee preservar.
-- La interferencia de ruido
+- La interferencia de ruido introducida por el uso de jumpers o cables de conexión puede mitigarse mediante el uso de cables blindados, que ofrecen protección contra las interferencias electromagnéticas externas.
 
 
 
