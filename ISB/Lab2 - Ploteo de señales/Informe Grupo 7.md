@@ -1,4 +1,9 @@
 # INFORME LABORATORIO 2
+## Lista de Participantes - Grupo 7
+
+- Andrea Razuri Madrid
+- Isabel Leon Luna
+- Johanni Bohorquez Gutierrez
 
 ## 1. OBJETIVOS
 - Capturar diversas formas de ondas, tales como cuadradas, triangulares, sinusoidales y de rampa.
