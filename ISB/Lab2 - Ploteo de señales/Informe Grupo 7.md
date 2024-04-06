@@ -21,12 +21,20 @@
 
 ### Configuración de Generador de Señales:
 En primer lugar, configuramos el Generador de Señales para proporcionar una señal sinusoidal de 100 Hz de frecuencia, 3V de Amplitud y 0V de offset, por el canal 1.
+<p align="center">
+  <img src="image.png" alt="alt text" width="600"/>
+</p>
 
 ### Visualización del Osciloscopio:
 Se conectó directamente el generador de señales con el osciloscopio para visualizar una onda sinusoidal sin ruido.
 
+<p align="center">
+  <img src="image-1.png" alt="alt text" width="600"/>
+</p>
+
+
 ### Programación del Arduino 33 IoT
-En el código utilizado se tomó en consideración los puertos, la frecuencia de sampleo y el periodo de la muestra utilizados para plotear la señal obtenida por el generador de señales sin ruido. Aquí se cambió la frecuencia de sampleo a 10 Hz. Código empleado:
+En el código utilizado se tomó en consideración los puertos, la frecuencia de sampleo y el periodo de la muestra utilizados para plotear la señal obtenida por el generador de señales sin ruido. Aquí se cambió la frecuencia de sampleo a 10 Hz. 
 
 ```c
 unsigned long lastMsg = 0;
@@ -56,12 +64,25 @@ void loop() {
 ```
 ### Visualización en el Serial Plotter
 Se obtuvo una señal parecida a la señal sinusoidal; sin embargo, aparece cortada. Con una amplitud de 1000 mV.
+<p align="center">
+  <img src="image-2.png" alt="alt text" width="600"/>
+</p>
+
 
 ### Cambio de voltaje en el Generador de Señales:
 Para mejorar la señal, se cambió el voltaje de 3V a 1V del generador de señales, y se obtuvo una amplitud de 600 mV.
+<p align="center">
+  <img src="image-4.png" alt="alt text" width="600"/>
+</p>
 
 ### Uso de Condensador
 Se añadió un condensador de 470μF.
+<p align="center">
+  <img src="image-5.png" alt="alt text" width="600"/>
+</p>
+<p align="center">
+  <img src="image-6.png" alt="alt text" width="600"/>
+</p>
 
 ## 4. DISCUSIONES
 - La modificación del factor de multiplicación de 10 a 20 en el código es una estrategia efectiva para evitar el aliasing en el procesamiento de señales. Al aumentar este factor, se incrementa la frecuencia de muestreo, lo cual ayuda a cumplir con el criterio de Nyquist y así capturar con mayor precisión la señal analógica sin introducir distorsiones indeseadas.
