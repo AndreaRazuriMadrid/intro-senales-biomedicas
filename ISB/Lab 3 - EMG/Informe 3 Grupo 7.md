@@ -1,4 +1,11 @@
 # INFORME LABORATORIO 3
+## Lista de Participantes - Grupo 7
+
+- Andrea Razuri Madrid
+- Isabel Leon Luna
+- Johanni Bohorquez Gutierrez
+- Claudia Camacho Grimaldi
+- Jaime Arista Cutipa 
 
 ## Tabla de contenidos
 
