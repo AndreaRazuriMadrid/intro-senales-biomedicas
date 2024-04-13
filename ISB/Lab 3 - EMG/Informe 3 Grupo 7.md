@@ -42,10 +42,13 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
 
 - **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
 
-<img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:410px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:390px;">
+<img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:430px;">
 
 - **Uso de BITalino**: El dispositivo cuenta con un procesador ATMEGA328P, y funciona de manera inalámbrica gracias a su módulo Bluetooth.
 - **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+
+
+
 
 <table style="width:100%">
   <tr>
