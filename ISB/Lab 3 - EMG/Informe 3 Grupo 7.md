@@ -87,9 +87,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
         </td>
       </tr>
     </table> 
-<video width="100%" controls>
-        <source src="https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB" type="video/mp4">
-</video>
+
 <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
   <tr>
     <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En reposo</th>
@@ -102,7 +100,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
       <h3 style="margin-top: 0;">Johanni Reposo</h3>
-        <https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB>
+        <source src="https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB" type="video/mp4">
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
       <h3 style="margin-top: 0;">Jaime Reposo</h3>
