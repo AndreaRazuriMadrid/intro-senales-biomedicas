@@ -11,8 +11,8 @@
    - [Uso de BITalino](#uso-de-bitalino)
    - [Posición de los electrodos](#posición-de-los-electrodos)
 6. [Resultados](#6-resultados)
-   - [Sujeto 1-jaime](#sujeto-1-jaime)
-   - [Sujeto 2- johanni](#sujeto-2-johanni)
+   - [Sujeto 1-Jaime](#sujeto-1-jaime)
+   - [Sujeto 2- Johanni](#sujeto-2-johanni)
 7. [Discusión](#7-discusión)
 8. [Conclusiones](#8-conclusiones)
 9. [Bibliografía](#9-bibliografía)
@@ -29,14 +29,13 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
 
 ## 3. Materiales y equipos
 
-|   Modelo      | Descripción   | Cantidad
+|   Modelo      | Descripción   | Cantidad |
 |---------------|---------------|----------|
-| (R)EVOLUTION  | Kit BITalino  | 1        |    
-|       -        | Laptop o PC   | 1        |    
+| (R)EVOLUTION  | Kit BITalino  | 1        |
+|       -       | Laptop o PC   | 1        |
 
 ## 4. Características de los sujetos de prueba
 
-## Características de los sujetos de prueba
 
 | Nombre  | Edad | Sexo | Frec. act. física | Intensidad act. | Condición Física | IMC  |
 |---------|------|------|-------------------|-----------------|------------------|------|
@@ -47,15 +46,172 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
 ## 5. Metodología
 
 - **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+<table style="width:100%">
+  <tr>
+    <td style="width:50%">
+      <img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:100%; display:block; margin:auto;">
+    </td>
+    <td style="width:50%">
+      <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:100%; display:block; margin:auto;">
+    </td>
+  </tr>
+</table>
+
 - **Uso de BITalino**: El dispositivo cuenta con un procesador ATMEGA328P, y funciona de manera inalámbrica gracias a su módulo Bluetooth.
+- **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+<table style="width:100%">
+  <tr>
+    <!-- Columna para la primera imagen -->
+    <td style="width:50%">
+      <img src="videos_imagenes/bitalino1.jpeg" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+      <p style="text-align:center;">Bitalino</p>
+    </td>
+    <!-- Columna para la segunda imagen -->
+    <td style="width:50%">
+      <img src="videos_imagenes/bitalino2.jpeg" alt="Bitalino 2" style="width:100%; display:block; margin:auto;">
+      <p style="text-align:center;">Bitalino conexiones y carcasa</p>
+    </td>
+  </tr>
+</table>
 
-### Posición de los electrodos
+- **Posición de los electrodos**:
+  - Se tomaron en consideración artículos enfocados en estimación del movimiento de mano usando redes neuronales artificiales y mediciones electromiográficas. Para el desarrollo de las mediciones, se realizaron por medio de dos canales del módulo para obtener el registro en modo diferencial de tres electrodos superficiales (dos electrodos por canal y un solo electrodo de referencia para ambos canales).
+  - Se colocaron los electrodos positivo y negativo en la parte delantera del brazo, y el electrodo de referencia cerca al grupo muscular posterior del brazo.
+  <table style="width:100%">
+      <tr>
+        <td style="width:100%; vertical-align:top;">
+          <div style="display:flex; justify-content:space-around; align-items:center;">
+            <div style="width:33%; text-align:center;">
+              <img src="videos_imagenes/fig.1.jpeg" alt="Figura 1" style="width:100%; display:block; margin:auto;">
+              <p>Fig.1. Posición de los electrodos para la adquisición de las señales EMG [1]</p>
+            </div>
+            <div style="width:66%; text-align:center;">
+              <div style="display:flex; justify-content:space-around; width:100%;">
+                <img src="videos_imagenes/fig2.jpeg" alt="Figura 2" style="width:50%; display:block; margin:auto;">
+                <img src="videos_imagenes/fig3.jpeg" alt="Figura 3" style="width:50%; display:block; margin:auto;">
+              </div>
+              <p>Fig.2-3. Posición de los electrodos para la adquisición de las señales EMG en el laboratorio</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+     
+<table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
+  <tr>
+    <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En reposo</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding: 12px; border-bottom: 1px solid #ccc; text-align: justify;">
+      En la primera prueba se tomó la señal en reposo, el brazo tenía un soporte. Teniendo la conexión a tierra un poco por encima del codo.
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
+      <h3 style="margin-top: 0;">Johanni Reposo</h3>
+      <video width="100%" controls>
+        <source src="videos_imagenes/johannireposo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
+      <h3 style="margin-top: 0;">Jaime Reposo</h3>
+      <video width="100%" controls>
+        <source src="videos_imagenes/jaimereposo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+  </tr>
+</table>
 
-Se tomaron en consideración artículos enfocados en estimación del movimiento de mano usando redes neuronales artificiales y mediciones electromiográficas. Para el desarrollo de las mediciones, se realizaron por medio de dos canales del módulo para obtener el registro en modo diferencial de tres electrodos superficiales (dos electrodos por canal y un solo electrodo de referencia para ambos canales).
-Se colocaron los electrodos positivo y negativo en la parte delantera del brazo, y el electrodo de referencia cerca al grupo muscular posterior del brazo.
 
-- Fig.1. Posición de los electrodos para la adquisición de las señales EMG [1]
-- Fig.2-3. Posición de los electrodos para la adquisición de las señales EMG en el laboratorio
+
+
+
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
+  <tr>
+    <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En extensión</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding: 12px; border-bottom: 1px solid #ccc; text-align: justify;">
+      La segunda prueba se realizó haciendo una extensión de codo. El brazo se encontraba suspendido en el aire.
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
+      <h4 style="margin-top: 0;">Johanni Extensión</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/johanniextension.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
+      <h4 style="margin-top: 0;">Jaime Extensión</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/jaimeextension.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+  </tr>
+</table>
+
+
+
+ <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
+  <tr>
+    <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En flexión</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding: 12px; border-bottom: 1px solid #ccc; text-align: justify;">
+      En la tercera prueba se tomó la señal haciendo una flexión del bíceps, teniendo la conexión tierra a la altura un poco por encima del codo.
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
+      <h4 style="margin-top: 0;">Johanni Flexión</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/johanniflexion.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
+      <h4 style="margin-top: 0;">Jaime Flexión</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/jaimeflexion.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+  </tr>
+</table>
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
+  <tr>
+    <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En oposición</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding: 12px; border-bottom: 1px solid #ccc; text-align: justify;">
+      En la cuarta prueba se tomó la señal del brazo haciendo oposición a una fuerza (en este caso, pusimos una oposición aplicando fuerza al brazo del compañero de prueba).
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
+      <h4 style="margin-top: 0;">Johanni Oposición</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/johanniflexionoppo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+    <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
+      <h4 style="margin-top: 0;">Jaime Oposición</h4>
+      <video width="100%" controls>
+        <source src="videos_imagenes/jaimeflexionoppo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </td>
+  </tr>
+</table>
+
 
 ## 6. Resultados
 
@@ -64,16 +220,70 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 ### Sujeto 1-Jaime
 
 - Reposo
+
+<img src="videos_imagenes/ja_reposo2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/ja_reposo.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Extensión
+
+<img src="videos_imagenes/ja_extensión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/ja_extensión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Flexión
+
+<img src="videos_imagenes/ja_flexión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/ja_flexión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Oposición
+
+<img src="videos_imagenes/ja_oposición2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/ja_oposición.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
 
 ### Sujeto 2- Johanni
 
 - Reposo
+
+<img src="videos_imagenes/jo_reposo2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/jo_reposo.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Extensión
+
+<img src="videos_imagenes/jo_extensión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/jo_extensión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Flexión
+
+<img src="videos_imagenes/jo_flexión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/jo_flexión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+
 - Oposición
+
+<img src="videos_imagenes/jo_oposición2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
+   
+<img src="videos_imagenes/jo_oposición.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<p style="text-align:center;">
 
 ## 7. Discusión
 
