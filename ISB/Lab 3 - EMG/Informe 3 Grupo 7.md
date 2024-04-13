@@ -7,12 +7,9 @@
 3. [Materiales y equipos](#3-materiales-y-equipos)
 4. [Características de los sujetos de prueba](#4-características-de-los-sujetos-de-prueba)
 5. [Metodología](#5-metodología)
-   - [Instalación de OpenSignals](#instalación-de-opensignals)
-   - [Uso de BITalino](#uso-de-bitalino)
-   - [Posición de los electrodos](#posición-de-los-electrodos)
 6. [Resultados](#6-resultados)
    - [Sujeto 1-Jaime](#sujeto-1-jaime)
-   - [Sujeto 2- Johanni](#sujeto-2-johanni)
+   - [Sujeto 2- Johanni](#sujeto-2--johanni)
 7. [Discusión](#7-discusión)
 8. [Conclusiones](#8-conclusiones)
 9. [Bibliografía](#9-bibliografía)
@@ -36,29 +33,20 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
 
 ## 4. Características de los sujetos de prueba
 
-
 | Nombre  | Edad | Sexo | Frec. act. física | Intensidad act. | Condición Física | IMC  |
 |---------|------|------|-------------------|-----------------|------------------|------|
 | Jaime   | 23   | M    | 3                 | Media           | Sano             | 30.6 |
 | Johanni | 22   | F    | 5                 | Media           | Sana             | 25   |
 
-
 ## 5. Metodología
 
 - **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
-<table style="width:100%">
-  <tr>
-    <td style="width:50%">
-      <img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:100%; display:block; margin:auto;">
-    </td>
-    <td style="width:50%">
-      <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:100%; display:block; margin:auto;">
-    </td>
-  </tr>
-</table>
+
+<img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:410px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:390px;">
 
 - **Uso de BITalino**: El dispositivo cuenta con un procesador ATMEGA328P, y funciona de manera inalámbrica gracias a su módulo Bluetooth.
 - **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+
 <table style="width:100%">
   <tr>
     <!-- Columna para la primera imagen -->
@@ -96,7 +84,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
         </td>
       </tr>
     </table>
-     
+
 <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
   <tr>
     <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En reposo</th>
@@ -124,11 +112,6 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
 </table>
 
-
-
-
-
-
 <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
   <tr>
     <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En extensión</th>
@@ -155,8 +138,6 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
     </td>
   </tr>
 </table>
-
-
 
  <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
   <tr>
@@ -212,7 +193,6 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
 </table>
 
-
 ## 6. Resultados
 
 En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el intervalo de tiempo de 6 a 7 segundos. Este ajuste se realizó para ampliar la imagen de la gráfica durante este periodo crítico, permitiendo una visualización detallada y clara de los datos. Este enfoque específico ayuda a analizar con mayor precisión las fluctuaciones y características de la señal EMG, facilitando así una interpretación más precisa de la actividad muscular registrada.
@@ -223,7 +203,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/ja_reposo2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/ja_reposo.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -231,7 +211,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/ja_extensión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/ja_extensión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -239,7 +219,6 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/ja_flexión2.png" alt="Flexión2" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
 
 <img src="videos_imagenes/Ja_flexión.png" alt="Flexión" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
@@ -248,7 +227,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/ja_oposición2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/ja_oposición.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -258,7 +237,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/jo_reposo2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/jo_reposo.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -266,7 +245,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/jo_extensión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/jo_extensión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -274,7 +253,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/jo_flexión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
+
 <img src="videos_imagenes/jo_flexión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
@@ -285,15 +264,13 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 <img src="videos_imagenes/jo_oposición2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
-   
-
 
 ## 7. Discusión
 
-- Los valores obtenidos cuando el bíceps está en reposo son dentro del rango de -0.025 mV a 0.005 mV, lo cual es coherente ya que durante el reposo muscular provoca señales eléctricas muy débiles o fluctuaciones cercanas a cero, dado que los músculos no están generando mucha actividad eléctrica. Algo a tomar en cuenta son los factores como, la posición en estado de reposo basal debería ser con la persona acostada; sin embargo, esto se tomaría como una limitación, ya que los sujetos en esta experimentación se encontraban sentados. Además, otro factor son los artefactos electrónicos cercanos a la toma de muestra, lo que conduciría a posibles variaciones y ruido. 
-- Durante la etapa de extensión del músculo, obtenemos un rango de -0.3 mV a 0.15 mV. Los músculos no están generando una actividad eléctrica significativa, en este punto el músculo sólo se encuentra levantado. 
-- Los valores obtenidos cuando se está flexionando o se ejerce una oposición al movimiento, son dentro del rango de -0.7 mV a 0.75 mV. Esto se debe a que, durante la contracción muscular, las unidades motoras generan potenciales de acción que son captados por los electrodos, los cuales son generados por la despolarización de todas las fibras musculares internadas por cada axón. 
-- La amplitud de estas señales de EMG varían de acuerdo a la intensidad de la contracción y la fuerza muscular de los dos usuarios de prueba. 
+- Los valores obtenidos cuando el bíceps está en reposo son dentro del rango de -0.025 mV a 0.005 mV, lo cual es coherente ya que durante el reposo muscular provoca señales eléctricas muy débiles o fluctuaciones cercanas a cero, dado que los músculos no están generando mucha actividad eléctrica. Algo a tomar en cuenta son los factores como, la posición en estado de reposo basal debería ser con la persona acostada; sin embargo, esto se tomaría como una limitación, ya que los sujetos en esta experimentación se encontraban sentados. Además, otro factor son los artefactos electrónicos cercanos a la toma de muestra, lo que conduciría a posibles variaciones y ruido.
+- Durante la etapa de extensión del músculo, obtenemos un rango de -0.3 mV a 0.15 mV. Los músculos no están generando una actividad eléctrica significativa, en este punto el músculo sólo se encuentra levantado.
+- Los valores obtenidos cuando se está flexionando o se ejerce una oposición al movimiento, son dentro del rango de -0.7 mV a 0.75 mV. Esto se debe a que, durante la contracción muscular, las unidades motoras generan potenciales de acción que son captados por los electrodos, los cuales son generados por la despolarización de todas las fibras musculares internadas por cada axón.
+- La amplitud de estas señales de EMG varían de acuerdo a la intensidad de la contracción y la fuerza muscular de los dos usuarios de prueba.
 - La frecuencia utilizada para estudiar el músculo del bíceps es desde los 20 a 450 Hz, los cuales se usan típicamente para superficie EMG [2]. Este dato nos ayuda también a eliminar fuentes de ruido no deseadas o limitar la salida del sensor. Tomando en consideración una tasa de muestreo de 1000Hz se cumple la ley de Nyquist y garantizando una buena tasa de.
 
 ## 8. Conclusiones
@@ -304,9 +281,8 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 - A primera vista, no se aprecia diferencia entre las muestras de ambos sujetos debido a su género; además, las señales se encuentran sin procesamiento para eliminar el ruido e interferencias, por lo que no se podría concluir algo al respecto.
 - El enfoque en el intervalo de 6 a 7 segundos en la gráfica EMG ilustra la importancia de examinar momentos específicos para una evaluación detallada de la actividad muscular, permitiendo identificar características y fluctuaciones que podrían pasar desapercibidas en análisis más generales.
 
-
 ## 9. Bibliografía
 
-[1] R. Lopez, M. A. López, J. Enrique, and L. Correa, “IMPLEMENTACIÓN EN FPGA DE UN CLASIFICADOR DE MOVIMIENTOS DE LA MANO USANDO SEÑALES EMG,” Udistrital.edu.co, Sep. 2015, doi: https://revistas.udistrital.edu.co/index.php/REDES/article/view/8178. 
-[2] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino. https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
-[3] PROCESAMIENTO DE SEÑALES DE ELECTROMIOGRAFÍA SUPERFICIAL PARA LA DETECCIÓN DE MOVIMIENTO DE DOS DEDOS DE LA MANO. (2012). UNIVERSIDAD RICARDO PALMA. https://repositorio.urp.edu.pe/bitstream/handle/20.500.14138/416/Alva_ca.pdf?sequence=1&amp;isAllowed=y 
+[1] R. Lopez, M. A. López, J. Enrique, and L. Correa, “IMPLEMENTACIÓN EN FPGA DE UN CLASIFICADOR DE MOVIMIENTOS DE LA MANO USANDO SEÑALES EMG,” Udistrital.edu.co, Sep. 2015, doi: <https://revistas.udistrital.edu.co/index.php/REDES/article/view/8178>.
+[2] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino. <https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf>
+[3] PROCESAMIENTO DE SEÑALES DE ELECTROMIOGRAFÍA SUPERFICIAL PARA LA DETECCIÓN DE MOVIMIENTO DE DOS DEDOS DE LA MANO. (2012). UNIVERSIDAD RICARDO PALMA. <https://repositorio.urp.edu.pe/bitstream/handle/20.500.14138/416/Alva_ca.pdf?sequence=1&amp;isAllowed=y>
