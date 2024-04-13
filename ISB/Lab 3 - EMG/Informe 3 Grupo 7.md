@@ -104,10 +104,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
       <h3 style="margin-top: 0;">Jaime Reposo</h3>
-      <video width="100%" controls>
-        <source src="videos_imagenes/jaimereposo.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h4 style="margin-top: 0;">https://youtu.be/GcEIgrYnnZg?si=miLk_dzslsEdaY0h</h3>
     </td>
   </tr>
 </table>
