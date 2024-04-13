@@ -99,8 +99,8 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
-      <h3 style="margin-top: 0;">Johanni Reposo</h3>
-        <source src="https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB" type="video/mp4">
+      <h3 style="margin-top: 0;">Johanni Reposo>
+        <source src="https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB">
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
       <h3 style="margin-top: 0;">Jaime Reposo</h3>
