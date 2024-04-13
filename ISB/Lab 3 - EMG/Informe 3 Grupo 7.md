@@ -100,7 +100,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
       <h3 style="margin-top: 0;">Johanni Reposo</h3>
-        <h4 style="margin-top: 0;">https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB</h3>
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
       <h3 style="margin-top: 0;">Jaime Reposo</h3>
@@ -141,18 +141,12 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
-      <h4 style="margin-top: 0;">Johanni Flexión</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/johanniflexion.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h3 style="margin-top: 0;">Johanni Flexión</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/WKeWJjS2XCw?si=ifGxIUC15p6WEObF</h3>
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
-      <h4 style="margin-top: 0;">Jaime Flexión</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/jaimeflexion.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h3 style="margin-top: 0;">Jaime Flexión</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/IaLitn-Q_R4?si=qrRCqGDMR7OwA721</h3>
     </td>
   </tr>
 </table>
