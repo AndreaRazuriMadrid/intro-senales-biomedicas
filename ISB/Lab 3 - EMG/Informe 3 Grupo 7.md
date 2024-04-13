@@ -100,7 +100,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
       <h3 style="margin-top: 0;">Johanni Reposo</h3>
-        <"https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB">
+        <h3 style="margin-top: 0;">J"https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB"</h3>
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
       <h3 style="margin-top: 0;">Jaime Reposo</h3>
