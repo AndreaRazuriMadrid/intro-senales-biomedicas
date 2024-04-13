@@ -120,17 +120,12 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
-      <h4 style="margin-top: 0;">Johanni Extensión</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/johanniextension.mp4" type="video/mp4">
-      </video>
+      <h3 style="margin-top: 0;">Johanni Extensión</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/cwzE7L5v1mc?si=1BnhZSbFjG7c40Xi</h3>
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
-      <h4 style="margin-top: 0;">Jaime Extensión</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/jaimeextension.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h3 style="margin-top: 0;">Jaime Extensión</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/LXT46R3yjDg?si=PNubcNVBWwSk9x5r</h3>
     </td>
   </tr>
 </table>
