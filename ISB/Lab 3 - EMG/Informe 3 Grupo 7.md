@@ -101,7 +101,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
       <h3 style="margin-top: 0;">Johanni Reposo</h3>
       <video width="100%" controls>
-        <source src="videos_imagenes/johannireposo.mp4" type="video/mp4">
+        <source src="https://youtu.be/L0g9XQ-Uvy4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
       </video>
     </td>
