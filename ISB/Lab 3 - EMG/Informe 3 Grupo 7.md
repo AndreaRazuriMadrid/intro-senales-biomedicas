@@ -86,8 +86,10 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
           </div>
         </td>
       </tr>
-    </table>
-
+    </table> 
+<video width="100%" controls>
+        <source src="https://youtu.be/L0g9XQ-Uvy4?si=Abfry1Oxdwu7bsCB" type="video/mp4">
+</video>
 <table style="width:100%; border-collapse: collapse; border: 1px solid #ccc;">
   <tr>
     <th colspan="2" style="text-align:center; padding: 8px; font-size: 15px;">En reposo</th>
