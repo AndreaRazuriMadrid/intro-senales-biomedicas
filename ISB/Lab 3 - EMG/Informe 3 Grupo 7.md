@@ -115,7 +115,7 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
   <tr>
     <td colspan="2" style="padding: 12px; border-bottom: 1px solid #ccc; text-align: justify;">
-      La segunda prueba se realizó haciendo una extensión de codo. El brazo se encontraba suspendido en el aire.
+      La segunda prueba se realizó haciendo una extensión de codo. El brazo se encontraba suspendido en el aire.                   
     </td>
   </tr>
   <tr>
@@ -162,18 +162,12 @@ En este informe se hace uso del dispositivo BITalino, el cual sirve para adquiri
   </tr>
   <tr>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px; border-right: 1px solid #ccc;">
-      <h4 style="margin-top: 0;">Johanni Oposición</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/johanniflexionoppo.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h3 style="margin-top: 0;">Johanni Oposición</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/WgJgAiKCUjU?si=K56eo6MtCBbzMmHn</h3>
     </td>
     <td style="width:50%; vertical-align:top; text-align:center; padding: 10px;">
-      <h4 style="margin-top: 0;">Jaime Oposición</h4>
-      <video width="100%" controls>
-        <source src="videos_imagenes/jaimeflexionoppo.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+      <h3 style="margin-top: 0;">Jaime Oposición</h3>
+      <h4 style="margin-top: 0;">https://youtu.be/3Ni4zurtAcE?si=X3kN9NY6t5wLrtT2</h3>
     </td>
   </tr>
 </table>
