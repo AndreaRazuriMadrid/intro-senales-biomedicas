@@ -237,10 +237,11 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 - Flexión
 
-<img src="videos_imagenes/ja_flexión2.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+<img src="videos_imagenes/ja_flexión2.png" alt="Flexión2" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
    
-<img src="videos_imagenes/ja_flexión.png" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
+
+<img src="videos_imagenes/ja_flexión" alt="Flexión" style="width:100%; display:block; margin:auto;">
 <p style="text-align:center;">
 
 - Oposición
