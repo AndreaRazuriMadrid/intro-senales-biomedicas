@@ -90,7 +90,17 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
 - **Posición de los electrodos**:
   - Se consideró la polarización de los electrodos al enfocarnos en la primera derivación bipolar.
   - Se colocó el electrodo negativo en el brazo derecho, el electrodo positivo en el brazo izquierdo, y el electrodo de referencia cerca a la cresta ilíaca.
+<p align="center">
+  <img src="videos_imagenes/PosicionElectrodos .jpeg" alt="Señales" style="width:440px;">
+  <br>
+  <strong>Fig.2. Posición de los electrodos para la adquisición de las señales ECG [3]</strong>
+</p>
 
+<p align="center">
+  <img src="videos_imagenes/PosElec.jpeg" alt="Señales" style="width:350px;">
+  <br>
+  <strong>Fig 3. Posicionamiento de los electrodos en el sujeto de prueba.</strong>
+</p>
 
 ## 6. Resultados
 
