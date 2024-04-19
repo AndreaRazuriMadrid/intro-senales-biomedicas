@@ -102,6 +102,16 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
   <strong>Fig 3. Posicionamiento de los electrodos en el sujeto de prueba.</strong>
 </p>
 
+- **Sujeto 1- Jaime**:
+  - Estado Basal
+    - En la primera prueba se tomó la señal en reposo, los electrodos se colocaron en los antebrazos con un punto de referencia en la cresta ilíaca.
+  - Respiración prolongada
+    - La segunda prueba se realizó conteniendo la respiración por 30 segundos. La persona se encontraba sentada.
+  - Haciendo ejercicio
+    - En la tercera prueba se realizaron ejercicios aeróbicos durante 1 minuto para tomar las señales por el BiTalino.
+      
+- **Pro-sim**:
+  
 ## 6. Resultados
 
 En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el intervalo de tiempo de 6 a 7 segundos. Este ajuste se realizó para ampliar la imagen de la gráfica durante este periodo crítico, permitiendo una visualización detallada y clara de los datos. Este enfoque específico ayuda a analizar con mayor precisión las fluctuaciones y características de la señal EMG, facilitando así una interpretación más precisa de la actividad muscular registrada.
