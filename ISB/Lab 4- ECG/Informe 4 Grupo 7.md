@@ -45,7 +45,7 @@
 
 ## 5. Metodología
 
-- **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+- **Empleo de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
 
 <img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:430px;">
 
@@ -54,10 +54,9 @@
 
 
 - **Posición de los electrodos**:
-  - Se tomaron en consideración artículos enfocados en estimación del movimiento de mano usando redes neuronales artificiales y mediciones electromiográficas. Para el desarrollo de las mediciones, se realizaron por medio de dos canales del módulo para obtener el registro en modo diferencial de tres electrodos superficiales (dos electrodos por canal y un solo electrodo de referencia para ambos canales).
-  - Se colocaron los electrodos positivo y negativo en la parte delantera del brazo, y el electrodo de referencia cerca al grupo muscular posterior del brazo.
- 
-</table>
+  - Se consideró la polarización de los electrodos al enfocarnos en la primera derivación bipolar.
+  - Se colocó el electrodo negativo en el brazo derecho, el electrodo positivo en el brazo izquierdo, y el electrodo de referencia cerca a la cresta ilíaca.
+
 
 ## 6. Resultados
 
