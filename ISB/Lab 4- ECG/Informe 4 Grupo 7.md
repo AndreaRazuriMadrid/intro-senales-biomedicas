@@ -26,8 +26,9 @@
 
 
 ## 2. Objetivos
-
-- 
+- Obtener señales biomédicas de electrocardiografía (ECG).
+- Configurar adecuadamente el dispositivo BiTalino.
+- Extraer datos de las señales ECG utilizando el software OpenSignals (r)evolution.
 
 ## 3. Materiales y equipos
 
