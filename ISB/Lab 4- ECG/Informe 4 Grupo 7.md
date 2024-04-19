@@ -111,7 +111,17 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
     - En la tercera prueba se realizaron ejercicios aeróbicos durante 1 minuto para tomar las señales por el BiTalino.
       
 - **Pro-sim**:
-  
+  ## Simulación de Pruebas Cardíacas
+
+| Paso | Descripción | Foto | Enlace al Video |
+|------|-------------|------|-----------------|
+| 2 | Onda CVP (Contracciones ventriculares prematuras) | <img src="videos_imagenes/Paso2-CVP.jpeg" alt="Paso2-CVP" style="width:200px;"> | [Ver video](https://youtu.be/29PwQj-pjZU) |
+| 3 | Taquicardia ventricular 160 lpm | <img src="videos_imagenes/Paso3-TaqVent.jpeg" alt="Paso3" style="width:200px;"> | [Ver video](https://youtu.be/cv6lpsEO8ZQ) |
+| 4 | Fibrilación ventricular severa | <img src="videos_imagenes/Paso4-FibVent.jpeg" alt="Paso4" style="width:200px;">| [Ver video](https://youtu.be/9j0LWFMWJuM) |
+| 5 | Asistolia |<img src="videos_imagenes/Paso5-Asistolia.jpeg" alt="Paso5-Asistolia" style="width:200px;"> | [Ver video](https://youtu.be/bHxz2DLPJss) |
+
+
+
 ## 6. Resultados
 
 En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el intervalo de tiempo de 6 a 7 segundos. Este ajuste se realizó para ampliar la imagen de la gráfica durante este periodo crítico, permitiendo una visualización detallada y clara de los datos. Este enfoque específico ayuda a analizar con mayor precisión las fluctuaciones y características de la señal EMG, facilitando así una interpretación más precisa de la actividad muscular registrada.
