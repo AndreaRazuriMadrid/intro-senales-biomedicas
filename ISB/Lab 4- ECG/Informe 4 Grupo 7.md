@@ -50,25 +50,9 @@
 <img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:430px;">
 
 - **Uso de BITalino**: El dispositivo cuenta con un procesador ATMEGA328P, y funciona de manera inalámbrica gracias a su módulo Bluetooth.
-- **Instalación de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
+<img src="videos_imagenes/bitalino1.jpeg" alt="bitalino1" style="width:455px;">
+<img src="videos_imagenes/bitalino2.jpeg" alt="bitalino2" style="width:455px;">
 
-
-
-
-<table style="width:100%">
-  <tr>
-    <!-- Columna para la primera imagen -->
-    <td style="width:50%">
-      <img src="videos_imagenes/bitalino1.jpeg" alt="Bitalino 1" style="width:100%; display:block; margin:auto;">
-      <p style="text-align:center;">Bitalino</p>
-    </td>
-    <!-- Columna para la segunda imagen -->
-    <td style="width:50%">
-      <img src="videos_imagenes/bitalino2.jpeg" alt="Bitalino 2" style="width:100%; display:block; margin:auto;">
-      <p style="text-align:center;">Bitalino conexiones y carcasa</p>
-    </td>
-  </tr>
-</table>
 
 - **Posición de los electrodos**:
   - Se tomaron en consideración artículos enfocados en estimación del movimiento de mano usando redes neuronales artificiales y mediciones electromiográficas. Para el desarrollo de las mediciones, se realizaron por medio de dos canales del módulo para obtener el registro en modo diferencial de tres electrodos superficiales (dos electrodos por canal y un solo electrodo de referencia para ambos canales).
