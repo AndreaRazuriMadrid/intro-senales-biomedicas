@@ -19,8 +19,8 @@
    - [Posición de los Electrodos](#posición-de-los-electrodos)
    - [Sujeto 1- Jaime](#sujeto-1--jaime)
       - [Estado Basal](#estado-basal)
-      - [Respiración Prolongada](#respiración-prolongada) 
-      - [Ejercicio Intenso](#ejercicio-intenso) 
+      - [Respiración Prolongada](#respiración-prolongada)
+      - [Ejercicio Intenso](#ejercicio-intenso)
    - [Pro-sim](#pro-sim)
 6. [Resultados](#6-resultados)
    - [Jaime](#jaime)
@@ -31,8 +31,6 @@
 7. [Discusión](#7-discusión)
 8. [Conclusiones](#8-conclusiones)
 9. [Bibliografía](#9-bibliografía)
-
-
 
 ## 1. INTRODUCCIÓN A LA ELECTROCARDIOGRAFÍA (ECG)
 
@@ -137,7 +135,7 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
       [![](https://markdown-videos-api.jorgenkh.no/youtube/Ik_4EM_qOgc )](https://youtu.be/Ik_4EM_qOgc)
 
 - **Pro-sim**:
-  ## Simulación de Pruebas Cardíacas
+   Simulación de Pruebas Cardíacas
 
 | Paso | Descripción | Foto | Enlace al Video |
 |------|-------------|------|-----------------|
