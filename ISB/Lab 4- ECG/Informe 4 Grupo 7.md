@@ -116,12 +116,12 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
 | Paso | Descripción | Foto | Enlace al Video |
 |------|-------------|------|-----------------|
 | 2 | Onda CVP (Contracciones ventriculares prematuras) | <img src="videos_imagenes/Paso2-CVP.jpeg" alt="Paso2-CVP" style="width:200px;"> |[![](https://markdown-videos-api.jorgenkh.no/youtube/29PwQj-pjZU)](https://www.youtube.com/watch?v=29PwQj-pjZU&ab_channel=ANDREARAZURIMADRID) |
-| 3 | Taquicardia ventricular 160 lpm | <img src="videos_imagenes/Paso3-TaqVent.jpeg" alt="Paso3" style="width:200px;"> | [Ver video](https://youtu.be/cv6lpsEO8ZQ) |
-| 4 | Fibrilación ventricular severa | <img src="videos_imagenes/Paso4-FibVent.jpeg" alt="Paso4" style="width:200px;">| [Ver video](https://youtu.be/9j0LWFMWJuM) |
-| 5 | Asistolia |<img src="videos_imagenes/Paso5-Asistolia.jpeg" alt="Paso5-Asistolia" style="width:200px;"> | [Ver video](https://youtu.be/bHxz2DLPJss) |
+| 3 | Taquicardia ventricular 160 lpm | <img src="videos_imagenes/Paso3-TaqVent.jpeg" alt="Paso3" style="width:200px;"> |[![](https://markdown-videos-api.jorgenkh.no/youtube/cv6lpsEO8ZQ)](https://youtu.be/cv6lpsEO8ZQ) |
+| 4 | Fibrilación ventricular severa | <img src="videos_imagenes/Paso4-FibVent.jpeg" alt="Paso4" style="width:200px;">| [![](https://markdown-videos-api.jorgenkh.no/youtube/9j0LWFMWJuM )](https://youtu.be/9j0LWFMWJuM)  |
+| 5 | Asistolia |<img src="videos_imagenes/Paso5-Asistolia.jpeg" alt="Paso5-Asistolia" style="width:200px;"> |  [![](https://markdown-videos-api.jorgenkh.no/youtube/bHxz2DLPJss)](https://youtu.be/bHxz2DLPJss) |
 
 
-
+https://youtu.be/cv6lpsEO8ZQ  
 
 
 ## 6. Resultados
