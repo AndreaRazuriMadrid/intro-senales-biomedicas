@@ -181,25 +181,48 @@ Consiste en un tipo de ritmo cardíaco irregular o arritmia, en donde las cámar
 Ausencia total de sístole cardíaca con pérdida completa de la actividad, se trata de un paro cardíaco.
 
 <img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
-## 7. Discusión
-- El uso de métodos de reconocimiento de patrones para el análisis de señales ECG, el dispositivo BiTalino utiliza la configuración de Einthoven para evaluar diferentes estados de ritmos cardíacos y a una frecuencia de sampleo de 1000 Hz para su correcta conversión de ADC. Para el proceso de filtrado de la señal se suele utilizar un filtro Butterworth de paso de banda con frecuencias de corte de 10 y 450 Hz, la rectificación de la señal y la aplicación de otro filtro Butterworth de paso bajo con frecuencias de corte de 4 Hz, en donde estas mediciones cumplen con los Golden Standard [6]. 
 
+## 7. Discusión
+
+El uso de métodos de reconocimiento de patrones para el análisis de señales ECG, el dispositivo BiTalino utiliza la configuración de Einthoven para evaluar diferentes estados de ritmos cardíacos y a una frecuencia de sampleo de 1000 Hz para su correcta conversión de ADC. Para el proceso de filtrado de la señal se suele utilizar un filtro Butterworth de paso de banda con frecuencias de corte de 10 y 450 Hz, la rectificación de la señal y la aplicación de otro filtro Butterworth de paso bajo con frecuencias de corte de 4 Hz, en donde estas mediciones cumplen con los Golden Standard. [5]
+
+
+- Durante la simulación de un ataque cardíaco se evaluaron 4 pasos.
+- Paso 2: CVP. contracciones ventriculares prematuras
+- Se observa un complejo QRS anormal, en su forma y duración, seguido de una pausa compensatoria.
+
+
+- En azul el complejo QRS deformado y ensanchado, en rojo la pausa compensatoria
+- Paso 3: taquicardia ventricular, 160 lpm.
+- Se puede observar un complejo QRS ancho, y con una frecuencia cardiaca mayor a 120 lpm en al menos 3 latidos consecutivos.
+
+
+- En rojo complejo QRS ancho, se ven múltiples latidos consecutivos iguales.
+- Paso 4: fibrilación ventricular
+- Ritmo rápido, mayor a 250 lpm, irregular y de forma caótica.
+
+
+- Se aprecian latidos erráticos y con alta frecuencia.
+- Paso 5: Asistolia
+- Las contracciones cardiacas se han detenido completamente, no hay señal electrica del corazon y no esta fluyendo la sangre.
+
+
+- Se muestra en el ecg como una linea plana, no hay actividad electrica.
 
 ## 8. Conclusiones
 - Para la toma de muestras de señales ECG con el BiTalino, consiste en la amplificación de señales eléctricas detectadas por los electrodos, para su posterior conversión a señal digital. Con la obtención de estas señales podemos estudiar y analizar patrones en la formación de ondas de ECG por medio de su frecuencia en el tiempo y su amplitud en milivoltios.
-- Durante la medición del estado basal, se obtuvo una amplitud máxima de 0.6 mV dentro del complejo QRS y con un intervalo R-R de 0.75 que equivalen a 80 latidos por minuto, lo cual está dentro de los rangos normales para señales ecg en reposo. Podemos observar que la amplitud del complejo QRS nos muestra la despolarización ventricular junto a la magnitud de la señal eléctrica generada por cada contracción [5]. 
+- Durante la medición del estado basal, se obtuvo una amplitud máxima de 0.6 mV dentro del complejo QRS y con un intervalo R-R de 0.75 que equivalen a 80 latidos por minuto, lo cual está dentro de los rangos normales para señales ecg en reposo. Podemos observar que la amplitud del complejo QRS nos muestra la despolarización ventricular junto a la magnitud de la señal eléctrica generada por cada contracción [4]. 
 - En la segunda medición, durante respiración prolongada, obtenemos un aumento en la amplitud de 0.8 mV dentro del complejo QRS y con un intervalo R-R de 0.83 que equivale a 72 latidos por minuto. Se muestra la disminución en la frecuencia cardíaca y en los intervalos R-R por el aumento progresivo del flujo sanguíneo.
 - En la tercera medición, obtuvimos una amplitud de 0.8 mV dentro del complejo QRS y un intervalo R-R de 0.55, lo que implica 109 latidos por minuto. Cuando se ha realizado ejercicio por un minuto, se aumentó la frecuencia cardíaca lo que nos resulta en la disminución del intervalo R-R, ya que el organismo necesita suministrar más oxígeno y nutrientes por medio del sistema nervioso autónomo.
-- Se debe considerar que las señales obtenidas están sujetas a interferencias y ruidos provocados por contacto de los electrodos. Por lo que, se deberá aplicar un filtro para la eliminación parcial o total de estas interferencias para la correcta detección de patrones o anomalías en las señales EKG [5]. 
+- Se debe considerar que las señales obtenidas están sujetas a interferencias y ruidos provocados por contacto de los electrodos. Por lo que, se deberá aplicar un filtro para la eliminación parcial o total de estas interferencias para la correcta detección de patrones o anomalías en las señales EKG [4]. 
 
 
 
 ## 9. Bibliografía
-[1] M. Proença y K. Mrotzeck, "BITalino (r)evolution Lab Guide," PLUX – Wireless Biosignals, S.A., Lisboa, Portugal, OD.LB.03.04, 15 de febrero de 2021.  
-[2] “(PDF) Avances en el Desarrollo de un Sistema de Espirometría con correlación ECGAR para la Detección Temprana de Enfermedades Cardiorrespiratorias,” ResearchGate, 2018. https://www.researchgate.net/publication/328080878_Avances_en_el_Desarrollo_de_un_Sistema_de_Espirometria_con_correlacion_ECGAR_para_la_Deteccion_Temprana_de_Enfermedades_Cardiorrespiratorias/figures (accessed Apr. 19, 2024).  
-[3] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino.  
-https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf  
-‌[4] PROCESAMIENTO DE SEÑALES DE ELECTROMIOGRAFÍA SUPERFICIAL PARA LA DETECCIÓN DE MOVIMIENTO DE DOS DEDOS DE LA MANO. (2012). UNIVERSIDAD RICARDO PALMA. https://repositorio.urp.edu.pe/bitstream/handle/20.500.14138/416/Alva_ca.pdf?sequence=1&isAllowed=y  
-[5] Lorenzo Romero, J. (2015). Análisis De Señales Electrocardiográficas Usando Técnicas De Procesamiento Digital. Ingeniería Técnica De Telecomunicación. https://openaccess.uoc.edu/bitstream/10609/40186/6/jlorenzoroTFC0115memoria.pdf  
-[6] Batista, D., Silva, H., & Fred, A. (2017). Experimental Characterization and Analysis of the BITalino Platforms Against a Reference Device. Instituto de Telecomunicações, Instituto Superior Técnico. https://pubmed.ncbi.nlm.nih.gov/29060386/
+[1] M. Proença y K. Mrotzeck, "BITalino (r)evolution Lab Guide," PLUX – Wireless Biosignals, S.A., Lisboa, Portugal, OD.LB.03.04, 15 de febrero de 2021.
+[2] “(PDF) Avances en el Desarrollo de un Sistema de Espirometría con correlación ECGAR para la Detección Temprana de Enfermedades Cardiorrespiratorias,” ResearchGate, 2018. https://www.researchgate.net/publication/328080878_Avances_en_el_Desarrollo_de_un_Sistema_de_Espirometria_con_correlacion_ECGAR_para_la_Deteccion_Temprana_de_Enfermedades_Cardiorrespiratorias/figures  (accessed Apr. 19, 2024).
+[3] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino. 
+https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
+[4] Lorenzo Romero, J. (2015). Análisis De Señales Electrocardiográficas Usando Técnicas De Procesamiento Digital. Ingeniería Técnica De Telecomunicación. https://openaccess.uoc.edu/bitstream/10609/40186/6/jlorenzoroTFC0115memoria.pdf
+[5] Batista, D., Silva, H., & Fred, A. (2017). Experimental Characterization and Analysis of the BITalino Platforms Against a Reference Device. Instituto de Telecomunicações, Instituto Superior Técnico. https://pubmed.ncbi.nlm.nih.gov/29060386/
 
