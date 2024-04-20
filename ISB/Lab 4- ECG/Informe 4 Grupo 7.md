@@ -196,41 +196,44 @@ El uso de métodos de reconocimiento de patrones para el análisis de señales E
 </p>
 
 - Durante la simulación de un ataque cardíaco se evaluaron 4 pasos.
-- Paso 2: CVP. contracciones ventriculares prematuras
+- **Paso 2: CVP. contracciones ventriculares prematuras**
   - Se observa un complejo QRS anormal, en su forma y duración, seguido de una pausa compensatoria.
-
+  - En azul el complejo QRS deformado y ensanchado, en rojo la pausa compensatoria
 <p align="center">
   <img src="imag_disc/2.jpg" alt="2" style="width:480px;">
   <br>
 </p>
 
-  - En azul el complejo QRS deformado y ensanchado, en rojo la pausa compensatoria
-  
-- Paso 3: taquicardia ventricular, 160 lpm.
-  - Se puede observar un complejo QRS ancho, y con una frecuencia cardiaca mayor a 120 lpm en al menos 3 latidos consecutivos.
 
+- **Paso 3: taquicardia ventricular, 160 lpm**
+  - Se puede observar un complejo QRS ancho, y con una frecuencia cardiaca mayor a 120 lpm en al menos 3 latidos consecutivos.
+  - En rojo complejo QRS ancho, se ven múltiples latidos consecutivos iguales.
+    
 <p align="center">
   <img src="imag_disc/3.jpg" alt="3" style="width:480px;">
   <br>
 </p>
-  - En rojo complejo QRS ancho, se ven múltiples latidos consecutivos iguales.
-- Paso 4: fibrilación ventricular
-  - Ritmo rápido, mayor a 250 lpm, irregular y de forma caótica.
 
+  
+- **Paso 4: fibrilación ventricular**
+  - Ritmo rápido, mayor a 250 lpm, irregular y de forma caótica.
+  - Se aprecian latidos erráticos y con alta frecuencia.
 
 <p align="center">
   <img src="resultados/ProSim/paso4A.png" alt="Ejercicio" style="width:455px;">
   <br>
 </p>
-  - Se aprecian latidos erráticos y con alta frecuencia.
-- Paso 5: Asistolia
-  - Las contracciones cardiacas se han detenido completamente, no hay señal electrica del corazon y no esta fluyendo la sangre.
 
+  
+- **Paso 5: Asistolia**
+  - Las contracciones cardiacas se han detenido completamente, no hay señal electrica del corazon y no esta fluyendo la sangre.
+  - Se muestra en el ecg como una linea plana, no hay actividad electrica.
 <p align="center">
   <img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
   <br>
 </p>
-  - Se muestra en el ecg como una linea plana, no hay actividad electrica.
+
+
 
 ## 8. Conclusiones
 - Para la toma de muestras de señales ECG con el BiTalino, consiste en la amplificación de señales eléctricas detectadas por los electrodos, para su posterior conversión a señal digital. Con la obtención de estas señales podemos estudiar y analizar patrones en la formación de ondas de ECG por medio de su frecuencia en el tiempo y su amplitud en milivoltios.
