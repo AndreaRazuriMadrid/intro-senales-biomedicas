@@ -7,19 +7,32 @@
 - Claudia Camacho Grimaldi
 - Jaime Arista Cutipa 
 
-## Tabla de contenidos
+## Tabla de Contenidos
 
-1. [Introducción](#1-introducción)
+1. [Introducción a la Electrocardiografía (ECG)](#1-introducción-a-la-electrocardiografía-ecg)
 2. [Objetivos](#2-objetivos)
-3. [Materiales y equipos](#3-materiales-y-equipos)
-4. [Características de los sujetos de prueba](#4-características-de-los-sujetos-de-prueba)
+3. [Materiales y Equipos](#3-materiales-y-equipos)
+4. [Características de los Sujetos de Prueba](#4-características-de-los-sujetos-de-prueba)
 5. [Metodología](#5-metodología)
+   - [Empleo de OpenSignals](#empleo-de-opensignals)
+   - [Uso de BITalino](#uso-de-bitalino)
+   - [Posición de los Electrodos](#posición-de-los-electrodos)
+   - [Sujeto 1- Jaime](#sujeto-1--jaime)
+      - [Estado Basal](#estado-basal)
+      - [Respiración Prolongada](#respiración-prolongada) 
+      - [Ejercicio Intenso](#ejercicio-intenso) 
+   - [Pro-sim](#pro-sim)
 6. [Resultados](#6-resultados)
-   - [Sujeto 1-Jaime](#sujeto-1-jaime)
-   - [Sujeto 2- Johanni](#sujeto-2--johanni)
+   - [Jaime](#jaime)
+     - [Estado Basal](#estado-basal-1)
+     - [Respiración Prolongada](#respiración-prolongada-1)
+     - [Ejercicio Intenso](#ejercicio-intenso-1)
+   - [Pro-sim](#pro-sim-1)
 7. [Discusión](#7-discusión)
 8. [Conclusiones](#8-conclusiones)
 9. [Bibliografía](#9-bibliografía)
+
+
 
 ## 1. INTRODUCCIÓN A LA ELECTROCARDIOGRAFÍA (ECG)
 
@@ -163,11 +176,13 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 - Se debe considerar que las señales obtenidas están sujetas a interferencias y ruidos provocados por contacto de los electrodos. Por lo que, se deberá aplicar un filtro para la eliminación parcial o total de estas interferencias para la correcta detección de patrones o anomalías en las señales EKG [5]. 
 
 
+
 ## 9. Bibliografía
-[1] M. Proença y K. Mrotzeck, "BITalino (r)evolution Lab Guide," PLUX – Wireless Biosignals, S.A., Lisboa, Portugal, OD.LB.03.04, 15 de febrero de 2021.
-[2] “(PDF) Avances en el Desarrollo de un Sistema de Espirometría con correlación ECGAR para la Detección Temprana de Enfermedades Cardiorrespiratorias,” ResearchGate, 2018. https://www.researchgate.net/publication/328080878_Avances_en_el_Desarrollo_de_un_Sistema_de_Espirometria_con_correlacion_ECGAR_para_la_Deteccion_Temprana_de_Enfermedades_Cardiorrespiratorias/figures  (accessed Apr. 19, 2024).
-[3] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino. 
-https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
-‌[4] PROCESAMIENTO DE SEÑALES DE ELECTROMIOGRAFÍA SUPERFICIAL PARA LA DETECCIÓN DE MOVIMIENTO DE DOS DEDOS DE LA MANO. (2012). UNIVERSIDAD RICARDO PALMA. https://repositorio.urp.edu.pe/bitstream/handle/20.500.14138/416/Alva_ca.pdf?sequence=1&amp;isAllowed=y 
-[5] Lorenzo Romero, J. (2015). Análisis De Señales Electrocardiográficas Usando Técnicas De Procesamiento Digital. Ingeniería Técnica De Telecomunicación. https://openaccess.uoc.edu/bitstream/10609/40186/6/jlorenzoroTFC0115memoria.pdf
+[1] M. Proença y K. Mrotzeck, "BITalino (r)evolution Lab Guide," PLUX – Wireless Biosignals, S.A., Lisboa, Portugal, OD.LB.03.04, 15 de febrero de 2021.  
+[2] “(PDF) Avances en el Desarrollo de un Sistema de Espirometría con correlación ECGAR para la Detección Temprana de Enfermedades Cardiorrespiratorias,” ResearchGate, 2018. https://www.researchgate.net/publication/328080878_Avances_en_el_Desarrollo_de_un_Sistema_de_Espirometria_con_correlacion_ECGAR_para_la_Deteccion_Temprana_de_Enfermedades_Cardiorrespiratorias/figures (accessed Apr. 19, 2024).  
+[3] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino.  
+https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf  
+‌[4] PROCESAMIENTO DE SEÑALES DE ELECTROMIOGRAFÍA SUPERFICIAL PARA LA DETECCIÓN DE MOVIMIENTO DE DOS DEDOS DE LA MANO. (2012). UNIVERSIDAD RICARDO PALMA. https://repositorio.urp.edu.pe/bitstream/handle/20.500.14138/416/Alva_ca.pdf?sequence=1&isAllowed=y  
+[5] Lorenzo Romero, J. (2015). Análisis De Señales Electrocardiográficas Usando Técnicas De Procesamiento Digital. Ingeniería Técnica De Telecomunicación. https://openaccess.uoc.edu/bitstream/10609/40186/6/jlorenzoroTFC0115memoria.pdf  
 [6] Batista, D., Silva, H., & Fred, A. (2017). Experimental Characterization and Analysis of the BITalino Platforms Against a Reference Device. Instituto de Telecomunicações, Instituto Superior Técnico. https://pubmed.ncbi.nlm.nih.gov/29060386/
+
