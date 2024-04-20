@@ -135,7 +135,7 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
       [![](https://markdown-videos-api.jorgenkh.no/youtube/Ik_4EM_qOgc )](https://youtu.be/Ik_4EM_qOgc)
 
 - **Pro-sim**:
-  ## Simulación de Pruebas Cardíacas
+   Simulación de Pruebas Cardíacas
 
 | Paso | Descripción | Foto | Enlace al Video |
 |------|-------------|------|-----------------|
