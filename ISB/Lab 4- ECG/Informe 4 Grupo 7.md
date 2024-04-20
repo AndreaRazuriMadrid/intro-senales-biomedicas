@@ -151,7 +151,7 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 ### Sujeto 1-Jaime
 
 - Estado basal
-  | <img src="resultados/basal.png" alt="Paso2-CVP" style="width:200px;"> | <img src="resultados/basalA.png" alt="Paso2-CVP" style="width:200px;"> |
+  [!]| <img src=ISB/Lab 4- ECG/resultados/Jaime/basal.png alt="basal" style="width:200px;"> | <img src="resultados/basal.png" alt="basal" style="width:200px;"> |
 - Respiración prolongada
     | <img src="resultados/basal.png" alt="Paso2-CVP" style="width:200px;"> | <img src="resultados/basalA.png" alt="Paso2-CVP" style="width:200px;"> |
   - Durante
