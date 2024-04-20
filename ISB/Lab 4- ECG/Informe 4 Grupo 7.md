@@ -151,12 +151,18 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 ### Sujeto 1-Jaime
 
 - Estado basal
-  [!]| <img src=ISB/Lab 4- ECG/resultados/Jaime/basal.png alt="basal" style="width:200px;"> | <img src="resultados/basal.png" alt="basal" style="width:200px;"> |
+
+<img src="resultados/Jaime/basal.png" alt="basal" style="width:455px;">  <img src="resultados/Jaime/basalA.jpg" alt="basalA" style="width:455px;">
 - Respiración prolongada
-    | <img src="resultados/basal.png" alt="Paso2-CVP" style="width:200px;"> | <img src="resultados/basalA.png" alt="Paso2-CVP" style="width:200px;"> |
   - Durante
+  
+<img src="resultados/Jaime/respiración_durante.png" alt="respiración_durante" style="width:455px;">  <img src="resultados/Jaime/resp_duranteA.jpg" alt="resp_duranteA" style="width:455px;">
   - Después
+
+<img src="resultados/Jaime/respiración_después.png" alt="respiración_después" style="width:455px;">  <img src="resultados/Jaime/resp_despA.jpg" alt="resp_despA" style="width:455px;">
 - Ejercicio intenso
+
+<img src="resultados/Jaime/Ejercicio.png" alt="Ejercicio" style="width:455px;">  <img src="resultados/Jaime/ejercicioA.jpg" alt="ejercicioA" style="width:455px;">
 
 ### Pro sim
 - Paso 2: Onda CVP (Contracciones ventriculares prematuras)
