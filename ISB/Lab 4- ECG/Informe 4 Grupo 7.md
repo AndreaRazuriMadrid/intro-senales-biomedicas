@@ -105,11 +105,24 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
 - **Sujeto 1- Jaime**:
   - Estado Basal
     - En la primera prueba se tomó la señal en reposo, los electrodos se colocaron en los antebrazos con un punto de referencia en la cresta ilíaca.
+
+      [![](https://markdown-videos-api.jorgenkh.no/youtube/QS-2v3W504M )](https://youtu.be/QS-2v3W504M)
+
   - Respiración prolongada
     - La segunda prueba se realizó conteniendo la respiración por 30 segundos. La persona se encontraba sentada.
+      - Jaime - Aguantar respiración (durante)
+
+        [![](https://markdown-videos-api.jorgenkh.no/youtube/z_PpKdiaDY4 )](https://youtu.be/z_PpKdiaDY4)
+
+      - Jaime - Aguantar respiración (después)
+
+        [![](https://markdown-videos-api.jorgenkh.no/youtube/dTZBowwIjXA )](https://youtu.be/dTZBowwIjXA)
+
   - Haciendo ejercicio
     - En la tercera prueba se realizaron ejercicios aeróbicos durante 1 minuto para tomar las señales por el BiTalino.
-      
+
+      [![](https://markdown-videos-api.jorgenkh.no/youtube/Ik_4EM_qOgc )](https://youtu.be/Ik_4EM_qOgc)
+
 - **Pro-sim**:
   ## Simulación de Pruebas Cardíacas
 
@@ -119,10 +132,6 @@ El electrocardiograma es una representación gráfica de la actividad eléctrica
 | 3 | Taquicardia ventricular 160 lpm | <img src="videos_imagenes/Paso3-TaqVent.jpeg" alt="Paso3" style="width:200px;"> |[![](https://markdown-videos-api.jorgenkh.no/youtube/cv6lpsEO8ZQ)](https://youtu.be/cv6lpsEO8ZQ) |
 | 4 | Fibrilación ventricular severa | <img src="videos_imagenes/Paso4-FibVent.jpeg" alt="Paso4" style="width:200px;">| [![](https://markdown-videos-api.jorgenkh.no/youtube/9j0LWFMWJuM )](https://youtu.be/9j0LWFMWJuM)  |
 | 5 | Asistolia |<img src="videos_imagenes/Paso5-Asistolia.jpeg" alt="Paso5-Asistolia" style="width:200px;"> |  [![](https://markdown-videos-api.jorgenkh.no/youtube/bHxz2DLPJss)](https://youtu.be/bHxz2DLPJss) |
-
-
-https://youtu.be/cv6lpsEO8ZQ  
-
 
 ## 6. Resultados
 
