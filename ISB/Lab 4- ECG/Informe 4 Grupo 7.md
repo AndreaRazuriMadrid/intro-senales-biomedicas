@@ -166,10 +166,21 @@ En la gráfica de electromiografía (EMG), se optó por centrar el enfoque en el
 
 ### Pro sim
 - Paso 2: Onda CVP (Contracciones ventriculares prematuras)
+Consiste en latidos adicionales que comienzan en una de las dos cavidades (ventrículos) inferiores de bombeo del corazón, los cuales alteran el ritmo cardíaco regular, lo que a veces provoca una sensación de interrupciones de los latidos.
+
+<img src="resultados/ProSim/paso2.png" alt="Ejercicio" style="width:455px;">  <img src="resultados/ProSim/paso2Mejorado.jpg" alt="ejercicioA" style="width:455px;">
 - Paso 3: Taquicardia ventricular 160 lpm
+Es un tipo de arritmia que induce al corazón a empezar a latir muy fuerte, causada por señales eléctricas defectuosas de las fibras del músculo cardíaco. El corazón late más rápido de lo normal a 160 lpm. Por tanto, el corazón no puede bombear suficiente sangre al cuerpo y a los pulmones.
+
+<img src="resultados/ProSim/paso3.png" alt="Ejercicio" style="width:455px;">  <img src="resultados/ProSim/paso3A.png" alt="ejercicioA" style="width:455px;">
 - Paso 4: Fibrilación ventricular severa
+Consiste en un tipo de ritmo cardíaco irregular o arritmia, en donde las cámaras inferiores del corazón se contraen de forma muy rápida y descoordinada, por tanto, el corazón no está bombeando sangre y se convierte en una forma de paro cardíaco.
+
+<img src="resultados/ProSim/paso4.png" alt="Ejercicio" style="width:455px;">  <img src="resultados/ProSim/paso4A.png" alt="ejercicioA" style="width:455px;">
 - Paso 5: Asistolia
-  
+Ausencia total de sístole cardíaca con pérdida completa de la actividad, se trata de un paro cardíaco.
+
+<img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
 ## 7. Discusión
 - El uso de métodos de reconocimiento de patrones para el análisis de señales ECG, el dispositivo BiTalino utiliza la configuración de Einthoven para evaluar diferentes estados de ritmos cardíacos y a una frecuencia de sampleo de 1000 Hz para su correcta conversión de ADC. Para el proceso de filtrado de la señal se suele utilizar un filtro Butterworth de paso de banda con frecuencias de corte de 10 y 450 Hz, la rectificación de la señal y la aplicación de otro filtro Butterworth de paso bajo con frecuencias de corte de 4 Hz, en donde estas mediciones cumplen con los Golden Standard [6]. 
 
