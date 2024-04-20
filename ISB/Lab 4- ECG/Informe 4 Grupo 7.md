@@ -180,7 +180,10 @@ Consiste en un tipo de ritmo cardíaco irregular o arritmia, en donde las cámar
 - Paso 5: Asistolia
 Ausencia total de sístole cardíaca con pérdida completa de la actividad, se trata de un paro cardíaco.
 
-<img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
+<p align="center">
+  <img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
+  <br>
+</p>
 
 ## 7. Discusión
 
@@ -202,11 +205,18 @@ El uso de métodos de reconocimiento de patrones para el análisis de señales E
 - Ritmo rápido, mayor a 250 lpm, irregular y de forma caótica.
 
 
+<p align="center">
+  <img src="resultados/ProSim/paso4A.png" alt="Ejercicio" style="width:455px;">
+  <br>
+</p>
 - Se aprecian latidos erráticos y con alta frecuencia.
 - Paso 5: Asistolia
 - Las contracciones cardiacas se han detenido completamente, no hay señal electrica del corazon y no esta fluyendo la sangre.
 
-
+<p align="center">
+  <img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
+  <br>
+</p>
 - Se muestra en el ecg como una linea plana, no hay actividad electrica.
 
 ## 8. Conclusiones
@@ -220,9 +230,12 @@ El uso de métodos de reconocimiento de patrones para el análisis de señales E
 
 ## 9. Bibliografía
 [1] M. Proença y K. Mrotzeck, "BITalino (r)evolution Lab Guide," PLUX – Wireless Biosignals, S.A., Lisboa, Portugal, OD.LB.03.04, 15 de febrero de 2021.
+
 [2] “(PDF) Avances en el Desarrollo de un Sistema de Espirometría con correlación ECGAR para la Detección Temprana de Enfermedades Cardiorrespiratorias,” ResearchGate, 2018. https://www.researchgate.net/publication/328080878_Avances_en_el_Desarrollo_de_un_Sistema_de_Espirometria_con_correlacion_ECGAR_para_la_Deteccion_Temprana_de_Enfermedades_Cardiorrespiratorias/figures  (accessed Apr. 19, 2024).
-[3] BITalino (r)evolution Lab Guide. (2021, 15 de febrero). BITalino. 
-https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
+
+[3] “BITalino (r)evolution Lab Guide.” Available: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+
 [4] Lorenzo Romero, J. (2015). Análisis De Señales Electrocardiográficas Usando Técnicas De Procesamiento Digital. Ingeniería Técnica De Telecomunicación. https://openaccess.uoc.edu/bitstream/10609/40186/6/jlorenzoroTFC0115memoria.pdf
+
 [5] Batista, D., Silva, H., & Fred, A. (2017). Experimental Characterization and Analysis of the BITalino Platforms Against a Reference Device. Instituto de Telecomunicações, Instituto Superior Técnico. https://pubmed.ncbi.nlm.nih.gov/29060386/
 
