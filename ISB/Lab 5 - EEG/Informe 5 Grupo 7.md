@@ -49,8 +49,7 @@
 </p>
   
 - **Posición de los electrodos**:
-  - Se consideró la polarización de los electrodos al enfocarnos en la primera derivación bipolar.
-  - Se colocó el electrodo negativo en el brazo derecho, el electrodo positivo en el brazo izquierdo, y el electrodo de referencia cerca a la cresta ilíaca.
+  - Se consideró la polarización de los electrodos enfocándonos en la configuración bipolar. Se situó el electrodo negativo (negro) en la parte derecha de la frente, mientras que el electrodo positivo (rojo) se colocó en la parte izquierda de la frente. Adicionalmente, el electrodo de referencia (blanco) se posicionó en una área neutra, específicamente en el hueso detrás de la oreja [3].
 <p align="center">
   <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
@@ -69,13 +68,11 @@
 |-----------------------|--------------------------------------------------------------------------------------------------------------------|-------------------|
 | Reposo (30 segundos)  | Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal, sin movimientos oculares/ojos cerrados) durante 30 segundos. | |
 | Abrir y cerrar ojos   | Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante cinco segundos.       |  |
-| Reposo (30 segundos)  | Registre otra fase de referencia de 30 segundos (paso 1).                                                             |  |
+| Reposo (30 segundos)  | Registre otra fase de referencia de 30 segundos                                                              |  |
 | Preguntas matemáticas | Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos y resuelve cada uno de ellos mentalmente enfocando tu mirada en un punto específico para evitar artefactos. |  |
 
 <video src="ISB\Lab 5 - EEG\videos_imagenes\Reposo1.mp4" width="50%" height="50%"></video><em><p align="center"> Visualización de la señal EEG </p></em> 
 </div> 
-
-
 
 
 - **ULTRACORTEX**:
