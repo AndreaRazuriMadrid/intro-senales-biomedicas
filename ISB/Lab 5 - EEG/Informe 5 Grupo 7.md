@@ -67,15 +67,14 @@
 
 - **Procedimiento de registro EEG**:
   
-| Etapa                 | Indicaciones                                                                                                       | Imagen/video      |
+| Etapa                 | Indicaciones                                                                                                       | Toma             |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------|-------------------|
 | Reposo (30 segundos)  | Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal, sin movimientos oculares/ojos cerrados) durante 30 segundos. | |
 | Abrir y cerrar ojos   | Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante cinco segundos.       |  |
 | Reposo (30 segundos)  | Registre otra fase de referencia de 30 segundos                                                              |  |
 | Preguntas matemáticas | Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos y resuelve cada uno de ellos mentalmente enfocando tu mirada en un punto específico para evitar artefactos. |  |
 
-<video src="ISB\Lab 5 - EEG\videos_imagenes\Reposo1.mp4" width="50%" height="50%"></video><em><p align="center"> Visualización de la señal EEG </p></em> 
-</div> 
+<video src=" " width="50%" height="50%"></video>
 
 
 - **ULTRACORTEX**:
