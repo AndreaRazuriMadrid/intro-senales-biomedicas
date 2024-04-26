@@ -62,7 +62,7 @@
 </p>
 
 <p align="center">
-  <img src="videos_imagenes/P1.jpeg" alt="Opensignals" style="width:300px;">  <img src="videos_imagenes\P2.png"alt="MenúOS" style="width:300px;">
+  <img src="videos_imagenes/P1.png" alt="Opensignals" style="width:300px;">  <img src="videos_imagenes\P2.png"alt="MenúOS" style="width:300px;">
   <br>
   <strong>Fig 3. Posicionamiento de los electrodos en el sujeto de prueba.</strong>
 </p>
