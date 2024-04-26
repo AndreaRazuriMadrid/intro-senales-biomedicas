@@ -24,6 +24,8 @@
 
 ## 3. Materiales y equipos
 
+<div align="center">
+
 |   Modelo      | Descripción   | Cantidad |
 |---------------|---------------|----------|
 | (R)EVOLUTION  | Kit BITalino  | 1        |
@@ -31,7 +33,7 @@
 |       -       | Laptop o PC   | 1        |
 | OpenBCI |Ultracortex Mark IV EEG Headset |1|
 | OpenBCI | OpenBCI Cyton 8-channel Board |1|
-
+</div>
 
 
 ## 4. Metodología
@@ -78,14 +80,16 @@
 
 
 - **ULTRACORTEX**:
-
+  
+<div align="center">
+ 
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
 | Reposo (30 segundos)  |                    |
 | Abrir y cerrar ojos   |                    |
 | Reposo (30 segundos)  |                    |
 | Preguntas matemáticas |                    |
-
+</div>
 
 
 
