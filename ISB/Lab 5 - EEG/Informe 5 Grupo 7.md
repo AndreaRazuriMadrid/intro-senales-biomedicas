@@ -9,27 +9,7 @@
 
 ## Tabla de Contenidos
 
-- [Introducción a la Electrocardiografía (ECG)](#introducción-a-la-electrocardiografía-ecg)
-  - [¿Qué es un Electrocardiograma?](#qué-es-un-electrocardiograma)
-  - [¿Cómo funciona el corazón?](#cómo-funciona-el-corazón)
-  - [Aplicaciones del ECG](#aplicaciones-del-ecg)
-  - [Decepción de la Señal de ECG](#decepción-de-la-señal-de-ecg)
-- [Objetivos](#objetivos)
-- [Materiales y Equipos](#materiales-y-equipos)
-- [Características de los Sujetos de Prueba](#características-de-los-sujetos-de-prueba)
-- [Metodología](#metodología)
-  - [Empleo de OpenSignals](#empleo-de-opensignals)
-  - [Uso de BITalino](#uso-de-bitalino)
-  - [Posición de los Electrodos](#posición-de-los-electrodos)
-- [Resultados](#resultados)
-  - [Sujeto 1 - Jaime](#sujeto-1---jaime)
-    - [Estado Basal](#estado-basal)
-    - [Respiración Prolongada](#respiración-prolongada)
-    - [Ejercicio Intenso](#ejercicio-intenso)
-  - [Pro-sim](#pro-sim)
-- [Discusión](#discusión)
-- [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografía)
+- 
 
 
 ## 1. INTRODUCCIÓN A LA  (EEG)
@@ -65,13 +45,13 @@
   - Se consideró la polarización de los electrodos al enfocarnos en la primera derivación bipolar.
   - Se colocó el electrodo negativo en el brazo derecho, el electrodo positivo en el brazo izquierdo, y el electrodo de referencia cerca a la cresta ilíaca.
 <p align="center">
-  <img src="videos_imagenes/PosicionElectrodos .jpeg" alt="Señales" style="width:440px;">
+  <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:440px;">
   <br>
   <strong>Fig.2. Posición de los electrodos para la adquisición de las señales ECG [3]</strong>
 </p>
 
 <p align="center">
-  <img src="videos_imagenes/PosElec.jpeg" alt="Señales" style="width:350px;">
+  <img src="videos_imagenes/P1.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/P2.jpeg" alt="MenúOS" style="width:430px;">
   <br>
   <strong>Fig 3. Posicionamiento de los electrodos en el sujeto de prueba.</strong>
 </p>
