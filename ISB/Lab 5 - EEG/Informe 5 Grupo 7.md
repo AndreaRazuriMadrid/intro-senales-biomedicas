@@ -120,12 +120,14 @@
 
 ## 5. Resultados
 
+| Etapa                 | Toma               |
+|-----------------------|--------------------|
+| Reposo 1 (30 segundos)  | <<img src="resultados/reposo1.png" alt="reposo1" style="width:320px;">|
+| Abrir y cerrar ojos   | <<img src="resultados/reposo1.png" alt="reposo1" style="width:320px;"> |
+| Reposo (30 segundos)  | <<img src="resultados/reposo1.png" alt="reposo1" style="width:320px;">  |
+| Preguntas matemáticas | <<img src="resultados/reposo1.png" alt="reposo1" style="width:320px;">  |
 
 
-### Sujeto 
-
-
-### Pro sim
 
 
 ## 6. Discusión
