@@ -94,11 +94,27 @@
  
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
-| Reposo (30 segundos)  | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/ad29e4ad-b436-4184-9fb4-75859c0570c3" width="50%" height="50%"></video>                   |
-| Abrir y cerrar ojos   | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/ad29e4ad-b436-4184-9fb4-75859c0570c3" width="50%" height="50%"></video>                   |
-| Reposo (30 segundos)  | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/ad29e4ad-b436-4184-9fb4-75859c0570c3" width="50%" height="50%"></video>                   |
-| Preguntas matemáticas | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/ad29e4ad-b436-4184-9fb4-75859c0570c3" width="50%" height="50%"></video>                   |
+| Reposo (30 segundos)  | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/3dab45b9-6547-4d54-873f-d5b4080d903e" width="50%" height="50%"></video>                   |
+| Abrir y cerrar ojos   | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/bd46b3f8-b6a9-45f1-b235-2544335b8c86" width="50%" height="50%"></video>                   |
+| Reposo (30 segundos)  | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/420e8521-14c6-4189-82ad-57cb3a3a3ba6" width="50%" height="50%"></video>                   |
+| Preguntas matemáticas |      <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/af04d08f-13e7-4b78-80a5-cb012320e098" width="50%" height="50%"></video>              |
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
