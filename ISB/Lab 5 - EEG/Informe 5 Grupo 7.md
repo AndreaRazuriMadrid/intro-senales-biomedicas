@@ -35,32 +35,53 @@
 
 - **Empleo de OpenSignals**: El software diseñado para la visualización de la señales del BITalino.
 
-<img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:430px;">
+   <p align="center">
+    <img src="videos_imagenes/Opensignals.jpeg" alt="Opensignals" style="width:320px;">
+    <img src="videos_imagenes/MenúOS.jpeg" alt="MenúOS" style="width:300px;">
+</p>
+
 
 - **Uso de BITalino**: El dispositivo cuenta con un procesador ATMEGA328P, y funciona de manera inalámbrica gracias a su módulo Bluetooth.
-<img src="videos_imagenes/bitalino1.jpeg" alt="bitalino1" style="width:440px;"> <img src="videos_imagenes/bitalino2.jpeg" alt="bitalino2" style="width:450px;">
 
-
+ <p align="center">
+    <img src="videos_imagenes/bitalino1.jpeg" alt="bitalino1" style="width:310px;">
+    <img src="videos_imagenes/bitalino2.jpeg" alt="bitalino2" style="width:320px;">
+</p>
+  
 - **Posición de los electrodos**:
   - Se consideró la polarización de los electrodos al enfocarnos en la primera derivación bipolar.
   - Se colocó el electrodo negativo en el brazo derecho, el electrodo positivo en el brazo izquierdo, y el electrodo de referencia cerca a la cresta ilíaca.
 <p align="center">
-  <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:440px;">
+  <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
-  <strong>Fig.2. Posición de los electrodos para la adquisición de las señales ECG [3]</strong>
+  <strong>Fig.2. Posición de los electrodos para la adquisición de las señales EEG [3]</strong>
 </p>
 
 <p align="center">
-  <img src="videos_imagenes/P1.jpeg" alt="Opensignals" style="width:455px;">  <img src="videos_imagenes/P2.jpeg" alt="MenúOS" style="width:430px;">
+  <img src="videos_imagenes/P1.jpeg" alt="Opensignals" style="width:300px;">  <img src="videos_imagenes/P2.jpeg" alt="MenúOS" style="width:300px;">
   <br>
   <strong>Fig 3. Posicionamiento de los electrodos en el sujeto de prueba.</strong>
 </p>
 
-- **Sujeto 1- Jaime**:
+- **Procedimiento de registro EEG**:
+  
+| Etapa                 | Indicaciones                                                                                                       | Imagen/video      |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------|-------------------|
+| Reposo (30 segundos)  | Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal, sin movimientos oculares/ojos cerrados) durante 30 segundos. | |
+| Abrir y cerrar ojos   | Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante cinco segundos.       |  |
+| Reposo (30 segundos)  | Registre otra fase de referencia de 30 segundos (paso 1).                                                             |  |
+| Preguntas matemáticas | Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos y resuelve cada uno de ellos mentalmente enfocando tu mirada en un punto específico para evitar artefactos. |  |
 
 
-- **Pro-sim**:
-   Simulación de Pruebas Cardíacas
+- **ULTRACORTEX**:
+
+| Etapa                 | Toma               |
+|-----------------------|--------------------|
+| Reposo (30 segundos)  |                    |
+| Abrir y cerrar ojos   |                    |
+| Reposo (30 segundos)  |                    |
+| Preguntas matemáticas |                    |
+
 
 
 
@@ -74,11 +95,6 @@
 
 ### Pro sim
 
-
-<p align="center">
-  <img src="resultados/ProSim/paso5.png" alt="Ejercicio" style="width:455px;">
-  <br>
-</p>
 
 ## 6. Discusión
 - 
