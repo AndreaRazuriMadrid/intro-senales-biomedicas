@@ -138,8 +138,8 @@ Ploteo de FFT en algunas etapas
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
 | Reposo 1 (30 segundos)  | <img src="resultados/reposo1FFT.png" alt="reposo1" style="width:500px;">|
-| Abrir y cerrar ojos entre 22-27 segundos | <img src="resultados/fftOjos22_27.png" alt="reposo1" style="width:500px;"> |
-| Abrir y cerrar ojos entre 27-32 segundos  | <img src="resultados/fftOjos27_32.png" alt="reposo1" style="width:500px;">  |
+| Abrir y cerrar ojos entre 22-27 segundos | <img src="resultados/fftOJOS22_27.png" alt="reposo1" style="width:500px;"> |
+| Abrir y cerrar ojos entre 27-32 segundos  | <img src="resultados/fftOJOS27_32.png" alt="reposo1" style="width:500px;">  |
 | Preguntas matemáticas fáciles | <img src="resultados/fftMATEfácil.png" alt="reposo1" style="width:500px;">  |
 | Preguntas matemáticas difíciles | <img src="resultados/fftMATEdif.png" alt="reposo1" style="width:500px;">  |
 
