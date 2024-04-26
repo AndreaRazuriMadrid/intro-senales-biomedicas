@@ -120,6 +120,11 @@
 
 ## 5. Resultados
 
+Ploteo de la señal en Python
+
+Se usó una frecuencia de muestreo del bitalino de 1000Hz. Se usó el canal 8 para extraer la información de los archivos txt obtenidas del OpenSignal. 
+
+
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
 | Reposo 1 (30 segundos)  | <img src="resultados/reposo1.png" alt="reposo1" style="width:600px;">|
@@ -127,6 +132,16 @@
 | Reposo (30 segundos)  | <img src="resultados/reposo2.png" alt="reposo1" style="width:600px;">  |
 | Preguntas matemáticas | <img src="resultados/matemática.png" alt="reposo1" style="width:600px;">  |
 
+
+Ploteo de FFT en algunas etapas
+
+| Etapa                 | Toma               |
+|-----------------------|--------------------|
+| Reposo 1 (30 segundos)  | <img src="resultados/reposo1FFT.png" alt="reposo1" style="width:500px;">|
+| Abrir y cerrar ojos entre 22-27 segundos | <img src="resultados/fftOjos22_27.png" alt="reposo1" style="width:500px;"> |
+| Abrir y cerrar ojos entre 27-32 segundos  | <img src="resultados/fftOjos27_32.png" alt="reposo1" style="width:500px;">  |
+| Preguntas matemáticas fáciles | <img src="resultados/fftMATEfácil.png" alt="reposo1" style="width:500px;">  |
+| Preguntas matemáticas difíciles | <img src="resultados/fftMATEdif.png" alt="reposo1" style="width:500px;">  |
 
 
 
