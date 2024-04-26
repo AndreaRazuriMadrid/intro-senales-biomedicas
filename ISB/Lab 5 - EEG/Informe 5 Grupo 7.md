@@ -72,6 +72,11 @@
 | Reposo (30 segundos)  | Registre otra fase de referencia de 30 segundos (paso 1).                                                             |  |
 | Preguntas matemáticas | Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos y resuelve cada uno de ellos mentalmente enfocando tu mirada en un punto específico para evitar artefactos. |  |
 
+<video src="ISB\Lab 5 - EEG\videos_imagenes\Reposo1.mp4" width="50%" height="50%"></video><em><p align="center"> Visualización de la señal EEG </p></em> 
+</div> 
+
+
+
 
 - **ULTRACORTEX**:
 
