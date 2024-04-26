@@ -27,7 +27,10 @@
 |   Modelo      | Descripción   | Cantidad |
 |---------------|---------------|----------|
 | (R)EVOLUTION  | Kit BITalino  | 1        |
+|      -      |Electrodos con gel| 3|
 |       -       | Laptop o PC   | 1        |
+| OpenBCI |Ultracortex Mark IV EEG Headset |1|
+| OpenBCI | OpenBCI Cyton 8-channel Board |1|
 
 
 
