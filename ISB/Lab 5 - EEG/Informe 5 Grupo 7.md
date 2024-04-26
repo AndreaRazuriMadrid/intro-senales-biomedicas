@@ -122,10 +122,10 @@
 
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
-| Reposo 1 (30 segundos)  | <img src="resultados/reposo1.png" alt="reposo1" style="width:500px;">|
-| Abrir y cerrar ojos   | <img src="resultados/Ojos.png" alt="reposo1" style="width:500px;"> |
-| Reposo (30 segundos)  | <img src="resultados/reposo2.png" alt="reposo1" style="width:500px;">  |
-| Preguntas matemáticas | <img src="resultados/matemática.png" alt="reposo1" style="width:500px;">  |
+| Reposo 1 (30 segundos)  | <img src="resultados/reposo1.png" alt="reposo1" style="width:600px;">|
+| Abrir y cerrar ojos   | <img src="resultados/Ojos.png" alt="reposo1" style="width:600px;"> |
+| Reposo (30 segundos)  | <img src="resultados/reposo2.png" alt="reposo1" style="width:600px;">  |
+| Preguntas matemáticas | <img src="resultados/matemática.png" alt="reposo1" style="width:600px;">  |
 
 
 
