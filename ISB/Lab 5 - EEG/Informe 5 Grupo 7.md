@@ -118,7 +118,7 @@ Ploteo de FFT en algunas etapas
 
 
 ## 6. Discusión
-En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en la frente nos permite leer la señal de lóbulo frontal del cerebro, se hizo siguiendo el sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia). El biTalino utiliza una configuración bipolar, en donde señal medida es la diferencia amplificada entre las dos señales de medición que se filtra por paso de banda por 0.8-48 Hz para eliminar señales no deseadas y una alta ganancia de amplificación de 40000, lo que lo hace sensible a artefactos como la luz y los movimientos.
+En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en la frente nos permite leer la señal de lóbulo frontal del cerebro, se hizo siguiendo el sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia). 
 <p align="center">
   <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
