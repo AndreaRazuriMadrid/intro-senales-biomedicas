@@ -135,6 +135,12 @@ Durante la medición de en reposo se pueden ver las ondas alfa de baja frecuenci
 
 Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha.
 
+<p align="center">
+  <img src="videos_imagenes/Fig5.png" alt="Señales" style="width:430px;">
+  <br>
+  <strong>Figura 5: Vista superior de un cabezal con posicionamiento de electrodos según el sistema internacional 10-20.[3]</strong>
+</p>
+
 En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que solo 2 de los canales lograran una señal de calidad aceptable
 
 ## 7. Conclusiones
