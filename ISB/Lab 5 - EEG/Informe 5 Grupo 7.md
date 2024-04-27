@@ -21,6 +21,24 @@
 
 ## 1. INTRODUCCIÓN A LA ELECTROENCEFALOGRAFÍA (EEG)
 
+La electroencefalografía (EEG) es una técnica utilizada para registrar la actividad eléctrica del cerebro. Se realiza mediante la colocación de electrodos en el cuero cabelludo, los cuales detectan las señales eléctricas generadas por las neuronas cerebrales. Estas señales se representan en forma de ondas en un gráfico, permitiendo a los médicos estudiar la actividad cerebral del paciente​ [1].
+
+**Contexto**
+
+- El EEG fue desarrollado inicialmente por Hans Berger en 1924, quien registró la primera actividad eléctrica cerebral humana. Desde entonces, la EEG ha evolucionado significativamente en términos de la tecnología utilizada para capturar y analizar datos, así como su aplicación en diferentes campos médicos y de investigación [2].
+
+**¿Cómo funciona el cerebro?**
+
+- El cerebro está activo todo el tiempo, incluso durante el sueño. Esta actividad se manifiesta como ondas cerebrales que varían en frecuencia y amplitud, dependiendo del estado de conciencia y actividad del individuo. Las ondas alfa (8–13 Hz) son comunes en estados de relajación con los ojos cerrados, mientras que las ondas beta (13–30 Hz) son típicas en estados de alerta o actividad mental intensa. Otras ondas como las delta (0.5–4 Hz) y theta (4–7 Hz) son más comunes durante el sueño o en condiciones anormales​ [1].
+
+**Aplicaciones del EEG**
+
+- El EEG se utiliza ampliamente para diagnosticar y monitorear trastornos neurológicos como la epilepsia, trastornos del sueño y encefalopatías. Además, es útil para evaluar la profundidad de la anestesia, el coma y la posible muerte cerebral. También se emplea para investigar la actividad cerebral en estudios de ciencias cognitivas y psicológicas, mediante técnicas derivadas como los potenciales evocados y las respuestas relacionadas con eventos [1].
+
+**Técnica y metodología**
+
+- La colocación de los electrodos sigue un sistema estándar denominado "Sistema Internacional 10-20", que asegura una cobertura uniforme del cuero cabelludo para capturar la actividad eléctrica en diversas regiones cerebrales. Los electrodos captan señales eléctricas, que son luego amplificadas y registradas para su análisis. Las señales se categorizan en diversas bandas de frecuencia, como alfa, beta, delta y theta, cada una asociada con diferentes estados de conciencia y actividad neuronal​ [1].
+
 
 
 ## 2. Objetivos
@@ -61,7 +79,7 @@
 </p>
   
 - **Posición de los electrodos**:
-  - Se consideró la polarización de los electrodos enfocándonos en la configuración bipolar. Se situó el electrodo negativo (negro) en la parte derecha de la frente, mientras que el electrodo positivo (rojo) se colocó en la parte izquierda de la frente. Adicionalmente, el electrodo de referencia (blanco) se posicionó en una área neutra, específicamente en el hueso detrás de la oreja [3].
+  - Se consideró la polarización de los electrodos enfocándonos en la configuración bipolar. Se situó el electrodo negativo (negro) en la parte derecha de la frente, mientras que el electrodo positivo (rojo) se colocó en la parte izquierda de la frente. Adicionalmente, el electrodo de referencia (blanco) se posicionó en una área neutra, específicamente en el hueso detrás de la oreja **[3]**.
 <p align="center">
   <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
@@ -135,16 +153,27 @@ Durante la medición de en reposo se pueden ver las ondas alfa de baja frecuenci
 
 Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha.
 
+<p align="center">
+  <img src="videos_imagenes/Fig5.png" alt="Señales" style="width:430px;">
+  <br>
+  <strong>Figura 5: Vista superior de un cabezal con posicionamiento de electrodos según el sistema internacional 10-20.[3]</strong>
+</p>
+
 En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que solo 2 de los canales lograran una señal de calidad aceptable
 
 ## 7. Conclusiones
 - En la medición en Reposo 1, se observa un aumento de amplitud de hasta 1.5mV. Sin embargo, esto puede deberse a factores de ruido o al movimiento involuntario de los ojos. Una medida más precisa se encuentra entre los 28 a 40s, en donde la amplitud es alrededor de 1 mV aproximadamente, esto sugiere que la actividad eléctrica cerebral es más estable en ese intervalo de tiempo y que la amplitud medida allí es más confiable.
-- En la medición de abrir y cerrar los ojos, se muestra se observa una repetición de la señal. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante [1]. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se podría considerar que se está encontrando ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto [2]. 
-- En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con una mayor generación de picos de 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión [2]. 
+- En la medición de abrir y cerrar los ojos, se muestra se observa una repetición de la señal. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante **[4]**. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se podría considerar que se está encontrando ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto **[5]**. 
+- En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con una mayor generación de picos de 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión **[5]**. 
  
 ## 8. Bibliografía
-[1] Gómez, L.J. (2016) Departamento de Automática, Ingeniería Eléctrica y Electrónica e Informática Industrial. Available at: https://oa.upm.es/44379/1/TFM_LEONARDO_JOSE_GOMEZ_FIGUEROA.pdf (Accessed: 26 April 2024).  
-[2] Ramos, R. (2020) Análisis de espectrogramas de señales EEG, Facultad de Ciencias de la Computación. Available at: https://repositorioinstitucional.buap.mx/server/api/core/bitstreams/92e27f78-4f9d-4d2e-9d69-9f90cd87c0b1/content (Accessed: 26 April 2024). 
+[1] "Mayo Clinic Staff, 'EEG (electroencephalogram) - Mayo Clinic,' Mayo Clinic, [Online]. Available: https://www.mayoclinic.org/tests-procedures/eeg/about/pac-20393875. [Accessed: 27-04-2024].
+
+[2] Mark Freedman, 'Electroencefalografía (EEG) - Manual Merck versión para profesionales,' Merck Manuals, [Online]. Available: https://www.merckmanuals.com/es-us/professional/trastornos-neurol%C3%B3gicos/pruebas-y-procedimientos-neurol%C3%B3gicos/electroencefalograf%C3%ADa-eeg. [Accessed: 27-04-2024].
 
 [3] “BITalino (r)evolution Lab Guide.” Accessed: Apr. 26, 2024. [Online]. Available: https://www.bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
+
+[4] Gómez, L.J. (2016) Departamento de Automática, Ingeniería Eléctrica y Electrónica e Informática Industrial. Available at: https://oa.upm.es/44379/1/TFM_LEONARDO_JOSE_GOMEZ_FIGUEROA.pdf (Accessed: 26 April 2024).  
+
+[5] Ramos, R. (2020) Análisis de espectrogramas de señales EEG, Facultad de Ciencias de la Computación. Available at: https://repositorioinstitucional.buap.mx/server/api/core/bitstreams/92e27f78-4f9d-4d2e-9d69-9f90cd87c0b1/content (Accessed: 26 April 2024). 
 
