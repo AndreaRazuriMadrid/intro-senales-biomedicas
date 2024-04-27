@@ -149,7 +149,10 @@ Ploteo de FFT en algunas etapas
 - 
 
 ## 7. Conclusiones
-- 
+- En la medición en Reposo 1, se observa un aumento de amplitud de hasta 1.5mV. Sin embargo, esto puede deberse a factores de ruido o al movimiento involuntario de los ojos. Una medida más precisa se encuentra entre los 28 a 40s, en donde la amplitud es alrededor de 1 mV aproximadamente, esto sugiere que la actividad eléctrica cerebral es más estable en ese intervalo de tiempo y que la amplitud medida allí es más confiable.
+- En la medición de abrir y cerrar los ojos, se muestra se observa una repetición de la señal. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se pueden visualizar las ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto. https://oa.upm.es/44379/1/TFM_LEONARDO_JOSE_GOMEZ_FIGUEROA.pdf 
+- En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con mayor generación de picos mayores a 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión. 
+
 
 
 
