@@ -84,7 +84,7 @@ La electroencefalografía (EEG) es una técnica utilizada para registrar la acti
 </p>
   
 - **Posición de los electrodos**:
-  - Se consideró la polarización de los electrodos enfocándonos en la configuración bipolar. Se situó el electrodo negativo (negro) en la parte derecha de la frente, mientras que el electrodo positivo (rojo) se colocó en la parte izquierda de la frente. Adicionalmente, el electrodo de referencia (blanco) se posicionó en una área neutra, específicamente en el hueso detrás de la oreja **[4]**.
+  - Siguiendo la guía "BITalino (r)evolution Lab Guide" se consideró la polarización de los electrodos enfocándonos en la configuración bipolar. Se situó el electrodo negativo (negro) en la parte derecha de la frente, mientras que el electrodo positivo (rojo) se colocó en la parte izquierda de la frente. Adicionalmente, el electrodo de referencia (blanco) se posicionó en una área neutra, específicamente en el hueso detrás de la oreja **[4]**.
 <p align="center">
   <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
