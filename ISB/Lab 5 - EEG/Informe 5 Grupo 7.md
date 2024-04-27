@@ -39,6 +39,11 @@ La electroencefalografía (EEG) es una técnica utilizada para registrar la acti
 
 - La colocación de los electrodos sigue un sistema estándar denominado "Sistema Internacional 10-20", que asegura una cobertura uniforme del cuero cabelludo para capturar la actividad eléctrica en diversas regiones cerebrales. Los electrodos captan señales eléctricas, que son luego amplificadas y registradas para su análisis. Las señales se categorizan en diversas bandas de frecuencia, como alfa, beta, delta y theta, cada una asociada con diferentes estados de conciencia y actividad neuronal​ [1].
 
+<p align="center">
+  <img src="videos_imagenes/Intro.jpeg" alt="Señales" style="width:430px;">
+  <br>
+  <strong>Fig.1. Adquisición de señal EEG [3]</strong>
+</p>
 
 
 ## 2. Objetivos
@@ -167,15 +172,14 @@ En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en l
   <strong>Fig.4. Electrodos +/- se colocan en las posiciones azul y roja, y  la referencia detras de la oreja  [4]</strong>
 </p>
 
-- En la medición en Reposo 1, se observa un aumento de amplitud de hasta 1.5mV. Sin embargo, esto puede deberse a factores de ruido o al movimiento involuntario de los ojos. Una medida más precisa se encuentra entre los 28 a 40s, en donde la amplitud es alrededor de 1 mV aproximadamente, esto sugiere que la actividad eléctrica cerebral es más estable en ese intervalo de tiempo y que la amplitud medida allí es más confiable.
+- En la medición en Reposo 1, se observa un aumento de amplitud de hasta 1.5mV. Sin embargo, esto puede deberse a factores de ruido o al movimiento involuntario de los ojos. Una medida más precisa se encuentra entre los 28 a 40s, en donde la amplitud es alrededor de 1 mV aproximadamente, esto sugiere que la actividad eléctrica cerebral es más estable en ese intervalo de tiempo y que la amplitud medida allí es más confiable. Por otro lado, durante la medición de en reposo se pueden ver las ondas alfa de baja frecuencia pero contiene muchos artefactos y ruido. Con el análisis de frecuencia podemos ver que el ruido continua en las otras pruebas, haciendo más difícil poder leer la información. Este ruido se puede deber al posicionamiento de los electrodos y su referencia, además de que el sujeto se encontraba cerca de 2 laptops y tenía una joya de acero.
 
-- En la medición de abrir y cerrar los ojos se observa los 5 ciclos realizados. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante **[5]**. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se podría considerar que se está encontrando ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto **[6]**.
+- En la medición de abrir y cerrar los ojos se observa los 5 ciclos realizados. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante **[5]**. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se podría considerar que se está encontrando ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto **[6]**. Además, de acuerdo a las gráficas de FFT, podemos observar que las ondas alfa (entre 8-13Hz) tienen actividad en cada ciclo.
   
--  En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con una mayor generación de picos de 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión **[6]**. 
+-  En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con una mayor generación de picos de 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión **[6]**. Esto se puede confirmar con las gráficas de FFT obtenidas en los resultados, ya que se observa actividad alrededor de los 30Hz.
 
-Durante la medición de en reposo se pueden ver las ondas alfa de baja frecuencia pero contiene muchos artefactos y ruido. Con el análisis de frecuencia podemos ver que el ruido continua en las otras pruebas, haciendo más difícil poder leer la información. Este ruido se puede deber al posicionamiento de los electrodos y su referencia, además de que el sujeto se encontraba cerca de 2 laptops y tenía una joya de acero.
 
-Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha.
+- Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha.
 
 <p align="center">
   <img src="videos_imagenes/Fig5.png" alt="Señales" style="width:430px;">
@@ -183,13 +187,14 @@ Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posi
   <strong>Figura 5: Vista superior de un cabezal con posicionamiento de electrodos según el sistema internacional 10-20.[4]</strong>
 </p>
 
-En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que a pesar de nuestros intentos no se pudiera recolectar una señal útil. 
+- En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que a pesar de nuestros intentos no se pudiera recolectar una señal útil. 
 Esto se puede deber a una falta de experiencia de los usuarios tanto nosotros como las personas que lo probaron antes que nosotros.
 
 
 ## 7. Conclusiones
 - En la medición en Reposo 1 y 2, se observa la adquisición de ruido en la señal al inicio, debido a interferencias por estar cerca a 2 laptops y tener un collar metálico durante la prueba.
-- 
+- En la medición de abrir y cerrar los ojos, se obtuvieron 5 ciclos de repetición durante la prueba. Se muestra que al abrir los ojos se obtuvo una amplitud mayor de 1.5mV, y al cerrar los ojos se obtiene una medición de 1 mV.
+- En la medición de preguntas matemáticas, se visualiza onda beta por el gráfico de FFT de la señal, en donde el rango de frecuencias es entre 12 a 30 Hz. Aquí se obtuvieron picos constantes con una amplitud mayor a 1.5mV, dependiendo de la complejidad de las preguntas.
 
  
 ## 8. Bibliografía
