@@ -130,7 +130,7 @@ Se usó una frecuencia de muestreo del bitalino de 1000Hz. Se usó el canal 8 pa
 | Preguntas matemáticas | <img src="resultados/matemática.png" alt="reposo1" style="width:600px;">  |
 
 
-Ploteo de FFT en algunas etapas
+**Ploteo de FFT**
 
 | Etapa                 | Toma               |
 |-----------------------|--------------------|
@@ -141,6 +141,14 @@ Ploteo de FFT en algunas etapas
 | Preguntas matemáticas difíciles | <img src="resultados/fftMATEdif.png" alt="reposo1" style="width:500px;">  |
 
 
+**Ploteo de la señal en Python - Ultracortex**
+
+Para la adquisición de la señal se utilizó 16 canales; sin embargo para el ploteo solo se está graficando 13 de estos.
+
+
+ <p align="center">
+    <img src="resultados/ultracortex.png" alt="ultracortex" style="width:510px;">
+</p>
 
 ## 6. Discusión
 En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en la frente nos permite leer la señal de lóbulo frontal del cerebro, se hizo siguiendo el sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia). 
