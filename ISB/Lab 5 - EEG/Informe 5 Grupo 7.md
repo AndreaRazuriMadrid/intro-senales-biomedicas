@@ -77,17 +77,6 @@
 | Preguntas matemáticas | Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos y resuelve cada uno de ellos mentalmente enfocando tu mirada en un punto específico para evitar artefactos. | <video src="https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/157930025/e48396e2-c8de-45c2-9273-54a04c8cb4a1" width="50%" height="50%"></video> |
 
 
-
-
-
-
-
-
-
-
-
-
-
 - **ULTRACORTEX**:
   
 <div align="center">
@@ -101,26 +90,9 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 5. Resultados
 
-Ploteo de la señal en Python
+**Ploteo de la señal en Python**
 
 Se usó una frecuencia de muestreo del bitalino de 1000Hz. Se usó el canal 8 para extraer la información de los archivos txt obtenidas del OpenSignal. 
 
