@@ -117,7 +117,15 @@ La electroencefalografía (EEG) es una técnica utilizada para registrar la acti
 
 
 - **ULTRACORTEX**:
+  - Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda [4].
   
+<p align="center">
+  <img src="videos_imagenes/Ultracortex.png" alt="Ultracortex" style="width:300px;"> 
+  <br>
+  <strong>Posicionamiento de los electrodos Ultra en el sujeto de prueba. [4]</strong>
+</p>
+
+
 <div align="center">
  
 | Etapa                 | Toma               |
@@ -179,7 +187,7 @@ En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en l
 -  En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con una mayor generación de picos de 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión **[6]**. Esto se puede confirmar con las gráficas de FFT obtenidas en los resultados, ya que se observa actividad alrededor de los 30Hz.
 
 
-- Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha.
+- Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda. El 10 y 20 describen las distancias entre cada electrodo adyacente en porcentaje. Cada posición tiene una letra y un número que describen la ubicación en el lóbulo (frontal, temporal, central y occipital), en donde los número impares se refiere a la izquierda y los número pares a la derecha [4].
 
 <p align="center">
   <img src="videos_imagenes/Fig5.png" alt="Señales" style="width:430px;">
