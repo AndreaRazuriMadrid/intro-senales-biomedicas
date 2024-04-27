@@ -157,7 +157,7 @@ Se usó una frecuencia de muestreo del bitalino de 1000Hz. Se usó el canal 8 pa
 
 **Ploteo de la señal en Python - Ultracortex**
 
-Para la adquisición de la señal se utilizó 16 canales; sin embargo para el ploteo solo se está graficando 13 de estos.
+Para la adquisición de la señal se utilizó 16 canales; sin embargo para el ploteo solo se está graficando 13 de estos. Se utilizó una ganancia de 1 para la adquisición.
 
 
  <p align="center">
