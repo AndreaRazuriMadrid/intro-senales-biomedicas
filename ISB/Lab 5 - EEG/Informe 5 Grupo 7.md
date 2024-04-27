@@ -146,7 +146,7 @@ Ploteo de FFT en algunas etapas
 
 
 ## 6. Discusión
-En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en la frente nos permite leer la señal de lóbulo frontal del cerebro, se hizo siguiendo el sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia).
+En nuestras pruebas usando el sensor eeg del bitalino, el arreglo utilizado en la frente nos permite leer la señal de lóbulo frontal del cerebro, se hizo siguiendo el sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia). El biTalino utiliza una configuración bipolar, en donde señal medida es la diferencia amplificada entre las dos señales de medición que se filtra por paso de banda por 0.8-48 Hz para eliminar señales no deseadas y una alta ganancia de amplificación de 40000, lo que lo hace sensible a artefactos como la luz y los movimientos.
 <p align="center">
   <img src="videos_imagenes/PosicionElectrodos.jpeg" alt="Señales" style="width:430px;">
   <br>
@@ -163,12 +163,9 @@ En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se lo
 - En la medición de abrir y cerrar los ojos, se muestra se observa una repetición de la señal. Cuando se abren los ojos se obtiene una amplitud de hasta 1.5 mV, pero cuando se cierran los ojos se muestra una amplitud alrededor de 1 mV, lo cual es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante [1]. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se pueden visualizar las ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto [2]. 
 - En la medición de preguntas matemáticas, se observan picos con una amplitud mayor a 1.5 mV cuando se razona la pregunta formulada. Para el caso de las preguntas con mayor dificultad, se observa una señal con mayor generación de picos mayores a 1.5 mV, debido a que el cerebro realiza un mayor esfuerzo. Se podría considerar que se está visualizando onda beta, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión [2]. 
  
-
-
-
-
 ## 9. Bibliografía
 [1] Gómez, L.J. (2016) Departamento de Automática, Ingeniería Eléctrica y Electrónica e Informática Industrial. Available at: https://oa.upm.es/44379/1/TFM_LEONARDO_JOSE_GOMEZ_FIGUEROA.pdf (Accessed: 26 April 2024).  
 [2] Ramos, R. (2020) Análisis de espectrogramas de señales EEG, Facultad de Ciencias de la Computación. Available at: https://repositorioinstitucional.buap.mx/server/api/core/bitstreams/92e27f78-4f9d-4d2e-9d69-9f90cd87c0b1/content (Accessed: 26 April 2024). 
+
 [3] “BITalino (r)evolution Lab Guide.” Accessed: Apr. 26, 2024. [Online]. Available: https://www.bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
 
