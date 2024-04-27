@@ -159,7 +159,9 @@ Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posi
   <strong>Figura 5: Vista superior de un cabezal con posicionamiento de electrodos según el sistema internacional 10-20.[4]</strong>
 </p>
 
-En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que solo 2 de los canales lograran una señal de calidad aceptable
+En el caso de la prueba con el ultra cortex se debe tener en cuenta que no se logró una buena toma de la señal, se pudo deber a diferentes factores como no haber logrado una buena conexión con el cuero cabelludo, los electrodos se encontraban algo secos, todo esto causó que a pesar de nuestros intentos no se pudiera recolectar una señal útil. 
+Esto se puede deber a una falta de experiencia de los usuarios tanto nosotros como las personas que lo probaron antes que nosotros.
+
 
 ## 7. Conclusiones
 - En la medición en Reposo 1, se observa un aumento de amplitud de hasta 1.5mV. Sin embargo, esto puede deberse a factores de ruido o al movimiento involuntario de los ojos. Una medida más precisa se encuentra entre los 28 a 40s, en donde la amplitud es alrededor de 1 mV aproximadamente, esto sugiere que la actividad eléctrica cerebral es más estable en ese intervalo de tiempo y que la amplitud medida allí es más confiable.
