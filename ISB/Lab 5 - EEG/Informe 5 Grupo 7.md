@@ -117,7 +117,7 @@ La electroencefalografía (EEG) es una técnica utilizada para registrar la acti
 
 
 - **ULTRACORTEX**:
-  - Para el reconocimiento de señales en el Ultra Cortex, se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda [4].
+  - Siguiendo la guía "BITalino (r)evolution Lab Guide", para el reconocimiento de señales en el Ultra Cortex se toma en cuenta la posición de los electrodos según el International 10-20 system en el cuero cabelludo, el cual consta de la distancia total entre el frente y la parte posterior, así como de derecha a izquierda [4].
   
 <p align="center">
   <img src="videos_imagenes/Ultracortex.png" alt="Ultracortex" style="width:300px;"> 
