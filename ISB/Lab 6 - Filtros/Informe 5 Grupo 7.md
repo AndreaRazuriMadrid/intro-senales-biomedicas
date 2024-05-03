@@ -66,7 +66,7 @@
 ## 6. Discusión
 
 **6.1. Análisis de Señales ECG:**
-- 
+- asd
 
 ## 7. Conclusiones
 - La inspección visual de las señales filtradas versus las señales crudas demostró claramente la efectividad de ambos tipos de filtros en la mejora de la calidad de la señal ECG. En particular, el filtro FIR, con sus características de fase lineal, mostró ser superior para aplicaciones donde la integridad de la fase es crucial.
