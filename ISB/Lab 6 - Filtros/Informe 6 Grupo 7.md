@@ -23,8 +23,9 @@
 
 
 ## 2. Objetivos
-- 
-
+- Crear un filtro IIR, seleccionando uno de los siguientes tipos: Bessel, Butterworth, Chebyshev, o Elíptico.
+- Diseñar un filtro FIR utilizando dos de las siguientes técnicas de ventaneo: Hanning, Hamming, Bartlett, rectangular, o Blackman.
+- Implementar filtros IIR y FIR en el procesamiento de señales ECG, EMG y EEG.
 ## 3. Materiales y equipos
 
 <div align="center">
