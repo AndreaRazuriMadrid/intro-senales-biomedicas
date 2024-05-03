@@ -64,6 +64,7 @@
 
 
 ## 6. Discusión
+
 **6.1. Análisis de Señales ECG:**
 - 
 
