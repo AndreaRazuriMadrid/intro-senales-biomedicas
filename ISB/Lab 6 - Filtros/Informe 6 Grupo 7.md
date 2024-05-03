@@ -9,7 +9,7 @@
 
 ## Tabla de Contenidos
 
-1. [INTRODUCCIÓN A LA ELECTROENCEFALOGRAFÍA (EEG)](#1-introducción-a-la-electroencefalografía-eeg)
+1. [INTRODUCCIÓN](#1-introducción)
 2. [Objetivos](#2-objetivos)
 3. [Materiales y equipos](#3-materiales-y-equipos)
 4. [Metodología](#4-metodología)
@@ -23,10 +23,7 @@
 
 
 ## 2. Objetivos
-- Obtener señales biomédicas de electroencefalografía (EEG).
-- Configurar adecuadamente el dispositivo BiTalino.
-- Extraer datos de las señales EEG utilizando el software OpenSignals (r)evolution.
-
+- 
 
 ## 3. Materiales y equipos
 
@@ -66,11 +63,21 @@
 ## 6. Discusión
 
 **6.1. Análisis de Señales ECG:**
-- asd
+- Elección del Filtro y Configuración:
+  - Filtro IIR Butterworth: Se eligió un filtro Butterworth de orden 5 con una frecuencia de corte de 20 Hz, basado en su capacidad para ofrecer una respuesta de frecuencia plana en la banda de paso, lo que es crucial para no alterar las características esenciales de la señal de ECG. Este diseño se apoya en el estudio de S. Basu y S. Mamud, donde se examina cómo la variación del orden y la frecuencia de corte afecta la eliminación de ruido en las señales de ECG [1].
+  - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [2].
+- Análisis de las Señales Filtradas:
+  - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [3].
+
 
 ## 7. Conclusiones
 - La inspección visual de las señales filtradas versus las señales crudas demostró claramente la efectividad de ambos tipos de filtros en la mejora de la calidad de la señal ECG. En particular, el filtro FIR, con sus características de fase lineal, mostró ser superior para aplicaciones donde la integridad de la fase es crucial.
 
  
 ## 8. Bibliografía
-[1] 
+[1] S. Basu y S. Mamud, "Comparative study on the effect of order and cut off frequency of Butterworth low pass filter for removal of noise in ECG signal," 2020 IEEE 1st International Conference for Convergence in Engineering, 2020. [En línea]. Disponible: https://ieeexplore.ieee.org/document/9290646
+
+[2] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
+
+[3] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
+
