@@ -40,7 +40,12 @@
 
 
 ## 4. Metodología
+**4.1. Análisis de Señales ECG:**
+**4.2. Análisis de Señales EMG:**
+**4.3. Análisis de Señales EEG:**
+Lo que se desea obtener por medio del diseño de un filtro IIR es suprimir las interferencias en la toma de datos, debido a frecuencias altas y artefactos. Los filtros IIR utilizan los valores de entrada actuales de la señal como los valores de salida pasados para calcular la salida del filtro. Esto los hace más eficientes en términos de la complejidad computacional para una misma efectividad de filtrado. 
 
+Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una ventana Hamming. Con el propósito de extraer las bandas de frecuencias alfa, beta, delta, etc. Dentro de las especificaciones, se consideró una frecuencia de corte de [] para el filtro pasa banda.
 
 
 ## 5. Resultados
@@ -56,9 +61,8 @@
 | Respiración     |<img src="señales/ecgRespiracion.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiracionButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiraciónHamming.png" alt="Ejercicio" style="width:400px;">|
 | Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioHamming.png" alt="Ejercicio" style="width:400px;">|
 
-
-
-
+**5.3. Análisis de Señales EEG:**
+  - Se trabajaron con las señales EEG con una frecuencia de muestreo de 1000 Hz. Se utilizó el BiTalino para la obtención de datos, por medio del sistema internacional 10-20, y se utilizó el método monopolar (dos electrodos en una área del cerebro y un electrodo de referencia).
 
 
 ## 6. Discusión
@@ -69,6 +73,13 @@
   - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [2].
 - Análisis de las Señales Filtradas:
   - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [3].
+**6.3. Análisis de Señales EEG:**
+- Elección del Filtro y Configuración:
+  - Filtro FIR Hamming:
+  - Filtro IIR Butterworth: Se optó por utilizar un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz, basándose en los picos identificados en el análisis espectral de la señal. Esta decisión se respaldó con datos de investigaciones previas. El diseño del filtro se alinea con los hallazgos de Sabine L. y Saraag S., quienes establecieron una frecuencia de corte de entre 47 y 53 Hz, incluyendo armónicos de hasta 500 Hz, en sus estudios. En dicha investigación, se empleó un filtro DFT ajustado a estos valores de frecuencia, obteniendo resultados satisfactorios en el filtrado de la señal [].
+
+  De acuerdo a las frecuencias en EEG, se consideró correcto utilizar una frecuencia de corte de 35 Hz al analizar las ondas alfa (8-12Hz), beta (12-30Hz) y theta (4-8) como las señales que se van a considerar en el estudio. Por tanto, se busca preservar la mayoría de estas bandas y eliminar o atenuar ruidos e interferencias de alta frecuencia.
+
 
 
 ## 7. Conclusiones
