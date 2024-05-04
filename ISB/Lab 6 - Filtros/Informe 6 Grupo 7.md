@@ -110,7 +110,14 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
 **5.2. Análisis de Señales EMG:**
 
-En este estudio se trabajaron con dos compañeros:
+En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de 1000 Hz, utilizamos. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a ca da actividad. 
+
+- Oposición: 3 coeficientes, frecuencia de corte de 300 Hz.
+- Reposo: 100 coeficientes, frecuencia de corte de 400 Hz para reservar la señal eliminando los componentes de baja frecuencia.
+- Extensión: 3 coeficientes, frecuencia de corte de 10 Hz.
+- Flexión: 3 coeficientes, frecuencia de corte de 300 Hz. 
+
+Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más sueave. El filtro se configuró on un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
 
 - El primer compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
 
@@ -121,13 +128,13 @@ En este estudio se trabajaron con dos compañeros:
 | Extensión |  |  |  |
 | Flexión |  |  |  |
 
-i. Oposición: En la señal original, muestra viarabilidad constante a lo alrgo del tiempo con una amplitud que varía en un rango estrecho. Luego, con el filtro FIR parece haber suavizado algunos picos y valles de la señal, reduciendo el ruido y dejando uan representación más limpia de las fluctuaciones de la señal. La forma de la señal se mantiene en gran medida, lo que indica que el filtro ha sido efectivo sin ser demasiado agresivo.
+i. Oposición: En la señal original, muestra viarabilidad constante a lo alrgo del tiempo con una amplitud que varía en un rango estrecho. Luego, con el filtro FIR parece haber suavizado algunos picos y valles de la señal, reduciendo el ruido y dejando uan representación más limpia de las fluctuaciones de la señal. La forma de la señal se mantiene en gran medida, lo que indica que el filtro ha sido efectivo sin ser demasiado agresivo. Luego, la señal filtrada por IIIR muestra una reducción notable en la amplitudd e las fluctuaciones. Esto indica que el filtro IIR ha suavizado efectivamente la señal, eliminando parte del ruido de alta frecuencia y posiblemente algunos componentes útiles, lo que puede ser indicativo de que la configuración del filtro necesita ajustes para preservar más características de la señal original. 
 
-ii. Reposo: La señal original, es predonmianntemente plana con variaciones pequeñas pero notables en amplitud. Luego, la señal filtrada por el filtro FIR parece una línea plana, lo que indica que el filtro ha eliminado prácticamente toda la variabilidad. Esto sugiere que es filtro puede estar configurado con una frecuencia demasiado baja, eliminado así componentes escenciales de la señal.
+ii. Reposo: La señal original, es predonmianntemente plana con variaciones pequeñas pero notables en amplitud. Luego, la señal filtrada por el filtro FIR parece una línea plana, lo que indica que el filtro ha eliminado prácticamente toda la variabilidad. Esto sugiere que es filtro puede estar configurado con una frecuencia demasiado baja, eliminado así componentes escenciales de la señal. Luego, la señal filtrada por IIR aparece como una línea plana, indicando que el filtro IIR ha eliminado prácticamente todas las fluctuaciones. Este es un caso claro donde el filtro está siendo demasiado agresivo, sugiriendo la necesidad de ajustar la frecuencia de corte o reducir el orden del filtro para conservar más de la señal de baja amplitud.
 
-iii. Extensión: Similar a la señal de Oposición, con una amplitud que varía dento de un rango entrescho pero con picos más definidos. El filtro FIR ha suavizado significativamente la señal. La señal retiene la forma general pero con menos vairabilidad y picos menos pronunciados. 
+iii. Extensión: Similar a la señal de Oposición, con una amplitud que varía dento de un rango entrescho pero con picos más definidos. El filtro FIR ha suavizado significativamente la señal. La señal retiene la forma general pero con menos vairabilidad y picos menos pronunciados. Por la parte del filtro IIR, la señal filtrada muestra una amplitud reducida y menos variabilidad. El filtro ha suavizado los picos y las caídas, pero al mismo tiempo podría estar atenuando detalles importantes de la señal.
 
-iv. Flexión: La señal original presenta más variabilidad y rango de amplitud que las otras actividades. El efecto del filtro FIR es su suavizado, aunque la señal sigue mostrando variabilidad y picos, lo cual es positivo por que indica que el filtro no ha sido excesivamente restrictivo. 
+iv. Flexión: La señal original presenta más variabilidad y rango de amplitud que las otras actividades. El efecto del filtro FIR es su suavizado, aunque la señal sigue mostrando variabilidad y picos, lo cual es positivo por que indica que el filtro no ha sido excesivamente restrictivo. Y el filtro IIR, hace que la señal filtrada sigue siendo reconocible pero con menor ruido y variabilidad. Aunque se conservan mejor las características generales que en otras señales, aún hay una notable reducción en la amplitud y los detalles finos.
 
 - El primer compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
 
@@ -138,6 +145,14 @@ iv. Flexión: La señal original presenta más variabilidad y rango de amplitud 
 | Extensión |  |  |  |
 | Flexión |  |  |  |
 
+i. Oposición: 
+
+ii. Reposo: 
+
+iii. Extensión:
+
+iv. Flexión: 
+
 - El segundo compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
 
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
@@ -146,6 +161,14 @@ iv. Flexión: La señal original presenta más variabilidad y rango de amplitud 
 | Reposo |  |  |  |
 | Extensión |  |  |  |
 | Flexión |  |  |  |
+
+i. Oposición: 
+
+ii. Reposo: 
+
+iii. Extensión:
+
+iv. Flexión: 
 
 - El segundo compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
 
@@ -156,6 +179,13 @@ iv. Flexión: La señal original presenta más variabilidad y rango de amplitud 
 | Extensión |  |  |  |
 | Flexión |  |  |  |
 
+i. Oposición: 
+
+ii. Reposo: 
+
+iii. Extensión:
+
+iv. Flexión: 
 
 **5.3. Análisis de Señales EEG:**
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
@@ -169,6 +199,9 @@ iv. Flexión: La señal original presenta más variabilidad y rango de amplitud 
   - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [11].
 - Análisis de las Señales Filtradas:
   - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [12].
+
+**6.2. Análisis de Señales EMG:**
+
 
 **6.3. Análisis de Señales EEG:**
 - Elección del Filtro y Configuración:
