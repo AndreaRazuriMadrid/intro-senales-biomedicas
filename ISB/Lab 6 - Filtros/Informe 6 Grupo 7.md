@@ -83,16 +83,26 @@ Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente preva
 
 ## 4. Metodología
 **4.1. Análisis de Señales ECG:** 
+- Las señales de electrocardiograma (ECG) se obtuvieron durante diferentes condiciones: en reposo basal, durante respiración controlada y después de ejercicio. Se almacenaron las señales en formato de texto y se muestrearon a una frecuencia de 1000 Hz, garantizando una captura adecuada de la dinámica cardíaca sin infracción del teorema de Nyquist.
+
+- Para el análisis y reducción del ruido inherente en las mediciones de ECG, se aplicaron dos tipos de filtros digitales: un Filtro FIR (Respuesta Impulsiva Finita) y un filtro IIR (Respuesta Impulsiva Infinita).
+
+  - Filtro FIR de Pasa-baja: Utilizando la función firwin de la biblioteca SciPy, se diseñó un filtro FIR con ventana de Hamming. Este filtro fue configurado con 101 taps y una frecuencia de corte de 20 Hz, seleccionada para preservar las componentes fundamentales de la señal de ECG mientras se reduce el ruido de alta frecuencia.
+  - Filtro IIR Butterworth de Pasa-baja: Para obtener una respuesta de frecuencia más suave, se implementó un filtro IIR tipo Butterworth. Este filtro se configuró de orden 5 y con una frecuencia de corte también de 20 Hz. Se utilizó la función filtfilt para la aplicación del filtro, evitando cualquier desfase en la señal filtrada.
+
+- Ambos filtros se aplicaron a las señales ECG para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas. El objetivo era evaluar cuál de los dos tipos de filtro era más efectivo en minimizar el ruido y mejorar la claridad de las señales para análisis posteriores.
+
+- Las señales crudas y filtradas fueron visualizadas utilizando gráficos que mostraban segmentos de la señal en el tiempo. Esto permitió una comparación directa y visual de los efectos de cada filtro. Se prestó especial atención a la preservación de los picos y formas características del ECG, como los complejos QRS, los cuales son críticos para un diagnóstico clínico acertado.
 
 **4.2. Análisis de Señales EMG:**
-Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
 
-Para esto se diseñaron los filtros FIR de alta-pasa utilizando la función 'firwin' de la biblioteca SciPY. La configuración del filtro se ajustó específicamente para cada tipo de actividad. Y luego el filtro IIR tipo butterworth de pasa-baja para obtener una respuesta de frecuencia más suave. El filtro se configuró de orden 5 y de frecuencia de corte de 200Hz. Se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
+- Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
+- Para esto se diseñaron los filtros FIR de alta-pasa utilizando la función 'firwin' de la biblioteca SciPY. La configuración del filtro se ajustó específicamente para cada tipo de actividad. Y luego el filtro IIR tipo butterworth de pasa-baja para obtener una respuesta de frecuencia más suave. El filtro se configuró de orden 5 y de frecuencia de corte de 200Hz. Se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
 
 **4.3. Análisis de Señales EEG:**
-Lo que se desea obtener por medio del diseño de un filtro IIR es suprimir las interferencias en la toma de datos, debido a frecuencias altas y artefactos. Los filtros IIR utilizan los valores de entrada actuales de la señal como los valores de salida pasados para calcular la salida del filtro. Esto los hace más eficientes en términos de la complejidad computacional para una misma efectividad de filtrado. 
 
-Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una ventana Hamming. Con el propósito de extraer las bandas de frecuencias alfa, beta, delta, etc. Dentro de las especificaciones, se consideró una frecuencia de corte de [] para el filtro pasa banda.
+- Lo que se desea obtener por medio del diseño de un filtro IIR es suprimir las interferencias en la toma de datos, debido a frecuencias altas y artefactos. Los filtros IIR utilizan los valores de entrada actuales de la señal como los valores de salida pasados para calcular la salida del filtro. Esto los hace más eficientes en términos de la complejidad computacional para una misma efectividad de filtrado.
+- Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una ventana Hamming. Con el propósito de extraer las bandas de frecuencias alfa, beta, delta, etc. Dentro de las especificaciones, se consideró una frecuencia de corte de [] para el filtro pasa banda.
 
 
 ## 5. Resultados
