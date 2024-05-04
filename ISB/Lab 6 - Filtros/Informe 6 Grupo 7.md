@@ -21,6 +21,33 @@
 
 ## 1. Introducción
 
+Un filtro de señales es un dispositivo o método que se utiliza en el procesamiento de señales para permitir el paso de ciertas frecuencias mientras que otras son atenuadas o eliminadas. Los filtros son esenciales en una variedad de aplicaciones tecnológicas y científicas, incluyendo sistemas de audio, comunicaciones y procesamiento de imágenes [1]. 
+
+Existen varios tipos de filtros de señales, clasificados generalmente según la naturaleza de las frecuencias que permiten pasar:
+
+i. Filtro de paso bajo: Permite el paso de señales con frecuencias por debajo de un punto de un corte específico, y son comúnmente utilizados para eliminar ruidos de alta frecuencia [2].
+
+ii. Filtro de paso alto: Operan de manera opuesta a los filtros de paso bajo, bloqueando señales de baja frecuencia y permitiendo el paso de señales de alta frecuencia. Son útiles en aplicaciones donde es necesario eliminar ruidos de fondo de baja frecuencia [2]. 
+
+iii. Filtros de paso banda: Permiten el paso de un rango específico de frecuencias, bloqueando las frecuencias por debajo y por encima de este rango. Son ideales para aislar señales específicas dentro de un espectro más amplio [2].
+
+iv. Filtro rechaza banda: Bloquean un rango específico de frecuencias mientras permiten el paso de todas las demás, utilizados para eliminar frecuencias específicas no deseadas [2].
+
+Los filtros pueden ser analógicos o digitales. Los filtros analógicos utilizan circuitos electrónicos con resistencias, capacitores e inductores para procesar señales eléctricas continuas. Por otro lado, los filtros digitales utilizan algoritmos matemáticos para modificar señales digitales, que son representaciones discretas de las señales analógicas [4].
+
+En términos de diseño, un filtro puede ser descrito por su orden, que indica el número de polos y ceros en su función de transferencia. Un orden mayor generalmente indica una mejor precisión en la conformación de la respuesta en frecuencia del filtro, aunque esto también puede incrementar la complejidad del diseño y los recursos computacionales necesarios para su implementación [3].
+
+Cada tipo de filtro tiene aplicaciones específicas basadas en sus características, como la atenuación de señales no deseadas, la mejora de la calidad de señales en sistemas de comunicación, y la protección de dispositivos electrónicos sensibles a interferencias electromagnéticas [2].
+
+### Filtro analógico 
+
+|   Nombre del Filtro     | Descripción   | 
+|---------------|---------------|
+| Butterworth | Conocido por su respuesta en frecuencia plana dentro de la banda de paso, lo que significa que no introduce distorsiones en esa región. La transición hacia la banda de rechazo es suave, pero no tan abrupta como en otros tipos del filtro [5].   |
+|     Chebyshev   |Este tipo de filtro permite ciertas ondulaciones (ripples) en las bandas de paso, lo que le permite tener una transición más abrupta entre la banda de paso y la banda de rechazo en comparación con el filtro Butterworth. Existen dos tipos: Tipo I, que tiene ripples solo en la banda de paso, y Tipo II, que tiene ripples en la banda de rechazo [5]. |
+|   Bessel    | Ofrece la mejor respuesta de fase, preservando la forma de las señales de entrada a lo largo de la banda de paso, lo que lo hace ideal para aplicaciones donde la calidad de la señal temporal es crítica. Sin embargo, su pendiente de corte es menos pronunciada comparada con otros filtros [5].   |
+| Elíptico   | Proporciona la transición más abrupta de todos los tipos de filtros entre la banda de paso y la banda de rechazo, pero a costa de ondulaciones tanto en la banda de paso como en la banda de rechazo y una respuesta de fase no lineal [5]  |
+
 Los filtros IIR (Respuesta Impulsiva Infinita) son fundamentales en el procesamiento digital de señales debido a su eficiencia computacional y capacidad de implementación en tiempo real. Estos filtros utilizan una combinación de entradas pasadas y su propia salida pasada para calcular la señal de salida actual, característica que les permite tener una fase efectiva y rápida respuesta en aplicaciones críticas. Según Kuznetsov et al. (2020), los filtros IIR son especialmente valorados en aplicaciones de aprendizaje automático por su linealidad y estabilidad en sistemas dinámicos [1].
 
 <p align="center">
