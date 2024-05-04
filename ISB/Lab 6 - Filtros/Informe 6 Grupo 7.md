@@ -87,7 +87,7 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
  
 ## 8. Bibliografía
-[1] S. Basu y S. Mamud, "Comparative study on the effect of order and cut off frequency of Butterworth low pass filter for removal of noise in ECG signal," 2020 IEEE 1st International Conference for Convergence in Engineering, 2020. [En línea]. Disponible: https://ieeexplore.ieee.org/document/9290646
+[1] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
 
 [2] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
 
