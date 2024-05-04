@@ -82,9 +82,12 @@ Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente preva
 
 
 ## 4. Metodología
-**4.1. Análisis de Señales ECG:**
+**4.1. Análisis de Señales ECG:** 
 
 **4.2. Análisis de Señales EMG:**
+Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
+
+Para esto se diseñaron los filtros FIR de alta-pasa utilizando la función 'firwin' de la biblioteca SciPY. La configuración del filtro se ajustó específicamente para cada tipo de actividad. Y luego el filtro IIR tipo butterworth de pasa-baja para obtener una respuesta de frecuencia más suave. El filtro se configuró de orden 5 y de frecuencia de corte de 200Hz. Se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
 
 **4.3. Análisis de Señales EEG:**
 Lo que se desea obtener por medio del diseño de un filtro IIR es suprimir las interferencias en la toma de datos, debido a frecuencias altas y artefactos. Los filtros IIR utilizan los valores de entrada actuales de la señal como los valores de salida pasados para calcular la salida del filtro. Esto los hace más eficientes en términos de la complejidad computacional para una misma efectividad de filtrado. 
@@ -104,6 +107,9 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 | Basal | <img src="señales/ecgBasal.png" alt="Ejercicio" style="width:400px;"> |<img src="señales/ecgBasalButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgBasalHamming.png" alt="Ejercicio" style="width:400px;">|
 | Respiración     |<img src="señales/ecgRespiracion.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiracionButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiraciónHamming.png" alt="Ejercicio" style="width:400px;">|
 | Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioHamming.png" alt="Ejercicio" style="width:400px;">|
+
+**5.2. Análisis de Señales EMG:**
+  - 
 
 **5.3. Análisis de Señales EEG:**
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
