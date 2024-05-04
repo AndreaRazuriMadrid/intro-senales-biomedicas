@@ -109,7 +109,53 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 | Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioHamming.png" alt="Ejercicio" style="width:400px;">|
 
 **5.2. Análisis de Señales EMG:**
-  - 
+
+En este estudio se trabajaron con dos compañeros:
+
+- El primer compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
+
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
+|-----------------|-------------|------------|------------|
+| Oposición |  |  |  |
+| Reposo |  |  |  |
+| Extensión |  |  |  |
+| Flexión |  |  |  |
+
+i. Oposición: En la señal original, muestra viarabilidad constante a lo alrgo del tiempo con una amplitud que varía en un rango estrecho. Luego, con el filtro FIR parece haber suavizado algunos picos y valles de la señal, reduciendo el ruido y dejando uan representación más limpia de las fluctuaciones de la señal. La forma de la señal se mantiene en gran medida, lo que indica que el filtro ha sido efectivo sin ser demasiado agresivo.
+
+ii. Reposo: La señal original, es predonmianntemente plana con variaciones pequeñas pero notables en amplitud. Luego, la señal filtrada por el filtro FIR parece una línea plana, lo que indica que el filtro ha eliminado prácticamente toda la variabilidad. Esto sugiere que es filtro puede estar configurado con una frecuencia demasiado baja, eliminado así componentes escenciales de la señal.
+
+iii. Extensión: Similar a la señal de Oposición, con una amplitud que varía dento de un rango entrescho pero con picos más definidos. El filtro FIR ha suavizado significativamente la señal. La señal retiene la forma general pero con menos vairabilidad y picos menos pronunciados. 
+
+iv. Flexión: La señal original presenta más variabilidad y rango de amplitud que las otras actividades. El efecto del filtro FIR es su suavizado, aunque la señal sigue mostrando variabilidad y picos, lo cual es positivo por que indica que el filtro no ha sido excesivamente restrictivo. 
+
+- El primer compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
+
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
+|-----------------|-------------|------------|------------|
+| Oposición |  |  |  |
+| Reposo |  |  |  |
+| Extensión |  |  |  |
+| Flexión |  |  |  |
+
+- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
+
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
+|-----------------|-------------|------------|------------|
+| Oposición |  |  |  |
+| Reposo |  |  |  |
+| Extensión |  |  |  |
+| Flexión |  |  |  |
+
+- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
+
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
+|-----------------|-------------|------------|------------|
+| Oposición |  |  |  |
+| Reposo |  |  |  |
+| Extensión |  |  |  |
+| Flexión |  |  |  |
+
 
 **5.3. Análisis de Señales EEG:**
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
