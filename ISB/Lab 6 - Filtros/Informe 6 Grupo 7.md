@@ -79,10 +79,7 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 **6.3. Análisis de Señales EEG:**
 - Elección del Filtro y Configuración:
   - Filtro FIR Hamming:
-  - Filtro IIR Butterworth: Se optó por utilizar un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz, basándose en los picos identificados en el análisis espectral de la señal. Esta decisión se respaldó con datos de investigaciones previas. El diseño del filtro se alinea con los hallazgos de Sabine L. y Saraag S., quienes establecieron una frecuencia de corte de entre 47 y 53 Hz, incluyendo armónicos de hasta 500 Hz, en sus estudios. En dicha investigación, se empleó un filtro DFT ajustado a estos valores de frecuencia, obteniendo resultados satisfactorios en el filtrado de la señal [].
-
-  De acuerdo a las frecuencias en EEG, se consideró correcto utilizar una frecuencia de corte de 35 Hz al analizar las ondas alfa (8-12Hz), beta (12-30Hz) y theta (4-8) como las señales que se van a considerar en el estudio. Por tanto, se busca preservar la mayoría de estas bandas y eliminar o atenuar ruidos e interferencias de alta frecuencia.
-
+  - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Saraag S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal []. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
 
 
 ## 7. Conclusiones
