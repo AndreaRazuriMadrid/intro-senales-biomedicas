@@ -9,7 +9,7 @@
 
 ## Tabla de Contenidos
 
-1. [INTRODUCCIÓN](#1-introducción)
+1. [Introducción](#1-introducción)
 2. [Objetivos](#2-objetivos)
 3. [Materiales y equipos](#3-materiales-y-equipos)
 4. [Metodología](#4-metodología)
@@ -19,7 +19,7 @@
 8. [Bibliografía](#8-bibliografía)
 
 
-## 1. INTRODUCCIÓN 
+## 1. Introducción
 
 
 ## 2. Objetivos
