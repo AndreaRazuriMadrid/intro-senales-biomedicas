@@ -21,20 +21,47 @@
 
 ## 1. Introducción
 
-Los filtros IIR (Respuesta Impulsiva Infinita) son fundamentales en el procesamiento digital de señales debido a su eficiencia computacional y capacidad de implementación en tiempo real. Estos filtros utilizan una combinación de entradas pasadas y su propia salida pasada para calcular la señal de salida actual, característica que les permite tener una fase efectiva y rápida respuesta en aplicaciones críticas. Según Kuznetsov et al. (2020), los filtros IIR son especialmente valorados en aplicaciones de aprendizaje automático por su linealidad y estabilidad en sistemas dinámicos [1].
+Un filtro de señales es un dispositivo o método que se utiliza en el procesamiento de señales para permitir el paso de ciertas frecuencias mientras que otras son atenuadas o eliminadas. Los filtros son esenciales en una variedad de aplicaciones tecnológicas y científicas, incluyendo sistemas de audio, comunicaciones y procesamiento de imágenes [1]. 
+
+Existen varios tipos de filtros de señales, clasificados generalmente según la naturaleza de las frecuencias que permiten pasar:
+
+i. Filtro de paso bajo: Permite el paso de señales con frecuencias por debajo de un punto de un corte específico, y son comúnmente utilizados para eliminar ruidos de alta frecuencia [2].
+
+ii. Filtro de paso alto: Operan de manera opuesta a los filtros de paso bajo, bloqueando señales de baja frecuencia y permitiendo el paso de señales de alta frecuencia. Son útiles en aplicaciones donde es necesario eliminar ruidos de fondo de baja frecuencia [2]. 
+
+iii. Filtros de paso banda: Permiten el paso de un rango específico de frecuencias, bloqueando las frecuencias por debajo y por encima de este rango. Son ideales para aislar señales específicas dentro de un espectro más amplio [2].
+
+iv. Filtro rechaza banda: Bloquean un rango específico de frecuencias mientras permiten el paso de todas las demás, utilizados para eliminar frecuencias específicas no deseadas [2].
+
+Los filtros pueden ser analógicos o digitales. Los filtros analógicos utilizan circuitos electrónicos con resistencias, capacitores e inductores para procesar señales eléctricas continuas. Por otro lado, los filtros digitales utilizan algoritmos matemáticos para modificar señales digitales, que son representaciones discretas de las señales analógicas [4].
+
+En términos de diseño, un filtro puede ser descrito por su orden, que indica el número de polos y ceros en su función de transferencia. Un orden mayor generalmente indica una mejor precisión en la conformación de la respuesta en frecuencia del filtro, aunque esto también puede incrementar la complejidad del diseño y los recursos computacionales necesarios para su implementación [3].
+
+Cada tipo de filtro tiene aplicaciones específicas basadas en sus características, como la atenuación de señales no deseadas, la mejora de la calidad de señales en sistemas de comunicación, y la protección de dispositivos electrónicos sensibles a interferencias electromagnéticas [2].
+
+### Filtro analógico 
+
+|   Nombre del Filtro     | Descripción   | 
+|---------------|---------------|
+| Butterworth | Conocido por su respuesta en frecuencia plana dentro de la banda de paso, lo que significa que no introduce distorsiones en esa región. La transición hacia la banda de rechazo es suave, pero no tan abrupta como en otros tipos del filtro [5].   |
+|     Chebyshev   |Este tipo de filtro permite ciertas ondulaciones (ripples) en las bandas de paso, lo que le permite tener una transición más abrupta entre la banda de paso y la banda de rechazo en comparación con el filtro Butterworth. Existen dos tipos: Tipo I, que tiene ripples solo en la banda de paso, y Tipo II, que tiene ripples en la banda de rechazo [5]. |
+|   Bessel    | Ofrece la mejor respuesta de fase, preservando la forma de las señales de entrada a lo largo de la banda de paso, lo que lo hace ideal para aplicaciones donde la calidad de la señal temporal es crítica. Sin embargo, su pendiente de corte es menos pronunciada comparada con otros filtros [5].   |
+| Elíptico   | Proporciona la transición más abrupta de todos los tipos de filtros entre la banda de paso y la banda de rechazo, pero a costa de ondulaciones tanto en la banda de paso como en la banda de rechazo y una respuesta de fase no lineal [5]  |
+
+Los filtros IIR (Respuesta Impulsiva Infinita) son fundamentales en el procesamiento digital de señales debido a su eficiencia computacional y capacidad de implementación en tiempo real. Estos filtros utilizan una combinación de entradas pasadas y su propia salida pasada para calcular la señal de salida actual, característica que les permite tener una fase efectiva y rápida respuesta en aplicaciones críticas. Según Kuznetsov et al. (2020), los filtros IIR son especialmente valorados en aplicaciones de aprendizaje automático por su linealidad y estabilidad en sistemas dinámicos [6].
 
 <p align="center">
   <img src="señales/IIRFILTERS.png" alt="Señales" style="width:440px;">
   <br>
-  <strong>Fig 1. Tipos de filtros IIR [2]</strong>
+  <strong>Fig 1. Tipos de filtros IIR [7]</strong>
 </p>
 
-Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente prevalentes en el ámbito del procesamiento digital de señales. A diferencia de los filtros IIR, los FIR se basan únicamente en un número finito de entradas anteriores y no requieren retroalimentación. Esta propiedad los hace inherentemente estables y libres de oscilaciones, lo cual es crítico en aplicaciones donde la precisión y la predictibilidad son necesarias. Datta y Dutta (2021) destacan que los filtros FIR son ideales para implementaciones en FPGA debido a su estructura regular y predecible, lo que facilita su diseño y optimización [3].
+Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente prevalentes en el ámbito del procesamiento digital de señales. A diferencia de los filtros IIR, los FIR se basan únicamente en un número finito de entradas anteriores y no requieren retroalimentación. Esta propiedad los hace inherentemente estables y libres de oscilaciones, lo cual es crítico en aplicaciones donde la precisión y la predictibilidad son necesarias. Datta y Dutta (2021) destacan que los filtros FIR son ideales para implementaciones en FPGA debido a su estructura regular y predecible, lo que facilita su diseño y optimización [8].
 
 <p align="center">
   <img src="señales/FIRFILTERS.png" alt="Señales" style="width:440px;">
   <br>
-  <strong>Fig 2. Ventanas para el diseño de filtros FIR. [4]</strong>
+  <strong>Fig 2. Ventanas para el diseño de filtros FIR. [9]</strong>
 </p>
 
 ## 2. Objetivos
@@ -86,15 +113,15 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
 **6.1. Análisis de Señales ECG:**
 - Elección del Filtro y Configuración:
-  - Filtro IIR Butterworth: Se eligió un filtro Butterworth de orden 5 con una frecuencia de corte de 20 Hz, basado en su capacidad para ofrecer una respuesta de frecuencia plana en la banda de paso, lo que es crucial para no alterar las características esenciales de la señal de ECG. Este diseño se apoya en el estudio de S. Basu y S. Mamud, donde se examina cómo la variación del orden y la frecuencia de corte afecta la eliminación de ruido en las señales de ECG [5].
-  - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [6].
+  - Filtro IIR Butterworth: Se eligió un filtro Butterworth de orden 5 con una frecuencia de corte de 20 Hz, basado en su capacidad para ofrecer una respuesta de frecuencia plana en la banda de paso, lo que es crucial para no alterar las características esenciales de la señal de ECG. Este diseño se apoya en el estudio de S. Basu y S. Mamud, donde se examina cómo la variación del orden y la frecuencia de corte afecta la eliminación de ruido en las señales de ECG [10].
+  - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [11].
 - Análisis de las Señales Filtradas:
-  - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [7].
+  - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [12].
 
 **6.3. Análisis de Señales EEG:**
 - Elección del Filtro y Configuración:
   - Filtro FIR Hamming:
-  - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Sarang S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal [8]. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
+  - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Sarang S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal [13]. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
 
 - Análisis de las Señales Filtradas:
   - Reposo:
@@ -107,18 +134,28 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
  
 ## 8. Bibliografía
-[1] B. Kuznetsov, J.D. Parker et al., "Differentiable IIR filters for machine learning applications," in Proceedings of the International Conference on Digital Audio Effects (DAFx), 2020. [Acceso en línea]: https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_52.pdf
+[1] Haily, 'Filtro digital - Definición y explicación,' TechEdu, 26 oct. 2022. [En línea]. Disponible: https://techlib.net/techedu/filtro-digital/. [Accedido: 03-may-2024]
 
-[2] “What Are High-Pass Filters? How & When To Use Them (+ Tips),” Unison.audio, May 06, 2023. https://unison.audio/high-pass-filters/ (accessed May 04, 2024).
+[2] Electropreguntas, 'Los Filtros Electrónicos Más Comunes Y Su Funcionamiento,' Electropreguntas, 2023. [En línea]. Disponible: https://electropreguntas.com/los-10-tipos-de-filtros-electronicos-mas-utilizados/. [Accedido: 03-may-2024].
 
-[3] D. Datta, H.S. Dutta, "High performance IIR filter implementation on FPGA," Journal of Electrical Systems and Information Technology, 2021. [Acceso en línea]: https://link.springer.com/article/10.1186/s43067-020-00025-4
+[3] Industriapedia, 'Filtro Butterworth: Optimiza tu señal de forma eficiente,' Industriapedia, 2023. [En línea]. Disponible: https://industriapedia.com/que-es-el-filtro-butterworth/. [Accedido: 03-may-2024]
 
-[4] “Perform Analysis and Design for the Spectral Analysis Case Study - dummies,” Dummies.com, 2016. https://www.dummies.com/article/business-careers-money/careers/trades-tech-engineering-careers/perform-analysis-and-design-for-the-spectral-analysis-case-study-165562/ (accessed May 04, 2024).
+[4] Learning About Electronics, 'Filtro Paso Alto- Explicado,' Learning About Electronics, [En línea]. Disponible: http://www.learningaboutelectronics.com/Articulos/Filtro-paso-alto.php. [Accedido: 03-may-2024].
+
+[5] Electrositio, '¿Qué Es Un Filtro Analógico? - Diferentes Tipos De Filtros Analógicos,' Electrositio, 2023. [En línea]. Disponible: https://electrositio.com/que-es-un-filtro-analogico-diferentes-tipos-de-filtros-analogicos/. [Accedido: 03-may-2024].
+
+[6] B. Kuznetsov, J.D. Parker et al., "Differentiable IIR filters for machine learning applications," in Proceedings of the International Conference on Digital Audio Effects (DAFx), 2020. [Acceso en línea]: https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_52.pdf
+
+[7] “What Are High-Pass Filters? How & When To Use Them (+ Tips),” Unison.audio, May 06, 2023. https://unison.audio/high-pass-filters/ (accessed May 04, 2024).
+
+[8] D. Datta, H.S. Dutta, "High performance IIR filter implementation on FPGA," Journal of Electrical Systems and Information Technology, 2021. [Acceso en línea]: https://link.springer.com/article/10.1186/s43067-020-00025-4
+
+[9] “Perform Analysis and Design for the Spectral Analysis Case Study - dummies,” Dummies.com, 2016. https://www.dummies.com/article/business-careers-money/careers/trades-tech-engineering-careers/perform-analysis-and-design-for-the-spectral-analysis-case-study-165562/ (accessed May 04, 2024).
 ‌
-[5] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
+[10] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
 
-[6] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
+[11] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
 
-[7] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
+[12] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
 
-[8] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
+[13] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
