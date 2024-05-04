@@ -21,6 +21,9 @@
 
 ## 1. Introducción
 
+Los filtros IIR (Respuesta Impulsiva Infinita) son fundamentales en el procesamiento digital de señales debido a su eficiencia computacional y capacidad de implementación en tiempo real. Estos filtros utilizan una combinación de entradas pasadas y su propia salida pasada para calcular la señal de salida actual, característica que les permite tener una fase efectiva y rápida respuesta en aplicaciones críticas. Según Kuznetsov et al. (2020), los filtros IIR son especialmente valorados en aplicaciones de aprendizaje automático por su linealidad y estabilidad en sistemas dinámicos [1].
+
+Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente prevalentes en el ámbito del procesamiento digital de señales. A diferencia de los filtros IIR, los FIR se basan únicamente en un número finito de entradas anteriores y no requieren retroalimentación. Esta propiedad los hace inherentemente estables y libres de oscilaciones, lo cual es crítico en aplicaciones donde la precisión y la predictibilidad son necesarias. Datta y Dutta (2021) destacan que los filtros FIR son ideales para implementaciones en FPGA debido a su estructura regular y predecible, lo que facilita su diseño y optimización [2].
 
 ## 2. Objetivos
 - Crear un filtro IIR, seleccionando uno de los siguientes tipos: Bessel, Butterworth, Chebyshev, o Elíptico.
@@ -71,15 +74,15 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
 **6.1. Análisis de Señales ECG:**
 - Elección del Filtro y Configuración:
-  - Filtro IIR Butterworth: Se eligió un filtro Butterworth de orden 5 con una frecuencia de corte de 20 Hz, basado en su capacidad para ofrecer una respuesta de frecuencia plana en la banda de paso, lo que es crucial para no alterar las características esenciales de la señal de ECG. Este diseño se apoya en el estudio de S. Basu y S. Mamud, donde se examina cómo la variación del orden y la frecuencia de corte afecta la eliminación de ruido en las señales de ECG [1].
-  - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [2].
+  - Filtro IIR Butterworth: Se eligió un filtro Butterworth de orden 5 con una frecuencia de corte de 20 Hz, basado en su capacidad para ofrecer una respuesta de frecuencia plana en la banda de paso, lo que es crucial para no alterar las características esenciales de la señal de ECG. Este diseño se apoya en el estudio de S. Basu y S. Mamud, donde se examina cómo la variación del orden y la frecuencia de corte afecta la eliminación de ruido en las señales de ECG [3].
+  - Filtro FIR con Ventana de Hamming: La elección de la ventana de Hamming para el diseño del filtro FIR se basa en su efectividad en la reducción de ruido mientras mantiene la integridad de la señal. Según un estudio reciente por M. Das, R. Kumar, y B. Sahana, el uso de una función de ventana híbrida que incorpora la ventana de Hamming en filtros FIR demuestra una mejora significativa en la desruidización de señales ECG, proporcionando una solución eficaz para aplicaciones clínicas donde la claridad de la señal es crucial [4].
 - Análisis de las Señales Filtradas:
-  - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [3].
+  - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [5].
 
 **6.3. Análisis de Señales EEG:**
 - Elección del Filtro y Configuración:
   - Filtro FIR Hamming:
-  - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Sarang S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal [4]. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
+  - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Sarang S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal [6]. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
 
 
 ## 7. Conclusiones
@@ -87,10 +90,14 @@ Para comprobar estos resultados, se diseño un filtro FIR, y se eligió una vent
 
  
 ## 8. Bibliografía
-[1] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
+[1] B. Kuznetsov, J.D. Parker et al., "Differentiable IIR filters for machine learning applications," in Proceedings of the International Conference on Digital Audio Effects (DAFx), 2020. [Acceso en línea]: https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_52.pdf
 
-[2] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
+[2] D. Datta, H.S. Dutta, "High performance IIR filter implementation on FPGA," Journal of Electrical Systems and Information Technology, 2021. [Acceso en línea]: https://link.springer.com/article/10.1186/s43067-020-00025-4
 
-[3] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
+[3] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
 
-[4] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
+[4] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
+
+[5] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
+
+[6] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
