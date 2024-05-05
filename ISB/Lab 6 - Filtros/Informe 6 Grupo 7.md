@@ -120,14 +120,17 @@ Por otro lado, los filtros FIR (Respuesta Impulsiva Finita) son igualmente preva
 
 **5.2. Análisis de Señales EMG:**
 
-En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de 1000 Hz, utilizamos. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a ca da actividad. 
+En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de muestreo de 1000 Hz. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a cada actividad. 
 
 - Oposición: 3 coeficientes, frecuencia de corte de 300 Hz.
 - Reposo: 100 coeficientes, frecuencia de corte de 400 Hz para reservar la señal eliminando los componentes de baja frecuencia.
 - Extensión: 3 coeficientes, frecuencia de corte de 10 Hz.
-- Flexión: 3 coeficientes, frecuencia de corte de 300 Hz. 
+- Flexión: 3 coeficientes, frecuencia de corte de 300 Hz.
 
-Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más sueave. El filtro se configuró on un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
+Sin embargo trans probar estas frecuencias de corte no se noto ninguna diferencia asi que para simplificar el codigo utilizado se uso solo la frecuencia de corte de 200 Hz.
+
+Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más suave. El filtro se configuró con un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
+
 
 - El primer compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
 
@@ -149,31 +152,15 @@ iii. Extensión: Similar a la señal de Oposición, con una amplitud que varía 
 
 iv. Flexión: La señal original presenta más variabilidad y rango de amplitud que las otras actividades. El efecto del filtro FIR es su suavizado, aunque la señal sigue mostrando variabilidad y picos, lo cual es positivo por que indica que el filtro no ha sido excesivamente restrictivo. Y el filtro IIR, hace que la señal filtrada sigue siendo reconocible pero con menor ruido y variabilidad. Aunque se conservan mejor las características generales que en otras señales, aún hay una notable reducción en la amplitud y los detalles finos.
 
-- El primer compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
-
-| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Oposición |  |  |  |
-| Reposo |  |  |  |
-| Extensión |  |  |  |
-| Flexión |  |  |  |
-
-i. Oposición: 
-
-ii. Reposo: 
-
-iii. Extensión:
-
-iv. Flexión: 
 
 - El segundo compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
 
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
 |-----------------|-------------|------------|------------|
-| Oposición |  |  |  |
-| Reposo |  |  |  |
-| Extensión |  |  |  |
-| Flexión |  |  |  |
+| Oposición |  <img src="señales/emg/emg_Ja_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_oposicion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Reposo |   <img src="señales/emg/emg_Ja_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 
 i. Oposición: 
 
