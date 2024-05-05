@@ -162,30 +162,15 @@ iv. Flexión: La señal original presenta más variabilidad y rango de amplitud 
 | Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 | Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 
-i. Oposición: 
+En todas las pruebas excepto la prueba de reposo el segundo participante muestro una mayor amplitud en la señal tomada
+i. Oposición: La señal original muestra variabilidad constante a lo largo del tiempo con una amplitud que varía en un rango estrecho. Con el filtro FIR, algunos picos y valles de la señal parecen suavizarse, reduciendo el ruido y dejando una representación más limpia de las fluctuaciones. La forma de la señal se mantiene en gran medida, indicando que el filtro ha sido efectivo sin ser demasiado agresivo. Sin embargo, la señal filtrada por IIR muestra una reducción notable en la amplitud de las fluctuaciones, lo que sugiere que el filtro IIR ha sido efectivo en suavizar la señal, aunque posiblemente ha eliminado algunos componentes útiles. Sería necesario ajustar la configuración del filtro para preservar más características de la señal original.
 
-ii. Reposo: 
+ii. Reposo: La señal original es predominantemente plana con pequeñas pero notables variaciones en amplitud. La señal filtrada por el filtro FIR parece una línea plana, lo que indica una eliminación casi completa de la variabilidad. Esto sugiere que el filtro podría estar configurado con una frecuencia demasiado baja, eliminando componentes esenciales de la señal. Por otro lado, la señal filtrada por IIR también parece una línea plana, lo que indica un filtrado demasiado agresivo. Sería necesario ajustar la frecuencia de corte o reducir el orden del filtro para conservar más de la señal original.
 
-iii. Extensión:
+iii. Extensión: Similar a la señal de Oposición, con variabilidad en un rango estrecho pero con picos más definidos. El filtro FIR ha suavizado la señal, aunque se conserva la forma general con menos variabilidad y picos menos pronunciados. La señal filtrada por IIR muestra una amplitud reducida y menos variabilidad. Si bien el filtro ha suavizado los picos y las caídas, podría estar atenuando detalles importantes de la señal.
 
-iv. Flexión: 
+iv. Flexión: La señal original presenta más variabilidad y amplitud que las otras actividades. El filtro FIR suaviza la señal sin eliminar completamente la variabilidad y los picos, lo cual es positivo ya que indica que el filtro no es demasiado restrictivo. La señal filtrada por IIR conserva las características generales pero con menos ruido y variabilidad. Aunque se conservan mejor las características generales que en otras señales, todavía hay una reducción notable en la amplitud y los detalles finos. Sería necesario ajustar la configuración del filtro para equilibrar la reducción de ruido con la preservación de detalles importantes.
 
-- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro IIR:
-
-| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Oposición |  |  |  |
-| Reposo |  |  |  |
-| Extensión |  |  |  |
-| Flexión |  |  |  |
-
-i. Oposición: 
-
-ii. Reposo: 
-
-iii. Extensión:
-
-iv. Flexión: 
 
 **5.3. Análisis de Señales EEG:**
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
