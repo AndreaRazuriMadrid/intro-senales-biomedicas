@@ -220,6 +220,9 @@ iv. Flexión:
 - Análisis de las Señales Filtradas - FIR:
   - Abrir y cerrar ojos:
     En la señal filtrada podemos observar una atenuación de los picos, alcanzando una amplitud de hasta 1 mV. Se logra visualizar los 5 ciclos de repetición entre los tiempos de 12 a 22s, por ejemplo. Cuando se cierran los ojos, se obtuvo una amplitud de 0.5 mV aproximadamente, esto se debe a que la persona se encuentra en ese momento en reposo. Para el diseño de este filtro se tomó en consideración las ondas alfa que se dan entre las frecuencias de 8 - 13 Hz, aquí se diseño primero un filtro pasa baja con un orden de 200; posteriormente, se diseño un filtro pasa alto con un orden de 101, esto enfocado en la creación de un filtro pasa banda. De acuerdo a los resultados, podemos decir que se ha logrado filtrar la señal eeg, al atenuar y eliminar artefactos en la toma de datos.
+  - Preguntas:
+    De acuerdo a la señal filtrada de Preguntas y Respuestas, podemos ver una atenuación de la amplitud también, aquí la amplitud alcanza hasta 1.5 mV. Aquí se conservan los picos representativos entre 10 y 20 segundos, ya que fue en el tiempo donde se realizaron las preguntas. Respecto al análsis espectral de la señal se encontraron las ondas alfa en 13 Hz y las ondas beta en 30 Hz aproximadamente. Lo cual corresponde al análsis realizado, en donde se está implicando actividades mentales que demandan mayor velocidad de transmisión.
+
 
 
 ## 7. Conclusiones
