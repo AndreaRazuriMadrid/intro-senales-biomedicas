@@ -133,10 +133,13 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
 |-----------------|-------------|------------|------------|
-| Oposición |  |  |  |
-| Reposo |  |  |  |
-| Extensión |  |  |  |
-| Flexión |  |  |  |
+| Oposición |  <img src="señales/emg/emg_Jo_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_oposicion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Reposo |   <img src="señales/emg/emg_Jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Extensión |  <img src="señales/emg/emg_Jo_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Flexión |  <img src="señales/emg/emg_Jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+
+
+
 
 i. Oposición: En la señal original, muestra viarabilidad constante a lo alrgo del tiempo con una amplitud que varía en un rango estrecho. Luego, con el filtro FIR parece haber suavizado algunos picos y valles de la señal, reduciendo el ruido y dejando uan representación más limpia de las fluctuaciones de la señal. La forma de la señal se mantiene en gran medida, lo que indica que el filtro ha sido efectivo sin ser demasiado agresivo. Luego, la señal filtrada por IIIR muestra una reducción notable en la amplitudd e las fluctuaciones. Esto indica que el filtro IIR ha suavizado efectivamente la señal, eliminando parte del ruido de alta frecuencia y posiblemente algunos componentes útiles, lo que puede ser indicativo de que la configuración del filtro necesita ajustes para preservar más características de la señal original. 
 
