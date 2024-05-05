@@ -181,7 +181,7 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 |-----------------|-------------|------------|------------|
 | Reposo |  <img src="señales/EEG/Reposo/SeñalSINFiltrar.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/SeñalIIR.png" alt="ReposoIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Reposo/SeñalFIR.png" alt="ReposoFIR" style="width:675px; height:125px;"> |
 | Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/señalSINFiltrar.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/SeñalIIR.png" alt="OjosIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/AbrirYCerrar/SeñalFIR.png" alt="OjosFIR" style="width:675px; height:125px;"> |
-| Preguntas matemáticas |   <img src="señales/EEG/Preguntas/señalSINFiltrar.png" alt="preguntas" style="width:675px; height:125px;"> |<img src="señales/EEG/Preguntas/SeñalIIR.png" alt="preguntasIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Preguntas/SeñalFIR.png" alt="preguntasFIR" style="width:675px; height:125px;"> |
+| Preguntas matemáticas |   <img src="señales/EEG/Preguntas/señalSINFiltrar.png" alt="preguntas" style="width:675px; height:125px;"> |<img src="señales/EEG/Preguntas/señalIIR.png" alt="preguntasIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Preguntas/señalFIR.png" alt="preguntasFIR" style="width:675px; height:125px;"> |
 
 ## 6. Discusión
 
