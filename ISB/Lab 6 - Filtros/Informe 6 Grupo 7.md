@@ -193,6 +193,17 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
   - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [12].
 
 **6.2. Análisis de Señales EMG:**
+El uso de un filtro Hamming y un filtro Butterworth para una señal de EMG depende de varios factores, como las características de la señal y los requisitos de la aplicación. Aquí hay una breve explicación de por qué podrías optar por cada uno, junto con referencias para profundizar en cada tema:
+
+-Filtro Hamming:
+  Rendimiento en el dominio de la frecuencia: Los filtros Hamming son tipos de filtros de ventana que se utilizan comúnmente en el dominio de la frecuencia.   Tienen una respuesta en frecuencia más suave en comparación con otros filtros de ventana, lo que puede ayudar a preservar mejor las características de la    señal EMG.
+-Reducción de la interferencia de frecuencia: Los filtros de ventana como el Hamming pueden ser útiles para reducir la interferencia de frecuencia no     deseada en la señal EMG, como el ruido de alta frecuencia.
+
+Filtro Butterworth:
+Características de diseño personalizables: Los filtros Butterworth son conocidos por su respuesta plana en la banda de paso y una caída rápida en la banda de parada. Esto los hace útiles cuando se necesita un filtro con características de diseño personalizables.
+
+En particular al ser usado en combinacion, de highpass filter en 15 Hz y un notch para eliminar el ruido electrico a los 60 Hz. [15]
+Ademas combinado con un filtro lowpass con frecuencia de corte alrededor de los 500Hz eliminatia la mayor parte del ruido blanco, sin afectar a la señal que tiene poca energia a esas frecuencias altas. [16]
 
 
 **6.3. Análisis de Señales EEG:**
@@ -223,6 +234,8 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 - La inspección visual de las señales filtradas versus las señales crudas demostró claramente la efectividad de ambos tipos de filtros en la mejora de la calidad de la señal ECG. En particular, el filtro FIR, con sus características de fase lineal, mostró ser superior para aplicaciones donde la integridad de la fase es crucial.
 
  
+- En las señales EMG, ambos tipos de filtrado se mostraron efectivos. Ya depende de requerimientos especificos la decision de cual utilizar, entre estos destaca la combinacion de filtros highpass junto con un uno notch para eliminar rudio electrico y sus artefactos, ademas de uno low pass para el ruido blanco muestran buenos resultados.
+
 ## 8. Bibliografía
 [1] Haily, 'Filtro digital - Definición y explicación,' TechEdu, 26 oct. 2022. [En línea]. Disponible: https://techlib.net/techedu/filtro-digital/. [Accedido: 03-may-2024]
 
@@ -251,3 +264,7 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 [13] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
 
 [14] Bowman AD, Griffis JC, Visscher KM, Dobbins AC, Gawne TJ, DiFrancesco MW, Szaflarski JP. Relationship Between Alpha Rhythm and the Default Mode Network: An EEG-fMRI Study. J Clin Neurophysiol. 2017 Nov;34(6):527-533. doi: 10.1097/WNP.0000000000000411. PMID: 28914659; PMCID: PMC8428580.
+
+[15] Mello, R. G. T., Oliveira, L. F., & Nadal, J. (2007). "Digital Butterworth filter for subtracting noise from low magnitude surface electromyogram". Computer Methods and Programs in Biomedicine, 87(1), 28–35. https://doi.org/10.1016/j.cmpb.2007.04.004.
+[16] M. Boyer, L. Bouyer, J.-S. Roy, and Alexandre Campeau-Lecours, “Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review,” Sensors, vol. 23, no. 6, pp. 2927–2927, Mar. 2023, doi: https://doi.org/10.3390/s23062927.
+‌
