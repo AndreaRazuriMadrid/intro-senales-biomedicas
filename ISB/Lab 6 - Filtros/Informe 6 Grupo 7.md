@@ -177,6 +177,12 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
 
 
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
+|-----------------|-------------|------------|------------|
+| Reposo |  <img src="señales/EEG/Reposo/SeñalSINFiltrar.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/SeñalIIR.png" alt="ReposoIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Reposo/SeñalFIR.png" alt="ReposoFIR" style="width:675px; height:125px;"> |
+| Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/señalSINFiltrar.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/SeñalIIR.png" alt="OjosIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/AbrirYCerrar/SeñalFIR.png" alt="OjosFIR" style="width:675px; height:125px;"> |
+| Preguntas matemáticas |   <img src="señales/EEG/Preguntas/señalSINFiltrar.png" alt="preguntas" style="width:675px; height:125px;"> |<img src="señales/EEG/Preguntas/señalIIR.png" alt="preguntasIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Preguntas/señalFIR.png" alt="preguntasFIR" style="width:675px; height:125px;"> |
+
 ## 6. Discusión
 
 **6.1. Análisis de Señales ECG:**
