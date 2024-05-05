@@ -173,6 +173,7 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
   - Las señales filtradas mostraron una notable reducción del ruido de alta frecuencia y los artefactos, validando la elección del orden del filtro y la frecuencia de corte. Y.A. Altay y A.S. Kremlev discuten en su estudio cómo los filtros polinomiales, incluidos los basados en Butterworth, mejoran la precisión del procesamiento de la señal de ECG, respaldando nuestras observaciones sobre la efectividad de los filtros elegidos [12].
 
 **6.2. Análisis de Señales EMG:**
+
 El uso de un filtro Hamming y un filtro Butterworth para una señal de EMG depende de varios factores, como las características de la señal y los requisitos de la aplicación. Aquí hay una breve explicación de por qué podrías optar por cada uno, junto con referencias para profundizar en cada tema:
 
 -Filtro Hamming:
