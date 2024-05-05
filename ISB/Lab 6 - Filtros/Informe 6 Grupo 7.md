@@ -180,7 +180,7 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
 |-----------------|-------------|------------|------------|
 | Reposo |  <img src="señales/EEG/Reposo/SeñalSINFiltrar.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/SeñalIIR.png" alt="ReposoIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Reposo/SeñalFIR.png" alt="ReposoFIR" style="width:675px; height:125px;"> |
-| Abrir y Cerrar los ojos |   <img src="señales/emg/emg_Ja_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/SeñalSINFiltrar.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/SeñalIIR.png" alt="OjosIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/AbrirYCerrar/SeñalFIR.png" alt="OjosFIR" style="width:675px; height:125px;"> |
 | Preguntas matemáticas |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 
 ## 6. Discusión
