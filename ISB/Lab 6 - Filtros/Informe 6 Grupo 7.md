@@ -195,12 +195,13 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 
 - Análisis de las Señales Filtradas - IIR:
   - Reposo:
-
     De acuerdo a las gráficas obtenidas, podemos ver que el filtro ha logrado atenuar las interferencias de la señal original. En la señal filtrada se han conservado las frecuencias más importantes, en este caso, en el tiempo 25 segundos en adelante, se observa que la amplitud de la señal alcanza hasta 0.6 mV. Lo cual es un resultado más certero, considerando que una señal eeg en reposo obtiene una magnitud en mV cercana a cero. En el caso de la señal antes del tiempo 25 segundos, se ha logrado también filtrar interferencias. Aquí se tomó en cuenta el parpadeo involuntario de los ojos como posible factor ante la obtención de picos con una amplitud superior a 1 mV, el cual en la señal original alcanza una amplitud superior a 1.5 mV.
     
   - Abrir y cerrar ojos:
-
     En las gráficas obtenidas en Abrir y Cerrar los ojos, vemos que el filtro ha logrado atenuar significativamente los ruidos e interferencias de la señal. En la señal original tenemos una amplitud superior a 1.5 mV; sin embargo, en la gráfica de la señal filtrada obtenemos una amplitud inferior a 1.5 mV. En ambas señales podemos ver los 5 ciclos de repetición que se dio al abrir y cerrar los ojos, en el mismo periodo de tiempo. Se va a considerar una señal filtrada a partir del tiempo 20 segundos, ya que se aprecia el aumento de la amplitud de la señal entre 0-10 segundos, lo cual se podría deber al diseño del filtro realizado, en cuanto a la delimitación del orden del filtro, las frecuencias de corte utilizadas, así como la elección del filtro.
+  - Preguntas:
+    En la señal filtrada de Preguntas y Respuestas, la señal alcanza una amplitud de hasta a 1.5 mV. Podemos observar que durante el tiempo de 20-40 segundos hemos atenuado la amplitud de la señal hasta 1 mV. De igual forma, se han conservado los picos en 10 a 20 segundos ya que fue en este tiempo que se realizaron las preguntas. A partir del tiempo 40 segundos, se observan picos de mayor amplitud, lo cual se debe a que en este punto se realizaron preguntas de mayor complejidad en la obtensión de la señal. Aquí se utilizó frecuencia de corte entre los randos de 8 a 30 Hz para el análisis de las ondas eeg. 
+
 
 - Análisis de las Señales Filtradas - FIR:
   - Abrir y cerrar ojos:
