@@ -218,10 +218,10 @@ iv. Flexión:
 
 **6.3. Análisis de Señales EEG:**
 - Elección del Filtro y Configuración:
-  - Filtro FIR Hamming:
+  - Filtro FIR Hamming: Se consideró un filtro Hamming ya que atenúa los artefactos de borde que pueden ocurrir al aplicar la transformada de Fourier a una señal de EEG, con mejores resultados. Para esto se consideró el análisis de las ondas alfa, por tanto, se eligió las frecuencias de corte dentro de los rangos de 8-13 Hz. Para el diseño del filtro se consideró un filtro pasa banda, en donde para su desarrollo se realizó el diseño de un filtro pasabaja de orden 200 y posteriormente de la aplicación de un filtro pasa alta de orden 101.
   - Filtro IIR Butterworth: Se seleccionó un filtro Butterworth IIR de orden 9 con una frecuencia de corte de 35 Hz para el procesamiento de señales EEG, basado en los picos identificados en el análisis espectral. Esta elección se fundamenta en datos de investigaciones anteriores y se alinea con los estudios realizados por Sabine L. y Sarang S., quienes recomendaron una frecuencia de corte entre 47 y 53 Hz, abarcando armónicos de hasta 500 Hz. En su investigación, utilizaron un filtro DFT calibrado a estos valores de frecuencia, logrando una eficacia notable en el filtrado de la señal [13]. Adicionalmente, considerando las bandas de frecuencia típicas en EEG, la elección de una frecuencia de corte de 35 Hz resulta adecuada para preservar las ondas alfa (8-12 Hz), beta (12-30 Hz) y theta (4-8 Hz), que son fundamentales en este estudio. Esto permite mantener la integridad de estas bandas esenciales, a la vez que se eliminan o atenúan las interferencias y ruidos de frecuencias más altas, asegurando así la calidad y la precisión de las señales EEG analizadas.
 
-- Análisis de las Señales Filtradas:
+- Análisis de las Señales Filtradas - IIR:
   - Reposo:
 
     De acuerdo a las gráficas obtenidas, podemos ver que el filtro ha logrado atenuar las interferencias de la señal original. En la señal filtrada se han conservado las frecuencias más importantes, en este caso, en el tiempo 25 segundos en adelante, se observa que la amplitud de la señal alcanza hasta 0.6 mV. Lo cual es un resultado más certero, considerando que una señal eeg en reposo obtiene una magnitud en mV cercana a cero. En el caso de la señal antes del tiempo 25 segundos, se ha logrado también filtrar interferencias. Aquí se tomó en cuenta el parpadeo involuntario de los ojos como posible factor ante la obtención de picos con una amplitud superior a 1 mV, el cual en la señal original alcanza una amplitud superior a 1.5 mV.
@@ -229,6 +229,11 @@ iv. Flexión:
   - Abrir y cerrar ojos:
 
     En las gráficas obtenidas en Abrir y Cerrar los ojos, vemos que el filtro ha logrado atenuar significativamente los ruidos e interferencias de la señal. En la señal original tenemos una amplitud superior a 1.5 mV; sin embargo, en la gráfica de la señal filtrada obtenemos una amplitud inferior a 1.5 mV. En ambas señales podemos ver los 5 ciclos de repetición que se dio al abrir y cerrar los ojos, en el mismo periodo de tiempo. Se va a considerar una señal filtrada a partir del tiempo 20 segundos, ya que se aprecia el aumento de la amplitud de la señal entre 0-10 segundos, lo cual se podría deber al diseño del filtro realizado, en cuanto a la delimitación del orden del filtro, las frecuencias de corte utilizadas, así como la elección del filtro.
+
+- Análisis de las Señales Filtradas - FIR:
+  - Abrir y cerrar ojos:
+    En la señal filtrada podemos observar una atenuación de los picos, alcanzando una amplitud de hasta 1 mV. Se logra visualizar los 5 ciclos de repetición entre los tiempos de 12 a 22s, por ejemplo. Cuando se cierran los ojos, se obtuvo una amplitud de 0.5 mV aproximadamente, esto se debe a que la persona se encuentra en ese momento en reposo. Para el diseño de este filtro se tomó en consideración las ondas alfa que se dan entre las frecuencias de 8 - 13 Hz, aquí se diseño primero un filtro pasa baja con un orden de 200; posteriormente, se diseño un filtro pasa alto con un orden de 101, esto enfocado en la creación de un filtro pasa banda. De acuerdo a los resultados, podemos decir que se ha logrado filtrar la señal eeg, al atenuar y eliminar artefactos en la toma de datos.
+
 
 ## 7. Conclusiones
 - La inspección visual de las señales filtradas versus las señales crudas demostró claramente la efectividad de ambos tipos de filtros en la mejora de la calidad de la señal ECG. En particular, el filtro FIR, con sus características de fase lineal, mostró ser superior para aplicaciones donde la integridad de la fase es crucial.
