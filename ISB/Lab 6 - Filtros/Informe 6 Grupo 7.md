@@ -240,6 +240,8 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 
  
 - En las señales EMG, ambos tipos de filtrado se mostraron efectivos. Ya depende de requerimientos especificos la decision de cual utilizar, entre estos destaca la combinacion de filtros highpass junto con un uno notch para eliminar rudio electrico y sus artefactos, ademas de uno low pass para el ruido blanco muestran buenos resultados.
+  
+- En las señales EEG, La implementación de filtros FIR y IIR ha demostrado ser eficaz en la atenuación de artefactos y la conservación de las frecuencias críticas asociadas con distintos estados cerebrales. En reposo, los filtros han reducido las interferencias, manteniendo una amplitud precisa y coherente con las expectativas de una señal EEG en calma. Durante la actividad de abrir y cerrar ojos, se logró una notable reducción de ruido, permitiendo observar ciclos claros y consistentes. En situaciones de preguntas, los filtros permitieron un análisis detallado de las ondas alfa y beta, asociadas a la actividad mental y el parpadeo. Además, se ha logrado visualizar un poco de las ondas alfa y beta en el análisis espectral, evidenciando la efectividad de los filtros en preservar estas componentes esenciales mientras se eliminan las frecuencias no deseadas. La selección cuidadosa de las frecuencias de corte y el orden de los filtros ha sido crucial para obtener resultados precisos y útiles, destacando la importancia de adaptar las especificaciones del filtro a las características particulares de cada tipo de señal EEG.
 
 ## 8. Bibliografía
 [1] Haily, 'Filtro digital - Definición y explicación,' TechEdu, 26 oct. 2022. [En línea]. Disponible: https://techlib.net/techedu/filtro-digital/. [Accedido: 03-may-2024]
