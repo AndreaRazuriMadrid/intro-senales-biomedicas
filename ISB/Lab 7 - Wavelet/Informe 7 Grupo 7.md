@@ -24,8 +24,8 @@
 
 
 ## 2. Objetivos
-- 
-- Implementar filtros Wavelet en el procesamiento de señales ECG, EMG y EEG.
+- Implementar y evaluar la eficacia de filtros wavelet para el procesamiento y mejora de la calidad de señales electrocardiográficas (ECG), electromiográficas (EMG) y electroencefalográficas (EEG), enfocándose en la reducción de ruido, la extracción de características relevantes y la mejora de la precisión en la detección de eventos clínicos significativos.
+  
 ## 3. Materiales y equipos
 
 <div align="center">
