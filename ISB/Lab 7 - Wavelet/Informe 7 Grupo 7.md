@@ -132,8 +132,12 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 ## 6. Discusión
 
-### 6.1. Análisis de Señales ECG:
-- 
+### 6.1. Análisis de Señales ECG
+- **Elección del Filtro y Configuración:**
+  - **Filtro Wavelet Biortogonal 3.1:** Se seleccionó este filtro debido a sus propiedades de simetría y localización temporal, lo cual es crucial para analizar señales no estacionarias como las ECG, que presentan eventos significativos y breves como los complejos QRS. La elección está fundamentada en la capacidad de las wavelets biortogonales para manejar adecuadamente la variabilidad de las señales ECG, tal como se discute en el estudio "Design of wavelet transform based electrocardiogram monitoring system", que resalta la eficiencia de las transformadas wavelet en la denoising y detección de características relevantes en señales ECG [3].
+
+- **Análisis de las Señales Filtradas:**
+  - Las señales procesadas con el filtro wavelet mostraron una mejora significativa en la reducción del ruido, preservando las características esenciales de la señal ECG, especialmente los picos R, que son críticos para el diagnóstico cardíaco. Este resultado confirma la efectividad de la transformada wavelet en la limpieza de la señal ECG sin comprometer la información diagnóstica esencial. Los estudios como el mencionado anteriormente apoyan esta observación, demostrando que la transformada wavelet es particularmente adecuada para el procesamiento de ECG, dado su enfoque adaptativo y su capacidad para minimizar el error en comparación con otros métodos de filtrado.
 
 ### 6.2. Análisis de Señales EMG:
 
@@ -187,3 +191,7 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
 
 ## 8. Bibliografía
 [1]
+
+
+[3] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
+‌
