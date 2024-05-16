@@ -40,23 +40,41 @@
 
 
 ## 4. Metodología
-**4.1. Análisis de Señales ECG:** 
-- Las señales de electrocardiograma (ECG) se obtuvieron durante diferentes condiciones: en reposo basal, durante respiración controlada y después de ejercicio. Se almacenaron las señales en formato de texto y se muestrearon a una frecuencia de 1000 Hz, garantizando una captura adecuada de la dinámica cardíaca sin infracción del teorema de Nyquist.
+
+### 4.1. Análisis de Señales ECG
+
+Las señales de electrocardiograma (ECG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante respiración controlada y después de ejercicio. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Este muestreo asegura una adecuada captura de la dinámica cardíaca y cumple con el teorema de Nyquist, evitando la pérdida de información relevante durante el proceso de digitalización.
+
+#### Aplicación del Filtro Wavelet
+Para el procesamiento de las señales ECG, se implementó un enfoque basado en la transformada wavelet, utilizando específicamente la wavelet biortogonal 3.1 debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. El proceso se divide en varias etapas clave:
+
+1. **Descomposición Wavelet:**
+   - La señal de ECG se descompuso utilizando la transformada wavelet biortogonal 3.1. Este proceso permite separar las componentes de frecuencia de la señal en diferentes niveles, aislando los detalles y las aproximaciones de frecuencia baja y alta.
+
+2. **Umbralización:**
+   - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en la fórmula `sqrt(2 * log(longitud de la señal))` , optimizada para la reducción del ruido mientras se conservan las características fundamentales de la señal ECG.
+
+3. **Reconstrucción:**
+   - Utilizando los coeficientes wavelet modificados, se reconstruyó la señal filtrada. Este paso es crucial para asegurar que los elementos esenciales de la señal, como los picos R, Q y S del complejo QRS, se mantengan claros y bien definidos, facilitando su identificación y análisis.
+
+4. **Evaluación de la Frecuencia:**
+   - La señal filtrada fue analizada mediante la Transformada Rápida de Fourier (FFT) para verificar la preservación de los componentes de frecuencia relevantes, especialmente aquellos asociados con el complejo QRS, crucial para el diagnóstico cardíaco.
+
+#### Visualización
+Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visualizadas para permitir una comparación directa de los efectos del filtrado. Este análisis visual enfatizó la capacidad del filtro wavelet para preservar las formas características de la señal ECG y su efectividad en la eliminación del ruido, mejorando así la calidad de la señal para usos clínicos y de investigación.
 
 
-- Las señales crudas y filtradas fueron visualizadas utilizando gráficos que mostraban segmentos de la señal en el tiempo. Esto permitió una comparación directa y visual de los efectos de cada filtro. Se prestó especial atención a la preservación de los picos y formas características del ECG, como los complejos QRS, los cuales son críticos para un diagnóstico clínico acertado.
-
-**4.2. Análisis de Señales EMG:**
+### 4.2. Análisis de Señales EMG:
 
 - Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
 
-**4.3. Análisis de Señales EEG:**
+### 4.3. Análisis de Señales EEG:
 
 - 
 
 ## 5. Resultados
 
-**5.1. Análisis de Señales ECG:**
+### 5.1. Análisis de Señales ECG:
 - Se analizaron las señales de electrocardiograma (ECG) con una frecuencia de muestreo de 1000 Hz. Utilizando Python, se extrajeron datos relevantes de la columna 6 de un archivo de texto. Estos datos, provenientes delvsistema biTalino, emplean una configuración bipolar para medir la diferencia amplificada entre dos puntos de medición.
 
 - Los datos digitales se convirtieron a mV utilizando una fórmula basada en el voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits. Luego, las señales se filtraron para reducir el ruido y mejorar la visibilidad de los componentes cardíacos significativos.
@@ -67,7 +85,7 @@
 | Respiración     |<img src="señales/ecgRespiracion.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiracionWavelet.png" alt="RespiraciónECG" style="width:400px;">|
 | Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioWavelet.png" alt="EjercicioECG" style="width:400px;">|
 
-**5.2. Análisis de Señales EMG:**
+### 5.2. Análisis de Señales EMG:
 
 En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de muestreo de 1000 Hz. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a cada actividad. 
 
@@ -100,7 +118,7 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 | Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 | Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 
-**5.3. Análisis de Señales EEG:**
+### 5.3. Análisis de Señales EEG:
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
 
 
@@ -112,10 +130,10 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 ## 6. Discusión
 
-**6.1. Análisis de Señales ECG:**
+### 6.1. Análisis de Señales ECG:
 - 
 
-**6.2. Análisis de Señales EMG:**
+### 6.2. Análisis de Señales EMG:
 
 - Análisis de resultados de primera prueba:
 
@@ -136,7 +154,7 @@ iii. Extensión: Similar a la señal de Oposición, con variabilidad en un rango
 
 iv. Flexión: La señal original presenta más variabilidad y amplitud que las otras actividades. 
 
-**6.3. Análisis de Señales EEG:**
+### 6.3. Análisis de Señales EEG:
 - Elección del Filtro y Configuración:
   -
 - Análisis de las Señales Filtradas - IIR:
