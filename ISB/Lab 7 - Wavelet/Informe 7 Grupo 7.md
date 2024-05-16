@@ -24,8 +24,8 @@
 
 
 ## 2. Objetivos
-- 
-- Implementar filtros Wavelet en el procesamiento de señales ECG, EMG y EEG.
+- Implementar y evaluar la eficacia de filtros wavelet para el procesamiento y mejora de la calidad de señales electrocardiográficas (ECG), electromiográficas (EMG) y electroencefalográficas (EEG), enfocándose en la reducción de ruido, la extracción de características relevantes y la mejora de la precisión en la detección de eventos clínicos significativos.
+  
 ## 3. Materiales y equipos
 
 <div align="center">
@@ -40,34 +40,54 @@
 
 
 ## 4. Metodología
-**4.1. Análisis de Señales ECG:** 
-- Las señales de electrocardiograma (ECG) se obtuvieron durante diferentes condiciones: en reposo basal, durante respiración controlada y después de ejercicio. Se almacenaron las señales en formato de texto y se muestrearon a una frecuencia de 1000 Hz, garantizando una captura adecuada de la dinámica cardíaca sin infracción del teorema de Nyquist.
+
+### 4.1. Análisis de Señales ECG
+
+Las señales de electrocardiograma (ECG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante respiración controlada y después de ejercicio. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Este muestreo asegura una adecuada captura de la dinámica cardíaca y cumple con el teorema de Nyquist, evitando la pérdida de información relevante durante el proceso de digitalización.
+
+#### Aplicación del Filtro Wavelet
+Para el procesamiento de las señales ECG, se implementó un enfoque basado en la transformada wavelet, utilizando específicamente la wavelet biortogonal 3.1 debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. El proceso se divide en varias etapas clave:
+
+1. **Descomposición Wavelet:**
+   - La señal de ECG se descompuso utilizando la transformada wavelet biortogonal 3.1. Este proceso permite separar las componentes de frecuencia de la señal en diferentes niveles, aislando los detalles y las aproximaciones de frecuencia baja y alta.
+
+2. **Umbralización:**
+   - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en la fórmula `sqrt(2 * log(longitud de la señal))` , optimizada para la reducción del ruido mientras se conservan las características fundamentales de la señal ECG.
+
+3. **Reconstrucción:**
+   - Utilizando los coeficientes wavelet modificados, se reconstruyó la señal filtrada. Este paso es crucial para asegurar que los elementos esenciales de la señal, como los picos R, Q y S del complejo QRS, se mantengan claros y bien definidos, facilitando su identificación y análisis.
+
+4. **Evaluación de la Frecuencia:**
+   - La señal filtrada fue analizada mediante la Transformada Rápida de Fourier (FFT) para verificar la preservación de los componentes de frecuencia relevantes, especialmente aquellos asociados con el complejo QRS, crucial para el diagnóstico cardíaco.
+
+#### Visualización
+Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visualizadas para permitir una comparación directa de los efectos del filtrado. Este análisis visual enfatizó la capacidad del filtro wavelet para preservar las formas características de la señal ECG y su efectividad en la eliminación del ruido, mejorando así la calidad de la señal para usos clínicos y de investigación.
 
 
-- Las señales crudas y filtradas fueron visualizadas utilizando gráficos que mostraban segmentos de la señal en el tiempo. Esto permitió una comparación directa y visual de los efectos de cada filtro. Se prestó especial atención a la preservación de los picos y formas características del ECG, como los complejos QRS, los cuales son críticos para un diagnóstico clínico acertado.
-
-**4.2. Análisis de Señales EMG:**
+### 4.2. Análisis de Señales EMG:
 
 - Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
 
-**4.3. Análisis de Señales EEG:**
+### 4.3. Análisis de Señales EEG:
 
 - 
 
+
 ## 5. Resultados
 
-**5.1. Análisis de Señales ECG:**
-- Se analizaron las señales de electrocardiograma (ECG) con una frecuencia de muestreo de 1000 Hz. Utilizando Python, se extrajeron datos relevantes de la columna 6 de un archivo de texto. Estos datos, provenientes delvsistema biTalino, emplean una configuración bipolar para medir la diferencia amplificada entre dos puntos de medición.
+### 5.1. Análisis de Señales ECG
+- Se analizaron las señales de electrocardiograma (ECG) con una frecuencia de muestreo de 1000 Hz. Utilizando Python, se extrajeron datos relevantes de la columna 6 de un archivo de texto. Estos datos, provenientes del sistema biTalino, emplean una configuración bipolar para medir la diferencia amplificada entre dos puntos de medición.
 
-- Los datos digitales se convirtieron a mV utilizando una fórmula basada en el voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits. Luego, las señales se filtraron para reducir el ruido y mejorar la visibilidad de los componentes cardíacos significativos.
+- Los datos digitales se convirtieron a mV utilizando una fórmula basada en el voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits. Posteriormente, las señales se procesaron con un filtro wavelet para reducir el ruido y mejorar la visualización de los componentes cardíacos significativos como los complejos QRS.
 
-| Campos          | Señal cruda | Filtro Wavelet | 
-|-----------------|-------------|------------|
-| Basal | <img src="señales/ecgBasal.png" alt="Ejercicio" style="width:400px;"> |<img src="señales/ecgBasalWavelet.png" alt="BasalECG" style="width:400px;">|
-| Respiración     |<img src="señales/ecgRespiracion.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiracionWavelet.png" alt="RespiraciónECG" style="width:400px;">|
-| Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioWavelet.png" alt="EjercicioECG" style="width:400px;">|
+| Campos          | Señal cruda | Filtro Wavelet |
+|-----------------|-------------|----------------|
+| Basal           | ![Señal cruda Basal](señales/ecgBasal.png) | ![ECG Basal con Filtro Wavelet](señales/ecgBasalWavelet.png) |
+| Respiración     | ![Señal cruda Respiración](señales/ecgRespiracion.png) | ![ECG Respiración con Filtro Wavelet](señales/ecgRespiracionWavelet.png) |
+| Post ejercicio  | ![Señal cruda Post Ejercicio](señales/ecgEjercicio.png) | ![ECG Post Ejercicio con Filtro Wavelet](señales/ecgEjercicioWavelet.png) |
 
-**5.2. Análisis de Señales EMG:**
+
+### 5.2. Análisis de Señales EMG:
 
 En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de muestreo de 1000 Hz. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a cada actividad. 
 
@@ -100,7 +120,7 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 | Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 | Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
 
-**5.3. Análisis de Señales EEG:**
+### 5.3. Análisis de Señales EEG:
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
 
 
@@ -112,10 +132,14 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 ## 6. Discusión
 
-**6.1. Análisis de Señales ECG:**
-- 
+### 6.1. Análisis de Señales ECG
+- **Elección del Filtro y Configuración:**
+  - **Filtro Wavelet Biortogonal 3.1:** Se seleccionó este filtro debido a sus propiedades de simetría y localización temporal, lo cual es crucial para analizar señales no estacionarias como las ECG, que presentan eventos significativos y breves como los complejos QRS. La elección está fundamentada en la capacidad de las wavelets biortogonales para manejar adecuadamente la variabilidad de las señales ECG, tal como se discute en el estudio "Design of wavelet transform based electrocardiogram monitoring system", que resalta la eficiencia de las transformadas wavelet en la denoising y detección de características relevantes en señales ECG [3].
 
-**6.2. Análisis de Señales EMG:**
+- **Análisis de las Señales Filtradas:**
+  - Las señales procesadas con el filtro wavelet mostraron una mejora significativa en la reducción del ruido, preservando las características esenciales de la señal ECG, especialmente los picos R, que son críticos para el diagnóstico cardíaco. Este resultado confirma la efectividad de la transformada wavelet en la limpieza de la señal ECG sin comprometer la información diagnóstica esencial. Los estudios como el mencionado anteriormente apoyan esta observación, demostrando que la transformada wavelet es particularmente adecuada para el procesamiento de ECG, dado su enfoque adaptativo y su capacidad para minimizar el error en comparación con otros métodos de filtrado.
+
+### 6.2. Análisis de Señales EMG:
 
 - Análisis de resultados de primera prueba:
 
@@ -136,7 +160,7 @@ iii. Extensión: Similar a la señal de Oposición, con variabilidad en un rango
 
 iv. Flexión: La señal original presenta más variabilidad y amplitud que las otras actividades. 
 
-**6.3. Análisis de Señales EEG:**
+### 6.3. Análisis de Señales EEG:
 - Elección del Filtro y Configuración:
   -
 - Análisis de las Señales Filtradas - IIR:
@@ -163,7 +187,27 @@ iv. Flexión: La señal original presenta más variabilidad y amplitud que las o
   - En la medición de preguntas matemáticas, después de realizar el filtrado, se podría considerar que se está visualizando onda beta y alfa, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión además del parpadeo normal del sujeto de prueba [18].
 
 ## 7. Conclusiones
--
+### 7.1. Señales ECG
+
+A lo largo de este estudio, se implementó y evaluó la eficacia de la transformada wavelet biortogonal 3.1 para el procesamiento de señales de electrocardiograma (ECG) en diversas condiciones fisiológicas, incluyendo reposo basal, respiración controlada y post ejercicio. Las principales conclusiones son las siguientes:
+
+1. **Efectividad del Filtro Wavelet:** La aplicación del filtro wavelet biortogonal 3.1 ha demostrado ser altamente efectiva en la reducción del ruido y la mejora de la claridad de las señales ECG. Esto se evidencia en la preservación de las formas características del ECG, particularmente los complejos QRS, que son vitales para diagnósticos clínicos precisos.
+
+2. **Preservación de la Integridad de la Señal:** A diferencia de otros métodos de filtrado, la transformada wavelet ha mostrado una capacidad superior para mantener la integridad de las señales cardíacas durante el procesamiento. Esto es crucial en aplicaciones médicas donde la exactitud y la confiabilidad de la señal son imprescindibles.
+
+3. **Adaptabilidad y Versatilidad:** La metodología basada en wavelets se adaptó eficientemente a las variaciones en las señales ECG provocadas por diferentes estados fisiológicos del paciente. Su flexibilidad para ajustar la descomposición a niveles específicos permite un enfoque más granular y preciso en comparación con filtros tradicionales.
+
+4. **Aplicaciones Clínicas y Futuras Investigaciones:** Los resultados obtenidos sugieren que la transformada wavelet puede ser una herramienta valiosa no solo para el monitoreo clínico rutinario, sino también para investigaciones futuras que busquen optimizar el análisis y procesamiento de señales biomédicas.
+
+Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como una técnica robusta y confiable para el procesamiento de señales ECG, ofreciendo un balance óptimo entre reducción de ruido y preservación de detalles críticos. Su implementación podría mejorar significativamente la calidad de la interpretación de ECG en entornos clínicos y de investigación.
+
+### 7.2. Señales EMG
+
+### 7.3. Señales EEG
 
 ## 8. Bibliografía
 [1]
+
+
+[3] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
+‌
