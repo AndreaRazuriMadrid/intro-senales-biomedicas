@@ -113,7 +113,7 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
 
     `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
     ![sqrt(ln(N))](https://latex.codecogs.com/png.latex?\sqrt{\ln(N)}).
-    ![Threshold formula](https://latex.codecogs.com/png.latex?\text{Threshold}, \tau = \delta_{\text{mad}} \sqrt{\ln(N)})., donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
+    ![Umbral](https://latex.codecogs.com/pdf.image?\dpi{110}\text{Threshold},\tau=\delta_{\text{mad}}\sqrt{\ln(N)}), donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
 
 
 ## 5. Resultados
