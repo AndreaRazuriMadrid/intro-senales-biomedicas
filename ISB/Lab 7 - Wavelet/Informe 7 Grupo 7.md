@@ -91,31 +91,24 @@ Una vez con ello, se forma un vector de características con las energías de lo
 
 ### 4.3. Análisis de Señales EEG:
 Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
-
-Se utilizó la transformada Wavelet para el procesamiento de las señales EEG, para esto se utilizó utilizando la wavelet Daubechies 8, enfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
-
-
-1. **Descomposición Wavelet:**
-    Se utilizó la db8, la cual es la octaba familia de Daubechies, la cual tiene 16 coeficientes en su filtro de descomposición. Este número de coeficientes determina la longitud de la Wavelet y afecta su capacidad para capturar detalles de la señal. 
-2. **Umbralización:**
-   Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
-
-    `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
-
-    `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
     
 
 #### Aplicación del Filtro Wavelet
 
-Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía[x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos.
+Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía[x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
+
 
 1. **Descomposición:**
 
-    - De igual manera que en las señales ECG, se aplicó una técnica de umbralización para atenuar o eliminar el ruido. Se usó la siguiente formula[x]:
+    - Se utilizó la db8, la cual es la octaba familia de Daubechies, la cual tiene 16 coeficientes en su filtro de descomposición. Este número de coeficientes determina la longitud de la Wavelet y afecta su capacidad para capturar detalles de la señal. 
 
 2. **Umbralización:**
 
-    - Utilizando el umbral calculado anteriormente, se suavizó la señal como modo de filtrar ruido.
+   - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
+
+    `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
+
+    `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
 
 
 ## 5. Resultados
