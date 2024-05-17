@@ -70,7 +70,19 @@ Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visuali
 
 ### 4.3. Análisis de Señales EEG:
 
-- 
+Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
+
+#### Aplicación del Filtro Wavelet
+
+Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía[x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos.
+
+1. **Descomposición:**
+
+De igual manera que en las señales ECG, se aplicó una técnica de umbralización para atenuar o eliminar el ruido. Se usó la siguiente formula[x]:
+
+2. **Umbralización:**
+
+Utilizando el umbral calculado anteriormente, se suavizó la señal como modo de filtrar ruido.
 
 
 ## 5. Resultados
