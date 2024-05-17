@@ -81,11 +81,7 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
 
   2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor. 
   * **Umbral suave (Soft Thresholding)**: Reduce gradualmente los coeficientes: $$w' = \text{sign}(w) \cdot (\lvert w \rvert - \lambda)_+$$
-  * **Umbral duro (Hard Thresholding)**: Elimina completamente los coeficientes por debajo del umbral:$$w' = 
-\begin{cases} 
-w & \text{si} \; \lvert w \rvert \geq \lambda \\
-0 & \text{si} \; \lvert w \rvert < \lambda 
-\end{cases}$$
+  * **Umbral duro (Hard Thresholding)**: Elimina completamente los coeficientes por debajo del umbral: $$w'=\begin{cases}w&\text{si} \; \lvert w \rvert \geq \lambda \\ 0 & \text{si} \; \lvert w \rvert < \lambda \end{cases}$$
 donde `w` son los coeficientes wavelet y `lambda` es el valor del umbral.
 
   3. **Reconstrucción de la señal**: Se utiliza los coeficientes wavelet ajustados (post-umbralización) para reconstruir la señal EMG utilizando la inversa de la Transformada Wavelet Discreta (IDWT). 
