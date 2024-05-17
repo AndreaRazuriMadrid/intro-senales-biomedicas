@@ -103,11 +103,11 @@ Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes 
 Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía[x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
 
 
-1. **Descomposición:**
+  1. **Descomposición:**
 
     - Se utilizó la db8, la cual es la octaba familia de Daubechies, la cual tiene 16 coeficientes en su filtro de descomposición. Este número de coeficientes determina la longitud de la Wavelet y afecta su capacidad para capturar detalles de la señal. 
 
-2. **Umbralización:**
+  2. **Umbralización:**
 
    - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El valor del umbral se puede ponderar de acuerdo con los valores de los coeficientes por escala, de esta forma el umbral puede ser dependiente del ruido encontrado por niveles [xx]. Por tanto, se utilizó la ponderación de primer nivel, en donde se calcula el nivel del ruido de los coedificientes del primer nivel de descomposición a partir de las fórmulas:
 
@@ -115,6 +115,9 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
 
     ![Umbral](https://latex.codecogs.com/png.image?\dpi{110}\text{Threshold},\tau=\delta_{\text{mad}}\sqrt{\ln(N)}), donde |C<sub>0</sub>|, |C<sub>1</sub>|,…,|C<sub>corte</sub> - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
 
+  3. **Reconstrucción de la señal**:
+    - Los coeficientes modificados se utilizan para reconstruir la señal original. Esta señal reconstruida tiene menos ruido y conserva las características esenciales de la señal original.
+    - La función pywt.waverec realiza esta reconstrucción a partir de los coeficientes umbralizados.
 
 ## 5. Resultados
 
