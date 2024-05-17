@@ -126,8 +126,8 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 | Ejercicio   | Señal original | Filtro Wavelet | 
 |-----------------|-------------|------------|
-| Reposo |  <img src="señales/EEG/Reposo/SeñalSINFiltrar.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/SeñalIIR.png" alt="ReposoIIR" style="width:675px; height:125px;"> |
-| Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/señalSINFiltrar.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/SeñalIIR.png" alt="OjosIIR" style="width:675px; height:125px;"> | 
+| Reposo |  <img src="señales/EEG/Reposo/reposo_original.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/reposo_filtrado.png" alt="ReposoIIR" style="width:675px; height:125px;"> |
+| Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/AbrirYCerrar_original.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/AbrirYCerrar_filtrado.png" alt="OjosIIR" style="width:675px; height:125px;"> | 
 | Preguntas matemáticas |   <img src="señales/EEG/Preguntas/señalSINFiltrar.png" alt="preguntas" style="width:675px; height:125px;"> |<img src="señales/EEG/Preguntas/señalIIR.png" alt="preguntasIIR" style="width:675px; height:125px;"> | 
 
 ## 6. Discusión
