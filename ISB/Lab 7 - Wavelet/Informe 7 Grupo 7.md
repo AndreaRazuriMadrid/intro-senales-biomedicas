@@ -72,9 +72,10 @@ Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visuali
 Se utilizó la transformada Wavelet para el procesamiento de las señales EEG, para esto se utilizó utilizando la wavelet Daubechies 8, enfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
 
 1. **Umbralización:**
-   - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
+   Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
 
     `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
+    
     `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano . 
 
     Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
