@@ -77,8 +77,11 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
 
 #### Aplicación del Filtro Wavelet
 
-  a. Descommposición mediante la Transformada de Wavelet: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: `coeff = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]` donde `ca` son los coeficientes de aproximación y `cd` son los coeficientes de detalle.
-  b.   
+  a. Descommposición mediante la Transformada de Wavelet: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: $$
+\text{coeff} = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]
+$$ donde $$\text{ca}$$ son los coeficientes de aproximación y $cd$ son los coeficientes de detalle.
+
+  b. Luego   
 
 
 ### 4.3. Análisis de Señales EEG:
