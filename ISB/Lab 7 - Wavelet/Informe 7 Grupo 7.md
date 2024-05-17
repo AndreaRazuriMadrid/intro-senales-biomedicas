@@ -78,11 +78,11 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
 
 1. **Descomposición:**
 
-  - De igual manera que en las señales ECG, se aplicó una técnica de umbralización para atenuar o eliminar el ruido. Se usó la siguiente formula[x]:
+    - De igual manera que en las señales ECG, se aplicó una técnica de umbralización para atenuar o eliminar el ruido. Se usó la siguiente formula[x]:
 
 2. **Umbralización:**
 
-  - Utilizando el umbral calculado anteriormente, se suavizó la señal como modo de filtrar ruido.
+    - Utilizando el umbral calculado anteriormente, se suavizó la señal como modo de filtrar ruido.
 
 
 ## 5. Resultados
