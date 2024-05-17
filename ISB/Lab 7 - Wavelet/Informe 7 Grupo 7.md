@@ -21,7 +21,7 @@
 
 ## 1. Introducción
 
-El procesamiento de bioseñales ha experimentado un rápido desarrollo, lo que ha mejorado significativamente la comprensión de procesos biológicos complejos en diversos campos. Un enfoque destacado en el análisis tiempo-frecuencia es la transformada Wavelet, que se ha empleado extensamente en varias áreas del procesamiento de bioseñales. Entre estas aplicaciones se incluyen estudios en electromiografía (EMG), electroencefalografía (EEG) y electrocardiografía (ECG), demostrando su versatilidad y potencia en el manejo de datos biológicos complejos.
+El procesamiento de bioseñales ha experimentado un rápido desarrollo, lo que ha mejorado significativamente la comprensión de procesos biológicos complejos en diversos campos. Un enfoque destacado en el análisis tiempo-frecuencia es la transformada Wavelet, que se ha empleado extensamente en varias áreas del procesamiento de bioseñales. Entre estas aplicaciones se incluyen estudios en electromiografía (EMG), electroencefalografía (EEG) y electrocardiografía (ECG), demostrando su versatilidad y potencia en el manejo de datos biológicos complejos [1].
 
 ## 2. Objetivos
 - Implementar y evaluar la eficacia de filtros wavelet para el procesamiento y mejora de la calidad de señales electrocardiográficas (ECG), electromiográficas (EMG) y electroencefalográficas (EEG), enfocándose en la reducción de ruido, la extracción de características relevantes y la mejora de la precisión en la detección de eventos clínicos significativos.
