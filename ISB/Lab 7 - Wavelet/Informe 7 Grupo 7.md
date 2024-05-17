@@ -100,7 +100,7 @@ Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes 
 
 #### Aplicación del Filtro Wavelet
 
-Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía[x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
+Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía [x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
 
 
   1. **Descomposición:**
@@ -249,7 +249,7 @@ Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como 
 ## 8. Bibliografía
 [1] J. Rafiee, M. A. R, N. Prause, and M. P. Schoen, “Wavelet basis functions in biomedical signal processing,” ResearchGate, May 2011. https://www.researchgate.net/publication/220220028_Wavelet_basis_functions_in_biomedical_signal_processing (accessed May 17, 2024).
 ‌
-
+[x] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
 
 [3] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
 
