@@ -69,16 +69,20 @@ Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visuali
 - Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
 
 ### 4.3. Análisis de Señales EEG:
+Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
+
 Se utilizó la transformada Wavelet para el procesamiento de las señales EEG, para esto se utilizó utilizando la wavelet Daubechies 8, enfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
 
-1. **Umbralización:**
+
+1. **Descomposición Wavelet:**
+    Se utilizó la db8, la cual es la octaba familia de Daubechies, la cual tiene 16 coeficientes en su filtro de descomposición. Este número de coeficientes determina la longitud de la Wavelet y afecta su capacidad para capturar detalles de la señal. 
+2. **Umbralización:**
    Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
 
     `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
-    
-    `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano . 
 
-    Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
+    `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
+    
 
 #### Aplicación del Filtro Wavelet
 
