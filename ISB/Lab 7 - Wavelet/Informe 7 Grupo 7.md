@@ -82,13 +82,7 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
   2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor. 
   * **Umbral suave (Soft Thresholding)**: Reduce gradualmente los coeficientes: $$w' = \text{sign}(w) \cdot (\lvert w \rvert - \lambda)_+$$
   * **Umbral duro (Hard Thresholding)**: Elimina completamente los coeficientes por debajo del umbral:
-$$
-w'=
-\begin{cases}
-w & \text{si} \; |w| \geq \lambda \\
-0 & \text{si} \; |w| < \lambda
-\end{cases}
-$$
+![Fórmula](https://latex.codecogs.com/png.latex?w%27%3D%5Cbegin%7Bcases%7D%20w%20%26%20%5Ctext%7Bsi%7D%20%7Cw%7C%20%5Cgeq%20%5Clambda%20%5C%5C%200%20%26%20%5Ctext%7Bsi%7D%20%7Cw%7C%20%3C%20%5Clambda%5Cend%7Bcases%7D)
 
 donde `w` son los coeficientes wavelet y `lambda` es el valor del umbral.
 
