@@ -77,19 +77,22 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
 
 #### Aplicación del Filtro Wavelet
 
-  1. **Descommposición mediante la Transformada de Wavelet**: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: $$\text{coeff} = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]$$ donde `ca` son los coeficientes de aproximación y `cd` son los coeficientes de detalle.
+  1. **Descommposición mediante la Transformada de Wavelet**: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: $$\text{coeff} = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]$$ donde `ca` son los coeficientes de aproximación y `cd` son los coeficientes de detalle [y].
 
-  2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor. 
+  2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor [y].
+     * **Modelo de Señal con Ruido**: La señal EMG con ruido se modela como: $$f(t)=s(t)+n(t)$$ donde s(t) es la señal de EMG y n(t) es el ruido Gaussiano blanco.
+       
+  4. **Umbralización**:
   * **Umbral suave (Soft Thresholding)**: Reduce gradualmente los coeficientes: $$w' = \text{sign}(w) \cdot (\lvert w \rvert - \lambda)_+$$
   * **Umbral duro (Hard Thresholding)**: Elimina completamente los coeficientes por debajo del umbral:
 ![Fórmula](https://latex.codecogs.com/png.latex?w%27%3D%5Cbegin%7Bcases%7D%20w%20%26%20%5Ctext%7Bsi%7D%20%7Cw%7C%20%5Cgeq%20%5Clambda%20%5C%5C%200%20%26%20%5Ctext%7Bsi%7D%20%7Cw%7C%20%3C%20%5Clambda%5Cend%7Bcases%7D)
 
 donde `w` son los coeficientes wavelet y `lambda` es el valor del umbral.
 
-  3. **Reconstrucción de la señal**: Se utiliza los coeficientes wavelet ajustados (post-umbralización) para reconstruir la señal EMG utilizando la inversa de la Transformada Wavelet Discreta (IDWT). 
+  3. **Reconstrucción de la señal**: Se utiliza los coeficientes wavelet ajustados (post-umbralización) para reconstruir la señal EMG utilizando la inversa de la Transformada Wavelet Discreta (IDWT) [y]. 
 
   4. **Extracción y Análisis**: Acá se calcula la energía de los coeficientes wavelet en cada nivel de descomposición como características: $$E_j = \sum_{k} (\text{coeff}_{j,k})^2$$
-Una vez con ello, se forma un vector de características con las energías de los diferentes niveles y otras posibles características relevantes. 
+Una vez con ello, se forma un vector de características con las energías de los diferentes niveles y otras posibles características relevantes [y]. 
 
 ### 4.3. Análisis de Señales EEG:
 Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
@@ -172,7 +175,7 @@ Después, se utilizó la transformada de Wavelet para descomponer la señal y ap
 
 ### 6.2. Análisis de Señales EMG:
 
-- Análisis de resultados de primera prueba:
+- **Análisis de resultados de primera prueba**:
 
 i. Oposición: La señal original, muestra una amplia variabilidad en la amplitud con muchos picos y valles abruptos. La amplitud de la señal varía entre aproximadamente 300 y 700 unidades. Esto significa que la señal contiene tanto la actividad muscular real como ruido de alta frecuencia por posibles artefactos externos. La variabilidad puede indicar tanto contracciones musculares como ruido presente en la señal. 
 Luego después de ser filtrada, la señal desnoiseada muestra una mayor reducción en el ruido residual, con amplitudes que varían aproximadamente entre 450 y 600 unidades, similar a la señal filtrada pero más refinada. La descomposoción wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue captado por el filtro pasa-baja. Esto resulta en una señal más clara y precisa lo que facilita la identificación de eventos musculares y la evaluación de actividad muscular real. 
@@ -185,7 +188,7 @@ Luego, la señal filtrada por Wavelet muestra una reducción mayor en el ruido r
 iv. Flexión: La señal original muestra una variabilidad significativa en amplitud, con picos que alcanzan cerca de 600 unidades y valles que descienden hasta aproximadamente 300 unidades. Esta señal contiene tanto la actividad muscular real como el ruido de alta frecuencia y posibles artefactos. La amplitud y variabilidad de los picos indican contracciones musculares junto con ruido presente en la señal. 
 Después para la señal desnoideada muestra una mayor reducción en el ruido residual, con amplitudes que varían entre aproximadamente 460 y 560 unidades, similar a la señal filtrada pero más refinada. La descomposición wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue capturado por el filtro pasa-bajos. Esto resulta en una señal más clara y precisa, lo que facilita la identificación de eventos musculares y la evaluación de la actividad muscular real.
 
-- Análisis de resultados de segunda prueba:
+- **Análisis de resultados de segunda prueba**:
 
 i. Oposición: La señal original muestra variabilidad constante a lo largo del tiempo con una amplitud que varía en un rango estrecho.
 
@@ -246,4 +249,6 @@ Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como 
 
 
 [3] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
-‌
+
+[‌y] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
+
