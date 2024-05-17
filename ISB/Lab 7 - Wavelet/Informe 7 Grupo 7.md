@@ -201,30 +201,20 @@ iii. Extensión: Similar a la señal de Oposición, con variabilidad en un rango
 iv. Flexión: La señal original presenta más variabilidad y amplitud que las otras actividades. 
 
 ### 6.3. Análisis de Señales EEG:
-- Elección del Filtro y Configuración:
-  -
-- Análisis de las Señales Filtradas - IIR:
-  - Reposo:
-   
-  - Abrir y cerrar ojos:
-    
-  - Preguntas:
-    
 
+El uso de la Transformada Wavelet Discreta (DWT) para la atenuación de ruido en señales EEG ha sido ampliamente documentado en la literatura debido a su capacidad para descomponer señales en diferentes niveles de resolución, permitiendo la identificación y eliminación de componentes de ruido (Mallat, 1989). En este estudio, se aplicó un filtro DWT utilizando la wavelet db8 con cuatro niveles de descomposición. Sin embargo, los resultados mostraron que el umbral calculado fue aproximadamente 0.0003, resultando en una atenuación de ruido prácticamente imperceptible. Este rendimiento subóptimo puede deberse a varios factores:
 
-- Análisis de las Señales Filtradas:
-  - Reposo:
-    
-  - Abrir y cerrar ojos:
-    
-  - Preguntas:
-   
-- Análisis de las Señales Final:
-  - En la medición en Reposo 1, durante la medición de en reposo se pueden ver las ondas alfa de baja frecuencia pero contiene muchos artefactos y ruido. Con el análisis de frecuencia podemos ver que el ruido continua en las otras pruebas, haciendo más difícil poder leer la información. Este ruido se puede deber al posicionamiento de los electrodos y su referencia, además de que el sujeto se encontraba cerca de 2 laptops y tenía una joya de acero.
+#### 1. Elección de la Wavelet y Niveles de Descomposición
 
-  - En la medición de abrir y cerrar los ojos se observa los 5 ciclos realizados. Después de realizar los filtros, se señal es consistente con la activación cortical asociada con la percepción visual y el procesamiento de la información visual entrante [17]. Este ciclo de repetición se da por ejemplo entre 12 a 22s. Se podría considerar que se está encontrando ondas alfa, debido a que en este ejercicio la persona se encuentra en un estado mentalmente relajado pero despierto [18].
+  La elección de la wavelet madre y el número de niveles de descomposición son cruciales para la efectividad del filtrado. Aunque la wavelet db8 es popular en el análisis de señales EEG [a], no es necesariamente la mejor opción para todas las señales. Hemos visto que diferentes wavelets tienen distintas aplicaciones debido a sus variaciones en eficacia en la eliminación de ruido. En base a esto, se debería optar por probar diferentes wavelets, como coif y bior4.4 para verificar su eficacia en esta aplicación [aa].
 
-  - En la medición de preguntas matemáticas, después de realizar el filtrado, se podría considerar que se está visualizando onda beta y alfa, debido a que se está implicando actividades mentales que demandan mayor velocidad de transmisión además del parpadeo normal del sujeto de prueba [18].
+#### 2. Distribución de los Coeficientes Wavelet
+
+  La distribución de los coeficientes wavelet después de la descomposición refleja las características intrínsecas de la señal y el ruido. En nuestro caso, la mediana de los coeficientes absolutos puede no estar representando adecuadamente el nivel de ruido presente en las señales EEG. Esto sugiere que la metodología de cálculo del umbral podría requerir ajustes. Se ha demostrado que el uso de técnicas adaptativas de umbralización puede mejorar significativamente la eliminación de ruido [aaa].
+
+#### 3. Factor de rescalamiento del umbral
+
+El valor de 0.6745 usado está basado en la asunción de que se trata de ruido blanco y gaussiano [x]. Sin embargo, el ruido en las señales EEG puede no seguir esta distribución, lo que haría que este factor de rescalado no sea el adecuado, y resulte en un filtrado poco eficiente.
 
 ## 7. Conclusiones
 ### 7.1. Señales ECG
@@ -256,3 +246,9 @@ Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como 
 [‌y] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
 
 [xx] C. Guarnizo, “Análisis de reducción de ruido en señales eeg orientado al reconocimiento de patrones,” Instituto Tecnológico Metropolitano Colombia, vol. 21, pp. 67–80, Dec. 2008. Available in: https://www.redalyc.org/pdf/3442/344234274005.pdf 
+
+[a] I. Daubechies, Ten lectures on wavelets. Philadelphia, Pa: SIAM, 1992.
+
+[aa] Harender and R. Sharma, “EEG signal denoising based on wavelet transform,” 2017 International conference of Electronics, Communication and Aerospace Technology (ICECA), 2017. https://www.semanticscholar.org/paper/EEG-signal-denoising-based-on-wavelet-transform-Harender-Sharma/4b2544a5137d54d5391310ffbeaff4382c053f4a (accessed May 17, 2024).
+
+‌[aaa] D. L. Donoho, “De-noising by soft-thresholding,” IEEE transactions on information theory, vol. 41, no. 3, pp. 613–627, May 1995, doi: https://doi.org/10.1109/18.382009.
