@@ -129,36 +129,27 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
 
 ### 5.2. Análisis de Señales EMG:
 
-En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de muestreo de 1000 Hz. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a cada actividad. 
+Se tomaron muestras de 2 compañeros, en las posiciones de reposo, extensión, flexión y oposición. Para aplicar el filtro Wavelet, se cargaron los datos, se aplicó luego un filtro paso-bajos para eliminar el ruido de alta frecuencia.
+Después, se utilizó la transformada de Wavelet para descomponer la señal y aplicar umbralizado (denoising), y luego se pudo observar la generación de las gráficas para las señal original, filtrada y desnoiseada.
 
-- Oposición: 3 coeficientes, frecuencia de corte de 300 Hz.
-- Reposo: 100 coeficientes, frecuencia de corte de 400 Hz para reservar la señal eliminando los componentes de baja frecuencia.
-- Extensión: 3 coeficientes, frecuencia de corte de 10 Hz.
-- Flexión: 3 coeficientes, frecuencia de corte de 300 Hz.
-
-Sin embargo trans probar estas frecuencias de corte no se noto ninguna diferencia asi que para simplificar el codigo utilizado se uso solo la frecuencia de corte de 200 Hz.
-
-Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más suave. El filtro se configuró con un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
-
-
-- El primer compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
+- El primer compañero tuvo estos resultados cuando se le aplicó en filtro Wavelet:
 
 | Ejercicio   | Señal original | Filtro Wavelet | 
 |-----------------|-------------|------------|
-| Oposición |  <img src="señales/emg/emg_Jo_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | 
-| Reposo |   <img src="señales/emg/emg_Jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | 
-| Extensión |  <img src="señales/emg/emg_Jo_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Flexión |  <img src="señales/emg/emg_Jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |  
+| Oposición |   |  | 
+| Reposo |    |   | 
+| Extensión |    |  |
+| Flexión |   |   |  
 
 
-- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
+- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro Wavelet:
 
 | Ejercicio   | Señal original | Filtro Wavelet | 
 |-----------------|-------------|------------|
-| Oposición |  <img src="señales/emg/emg_Ja_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | 
-| Reposo |   <img src="señales/emg/emg_Ja_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | 
-| Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Oposición |  |    | 
+| Reposo |    |   | 
+| Extensión |   |   |
+| Flexión |   |    |
 
 ### 5.3. Análisis de Señales EEG:
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros Wavelet, debido a su buena resolución en tiempo y en frecuencia, junto a su efectividad en la eliminación de ruido.
@@ -183,12 +174,16 @@ Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una
 
 - Análisis de resultados de primera prueba:
 
-i. Oposición: En la señal original, muestra viarabilidad constante a lo alrgo del tiempo con una amplitud que varía en un rango estrecho. Luego, con el filtro 
+i. Oposición: La señal original, muestra una amplia variabilidad en la amplitud con muchos picos y valles abruptos. La amplitud de la señal varía entre aproximadamente 300 y 700 unidades. Esto significa que la señal contiene tanto la actividad muscular real como ruido de alta frecuencia por posibles artefactos externos. La variabilidad puede indicar tanto contracciones musculares como ruido presente en la señal. 
+Luego después de ser filtrada, la señal desnoiseada muestra una mayor reducción en el ruido residual, con amplitudes que varían aproximadamente entre 450 y 600 unidades, similar a la señal filtrada pero más refinada. La descomposoción wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue captado por el filtro pasa-baja. Esto resulta en una señal más clara y precisa lo que facilita la identificación de eventos musculares y la evaluación de actividad muscular real. 
 
-ii. Reposo: La señal original, es predonmianntemente plana con variaciones pequeñas pero notables en amplitud. Luego, la señal filtrada por el filtro 
+ii. Reposo: La señal original muestra una amplitud que varía entre aproximadamente 504 y 514 unidades, la señal tiene muchas variaciones rápdias, lo que indica la presencia de ruido y posiblemente algunos artefactos. La señal debe tener poca actividad muscular, por lo que las variaciones rápidas se deben al ruido. Una vez aplicado el filtro de Wavelet, la señal desnoiseada muestra una mayor reducción en el ruido residual comparada con la señal filtrada. Las amplitudes ahora varían entre aproximadamente 507 y 511 unidades, con menos variaciones rápidas. La descomposición wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue capturado por el filtro pasa-bajos. Esto resulta en una señal más clara y precisa, reflejando mejor la falta de acitividad muscular esperada en una condición de reposo. 
 
-iii. Extensión: Similar a la señal de Oposición, con una amplitud que varía dento de un rango entrescho pero con picos más definidos. 
-iv. Flexión: La señal original presenta más variabilidad y rango de amplitud que las otras actividades.
+iii. Extensión: Pa ra la señal original muestra una amplia variabilidad en amplitud con muchos picos y valles abruptos. La amplitud de la señal varía entre aproximadamente 300 y 600 unidades. La señal contiene la actividad muscular real como ruido de alta frecuencia y posibles artefactos.
+Luego, la señal filtrada por Wavelet muestra una reducción mayor en el ruido residual, con amplitud que varían entre 460 y 560 unidades, similar a la señal filtrada pero más refinada. La descomposición wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue capturado por el filtro pasa-bajos. Esto resulta en una señal más clara y precisa, lo que facilita la identificación de eventos musculares y la evaluación de la actividad muscular real.
+
+iv. Flexión: La señal original muestra una variabilidad significativa en amplitud, con picos que alcanzan cerca de 600 unidades y valles que descienden hasta aproximadamente 300 unidades. Esta señal contiene tanto la actividad muscular real como el ruido de alta frecuencia y posibles artefactos. La amplitud y variabilidad de los picos indican contracciones musculares junto con ruido presente en la señal. 
+Después para la señal desnoideada muestra una mayor reducción en el ruido residual, con amplitudes que varían entre aproximadamente 460 y 560 unidades, similar a la señal filtrada pero más refinada. La descomposición wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue capturado por el filtro pasa-bajos. Esto resulta en una señal más clara y precisa, lo que facilita la identificación de eventos musculares y la evaluación de la actividad muscular real.
 
 - Análisis de resultados de segunda prueba:
 
@@ -242,6 +237,7 @@ A lo largo de este estudio, se implementó y evaluó la eficacia de la transform
 Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como una técnica robusta y confiable para el procesamiento de señales ECG, ofreciendo un balance óptimo entre reducción de ruido y preservación de detalles críticos. Su implementación podría mejorar significativamente la calidad de la interpretación de ECG en entornos clínicos y de investigación.
 
 ### 7.2. Señales EMG
+
 
 ### 7.3. Señales EEG
 
