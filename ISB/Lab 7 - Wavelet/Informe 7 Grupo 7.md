@@ -112,7 +112,7 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
    - Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El umbral utilizado se basó en las fórmulas:
 
     `desviación absoluta mediana = (median{|Co|,|C1|,...,|Cn-1}) / 0.6745` 
-
+    ![sqrt(ln(N))](https://latex.codecogs.com/png.latex?\sqrt{\ln(N)}).
     `Umbral = (desviación absoluta mediana) * sqrt(ln(N))`, donde |Co|, |C1|,…,|Ccorte - 1| son los coeficientes wavelet y 0,6745 en el denominador cambia la escala del numerador para que sea un estimador adecuado para la desviación estándar del ruido blanco gaussiano.
 
 
