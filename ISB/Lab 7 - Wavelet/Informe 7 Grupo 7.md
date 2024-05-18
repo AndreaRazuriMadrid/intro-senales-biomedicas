@@ -141,20 +141,21 @@ Después, se utilizó la transformada de Wavelet para descomponer la señal y ap
 
 | Ejercicio   | Señal original | Filtro Wavelet | 
 |-----------------|-------------|------------|
-| Oposición |   |  | 
-| Reposo |    |   | 
-| Extensión |    |  |
-| Flexión |   |   |  
+| Oposición | ![Señal base oposicion](señales/EMG/jo_oposicion.PNG)  | ![Señal filtrada oposicion](señales/EMG/jo_oposicion_wavelet.PNG) | 
+| Reposo |  ![Señal base reposo](señales/EMG/jo_reposo.PNG)  | ![Señal filtrada reposo](señales/EMG/jo_reposo_wavelet.PNG) |
+| Extensión | ![Señal base estension](señales/EMG/jo_extension.PNG)  | ![Señal filtrada extension](señales/EMG/jo_extension_wavelet.PNG) |
+| Flexión | ![Señal base flexion](señales/EMG/jo_flexion.PNG)  | ![Señal filtrada flexion](señales/EMG/jo_flexion_wavelet.PNG) |
 
 
 - El segundo compañero tuvo estos resultados cuando se le aplicó el filtro Wavelet:
 
 | Ejercicio   | Señal original | Filtro Wavelet | 
 |-----------------|-------------|------------|
-| Oposición |  |    | 
-| Reposo |    |   | 
-| Extensión |   |   |
-| Flexión |   |    |
+| Oposición | ![Señal base oposicion](señales/EMG/Ja_oposicion.PNG)  | ![Señal filtrada oposicion](señales/EMG/Ja_oposicion_wavelet.PNG) | 
+| Reposo |  ![Señal base reposo](señales/EMG/Ja_reposo.PNG)  | ![Señal filtrada reposo](señales/EMG/Ja_reposo_wavelet.PNG) |
+| Extensión | ![Señal base estension](señales/EMG/Ja_extension.PNG)  | ![Señal filtrada extension](señales/EMG/Ja_extension_wavelet.PNG) |
+| Flexión | ![Señal base flexion](señales/EMG/Ja_flexion.PNG)  | ![Señal filtrada flexion](señales/EMG/Ja_flexion_wavelet.PNG) |
+
 
 ### 5.3. Análisis de Señales EEG:
   - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros Wavelet, debido a su buena resolución en tiempo y en frecuencia, junto a su efectividad en la eliminación de ruido.
