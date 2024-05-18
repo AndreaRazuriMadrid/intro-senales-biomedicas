@@ -77,9 +77,9 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
 
 #### Aplicación del Filtro Wavelet
 
-  1. **Descommposición mediante la Transformada de Wavelet**: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: $$\text{coeff} = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]$$ donde `ca` son los coeficientes de aproximación y `cd` son los coeficientes de detalle [y].
+  1. **Descommposición mediante la Transformada de Wavelet**: escogemos una wavelet madre     adecuada, como la wavelet Daubechies (db4) o Symlet (syms5), según las características de tus señales EMG. Después, se descompone la señal EMG en varios niveles utilizando la Transformada Wavelet Discreta (DWT). Por ejemplo, se puede descomponer la señal en 5 niveles: $$\text{coeff} = [ca_5, cd_5, cd_4, cd_3, cd_2, cd_1]$$ donde `ca` son los coeficientes de aproximación y `cd` son los coeficientes de detalle [3].
 
-  2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor [y].
+  2. **Reducción de Ruido (Denoising)**: Acá se analizan los coeficientes de wavelet para estimar el nivel del reuido presente en la señal, y luego aplicamos un umbral suave o duro a los coeficientes de wavelet. El método de umbral suave reduce los coeficientes por una cantidad fija, mientras que el umbral duro elimina completamente si esetán por debajo de cierto valor [3].
      * **Modelo de Señal con Ruido**: La señal EMG con ruido se modela como: $$f(t)=s(t)+n(t)$$ donde s(t) es la señal de EMG y n(t) es el ruido Gaussiano blanco.
        
   4. **Umbralización**:
@@ -89,10 +89,10 @@ Aplicamos un filtro pasa-bajos para eliminar la alta frecuencia no deseada.
 
 donde `w` son los coeficientes wavelet y `lambda` es el valor del umbral.
 
-  3. **Reconstrucción de la señal**: Se utiliza los coeficientes wavelet ajustados (post-umbralización) para reconstruir la señal EMG utilizando la inversa de la Transformada Wavelet Discreta (IDWT) [y]. 
+  3. **Reconstrucción de la señal**: Se utiliza los coeficientes wavelet ajustados (post-umbralización) para reconstruir la señal EMG utilizando la inversa de la Transformada Wavelet Discreta (IDWT) [3]. 
 
   4. **Extracción y Análisis**: Acá se calcula la energía de los coeficientes wavelet en cada nivel de descomposición como características: $$E_j = \sum_{k} (\text{coeff}_{j,k})^2$$
-Una vez con ello, se forma un vector de características con las energías de los diferentes niveles y otras posibles características relevantes [y]. 
+Una vez con ello, se forma un vector de características con las energías de los diferentes niveles y otras posibles características relevantes [3]. 
 
 ### 4.3. Análisis de Señales EEG:
 Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante ciclos de abrir y cerrar ojos, y durante la resolución de preguntas matemáticas. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz.
@@ -274,11 +274,13 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 
 [2] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
 ‌
+[‌3] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
+
 [x] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
 
 
 
-[‌y] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
+
 
 [xx] C. Guarnizo, “Análisis de reducción de ruido en señales eeg orientado al reconocimiento de patrones,” Instituto Tecnológico Metropolitano Colombia, vol. 21, pp. 67–80, Dec. 2008. Available in: https://www.redalyc.org/pdf/3442/344234274005.pdf 
 
