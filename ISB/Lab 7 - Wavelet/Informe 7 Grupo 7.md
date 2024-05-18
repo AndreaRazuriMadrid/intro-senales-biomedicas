@@ -100,7 +100,7 @@ Las señales de electroencefalograma (EEG) fueron adquiridas durante diferentes 
 
 #### Aplicación del Filtro Wavelet
 
-Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía [x], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
+Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechies8 (db8), con 4 niveles de descomposición. Según bibliografía [4], este proceso nos ofrece una buena forma de eliminación de ruino en señales obtenidas de sujetos sanos. Este filtro está nfocado en la diferencia cuadrática media para encontrar la utilidad de la eliminación de ruido. Debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. En el proceso se tomó en cuenta lo siguiente: 
 
 
   1. **Descomposición:**
@@ -215,7 +215,7 @@ El uso de la Transformada Wavelet Discreta (DWT) para la atenuación de ruido en
 
 #### 3. Factor de rescalamiento del umbral
 
-El valor de 0.6745 usado está basado en la asunción de que se trata de ruido blanco y gaussiano [x]. Sin embargo, el ruido en las señales EEG puede no seguir esta distribución, lo que haría que este factor de rescalado no sea el adecuado, y resulte en un filtrado poco eficiente.
+El valor de 0.6745 usado está basado en la asunción de que se trata de ruido blanco y gaussiano [4]. Sin embargo, el ruido en las señales EEG puede no seguir esta distribución, lo que haría que este factor de rescalado no sea el adecuado, y resulte en un filtrado poco eficiente.
 
 ## 7. Conclusiones
 ### 7.1. Señales ECG
@@ -276,7 +276,7 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 ‌
 [‌3] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
 
-[x] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
+[4] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
 
 
 
