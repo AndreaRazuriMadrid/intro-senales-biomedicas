@@ -233,7 +233,31 @@ A lo largo de este estudio, se implementó y evaluó la eficacia de la transform
 Por lo que la transformada wavelet biortogonal 3.1 ha establecido su lugar como una técnica robusta y confiable para el procesamiento de señales ECG, ofreciendo un balance óptimo entre reducción de ruido y preservación de detalles críticos. Su implementación podría mejorar significativamente la calidad de la interpretación de ECG en entornos clínicos y de investigación.
 
 ### 7.2. Señales EMG
+Al procesar señales EMG con la transformada wavelet se utilizo la wavelet Daubechies 4 (db4) en 4 condiciones: 
+-Reposo
+-Oposicion
+-Extension
+-Flexion
 
+Mostro tener las siguientes caracteristicas:
+**1. Eficiencia en la eliminación de ruido:**
+
+La wavelet db4 ha demostrado ser efectiva en la eliminación de ruido en señales biológicas, incluyendo las señales EMG y ECG. Los estudios muestran que db4 puede mejorar la relación señal/ruido (SNR) y reducir el error cuadrático medio (MSE) de manera significativa.[Z]
+
+
+**2. Capacidad de preservar características importantes de la señal:**
+
+La db4 es capaz de eliminar ruidos de alta frecuencia mientras conserva y mejora las características débiles de la señal, lo cual es crucial para aplicaciones clínicas y de diagnóstico en EMG.[Z]
+
+**3. Mejora en la precisión del sistema de navegación y control:**
+
+En aplicaciones como el control de prótesis y sistemas de teleoperación de robots, la wavelet db4 mejora la precisión del sistema al filtrar efectivamente el ruido de la señal EMG.[D]
+
+**4. Comparativa con otros métodos de filtrado:**
+
+En estudios comparativos, la wavelet db4 ha mostrado un rendimiento superior en la reducción de ruido comparado con filtros Butterworth y otros métodos de filtrado tradicional, destacándose en aplicaciones de electromiografía uterina y ECG.[D]
+
+La wavelet Daubechies 4 (db4) es altamente eficaz para el procesamiento de señales EMG, ofreciendo ventajas significativas en la eliminación de ruido y preservación de características importantes de la señal. Esto mejora la precisión y la utilidad de las señales EMG en diversas aplicaciones.
 
 ### 7.3. Señales EEG
 En el procesamiento de señales EEG mediante la transformada de wavelet, se analizó el filtrado utilizando la wavelet Daubechies 8 (db8) en tres condiciones: en reposo, al abrir y cerrar los ojos, y durante la realización de preguntas matemáticas.
@@ -261,3 +285,11 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 [aa] Harender and R. Sharma, “EEG signal denoising based on wavelet transform,” 2017 International conference of Electronics, Communication and Aerospace Technology (ICECA), 2017. https://www.semanticscholar.org/paper/EEG-signal-denoising-based-on-wavelet-transform-Harender-Sharma/4b2544a5137d54d5391310ffbeaff4382c053f4a (accessed May 17, 2024).
 
 ‌[aaa] D. L. Donoho, “De-noising by soft-thresholding,” IEEE transactions on information theory, vol. 41, no. 3, pp. 613–627, May 1995, doi: https://doi.org/10.1109/18.382009.
+
+
+Z. Wang, J. Zhu, T. Yan, and L. Yang, "A new modified wavelet-based ECG denoising," Computer Assisted Surgery, vol. 24, pp. 174-183, 2019.
+D. Chuanhong, "Realization and Application of Wavelet-based in Signal-process of RLG," Computer Simulation, 2008. [Online].
+
+D. Gradolewski, P. Tojza, J. Jaworski, D. Ambroziak, G. Redlarski, and M. Krawczuk, "Arm EMG Wavelet-Based Denoising System," in Proceedings of the 2015 International Conference on Advanced Mechatronic Systems (ICAMechS), 2015, pp. 289-296. [Online].
+
+M. Limem and M. Hamdi, "Uterine electromyography signals denoising using discrete wavelet transform," in 2015 International Conference on Advances in Biomedical Engineering (ICABME), 2015, pp. 101-103. [Online].
