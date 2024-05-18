@@ -46,7 +46,7 @@ El procesamiento de bioseñales ha experimentado un rápido desarrollo, lo que h
 Las señales de electrocardiograma (ECG) fueron adquiridas durante diferentes condiciones experimentales: en estado basal (reposo), durante respiración controlada y después de ejercicio. Estas señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Este muestreo asegura una adecuada captura de la dinámica cardíaca y cumple con el teorema de Nyquist, evitando la pérdida de información relevante durante el proceso de digitalización.
 
 #### Aplicación del Filtro Wavelet
-Para el procesamiento de las señales ECG, se implementó un enfoque basado en la transformada wavelet, utilizando específicamente la wavelet biortogonal 3.1 debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias. El proceso se divide en varias etapas clave:
+Para el procesamiento de las señales ECG, se implementó un enfoque basado en la transformada wavelet, utilizando específicamente la wavelet biortogonal 3.1 debido a sus propiedades de simetría y efectividad en el manejo de señales no estacionarias [2]. El proceso se divide en varias etapas clave:
 
 1. **Descomposición Wavelet:**
    - La señal de ECG se descompuso utilizando la transformada wavelet biortogonal 3.1. Este proceso permite separar las componentes de frecuencia de la señal en diferentes niveles, aislando los detalles y las aproximaciones de frecuencia baja y alta.
@@ -69,7 +69,7 @@ Las señales, tanto crudas como procesadas con el filtro wavelet, fueron visuali
 
 #### Adquisición de las señales
 
-Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron dos tipos de filtros digitales: Filtro FIR (Respuesta Impulsiva Finita) y filtro IIR (Respuesta Impulsiva Infinita).
+Se obtuvieron las señales de EMG en diferentes actividades músculares: Oposición, Reposo, Extensión y Flexión. Las señales se almacenaron en formato de texto y se muestrearon a una frecuencia de 1000 Hz. Para analizar las señales y reducir el ruido inherente a las mediciones de EMG, se aplicaron filtros DWT.g
 
 #### Preprocesamiento de las señales
 
@@ -171,7 +171,7 @@ Después, se utilizó la transformada de Wavelet para descomponer la señal y ap
 
 ### 6.1. Análisis de Señales ECG
 - **Elección del Filtro y Configuración:**
-  - **Filtro Wavelet Biortogonal 3.1:** Se seleccionó este filtro debido a sus propiedades de simetría y localización temporal, lo cual es crucial para analizar señales no estacionarias como las ECG, que presentan eventos significativos y breves como los complejos QRS. La elección está fundamentada en la capacidad de las wavelets biortogonales para manejar adecuadamente la variabilidad de las señales ECG, tal como se discute en el estudio "Design of wavelet transform based electrocardiogram monitoring system", que resalta la eficiencia de las transformadas wavelet en la denoising y detección de características relevantes en señales ECG [3].
+  - **Filtro Wavelet Biortogonal 3.1:** Se seleccionó este filtro debido a sus propiedades de simetría y localización temporal, lo cual es crucial para analizar señales no estacionarias como las ECG, que presentan eventos significativos y breves como los complejos QRS. La elección está fundamentada en la capacidad de las wavelets biortogonales para manejar adecuadamente la variabilidad de las señales ECG, tal como se discute en el estudio "Design of wavelet transform based electrocardiogram monitoring system", que resalta la eficiencia de las transformadas wavelet en la denoising y detección de características relevantes en señales ECG [2].
 
 - **Análisis de las Señales Filtradas:**
   - Las señales procesadas con el filtro wavelet mostraron una mejora significativa en la reducción del ruido, preservando las características esenciales de la señal ECG, especialmente los picos R, que son críticos para el diagnóstico cardíaco. Este resultado confirma la efectividad de la transformada wavelet en la limpieza de la señal ECG sin comprometer la información diagnóstica esencial. Los estudios como el mencionado anteriormente apoyan esta observación, demostrando que la transformada wavelet es particularmente adecuada para el procesamiento de ECG, dado su enfoque adaptativo y su capacidad para minimizar el error en comparación con otros métodos de filtrado.
@@ -271,10 +271,12 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 
 ## 8. Bibliografía
 [1] J. Rafiee, M. A. R, N. Prause, and M. P. Schoen, “Wavelet basis functions in biomedical signal processing,” ResearchGate, May 2011. https://www.researchgate.net/publication/220220028_Wavelet_basis_functions_in_biomedical_signal_processing (accessed May 17, 2024).
+
+[2] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
 ‌
 [x] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
 
-[3] A. Kumar, Rama Komaragiri, and M. Kumar, “Design of wavelet transform based electrocardiogram monitoring system,” ISA transactions, vol. 80, pp. 381–398, Sep. 2018, doi: https://doi.org/10.1016/j.isatra.2018.08.003.
+
 
 [‌y] Z. Y. Zhang, "Wavelet Transform theory and its application in EMG signal processing," International Conference on Computer, Mechatronics, Control and Electronic Engineering (CMCE), Changchun, China, 2010, pp. 142-145. doi: 10.1109/CMCE.2010.5610403.
 
