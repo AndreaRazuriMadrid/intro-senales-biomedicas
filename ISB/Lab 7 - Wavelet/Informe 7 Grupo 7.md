@@ -207,11 +207,11 @@ El uso de la Transformada Wavelet Discreta (DWT) para la atenuación de ruido en
 
 #### 1. Elección de la Wavelet y Niveles de Descomposición
 
-  La elección de la wavelet madre y el número de niveles de descomposición son cruciales para la efectividad del filtrado. Aunque la wavelet db8 es popular en el análisis de señales EEG [a], no es necesariamente la mejor opción para todas las señales. Hemos visto que diferentes wavelets tienen distintas aplicaciones debido a sus variaciones en eficacia en la eliminación de ruido. En base a esto, se debería optar por probar diferentes wavelets, como coif y bior4.4 para verificar su eficacia en esta aplicación [aa].
+  La elección de la wavelet madre y el número de niveles de descomposición son cruciales para la efectividad del filtrado. Aunque la wavelet db8 es popular en el análisis de señales EEG [9], no es necesariamente la mejor opción para todas las señales. Hemos visto que diferentes wavelets tienen distintas aplicaciones debido a sus variaciones en eficacia en la eliminación de ruido. En base a esto, se debería optar por probar diferentes wavelets, como coif y bior4.4 para verificar su eficacia en esta aplicación [10].
 
 #### 2. Distribución de los Coeficientes Wavelet
 
-  La distribución de los coeficientes wavelet después de la descomposición refleja las características intrínsecas de la señal y el ruido. En nuestro caso, la mediana de los coeficientes absolutos puede no estar representando adecuadamente el nivel de ruido presente en las señales EEG. Esto sugiere que la metodología de cálculo del umbral podría requerir ajustes. Se ha demostrado que el uso de técnicas adaptativas de umbralización puede mejorar significativamente la eliminación de ruido [aaa].
+  La distribución de los coeficientes wavelet después de la descomposición refleja las características intrínsecas de la señal y el ruido. En nuestro caso, la mediana de los coeficientes absolutos puede no estar representando adecuadamente el nivel de ruido presente en las señales EEG. Esto sugiere que la metodología de cálculo del umbral podría requerir ajustes. Se ha demostrado que el uso de técnicas adaptativas de umbralización puede mejorar significativamente la eliminación de ruido [11].
 
 #### 3. Factor de rescalamiento del umbral
 
@@ -242,22 +242,22 @@ Al procesar señales EMG con la transformada wavelet se utilizo la wavelet Daube
 Mostro tener las siguientes caracteristicas:
 **1. Eficiencia en la eliminación de ruido:**
 
-La wavelet db4 ha demostrado ser efectiva en la eliminación de ruido en señales biológicas, incluyendo las señales EMG y ECG. Los estudios muestran que db4 puede mejorar la relación señal/ruido (SNR) y reducir el error cuadrático medio (MSE) de manera significativa.[Z]
+La wavelet db4 ha demostrado ser efectiva en la eliminación de ruido en señales biológicas, incluyendo las señales EMG y ECG. Los estudios muestran que db4 puede mejorar la relación señal/ruido (SNR) y reducir el error cuadrático medio (MSE) de manera significativa.[6]
 
 
 **2. Capacidad de preservar características importantes de la señal:**
 
-La db4 es capaz de eliminar ruidos de alta frecuencia mientras conserva y mejora las características débiles de la señal, lo cual es crucial para aplicaciones clínicas y de diagnóstico en EMG.[Z]
+La db4 es capaz de eliminar ruidos de alta frecuencia mientras conserva y mejora las características débiles de la señal, lo cual es crucial para aplicaciones clínicas y de diagnóstico en EMG.[6]
 
 **3. Mejora en la precisión del sistema de navegación y control:**
 
-En aplicaciones como el control de prótesis y sistemas de teleoperación de robots, la wavelet db4 mejora la precisión del sistema al filtrar efectivamente el ruido de la señal EMG.[D]
+En aplicaciones como el control de prótesis y sistemas de teleoperación de robots, la wavelet db4 mejora la precisión del sistema al filtrar efectivamente el ruido de la señal EMG.[7]
 
 **4. Comparativa con otros métodos de filtrado:**
 
-En estudios comparativos, la wavelet db4 ha mostrado un rendimiento superior en la reducción de ruido comparado con filtros Butterworth y otros métodos de filtrado tradicional, destacándose en aplicaciones de electromiografía uterina y ECG.[D]
+En estudios comparativos, la wavelet db4 ha mostrado un rendimiento superior en la reducción de ruido comparado con filtros Butterworth y otros métodos de filtrado tradicional, destacándose en aplicaciones de electromiografía uterina y ECG.[7]
 
-La wavelet Daubechies 4 (db4) es altamente eficaz para el procesamiento de señales EMG, ofreciendo ventajas significativas en la eliminación de ruido y preservación de características importantes de la señal. Esto mejora la precisión y la utilidad de las señales EMG en diversas aplicaciones.
+La wavelet Daubechies 4 (db4) es altamente eficaz para el procesamiento de señales EMG, ofreciendo ventajas significativas en la eliminación de ruido y preservación de características importantes de la señal. Esto mejora la precisión y la utilidad de las señales EMG en diversas aplicaciones [8].
 
 ### 7.3. Señales EEG
 En el procesamiento de señales EEG mediante la transformada de wavelet, se analizó el filtrado utilizando la wavelet Daubechies 8 (db8) en tres condiciones: en reposo, al abrir y cerrar los ojos, y durante la realización de preguntas matemáticas.
@@ -281,16 +281,18 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 
 [5] C. Guarnizo, “Análisis de reducción de ruido en señales eeg orientado al reconocimiento de patrones,” Instituto Tecnológico Metropolitano Colombia, vol. 21, pp. 67–80, Dec. 2008. Available in: https://www.redalyc.org/pdf/3442/344234274005.pdf 
 
-[a] I. Daubechies, Ten lectures on wavelets. Philadelphia, Pa: SIAM, 1992.
-
-[aa] Harender and R. Sharma, “EEG signal denoising based on wavelet transform,” 2017 International conference of Electronics, Communication and Aerospace Technology (ICECA), 2017. https://www.semanticscholar.org/paper/EEG-signal-denoising-based-on-wavelet-transform-Harender-Sharma/4b2544a5137d54d5391310ffbeaff4382c053f4a (accessed May 17, 2024).
-
-‌[aaa] D. L. Donoho, “De-noising by soft-thresholding,” IEEE transactions on information theory, vol. 41, no. 3, pp. 613–627, May 1995, doi: https://doi.org/10.1109/18.382009.
-
-
-Z. Wang, J. Zhu, T. Yan, and L. Yang, "A new modified wavelet-based ECG denoising," Computer Assisted Surgery, vol. 24, pp. 174-183, 2019.
+[6] Z. Wang, J. Zhu, T. Yan, and L. Yang, "A new modified wavelet-based ECG denoising," Computer Assisted Surgery, vol. 24, pp. 174-183, 2019.
 D. Chuanhong, "Realization and Application of Wavelet-based in Signal-process of RLG," Computer Simulation, 2008. [Online].
 
-D. Gradolewski, P. Tojza, J. Jaworski, D. Ambroziak, G. Redlarski, and M. Krawczuk, "Arm EMG Wavelet-Based Denoising System," in Proceedings of the 2015 International Conference on Advanced Mechatronic Systems (ICAMechS), 2015, pp. 289-296. [Online].
+[7] D. Gradolewski, P. Tojza, J. Jaworski, D. Ambroziak, G. Redlarski, and M. Krawczuk, "Arm EMG Wavelet-Based Denoising System," in Proceedings of the 2015 International Conference on Advanced Mechatronic Systems (ICAMechS), 2015, pp. 289-296. [Online].
 
-M. Limem and M. Hamdi, "Uterine electromyography signals denoising using discrete wavelet transform," in 2015 International Conference on Advances in Biomedical Engineering (ICABME), 2015, pp. 101-103. [Online].
+[8] M. Limem and M. Hamdi, "Uterine electromyography signals denoising using discrete wavelet transform," in 2015 International Conference on Advances in Biomedical Engineering (ICABME), 2015, pp. 101-103. [Online].
+
+[9] I. Daubechies, Ten lectures on wavelets. Philadelphia, Pa: SIAM, 1992.
+
+[10] Harender and R. Sharma, “EEG signal denoising based on wavelet transform,” 2017 International conference of Electronics, Communication and Aerospace Technology (ICECA), 2017. https://www.semanticscholar.org/paper/EEG-signal-denoising-based-on-wavelet-transform-Harender-Sharma/4b2544a5137d54d5391310ffbeaff4382c053f4a (accessed May 17, 2024).
+
+‌[11] D. L. Donoho, “De-noising by soft-thresholding,” IEEE transactions on information theory, vol. 41, no. 3, pp. 613–627, May 1995, doi: https://doi.org/10.1109/18.382009.
+
+
+
