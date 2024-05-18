@@ -109,7 +109,7 @@ Para el procesamiento de las señales EEG, se aplicó un filtro Wavelet Daubechi
 
   2. **Umbralización:**
 
-  Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El valor del umbral se puede ponderar de acuerdo con los valores de los coeficientes por escala, de esta forma el umbral puede ser dependiente del ruido encontrado por niveles [xx]. Por tanto, se utilizó la ponderación de primer nivel, en donde se calcula el nivel del ruido de los coedificientes del primer nivel de descomposición a partir de las fórmulas:
+  Se aplicó una técnica de umbralización suave a los coeficientes wavelet para atenuar o eliminar el ruido. El valor del umbral se puede ponderar de acuerdo con los valores de los coeficientes por escala, de esta forma el umbral puede ser dependiente del ruido encontrado por niveles [5]. Por tanto, se utilizó la ponderación de primer nivel, en donde se calcula el nivel del ruido de los coedificientes del primer nivel de descomposición a partir de las fórmulas:
 
 ![desviación absoluta mediana](https://latex.codecogs.com/png.image?\dpi{110}\delta_{\text{mad}}=\frac{\text{median}\{|c_0|,|c_1|,\ldots,|c_{n-1}|\}}{0.6745})
 
@@ -264,7 +264,7 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 
 **1. Proceso de Descomposición y Reconstrucción:** La aplicación del filtro db8 no ha mostrado cambios significativos en comparación con la señal original, ya que gran parte del ruido aún persiste y no hay una mejora notable en la limpieza de la señal. Esto se debe a que el filtro db8 está diseñado para captar detalles finos en las señales EEG y eliminar ruido de alta frecuencia, minimizando el impacto en las componentes importantes de la señal. Su capacidad para preservar las características esenciales de la señal mientras elimina el ruido de alta frecuencia es beneficiosa, pero puede no ser suficiente si el ruido predominante es de baja frecuencia o tiene una gran magnitud.
 
-**2. Establecimiento del Umbral para Denoising:** Para la eliminación del ruido en los coeficientes wavelet, se calculó un umbral basado en la desviación absoluta mediana (MAD) de los coeficientes wavelet, ajustado por un factor de escala. Se aplicó un umbral suave (soft thresholding) a los coeficientes. Los valores de umbral obtenidos fueron casi nulos o muy cercanos a cero, lo que explica la falta de un cambio significativo respecto a la señal original. Esta situación puede ocurrir cuando el ruido en la señal es de baja amplitud en comparación con las características relevantes de la señal, lo que dificulta establecer un umbral eficaz sin afectar las componentes importantes [xx].
+**2. Establecimiento del Umbral para Denoising:** Para la eliminación del ruido en los coeficientes wavelet, se calculó un umbral basado en la desviación absoluta mediana (MAD) de los coeficientes wavelet, ajustado por un factor de escala. Se aplicó un umbral suave (soft thresholding) a los coeficientes. Los valores de umbral obtenidos fueron casi nulos o muy cercanos a cero, lo que explica la falta de un cambio significativo respecto a la señal original. Esta situación puede ocurrir cuando el ruido en la señal es de baja amplitud en comparación con las características relevantes de la señal, lo que dificulta establecer un umbral eficaz sin afectar las componentes importantes [5].
 
 **3. Factores en la Toma de Señales EEG:** La calidad de la señal EEG es crucial para el análisis y el filtrado. En nuestro caso, se observó una cantidad considerable de ruido e interferencias en las señales, lo que constituye el principal inconveniente para obtener una señal más limpia. La correcta adquisición de la señal EEG es fundamental para el éxito del filtrado posterior. Las interferencias pueden deberse a factores externos, como ruido ambiental o movimientos del sujeto, y factores internos, como actividad muscular. Además, debido a la necesidad de conservar detalles finos en las señales EEG, no se pueden establecer umbrales altos sin riesgo de perder información valiosa. Por lo tanto, mejorar la calidad de la señal en el momento de la captura es vital para obtener mejores resultados en el procesamiento y análisis de las señales EEG.
 
@@ -278,11 +278,7 @@ En el procesamiento de señales EEG mediante la transformada de wavelet, se anal
 
 [4] M. Mamun, Mahmoud Al-Kadi, and Mohd. Marufuzzaman, “Effectiveness of Wavelet Denoising on Electroencephalogram Signals,” Journal of applied research and technology, vol. 11, no. 1, pp. 156–160, Feb. 2013, doi: https://doi.org/10.1016/s1665-6423(13)71524-4.
 
-
-
-
-
-[xx] C. Guarnizo, “Análisis de reducción de ruido en señales eeg orientado al reconocimiento de patrones,” Instituto Tecnológico Metropolitano Colombia, vol. 21, pp. 67–80, Dec. 2008. Available in: https://www.redalyc.org/pdf/3442/344234274005.pdf 
+[5] C. Guarnizo, “Análisis de reducción de ruido en señales eeg orientado al reconocimiento de patrones,” Instituto Tecnológico Metropolitano Colombia, vol. 21, pp. 67–80, Dec. 2008. Available in: https://www.redalyc.org/pdf/3442/344234274005.pdf 
 
 [a] I. Daubechies, Ten lectures on wavelets. Philadelphia, Pa: SIAM, 1992.
 
