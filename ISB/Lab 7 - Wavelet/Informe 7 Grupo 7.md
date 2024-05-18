@@ -231,6 +231,7 @@ Al procesar señales EMG con la transformada wavelet se utilizo la wavelet Daube
 -Flexion
 
 Mostro tener las siguientes caracteristicas:
+
 **1. Eficiencia en la eliminación de ruido:**
 
 La wavelet db4 ha demostrado ser efectiva en la eliminación de ruido en señales biológicas, incluyendo las señales EMG y ECG. Los estudios muestran que db4 puede mejorar la relación señal/ruido (SNR) y reducir el error cuadrático medio (MSE) de manera significativa.[6]
