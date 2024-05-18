@@ -192,16 +192,6 @@ Luego, la señal filtrada por Wavelet muestra una reducción mayor en el ruido r
 iv. Flexión: La señal original muestra una variabilidad significativa en amplitud, con picos que alcanzan cerca de 600 unidades y valles que descienden hasta aproximadamente 300 unidades. Esta señal contiene tanto la actividad muscular real como el ruido de alta frecuencia y posibles artefactos. La amplitud y variabilidad de los picos indican contracciones musculares junto con ruido presente en la señal. 
 Después para la señal desnoideada muestra una mayor reducción en el ruido residual, con amplitudes que varían entre aproximadamente 460 y 560 unidades, similar a la señal filtrada pero más refinada. La descomposición wavelet y el umbralizado han eliminado adicionalmente el ruido residual que no fue capturado por el filtro pasa-bajos. Esto resulta en una señal más clara y precisa, lo que facilita la identificación de eventos musculares y la evaluación de la actividad muscular real.
 
-- **Análisis de resultados de segunda prueba**:
-
-i. Oposición: La señal original muestra variabilidad constante a lo largo del tiempo con una amplitud que varía en un rango estrecho.
-
-ii. Reposo: La señal original es predominantemente plana con pequeñas pero notables variaciones en amplitud. 
-
-iii. Extensión: Similar a la señal de Oposición, con variabilidad en un rango estrecho pero con picos más definidos. 
-
-iv. Flexión: La señal original presenta más variabilidad y amplitud que las otras actividades. 
-
 ### 6.3. Análisis de Señales EEG:
 
 El uso de la Transformada Wavelet Discreta (DWT) para la atenuación de ruido en señales EEG ha sido ampliamente documentado en la literatura debido a su capacidad para descomponer señales en diferentes niveles de resolución, permitiendo la identificación y eliminación de componentes de ruido (Mallat, 1989). En este estudio, se aplicó un filtro DWT utilizando la wavelet db8 con cuatro niveles de descomposición. Sin embargo, los resultados mostraron que el umbral calculado fue aproximadamente 0.0003, resultando en una atenuación de ruido prácticamente imperceptible. Este rendimiento subóptimo puede deberse a varios factores:
