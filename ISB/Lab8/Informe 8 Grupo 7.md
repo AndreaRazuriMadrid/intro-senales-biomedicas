@@ -138,8 +138,8 @@ Después, se utilizó la transformada de Wavelet para descomponer la señal y ap
 
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR | Filtro Wavelet | 
 |-----------------|-------------|------------|------------|------------|
-| Reposo |   <img src="señales/emg/jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/EMG/jo_reposo_wavelet.PNG" style="width:675px; height:125px;"> |
-| Flexión |  <img src="señales/emg/jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/EMG/jo_flexion_wavelet.PNG" style="width:675px; height:125px;"> |
+| Reposo |   <img src="señales/emg/jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/jo_reposo_wavelet.PNG" style="width:675px; height:125px;"> |
+| Flexión |  <img src="señales/emg/jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/jo_flexion_wavelet.PNG" style="width:675px; height:125px;"> |
 
 
 **5.3. Análisis de Señales EEG:**
