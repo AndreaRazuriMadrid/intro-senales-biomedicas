@@ -121,20 +121,18 @@ Para ambos filtros Se utilizó de una frecuencia de sampleo de 1000 Hz y las fre
 
 **5.2. Análisis de Señales EMG:**
 
-En este estudio se trabajaron con dos compañeros. Se utilizó una frecuencia de muestreo de 1000 Hz. En el filtro FIR utilizamos 'firwin' para la creación del filtro pasa alta. La configuración se ajustó a cada actividad. 
+En este estudio se utilizó una frecuencia de muestreo de 1000 Hz. Para la creación del filtro pasa alta en el filtro FIR, se utilizó 'firwin'. La configuración se ajustó a cada actividad de la siguiente manera:
 
 - Oposición: 3 coeficientes, frecuencia de corte de 300 Hz.
-- Reposo: 100 coeficientes, frecuencia de corte de 400 Hz para reservar la señal eliminando los componentes de baja frecuencia.
+- Reposo: 100 coeficientes, frecuencia de corte de 400 Hz para preservar la señal eliminando los componentes de baja frecuencia.
 - Extensión: 3 coeficientes, frecuencia de corte de 10 Hz.
 - Flexión: 3 coeficientes, frecuencia de corte de 300 Hz.
 
-Sin embargo trans probar estas frecuencias de corte no se noto ninguna diferencia asi que para simplificar el codigo utilizado se uso solo la frecuencia de corte de 200 Hz.
+Sin embargo, tras probar estas frecuencias de corte no se notó ninguna diferencia significativa, así que para simplificar el código utilizado se usó solo una frecuencia de corte de 200 Hz.
 
-Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más suave. El filtro se configuró con un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
+En cuanto al filtro IIR, se utilizó un Butterworth de pasa baja para obtener una respuesta más suave. El filtro se configuró con un orden de 5 y una frecuencia de corte de 200 Hz. Este filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
 
-Se tomaron muestras de 2 compañeros, en las posiciones de reposo, extensión, flexión y oposición. Para aplicar el filtro Wavelet, se cargaron los datos, se aplicó luego un filtro paso-bajos para eliminar el ruido de alta frecuencia.
-Después, se utilizó la transformada de Wavelet para descomponer la señal y aplicar umbralizado (denoising), y luego se pudo observar la generación de las gráficas para las señal original, filtrada y desnoiseada.
-
+Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un filtro paso-bajos para eliminar el ruido de alta frecuencia. Después, se utilizó la transformada de Wavelet para descomponer la señal y aplicar umbralizado (denoising). Finalmente, se generaron las gráficas para las señales original, filtrada y desnoiseada.
 
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR | Filtro Wavelet | 
 |-----------------|-------------|------------|------------|------------|
