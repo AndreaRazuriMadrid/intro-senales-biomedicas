@@ -1,4 +1,4 @@
-# INFORME LABORATORIO 6
+# INFORME LABORATORIO 8
 ## Lista de Participantes - Grupo 7
 
 - Andrea Razuri Madrid
@@ -132,25 +132,14 @@ Sin embargo trans probar estas frecuencias de corte no se noto ninguna diferenci
 
 Mientras el que filtro IIR se utilizó Butterworth de pasa baja para obtener una respuesta más suave. El filtro se configuró con un orden de 5 y una frecuencia de corte de 200 Hz. El filtro IIR se aplicó a las mismas señales para comparar los efectos del filtrado FIR e IIR en la calidad de las señales procesadas.
 
-
-- El primer compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
-
-| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Oposición |  <img src="señales/emg/emg_Jo_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_oposicion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Reposo |   <img src="señales/emg/emg_Jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Extensión |  <img src="señales/emg/emg_Jo_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Flexión |  <img src="señales/emg/emg_Jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+Se tomaron muestras de 2 compañeros, en las posiciones de reposo, extensión, flexión y oposición. Para aplicar el filtro Wavelet, se cargaron los datos, se aplicó luego un filtro paso-bajos para eliminar el ruido de alta frecuencia.
+Después, se utilizó la transformada de Wavelet para descomponer la señal y aplicar umbralizado (denoising), y luego se pudo observar la generación de las gráficas para las señal original, filtrada y desnoiseada.
 
 
-- El segundo compañero tuvo estos resultados cuando se le aplicó el filtro FIR:
-
-| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Oposición |  <img src="señales/emg/emg_Ja_oposicion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_oposicion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_oposicion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Reposo |   <img src="señales/emg/emg_Ja_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Extensión |  <img src="señales/emg/emg_Ja_extension.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_extension_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_extension_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
-| Flexión |  <img src="señales/emg/emg_Ja_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Ja_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Ja_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |
+| Ejercicio   | Señal original | Filtro IIR | Filtro FIR | Filtro Wavelet | 
+|-----------------|-------------|------------|------------|------------|
+| Reposo |   <img src="señales/emg/jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/EMG/jo_reposo_wavelet.PNG" style="width:675px; height:125px;"> |
+| Flexión |  <img src="señales/emg/jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/EMG/jo_flexion_wavelet.PNG" style="width:675px; height:125px;"> |
 
 
 **5.3. Análisis de Señales EEG:**
