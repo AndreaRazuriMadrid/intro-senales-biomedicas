@@ -64,7 +64,8 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 |-----------------|------------|------------|------------|
 | Reposo |  <img src="señales/emg/emg_reposo_IIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_reposo_FIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_reposo_wavelet.png" style="width:400px; height:200px;"> |
 | Flexión | <img src="señales/emg/emg_flexion_IIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_flexion_FIR.png" alt="Ejercicio" style="width:400px; height:200px;"> |<img src="señales/emg/emg_flexion_wavelet.png" style="width:400px; height:200px;"> |
-
+| **SNR Reposo**  | 50.824073 | 23.382454 | 42.810184 |
+| **SNR Flexión** | 27.707349 | 21.897949 | 18.347009 |
 
 **3.2. Análisis la eficacia de los filtros: Elección del mejor**
 
@@ -76,6 +77,22 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 ## 4. Discusión
 
 **4.1. Análisis de la elección del filtro:**
+
+### EMG
+
+#### Reposo:
+- FIR: 23.382454
+- IIR: 50.824073
+- Wavelet: 42.810184
+
+#### Flexión:
+- FIR: 21.897949
+- IIR: 27.707349
+- Wavelet: 18.347009
+
+### Análisis:
+
+Para el ejercicio de reposo, el filtro IIR tiene el mayor SNR con un valor de 50.824073, seguido del filtro Wavelet con 42.810184, y el filtro FIR con 23.382454. Para el ejercicio de flexión, el filtro IIR también tiene el mayor SNR con un valor de 27.707349, seguido del filtro FIR con 21.897949, y el filtro Wavelet con 18.347009.
 
 
 **4.2. Análisis de las características obtenidas:**
