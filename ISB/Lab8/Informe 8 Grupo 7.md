@@ -65,6 +65,45 @@ Tomando en cuenta que el intervalo mínimo entre 2 contracciones es de 200 ms, y
 
 **2.4. Extracción de características:** 
 
+Se usará el método Welch, el cuál consiste en calcular la densidad espectral de potencia, este método divide la señal en segmentos superpuestos, aplica una ventana a cada segmento, calcula la transformada de Fourier de cada uno y luego promedia los resultados. Es bastante útil para extraer características en el dominio del tiempo y en frecuencia.
+En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50%.
+
+
+Características en el dominio del tiempo:
+
+- Número de Activaciones Musculares:e refiere al número de veces que el músculo se ha activado durante el período de registro. Indica la frecuencia con la que el músculo se contrae.
+- Duración Máxima de Activación Muscular: La duración máxima de una activación muscular. Esto indica cuánto tiempo dura la activación más larga.
+- Duración Mínima de Activación Muscular: La duración más corta durante la cual una activación muscular persistió durante el período de registro. Esto puede proporcionar información sobre las respuestas musculares más breves o espasmos.
+- Duración Promedio de Activación Muscular: La duración media de todas las activaciones musculares. Proporciona una visión general de la duración típica de las activaciones musculares.
+- Desviación Estándar de la Duración de Activación Muscular:  La desviación estándar de la duración de las activaciones musculares, lo que proporciona una medida de la variabilidad en las duraciones de las activaciones.
+- Valor Máximo de Muestra:  La amplitud más alta registrada en la señal EMG. Valores altos pueden indicar contracciones musculares fuertes.
+- Valor Mínimo de Muestra: La amplitud más baja registrada en la señal EMG. Esto puede indicar el nivel de relajación muscular o el ruido de fondo en la señal.
+- Valor Promedio de Muestra: El valor medio de las muestras de la señal EMG. Esto puede proporcionar una línea base alrededor de la cual oscila la actividad muscular.
+- Desviación Estándar del Valor de Muestra: Una medida de la variabilidad en la amplitud de la señal. Valores más altos sugieren una mayor variabilidad en la actividad muscular.
+- RMS (Root Mean Square): Representa el valor efectivo de la señal EMG y se utiliza para cuantificar el nivel general de activación muscular.
+
+
+$$
+\text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
+$$
+
+
+Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
+
+
+- Área: El área bajo la curva de la señal EMG, que puede representar la energía total de la señal.
+
+
+
+
+Características en el dominio de la frecuencia
+
+- Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
+
+- Frecuencia Mediana: La frecuencia en la que el espectro de potencia se divide en dos mitades iguales. Se utiliza a menudo para evaluar la fatiga muscular, con una frecuencia mediana más baja indicando fatiga.
+
+- Frecuencia de Máxima Potencia: La frecuencia con la mayor potencia en la señal. Puede indicar la frecuencia dominante de la activación muscular.
+
 
 
 ## 3. Resultados
