@@ -47,6 +47,13 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 
 **2.2. Análisis para la elección del filtro:** 
 
+Para validar la solidez y eficacia de los filtros aplicados (FIR, IIR y wavelet), en este estudio se empleará la relación señal-ruido(SNR), la cuál es una métrica destacada para medir la eficacia de la eliminación de ruido [2] [3].
+
+$$
+\text{SNR} = 10 \log \left[ \frac{\sum_{i=1}^{N} (s(i))^2}{\sum_{i=1}^{N} (s(i) - x(i))^2} \right]
+$$  [2]
+
+Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrada y N es la longitud de la señal.
 
 **2.3. Segmentación de las señales:** 
 
@@ -106,4 +113,8 @@ Para el ejercicio de reposo, el filtro IIR tiene el mayor SNR con un valor de 50
 
 
 [1] M. B. I. Reaz, M. S. Hussain, and F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological procedures online, vol. 8, no. 1, pp. 11–35, Dec. 2006, doi: https://doi.org/10.1251/bpo115.
+‌
+[2] C. Ouyang, L. Cai, B. Liu, and T. Zhang, “An improved wavelet threshold denoising approach for surface electromyography signal,” EURASIP Journal on Advances in Signal Processing, vol. 2023, no. 1, Oct. 2023, doi: https://doi.org/10.1186/s13634-023-01066-3.
+‌
+[3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
 ‌
