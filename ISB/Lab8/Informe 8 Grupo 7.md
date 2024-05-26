@@ -61,9 +61,9 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 **3.1. Resultados de la aplicación de los distintos filtros:** 
 
 | Ejercicio   | Filtro IIR | Filtro FIR | Filtro Wavelet | 
-|-----------------|-------------|------------|------------|------------|
-| Reposo |  <img src="señales/emg/emg_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_reposo_wavelet.PNG" style="width:675px; height:125px;"> |
-| Flexión | <img src="señales/emg/emg_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_flexion_wavelet.PNG" style="width:675px; height:125px;"> |
+|-----------------|------------|------------|------------|
+| Reposo |  <img src="señales/emg/emg_reposo_IIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_reposo_FIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_reposo_wavelet.png" style="width:400px; height:200px;"> |
+| Flexión | <img src="señales/emg/emg_flexion_IIR.png" alt="Ejercicio" style="width:400px; height:200px;"> | <img src="señales/emg/emg_flexion_FIR.png" alt="Ejercicio" style="width:400px; height:200px;"> |<img src="señales/emg/emg_flexion_wavelet.png" style="width:400px; height:200px;"> |
 
 
 **3.2. Análisis la eficacia de los filtros: Elección del mejor**
