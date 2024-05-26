@@ -69,7 +69,7 @@ Se usará el método Welch, el cuál consiste en calcular la densidad espectral 
 En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50%.
 
 
-Características en el dominio del tiempo:
+***Características en el dominio del tiempo:***
 
 - Número de Activaciones Musculares:e refiere al número de veces que el músculo se ha activado durante el período de registro. Indica la frecuencia con la que el músculo se contrae.
 - Duración Máxima de Activación Muscular: La duración máxima de una activación muscular. Esto indica cuánto tiempo dura la activación más larga.
@@ -88,7 +88,7 @@ $$
 $$
 
 
-Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
+  Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
 
 
 - Área: El área bajo la curva de la señal EMG, que puede representar la energía total de la señal.
@@ -96,7 +96,7 @@ Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en u
 
 
 
-Características en el dominio de la frecuencia
+***Características en el dominio de la frecuencia:***
 
 - Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
 
