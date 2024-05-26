@@ -114,8 +114,15 @@ Si el valor de SNR que obtenemos es alto, significa mejor calidad de señal, men
 
 **4.2. Análisis de las características obtenidas:**
 
+Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
 
+-Evaluación de fatiga muscular: Características como la frecuencia media y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
 
+-Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
+
+-Control y coordinación motora: El número de activaciones musculares y la variabilidad en estas pueden utilizarse para evaluar el control y la coordinación motora. Una alta variabilidad puede sugerir un pobre control motor o un rendimiento muscular inconsistente.
+
+-Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
 ## 5. Conclusiones
 
 
