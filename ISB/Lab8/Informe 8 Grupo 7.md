@@ -88,7 +88,7 @@ $$
 $$
 
 
-  Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
+    Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
 
 
 - Área: El área bajo la curva de la señal EMG, que puede representar la energía total de la señal.
