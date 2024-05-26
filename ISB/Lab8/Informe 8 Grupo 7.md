@@ -30,7 +30,7 @@ Los avances recientes en modelos matemáticos y tecnologías de procesamiento de
 
 ## 2. Metodología
 
-**2.1. Análisis para la elección del filtro:** 
+**2.1. Aplicación de filtros a las señales adquiridas:** 
 
 En este estudio se utilizó una frecuencia de muestreo de 1000 Hz. Para la creación del filtro pasa alta en el filtro FIR, se utilizó 'firwin'. La configuración se ajustó a cada actividad de la siguiente manera:
 
