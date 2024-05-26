@@ -88,7 +88,7 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 - Potencia total y algunos puntos de referencia en el dominio de la frecuencia
 
-<img src="señales/señal1.png"> 
+<img src="señales/señal2.png"> 
 
 ## 4. Discusión
 
