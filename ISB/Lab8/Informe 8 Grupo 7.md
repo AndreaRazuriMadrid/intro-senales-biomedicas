@@ -82,7 +82,7 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 **3.2. Extracción de características:**
 - Segmento de serie de tiempo determinado
 
-<img src="señales/señal3.png"> 
+<img src="señales/Señal3.png"> 
 
 - Detección y contabilidad de activaciones musculares
 
