@@ -69,13 +69,19 @@ Se usará el método Welch, el cuál consiste en calcular la densidad espectral 
 En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50% [4].
 
 
-***Características en el dominio del tiempo:***
+***Características en el dominio del tiempo: [4][5]***
 
 - Número de Activaciones Musculares:e refiere al número de veces que el músculo se ha activado durante el período de registro. Indica la frecuencia con la que el músculo se contrae.
 - Duración Máxima de Activación Muscular: La duración máxima de una activación muscular. Esto indica cuánto tiempo dura la activación más larga.
 - Duración Mínima de Activación Muscular: La duración más corta durante la cual una activación muscular persistió durante el período de registro. Esto puede proporcionar información sobre las respuestas musculares más breves o espasmos.
 - Duración Promedio de Activación Muscular: La duración media de todas las activaciones musculares. Proporciona una visión general de la duración típica de las activaciones musculares.
 - Desviación Estándar de la Duración de Activación Muscular:  La desviación estándar de la duración de las activaciones musculares, lo que proporciona una medida de la variabilidad en las duraciones de las activaciones.
+
+$$
+\text{std}(\sigma) = \sqrt{\frac{1}{N-1} \sum_{n=1}^{N} (x_n - \mu)^2}
+$$
+
+  
 - Valor Máximo de Muestra:  La amplitud más alta registrada en la señal EMG. Valores altos pueden indicar contracciones musculares fuertes.
 - Valor Mínimo de Muestra: La amplitud más baja registrada en la señal EMG. Esto puede indicar el nivel de relajación muscular o el ruido de fondo en la señal.
 - Valor Promedio de Muestra: El valor medio de las muestras de la señal EMG. Esto puede proporcionar una línea base alrededor de la cual oscila la actividad muscular.
@@ -96,11 +102,16 @@ $$
 
 
 
-***Características en el dominio de la frecuencia:***
+***Características en el dominio de la frecuencia: [4][5]***
 
 - Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
 
 - Frecuencia Mediana: La frecuencia en la que el espectro de potencia se divide en dos mitades iguales. Se utiliza a menudo para evaluar la fatiga muscular, con una frecuencia mediana más baja indicando fatiga.
+
+$$
+\sum_{j=1}^{\text{MDF}} P_j = \sum_{j=\text{MDF}}^{M} P_j \quad P_j = \frac{1}{2} \sum_{j=1}^{M} P_j
+$$
+
 
 - Frecuencia de Máxima Potencia: La frecuencia con la mayor potencia en la señal. Puede indicar la frecuencia dominante de la activación muscular.
 
@@ -191,8 +202,6 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 
 -Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
 
-## 5. Conclusiones
-
 
 En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
 el valor maximo de la muestra es de 0.33, es bastante bajo por lo que puede indicar que no se requirio demasiado esfuerzo durante la lectura, est es consistente con el rms bajo. Ademas la potencia total de espectro tambien indica lo mismo, una baja energia en la activacion.
@@ -215,4 +224,6 @@ Las caracteristicas extraidas de la señal nos indican una actividad muscular la
 [3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
 ‌
 [4] A. Sultana, T. Islam, F. Ahmed, and Md Shafiul Alam, “A novel machine learning algorithm for finger movement classification from surface electromyogram signals using welch power estimation,” Healthcare analytics, vol. 5, pp. 100296–100296, Jun. 2024, doi: https://doi.org/10.1016/j.health.2023.100296.
+‌
+[5] Cemil Altin and O. Er, “Comparison of Different Time and Frequency Domain Feature Extraction Methods on Elbow Gesture’s EMG,” ResearchGate, Aug. 30, 2016. https://www.researchgate.net/publication/318538198_Comparison_of_Different_Time_and_Frequency_Domain_Feature_Extraction_Methods_on_Elbow_Gesture's_EMG (accessed May 26, 2024).
 ‌
