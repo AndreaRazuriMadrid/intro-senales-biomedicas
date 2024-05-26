@@ -82,9 +82,13 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 **3.2. Extracción de características:**
 
-- Detection and accounting of muscular activations
+- Detección y contabilidad de activaciones musculares.
 
-<img src="señales/señal1.png" style="width:500px; height:200px;"> 
+<img src="señales/señal1.png"> 
+
+- Potencia total y algunos puntos de referencia en el dominio de la frecuencia
+
+<img src="señales/señal1.png"> 
 
 ## 4. Discusión
 
