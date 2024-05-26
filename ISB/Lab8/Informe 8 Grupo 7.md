@@ -88,39 +88,7 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 
 
 ## 8. Bibliografía
-[1] Haily, 'Filtro digital - Definición y explicación,' TechEdu, 26 oct. 2022. [En línea]. Disponible: https://techlib.net/techedu/filtro-digital/. [Accedido: 03-may-2024]
 
-[2] Electropreguntas, 'Los Filtros Electrónicos Más Comunes Y Su Funcionamiento,' Electropreguntas, 2023. [En línea]. Disponible: https://electropreguntas.com/los-10-tipos-de-filtros-electronicos-mas-utilizados/. [Accedido: 03-may-2024].
 
-[3] Industriapedia, 'Filtro Butterworth: Optimiza tu señal de forma eficiente,' Industriapedia, 2023. [En línea]. Disponible: https://industriapedia.com/que-es-el-filtro-butterworth/. [Accedido: 03-may-2024]
-
-[4] Learning About Electronics, 'Filtro Paso Alto- Explicado,' Learning About Electronics, [En línea]. Disponible: http://www.learningaboutelectronics.com/Articulos/Filtro-paso-alto.php. [Accedido: 03-may-2024].
-
-[5] Electrositio, '¿Qué Es Un Filtro Analógico? - Diferentes Tipos De Filtros Analógicos,' Electrositio, 2023. [En línea]. Disponible: https://electrositio.com/que-es-un-filtro-analogico-diferentes-tipos-de-filtros-analogicos/. [Accedido: 03-may-2024].
-
-[6] B. Kuznetsov, J.D. Parker et al., "Differentiable IIR filters for machine learning applications," in Proceedings of the International Conference on Digital Audio Effects (DAFx), 2020. [Acceso en línea]: https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_52.pdf
-
-[7] “What Are High-Pass Filters? How & When To Use Them (+ Tips),” Unison.audio, May 06, 2023. https://unison.audio/high-pass-filters/ (accessed May 04, 2024).
-
-[8] D. Datta, H.S. Dutta, "High performance IIR filter implementation on FPGA," Journal of Electrical Systems and Information Technology, 2021. [Acceso en línea]: https://link.springer.com/article/10.1186/s43067-020-00025-4
-
-[9] “Perform Analysis and Design for the Spectral Analysis Case Study - dummies,” Dummies.com, 2016. https://www.dummies.com/article/business-careers-money/careers/trades-tech-engineering-careers/perform-analysis-and-design-for-the-spectral-analysis-case-study-165562/ (accessed May 04, 2024).
+[1] M. B. I. Reaz, M. S. Hussain, and F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological procedures online, vol. 8, no. 1, pp. 11–35, Dec. 2006, doi: https://doi.org/10.1251/bpo115.
 ‌
-[10] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal,” Sep. 2020, doi: https://doi.org/10.1109/icce50343.2020.9290646.
-
-[11] M. Das, R. Kumar, y B. Sahana, "Implementation of effective hybrid window function for ECG signal denoising," Traitement du Signal, vol. 37, no. 2, pp. 305-312, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/340100534_Implementation_of_Effective_Hybrid_Window_Function_for_ECG_Signal_Denoising
-
-[12] Y. A. Altay y A. S. Kremlev, "Polynomial filtering of low-and high-frequency noise for improving the accuracy of ECG signal processing: new advancements," Cardiometry, 2020. [En línea]. Disponible: https://www.researchgate.net/publication/343295169_Polynomial_filtering_of_low-_and_high-_frequency_noise_for_improving_the_accuracy_of_ECG_signal_processing_new_advancements
-
-[13] Sabine , L. and Sarang, S.D. (2019) Reducing power line noise in EEG and MEG data via spectrum interpolation, Neuroimage, 2019 Apr 1. Disponible: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6456018/ (Accessed: 03 May 2024). 
-
-[14] Bowman AD, Griffis JC, Visscher KM, Dobbins AC, Gawne TJ, DiFrancesco MW, Szaflarski JP. Relationship Between Alpha Rhythm and the Default Mode Network: An EEG-fMRI Study. J Clin Neurophysiol. 2017 Nov;34(6):527-533. doi: 10.1097/WNP.0000000000000411. PMID: 28914659; PMCID: PMC8428580.
-
-[15] Mello, R. G. T., Oliveira, L. F., & Nadal, J. (2007). "Digital Butterworth filter for subtracting noise from low magnitude surface electromyogram". Computer Methods and Programs in Biomedicine, 87(1), 28–35. https://doi.org/10.1016/j.cmpb.2007.04.004.
-
-[16] M. Boyer, L. Bouyer, J.-S. Roy, and Alexandre Campeau-Lecours, “Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review,” Sensors, vol. 23, no. 6, pp. 2927–2927, Mar. 2023, doi: https://doi.org/10.3390/s23062927.
-‌
-
-[17] Gómez, L.J. (2016) Departamento de Automática, Ingeniería Eléctrica y Electrónica e Informática Industrial. Available at: https://oa.upm.es/44379/1/TFM_LEONARDO_JOSE_GOMEZ_FIGUEROA.pdf (Accessed: 26 April 2024).
-
-[18] Ramos, R. (2020) Análisis de espectrogramas de señales EEG, Facultad de Ciencias de la Computación. Available at: https://repositorioinstitucional.buap.mx/server/api/core/bitstreams/92e27f78-4f9d-4d2e-9d69-9f90cd87c0b1/content (Accessed: 26 April 2024).
