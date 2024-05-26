@@ -68,7 +68,7 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 ## 3. Resultados
 
 
-**3.1. Resultados de la aplicación de los distintos filtros:** 
+**3.1. Análisis la eficacia de los filtros: Elección del mejor**
 
 | Ejercicio   | Filtro IIR | Filtro FIR | Filtro Wavelet | 
 |-----------------|------------|------------|------------|
@@ -77,7 +77,6 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 | **SNR Reposo**  | 50.824073 | 23.382454 | 42.810184 |
 | **SNR Flexión** | 27.707349 | 21.897949 | 18.347009 |
 
-**3.2. Análisis la eficacia de los filtros: Elección del mejor**
 
 
 **3.2. Extracción de características:**
