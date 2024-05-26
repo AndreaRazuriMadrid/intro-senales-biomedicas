@@ -223,9 +223,12 @@ Las caracteristicas extraidas de la señal nos indican una actividad muscular la
 
 [3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
 ‌
+
 [4] A. Sultana, T. Islam, F. Ahmed, and Md Shafiul Alam, “A novel machine learning algorithm for finger movement classification from surface electromyogram signals using welch power estimation,” Healthcare analytics, vol. 5, pp. 100296–100296, Jun. 2024, doi: https://doi.org/10.1016/j.health.2023.100296.
 ‌
+
 [5] Cemil Altin and O. Er, “Comparison of Different Time and Frequency Domain Feature Extraction Methods on Elbow Gesture’s EMG,” ResearchGate, Aug. 30, 2016. https://www.researchgate.net/publication/318538198_Comparison_of_Different_Time_and_Frequency_Domain_Feature_Extraction_Methods_on_Elbow_Gesture's_EMG (accessed May 26, 2024).
+
 
 [6]L. A. C. Kallenberg and H. J. Hermens, "Behaviour of motor unit action potential rate, estimated from surface EMG, as a measure of muscle activation level," Journal of NeuroEngineering and Rehabilitation, vol. 3, no. 1, p. 15, 2006. Available: https://jneuroengrehab.biomedcentral.com/articles/10.1186/1743-0003-3-15.
 ‌
