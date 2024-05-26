@@ -60,8 +60,49 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 **2.3. Segmentación de las señales:** 
 
+Tomando en cuenta que el intervalo mínimo entre 2 contracciones es de 200 ms, y que existen 2 métodos fundamentales para segmentar datos: ventanas deslizantes superpuestas y ventanas deslizantes no superpuestas, se decidió utilizar una ventana de segmentación con un tamaño de 256 ms y con incremento de 64ms [4].
+
 
 **2.4. Extracción de características:** 
+
+Se usará el método Welch, el cuál consiste en calcular la densidad espectral de potencia, este método divide la señal en segmentos superpuestos, aplica una ventana a cada segmento, calcula la transformada de Fourier de cada uno y luego promedia los resultados. Es bastante útil para extraer características en el dominio del tiempo y en frecuencia [4].
+En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50% [4].
+
+
+***Características en el dominio del tiempo:***
+
+- Número de Activaciones Musculares:e refiere al número de veces que el músculo se ha activado durante el período de registro. Indica la frecuencia con la que el músculo se contrae.
+- Duración Máxima de Activación Muscular: La duración máxima de una activación muscular. Esto indica cuánto tiempo dura la activación más larga.
+- Duración Mínima de Activación Muscular: La duración más corta durante la cual una activación muscular persistió durante el período de registro. Esto puede proporcionar información sobre las respuestas musculares más breves o espasmos.
+- Duración Promedio de Activación Muscular: La duración media de todas las activaciones musculares. Proporciona una visión general de la duración típica de las activaciones musculares.
+- Desviación Estándar de la Duración de Activación Muscular:  La desviación estándar de la duración de las activaciones musculares, lo que proporciona una medida de la variabilidad en las duraciones de las activaciones.
+- Valor Máximo de Muestra:  La amplitud más alta registrada en la señal EMG. Valores altos pueden indicar contracciones musculares fuertes.
+- Valor Mínimo de Muestra: La amplitud más baja registrada en la señal EMG. Esto puede indicar el nivel de relajación muscular o el ruido de fondo en la señal.
+- Valor Promedio de Muestra: El valor medio de las muestras de la señal EMG. Esto puede proporcionar una línea base alrededor de la cual oscila la actividad muscular.
+- Desviación Estándar del Valor de Muestra: Una medida de la variabilidad en la amplitud de la señal. Valores más altos sugieren una mayor variabilidad en la actividad muscular.
+- RMS (Root Mean Square): Representa el valor efectivo de la señal EMG y se utiliza para cuantificar el nivel general de activación muscular. En la ecuación, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
+
+
+$$
+\text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
+$$
+
+
+
+
+
+- Área: El área bajo la curva de la señal EMG, que puede representar la energía total de la señal.
+
+
+
+
+***Características en el dominio de la frecuencia:***
+
+- Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
+
+- Frecuencia Mediana: La frecuencia en la que el espectro de potencia se divide en dos mitades iguales. Se utiliza a menudo para evaluar la fatiga muscular, con una frecuencia mediana más baja indicando fatiga.
+
+- Frecuencia de Máxima Potencia: La frecuencia con la mayor potencia en la señal. Puede indicar la frecuencia dominante de la activación muscular.
 
 
 
@@ -133,14 +174,34 @@ Si el valor de SNR que obtenemos es alto, significa mejor calidad de señal, men
 Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
 
 -Evaluación de fatiga muscular: Características como la frecuencia media y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
+-Evaluación de fatiga muscular: La frecuencia mediana y la desviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
 
 -Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
 
 -Control y coordinación motora: El número de activaciones musculares y la variabilidad en estas pueden utilizarse para evaluar el control y la coordinación motora. Una alta variabilidad puede sugerir un pobre control motor o un rendimiento muscular inconsistente.
 
 -Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
+Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
+
+-Evaluación de fatiga muscular: Características como la frecuencia mediana y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
+
+-Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
+
+-Control y coordinación motora: El número de activaciones musculares y la variabilidad en estas pueden utilizarse para evaluar el control y la coordinación motora. Una alta variabilidad puede sugerir un pobre control motor o un rendimiento muscular inconsistente.
+
+-Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
+
 ## 5. Conclusiones
 
+
+En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
+el valor maximo de la muestra es de 0.33, es bastante bajo por lo que puede indicar que no se requirio demasiado esfuerzo durante la lectura, est es consistente con el rms bajo. Ademas la potencia total de espectro tambien indica lo mismo, una baja energia en la activacion.
+
+La frecuencia mediana de 78Hz se encuentra en un rango promedio, consistente con poca fatiga muscular y la frecuencia de maxima potencia es de 43Hz, indicando que la mayor parte de la energia se encuentran en las frecuencias mas bajas.
+
+## 5. Conclusiones
+
+Las caracteristicas extraidas de la señal nos indican una actividad muscular larga, de baja amplitud y energia. Con una frecuencia mediana en un rango normal indicando que fue realizado sin fatiga pero no se raalizo una contraccion muy fuerte.
 
 ## 6. Bibliografía
 
@@ -152,4 +213,6 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 ‌
 
 [3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
+‌
+[4] A. Sultana, T. Islam, F. Ahmed, and Md Shafiul Alam, “A novel machine learning algorithm for finger movement classification from surface electromyogram signals using welch power estimation,” Healthcare analytics, vol. 5, pp. 100296–100296, Jun. 2024, doi: https://doi.org/10.1016/j.health.2023.100296.
 ‌
