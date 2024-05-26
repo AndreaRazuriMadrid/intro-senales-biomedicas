@@ -94,8 +94,6 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 **4.1. Análisis de la elección del filtro:**
 
-### EMG
-
 #### Reposo:
 - FIR: 23.382454
 - IIR: 50.824073
@@ -110,6 +108,7 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 Para el ejercicio de reposo, el filtro IIR tiene el mayor SNR con un valor de 50.824073, seguido del filtro Wavelet con 42.810184, y el filtro FIR con 23.382454. Para el ejercicio de flexión, el filtro IIR también tiene el mayor SNR con un valor de 27.707349, seguido del filtro FIR con 21.897949, y el filtro Wavelet con 18.347009.
 
+Si el valor de SNR que obtenemos es alto, significa mejor calidad de señal, menos ruido, mayor efectividad del filtro; sin embargo, si el valor obtenido es bajo, significa peor calidad de señal, más ruido, menor efectividad del filtro. En este contexto, el filtro IIR es el que presenta mejor resultado 
 
 **4.2. Análisis de las características obtenidas:**
 
