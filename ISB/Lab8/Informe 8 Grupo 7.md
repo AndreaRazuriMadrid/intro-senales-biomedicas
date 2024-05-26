@@ -203,7 +203,7 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 -Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
 
 
-En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
+En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones, esto es un problema de la adquisición de la señal. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
 el valor maximo de la muestra es de 0.33, es bastante bajo por lo que puede indicar que no se requirio demasiado esfuerzo durante la lectura, est es consistente con el rms bajo. Ademas la potencia total de espectro tambien indica lo mismo, una baja energia en la activacion.[6]
 
 La frecuencia mediana de 78Hz se encuentra en un rango promedio, consistente con poca fatiga muscular y la frecuencia de maxima potencia es de 43Hz, indicando que la mayor parte de la energia se encuentran en las frecuencias mas bajas.
