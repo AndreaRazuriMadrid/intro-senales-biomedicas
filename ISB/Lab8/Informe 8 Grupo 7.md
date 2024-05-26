@@ -60,6 +60,8 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 **2.3. Segmentación de las señales:** 
 
+Tomando en cuenta que el intervalo mínimo entre 2 contracciones es de 200 ms, y que existen 2 métodos fundamentales para segmentar datos: ventanas deslizantes superpuestas y ventanas deslizantes no superpuestas, se decidió utilizar una ventana de segmentación con un tamaño de 256 ms y con incremento de 64ms [4].
+
 
 **2.4. Extracción de características:** 
 
@@ -152,4 +154,6 @@ Las caracteristicas extraidas de la señal nos indican una actividad muscular la
 ‌
 
 [3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
+‌
+[4] A. Sultana, T. Islam, F. Ahmed, and Md Shafiul Alam, “A novel machine learning algorithm for finger movement classification from surface electromyogram signals using welch power estimation,” Healthcare analytics, vol. 5, pp. 100296–100296, Jun. 2024, doi: https://doi.org/10.1016/j.health.2023.100296.
 ‌
