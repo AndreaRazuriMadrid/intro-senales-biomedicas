@@ -116,7 +116,7 @@ Si el valor de SNR que obtenemos es alto, significa mejor calidad de señal, men
 
 Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
 
--Evaluación de fatiga muscular: La frecuencia media y la desviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
+-Evaluación de fatiga muscular: La frecuencia mediana y la desviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
 
 -Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
 
@@ -125,7 +125,7 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 -Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
 Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
 
--Evaluación de fatiga muscular: Características como la frecuencia media y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
+-Evaluación de fatiga muscular: Características como la frecuencia mediana y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
 
 -Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
 
@@ -136,11 +136,11 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
 el valor maximo de la muestra es de 0.33, es bastante bajo por lo que puede indicar que no se requirio demasiado esfuerzo durante la lectura, est es consistente con el rms bajo. Ademas la potencia total de espectro tambien indica lo mismo, una baja energia en la activacion.
 
-La frecuencia media de 78Hz se encuentra en un rango promedio, consistente con poca fatiga muscular y la frecuencia de maxima potencia es de 43Hz, indicando que la mayor parte de la energia se encuentran en las frecuencias mas bajas.
+La frecuencia mediana de 78Hz se encuentra en un rango promedio, consistente con poca fatiga muscular y la frecuencia de maxima potencia es de 43Hz, indicando que la mayor parte de la energia se encuentran en las frecuencias mas bajas.
 
 ## 5. Conclusiones
 
-Las caracteristicas extraidas de la señal nos indican una actividad muscular larga, de baja amplitud y energia. Con una frecuencia media en un rango normal indicando que fue realizado sin fatiga pero no se raalizo una contraccion muy fuerte.
+Las caracteristicas extraidas de la señal nos indican una actividad muscular larga, de baja amplitud y energia. Con una frecuencia mediana en un rango normal indicando que fue realizado sin fatiga pero no se raalizo una contraccion muy fuerte.
 
 ## 6. Bibliografía
 
