@@ -80,7 +80,7 @@ En este estudio se usará la ventana Hamming que por defecto aplica una superpos
 - Valor Mínimo de Muestra: La amplitud más baja registrada en la señal EMG. Esto puede indicar el nivel de relajación muscular o el ruido de fondo en la señal.
 - Valor Promedio de Muestra: El valor medio de las muestras de la señal EMG. Esto puede proporcionar una línea base alrededor de la cual oscila la actividad muscular.
 - Desviación Estándar del Valor de Muestra: Una medida de la variabilidad en la amplitud de la señal. Valores más altos sugieren una mayor variabilidad en la actividad muscular.
-- RMS (Root Mean Square): Representa el valor efectivo de la señal EMG y se utiliza para cuantificar el nivel general de activación muscular.
+- RMS (Root Mean Square): Representa el valor efectivo de la señal EMG y se utiliza para cuantificar el nivel general de activación muscular. En la ecuación, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
 
 
 $$
@@ -88,7 +88,7 @@ $$
 $$
 
 
-    Donde, \(N\) es la longitud de la señal y \(x_i\) representa la señal EMG en un segmento.
+
 
 
 - Área: El área bajo la curva de la señal EMG, que puede representar la energía total de la señal.
