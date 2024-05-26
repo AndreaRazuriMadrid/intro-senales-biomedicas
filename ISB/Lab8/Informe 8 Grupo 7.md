@@ -76,6 +76,12 @@ En este estudio se usará la ventana Hamming que por defecto aplica una superpos
 - Duración Mínima de Activación Muscular: La duración más corta durante la cual una activación muscular persistió durante el período de registro. Esto puede proporcionar información sobre las respuestas musculares más breves o espasmos.
 - Duración Promedio de Activación Muscular: La duración media de todas las activaciones musculares. Proporciona una visión general de la duración típica de las activaciones musculares.
 - Desviación Estándar de la Duración de Activación Muscular:  La desviación estándar de la duración de las activaciones musculares, lo que proporciona una medida de la variabilidad en las duraciones de las activaciones.
+
+$$
+\text{std}(\sigma) = \sqrt{\frac{1}{N-1} \sum_{n=1}^{N} (x_n - \mu)^2}
+$$
+
+  
 - Valor Máximo de Muestra:  La amplitud más alta registrada en la señal EMG. Valores altos pueden indicar contracciones musculares fuertes.
 - Valor Mínimo de Muestra: La amplitud más baja registrada en la señal EMG. Esto puede indicar el nivel de relajación muscular o el ruido de fondo en la señal.
 - Valor Promedio de Muestra: El valor medio de las muestras de la señal EMG. Esto puede proporcionar una línea base alrededor de la cual oscila la actividad muscular.
@@ -101,6 +107,11 @@ $$
 - Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
 
 - Frecuencia Mediana: La frecuencia en la que el espectro de potencia se divide en dos mitades iguales. Se utiliza a menudo para evaluar la fatiga muscular, con una frecuencia mediana más baja indicando fatiga.
+
+$$
+\sum_{j=1}^{\text{MDF}} P_j = \sum_{j=\text{MDF}}^{M} P_j \quad P_j = \frac{1}{2} \sum_{j=1}^{M} P_j
+$$
+
 
 - Frecuencia de Máxima Potencia: La frecuencia con la mayor potencia en la señal. Puede indicar la frecuencia dominante de la activación muscular.
 
