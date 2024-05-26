@@ -32,29 +32,6 @@ Los avances recientes en modelos matemáticos y tecnologías de procesamiento de
 
 **2.1. Análisis para la elección del filtro:** 
 
-
-**2.2. Segmentación de las señales:** 
-
-
-**2.3. Extracción de características:** 
-
-
-
-## 3. Resultados
-
-**3.1. Análisis de Señales ECG:**
-- Se analizaron las señales de electrocardiograma (ECG) con una frecuencia de muestreo de 1000 Hz. Utilizando Python, se extrajeron datos relevantes de la columna 6 de un archivo de texto. Estos datos, provenientes delvsistema biTalino, emplean una configuración bipolar para medir la diferencia amplificada entre dos puntos de medición.
-
-- Los datos digitales se convirtieron a mV utilizando una fórmula basada en el voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits. Luego, las señales se filtraron para reducir el ruido y mejorar la visibilidad de los componentes cardíacos significativos. Se utilizaron dos tipos de filtros: un filtro IIR Butterworth de orden 5 y un filtro FIR con ventana de Hamming, ambos con una frecuencia de corte de 20 Hz.
-
-| Campos          | Señal cruda | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Basal | <img src="señales/ecgBasal.png" alt="Ejercicio" style="width:400px;"> |<img src="señales/ecgBasalButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgBasalHamming.png" alt="Ejercicio" style="width:400px;">|
-| Respiración     |<img src="señales/ecgRespiracion.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiracionButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgRespiraciónHamming.png" alt="Ejercicio" style="width:400px;">|
-| Post ejercicio  |<img src="señales/ecgEjercicio.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioButter.png" alt="Ejercicio" style="width:400px;">|<img src="señales/ecgEjercicioHamming.png" alt="Ejercicio" style="width:400px;">|
-
-**3.2. Análisis de Señales EMG:**
-
 En este estudio se utilizó una frecuencia de muestreo de 1000 Hz. Para la creación del filtro pasa alta en el filtro FIR, se utilizó 'firwin'. La configuración se ajustó a cada actividad de la siguiente manera:
 
 - Oposición: 3 coeficientes, frecuencia de corte de 300 Hz.
@@ -68,21 +45,35 @@ En cuanto al filtro IIR, se utilizó un Butterworth de pasa baja para obtener un
 
 Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un filtro paso-bajos para eliminar el ruido de alta frecuencia. Después, se utilizó la transformada de Wavelet para descomponer la señal y aplicar umbralizado (denoising). Finalmente, se generaron las gráficas para las señales original, filtrada y desnoiseada.
 
+
+
+**2.2. Análisis para la elección del filtro:** 
+
+
+**2.3. Segmentación de las señales:** 
+
+
+**2.4. Extracción de características:** 
+
+
+
+## 3. Resultados
+
+
+**3.1. Resultados de la aplicación de los distintos filtros:** 
+
 | Ejercicio   | Señal original | Filtro IIR | Filtro FIR | Filtro Wavelet | 
 |-----------------|-------------|------------|------------|------------|
 | Reposo |   <img src="señales/emg/jo_reposo.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_reposo_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_reposo_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/jo_reposo_wavelet.PNG" style="width:675px; height:125px;"> |
 | Flexión |  <img src="señales/emg/jo_flexion.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/emg_Jo_flexion_IIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> | <img src="señales/emg/emg_Jo_flexion_FIR.PNG" alt="Ejercicio" style="width:675px; height:125px;"> |<img src="señales/emg/jo_flexion_wavelet.PNG" style="width:675px; height:125px;"> |
 
 
-**3.3. Análisis de Señales EEG:**
-  - En este estudio se procesaron señales EEG registradas a una frecuencia de muestreo de 1000 Hz, empleando el dispositivo BiTalino junto con la disposición estándar de electrodos según el sistema internacional 10-20, y aplicando un método monopolar con dos electrodos posicionados en una región cerebral específica más un electrodo de referencia. Para la conversión de las señales a milivoltios, se utilizó una ecuación que considera un voltaje de referencia (VCC) de 3.3V y una resolución de 10 bits, permitiendo una cuantificación precisa de la señal EEG. Posteriormente, para mejorar la calidad de las señales eliminando ruidos no deseados, se implementaron filtros digitales. Se aplicaron dos tipos de filtros: un filtro IIR Butterworth de orden 9 y un filtro FIR diseñado con una ventana de Hanning, el primero configurados con una frecuencia de corte de 35 Hz y el segundo se trabajó por separado para analizar las frecuencias de las ondas alfa y beta. Estos filtros fueron esenciales para atenuar componentes de alta frecuencia y ruidos, facilitando así una mejor interpretación y análisis de las señales EEG.
+**3.2. Análisis la eficacia de los filtros: Elección del mejor**
 
 
-| Ejercicio   | Señal original | Filtro IIR | Filtro FIR |
-|-----------------|-------------|------------|------------|
-| Reposo |  <img src="señales/EEG/Reposo/SeñalSINFiltrar.png" alt="Reposo" style="width:675px; height:125px;"> |<img src="señales/EEG/Reposo/SeñalIIR.png" alt="ReposoIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Reposo/SeñalFIR.png" alt="ReposoFIR" style="width:675px; height:125px;"> |
-| Abrir y Cerrar los ojos |   <img src="señales/EEG/AbrirYCerrar/señalSINFiltrar.png" alt="Ojos" style="width:675px; height:125px;"> |<img src="señales/EEG/AbrirYCerrar/SeñalIIR.png" alt="OjosIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/AbrirYCerrar/SeñalFIR.png" alt="OjosFIR" style="width:675px; height:125px;"> |
-| Preguntas matemáticas |   <img src="señales/EEG/Preguntas/señalSINFiltrar.png" alt="preguntas" style="width:675px; height:125px;"> |<img src="señales/EEG/Preguntas/señalIIR.png" alt="preguntasIIR" style="width:675px; height:125px;"> | <img src="señales/EEG/Preguntas/señalFIR.png" alt="preguntasFIR" style="width:675px; height:125px;"> |
+**3.2. Extracción de características:**
+
+
 
 ## 4. Discusión
 
