@@ -65,8 +65,8 @@ Tomando en cuenta que el intervalo mínimo entre 2 contracciones es de 200 ms, y
 
 **2.4. Extracción de características:** 
 
-Se usará el método Welch, el cuál consiste en calcular la densidad espectral de potencia, este método divide la señal en segmentos superpuestos, aplica una ventana a cada segmento, calcula la transformada de Fourier de cada uno y luego promedia los resultados. Es bastante útil para extraer características en el dominio del tiempo y en frecuencia.
-En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50%.
+Se usará el método Welch, el cuál consiste en calcular la densidad espectral de potencia, este método divide la señal en segmentos superpuestos, aplica una ventana a cada segmento, calcula la transformada de Fourier de cada uno y luego promedia los resultados. Es bastante útil para extraer características en el dominio del tiempo y en frecuencia [4].
+En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50% [4].
 
 
 ***Características en el dominio del tiempo:***
