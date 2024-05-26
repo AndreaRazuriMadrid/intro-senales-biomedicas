@@ -69,7 +69,7 @@ Se usará el método Welch, el cuál consiste en calcular la densidad espectral 
 En este estudio se usará la ventana Hamming que por defecto aplica una superposición máxima del 50% [4].
 
 
-***Características en el dominio del tiempo:***
+***Características en el dominio del tiempo: [4][5]***
 
 - Número de Activaciones Musculares:e refiere al número de veces que el músculo se ha activado durante el período de registro. Indica la frecuencia con la que el músculo se contrae.
 - Duración Máxima de Activación Muscular: La duración máxima de una activación muscular. Esto indica cuánto tiempo dura la activación más larga.
@@ -102,7 +102,7 @@ $$
 
 
 
-***Características en el dominio de la frecuencia:***
+***Características en el dominio de la frecuencia: [4][5]***
 
 - Potencia Total del Espectro: La potencia total de la señal en el dominio de frecuencia. Esto indica la energía total de la señal EMG.
 
@@ -226,4 +226,6 @@ Las caracteristicas extraidas de la señal nos indican una actividad muscular la
 [3] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
 ‌
 [4] A. Sultana, T. Islam, F. Ahmed, and Md Shafiul Alam, “A novel machine learning algorithm for finger movement classification from surface electromyogram signals using welch power estimation,” Healthcare analytics, vol. 5, pp. 100296–100296, Jun. 2024, doi: https://doi.org/10.1016/j.health.2023.100296.
+‌
+[5] Cemil Altin and O. Er, “Comparison of Different Time and Frequency Domain Feature Extraction Methods on Elbow Gesture’s EMG,” ResearchGate, Aug. 30, 2016. https://www.researchgate.net/publication/318538198_Comparison_of_Different_Time_and_Frequency_Domain_Feature_Extraction_Methods_on_Elbow_Gesture's_EMG (accessed May 26, 2024).
 ‌
