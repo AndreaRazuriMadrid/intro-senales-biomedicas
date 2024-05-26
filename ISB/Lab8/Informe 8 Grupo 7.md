@@ -49,9 +49,11 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 
 Para validar la solidez y eficacia de los filtros aplicados (FIR, IIR y wavelet), en este estudio se empleará la relación señal-ruido(SNR), la cuál es una métrica destacada para medir la eficacia de la eliminación de ruido [2] [3].
 
+
 $$
 \text{SNR} = 10 \log \left[ \frac{\sum_{i=1}^{N} (s(i))^2}{\sum_{i=1}^{N} (s(i) - x(i))^2} \right]
-$$  [2]
+$$ 
+
 
 Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrada y N es la longitud de la señal.
 
