@@ -10,13 +10,11 @@
 ## Tabla de Contenidos
 
 1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
-3. [Materiales y equipos](#3-materiales-y-equipos)
-4. [Metodología](#4-metodología)
-5. [Resultados](#5-resultados)
-6. [Discusión](#6-discusión)
-7. [Conclusiones](#7-conclusiones)
-8. [Bibliografía](#8-bibliografía)
+2. [Metodología](#2-metodología)
+3. [Resultados](#3-resultados)
+4. [Discusión](#4-discusión)
+5. [Conclusiones](#5-conclusiones)
+6. [Bibliografía](#6-bibliografía)
 
 
 ## 1. Introducción
@@ -87,7 +85,7 @@ Para aplicar el filtro Wavelet, se cargaron los datos y se aplicó primero un fi
 ## 5. Conclusiones
 
 
-## 8. Bibliografía
+## 6. Bibliografía
 
 
 [1] M. B. I. Reaz, M. S. Hussain, and F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological procedures online, vol. 8, no. 1, pp. 11–35, Dec. 2006, doi: https://doi.org/10.1251/bpo115.
