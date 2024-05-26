@@ -80,9 +80,6 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 
 
 **3.2. Extracción de características:**
-- Segmento de serie de tiempo determinado
-
-<img src="señales/Señal3.png"> 
 
 - Detección y contabilidad de activaciones musculares
 
@@ -91,6 +88,25 @@ Donde s(i) es la señal original de EMG de superficie, x(i) es la señal filtrad
 - Potencia total y algunos puntos de referencia en el dominio de la frecuencia
 
 <img src="señales/señal2.png"> 
+
+- Resultados de EMG
+
+| Característica                                  | Valor                        |
+|-------------------------------------------------|------------------------------|
+| Number of Muscular Activations                  | 1                            |
+| Maximum Muscular Activation Duration            | 13.099970368175418           |
+| Minimum Muscular Activation Duration            | 13.099970368175418           |
+| Average Muscular Activation Duration            | 13.099970368175418           |
+| Standard Deviation of Muscular Activation Duration | 0.0                      |
+| Maximum Sample Value                            | 0.33927615659936916          |
+| Minimum Sample Value                            | -0.7526895780244606          |
+| Average Sample Value                            | -0.00981739507679961         |
+| Standard Deviation Sample Value                 | 0.07729475074507437          |
+| RMS                                             | 0.07791572202602723          |
+| Area                                            | -132.5648976504308           |
+| Total Power Spect                               | 0.005892733550501693         |
+| Median Frequency                                | 78.125                       |
+| Maximum Power Frequency                         | 42.96875                     |
 
 ## 4. Discusión
 
@@ -116,15 +132,6 @@ Si el valor de SNR que obtenemos es alto, significa mejor calidad de señal, men
 
 Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
 
--Evaluación de fatiga muscular: La frecuencia media y la desviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
-
--Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
-
--Control y coordinación motora: El número de activaciones musculares y la variabilidad en estas pueden utilizarse para evaluar el control y la coordinación motora. Una alta variabilidad puede sugerir un pobre control motor o un rendimiento muscular inconsistente.
-
--Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
-Para este analisis tomamos varias caracteristicas comunmente utilizadas de señales emg. Estas se pueden utilizar en conjunto para evaluar caracteristicas del musculo como:
-
 -Evaluación de fatiga muscular: Características como la frecuencia media y la eesviación estándar de la duración de ectivación muscular pueden ayudar a evaluar la fatiga muscular. Un desplazamiento de la frecuencia mediana hacia valores más bajos generalmente indica fatiga muscular.
 
 -Fuerza y resistencia muscular: La duración máxima y mínima de activación muscular, así como los valores de RMS, pueden proporcionar información sobre la fuerza y la resistencia del músculo. Valores más altos usualmente indican contracciones musculares más fuertes y sostenidas.
@@ -132,15 +139,8 @@ Para este analisis tomamos varias caracteristicas comunmente utilizadas de seña
 -Control y coordinación motora: El número de activaciones musculares y la variabilidad en estas pueden utilizarse para evaluar el control y la coordinación motora. Una alta variabilidad puede sugerir un pobre control motor o un rendimiento muscular inconsistente.
 
 -Actividad muscular general: El area, la potencia total del espectro y los valores de RMS proporcionan una idea general de la actividad muscular.
-
-En nuestro caso hubo una sola activacion muscular muy larga durante la flexion( aprox. 13s) esto se puede deber a la cantidad de ruido en nuestra señal, no es posible registrar el numero real de activaciones. Por esta misma razon los minimos y maximos de las duraciones de las activaciones son iguales y la desviacion estandar de la duracion de la activacion es 0.
-el valor maximo de la muestra es de 0.33, es bastante bajo por lo que puede indicar que no se requirio demasiado esfuerzo durante la lectura, est es consistente con el rms bajo. Ademas la potencia total de espectro tambien indica lo mismo, una baja energia en la activacion.
-
-La frecuencia media de 78Hz se encuentra en un rango promedio, consistente con poca fatiga muscular y la frecuencia de maxima potencia es de 43Hz, indicando que la mayor parte de la energia se encuentran en las frecuencias mas bajas.
-
 ## 5. Conclusiones
 
-Las caracteristicas extraidas de la señal nos indican una actividad muscular larga, de baja amplitud y energia. Con una frecuencia media en un rango normal indicando que fue realizado sin fatiga pero no se raalizo una contraccion muy fuerte.
 
 ## 6. Bibliografía
 
