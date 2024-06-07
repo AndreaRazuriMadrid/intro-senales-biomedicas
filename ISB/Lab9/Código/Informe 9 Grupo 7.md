@@ -17,3 +17,18 @@
 6. [Discusión](#6-discusión)
 7. [Conclusiones](#7-conclusiones)
 8. [Bibliografía](#8-bibliografía)
+
+
+## 1. Introducción
+
+## 2. Objetivos
+
+## 3. Materiales y equipos
+
+## 4. Metodología
+
+### 4.1. Adquisicion y procesamiento de la señal
+
+### 4.2. Uso de funcion Taquigram
+
+
