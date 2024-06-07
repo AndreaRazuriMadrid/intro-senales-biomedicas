@@ -248,7 +248,7 @@ El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>5
 * SD1/SD2: 0.374
 * RMSSD: 0.0142 segundos
 
-Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. Los valores de SD1 y SD2 siguen mostrando una baja variabilidad, y el ratio SD1/SD2 (0.374) sugiere una dominancia simpática más pronunciada que en estado basal.
+Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. La disminución en SDNN durante el ejercicio refleja la respuesta normal del cuerpo al estrés físico, donde el ritmo cardíaco se vuelve más regular y controlado principalmente por el sistema nervioso simpático para satisfacer las demandas del ejercicio. Los valores de SD1 y SD2 siguen mostrando una baja variabilidad, y el ratio SD1/SD2 (0.374) sugiere una dominancia simpática más pronunciada que en estado basal.
 
 #### PNN20 y PNN50: 
 #### Estado Basal:
