@@ -112,7 +112,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 
 1. **HRV de ECG en Estado Basal**
 
-** RR Intervals and BPM **
+**RR Intervals and BPM**
 
 | Parameter  | Value                        |
 |------------|------------------------------|
@@ -125,9 +125,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | Minimum    | 75.93785960874565            |
 | Average    | 79.76188677534863            |
 
-2. **HRV de ECG en estado de Ejercicio**
-
-** Heart Rate Variability (HRV) **
+**Heart Rate Variability (HRV)**
 
 | Parameter  | Value                        |
 |------------|------------------------------|
@@ -146,7 +144,9 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | hf_band    | 0.00012                      |
 | **Total power** | 0.00012                 |
 
-** RR Intervals and BPM **
+
+2. **HRV de ECG en estado de Ejercicio**
+**RR Intervals and BPM**
 
 | Parameter  | Value                        |
 |------------|------------------------------|
@@ -159,7 +159,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | Minimum    | 97.71315356459242            |
 | Average    | 104.00249884226524           |
 
-** Heart Rate Variability (HRV) **
+**Heart Rate Variability (HRV)**
 
 | Parameter  | Value                        |
 |------------|------------------------------|
