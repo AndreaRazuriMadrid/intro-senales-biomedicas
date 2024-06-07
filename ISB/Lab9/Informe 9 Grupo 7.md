@@ -135,6 +135,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | SD1        | 0.015601945296498526         |
 | SD2        | 0.027948318247007147         |
 | SD1/SD2    | 0.5582427235373729           |
+| RMSSD      | 0.022399184236572067         |
 | NN20       | 3                            |
 | PNN20      | 42%                          |
 | NN50       | 0                            |
