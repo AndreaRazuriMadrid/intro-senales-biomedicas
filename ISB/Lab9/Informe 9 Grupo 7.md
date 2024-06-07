@@ -112,7 +112,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 
 1. **HRV de ECG en Estado Basal**
 
-# RR Intervals and BPM
+** RR Intervals and BPM **
 
 | Parameter  | Value                        |
 |------------|------------------------------|
@@ -125,7 +125,9 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | Minimum    | 75.93785960874565            |
 | Average    | 79.76188677534863            |
 
-# Heart Rate Variability (HRV)
+2. **HRV de ECG en estado de Ejercicio**
+
+** Heart Rate Variability (HRV) **
 
 | Parameter  | Value                        |
 |------------|------------------------------|
@@ -143,3 +145,36 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | lf_band    | 0.0                          |
 | hf_band    | 0.00012                      |
 | **Total power** | 0.00012                 |
+
+** RR Intervals and BPM **
+
+| Parameter  | Value                        |
+|------------|------------------------------|
+| **RR Intervals** |                          |
+| Maximum    | 0.614042202213211            |
+| Minimum    | 0.5470375970857102           |
+| Average    | 0.5769092153352837           |
+| **BPM**    |                              |
+| Maximum    | 109.6816751163799            |
+| Minimum    | 97.71315356459242            |
+| Average    | 104.00249884226524           |
+
+** Heart Rate Variability (HRV) **
+
+| Parameter  | Value                        |
+|------------|------------------------------|
+| SDNN       | 0.020198900674225577         |
+| SD1        | 0.009994951822617493         |
+| SD2        | 0.02675989751396698          |
+| SD1/SD2    | 0.3735048617955565           |
+| RMSSD      | 0.014173611019501443         |
+| NN20       | 4                            |
+| PNN20      | 18%                          |
+| NN50       | 0                            |
+| PNN50      | 0%                           |
+| **Power values** |                        |
+| ulf_band   | 0.0                          |
+| vlf_band   | 0.0                          |
+| lf_band    | 0.0                          |
+| hf_band    | 6e-05                        |
+| **Total power** | 6e-05                   |
