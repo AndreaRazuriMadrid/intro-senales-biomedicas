@@ -33,6 +33,10 @@
 
 ### 4.3 Extracción de características de HRV [4][5]
 
+## 5. Resultados
+
+
+
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
 
 #### Dominio de Tiempo
@@ -96,5 +100,9 @@ La selección de características de HRV para el análisis tiene una base sólid
 
 En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
+## 5. Resultados
 
-
+| Señales   | ECG Ejercicio | ECG Estado Basal | 
+|-----------------|------------|------------|------------|
+| Sin filtrar |  <img src="Resultados/1_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
+| Evolución de los picos detectados | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
