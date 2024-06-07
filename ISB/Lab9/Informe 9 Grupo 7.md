@@ -45,7 +45,7 @@ Para el estudio de las caracteristicas HRV de un ecg necesitamos ver el registro
 5. Visualizacion: permite poder ver la varaibilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalias.
 Para facilitar la complejidad del codigo se utilizara la libreria biosignalnotebooks que ya incluye funciones para simplificar la ubicacion de los picos R y utilizarlos para crear un tacograma del cual extraer los parametros HRV. 
    
-### 4.3 Extracción de características de HRV [4][5]
+### 4.3 Extracción de características de HRV [2][3]
 
 
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
@@ -224,3 +224,8 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 
 [1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
+[2] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
+
+[3] S. Ishaque, Naimul Mefraz Khan, and S. Krishnan, “Trends in Heart-Rate Variability Signal Analysis,” Frontiers in digital health, vol. 3, Feb. 2021, doi: https://doi.org/10.3389/fdgth.2021.639444.
+‌
+‌
