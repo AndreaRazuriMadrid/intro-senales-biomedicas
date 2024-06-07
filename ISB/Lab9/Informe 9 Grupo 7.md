@@ -109,7 +109,7 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 2. **ApEn (Entropía aproximada):**
    - Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
 
-En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
+Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
 
 ## 5. Resultados
