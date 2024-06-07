@@ -39,7 +39,8 @@ Para el estudio de las caracteristicas HRV de un ecg necesitamos ver el registro
 4. Analisis no linear: permiten el analisis no linear del ritmo cardiaco, incluye a los parametros:
    -Graficas Poincaré
    -Mediciones de entropia
-Para facilitar la complejidad del codigo se utilizara la libreria biosignalnotebooks que ya incluye funciones para simplificar la ubicacion de los picos R y utilizarlos para crear un tacograma del cual extraer los parametros HRV.
+5. Visualizacion: permite poder ver la varaibilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalias.
+Para facilitar la complejidad del codigo se utilizara la libreria biosignalnotebooks que ya incluye funciones para simplificar la ubicacion de los picos R y utilizarlos para crear un tacograma del cual extraer los parametros HRV. 
    
 ### 4.3 Extracción de características de HRV [4][5]
 
