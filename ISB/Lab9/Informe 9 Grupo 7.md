@@ -28,6 +28,9 @@
 ## 4. Metodología
 
 ### 4.1. Adquisicion y procesamiento de la señal
+En este estudio se utilizó una frecuencia de muestreo de 1000 Hz para la adquisición de las señales ECG. Se ha seguido la metodología descrita en el artículo "Application of Artificial Intelligence for ECG Classification" [1]. Esta metodología incluye la aplicación de un filtro pasabanda Butterworth de tercer orden (rango de frecuencias: 5 Hz a 150 Hz) para eliminar el ruido de alta frecuencia. Posteriormente, se aplicó una transformada wavelet discreta (DWT) utilizando el wavelet Daubechies 4 (Db4) con umbralización dura, además de un filtro notch a 60 Hz para suprimir la interferencia de la línea de alimentación.
+
+Sin embargo, en este trabajo no se aplicará el filtro pasabanda Butterworth debido a observaciones específicas en los datos analizados. Los otros dos métodos combinados, la DWT y el filtro notch, han demostrado ser suficientes para eliminar el ruido de alta frecuencia y la interferencia de la línea de alimentación sin alterar la morfología de la señal. Estos métodos son suficientes para el análisis de la variabilidad de la frecuencia cardíaca (HRV) ya que permiten limpiar la señal de ruido e interferencia sin comprometer la detección de los picos R. Esto asegura la preservación de la calidad de la señal y la precisión del análisis de HRV.
 
 ### 4.2. Uso de funcion Taquigram
 Para el estudio de las caracteristicas HRV de un ecg necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta util.  Est se debe a las siguientes razones.
@@ -215,4 +218,9 @@ Durante el ejercicio, los intervalos RR se acortan significativamente, con un pr
 La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del sistema cardiovascular. En estado basal, la frecuencia cardíaca promedio de 79.76 BPM está dentro del rango normal para un adulto en reposo (60-100 BPM). Esto sugiere que el sujeto tiene un ritmo cardíaco saludable cuando está en reposo.
 
 Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada al incremento en la demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo.
+
+
+## 7. Bibliografía
+
+[1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
