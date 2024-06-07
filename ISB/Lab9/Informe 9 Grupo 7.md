@@ -27,7 +27,6 @@
 
 ## 4. Metodología
 
-
 ### 4.1. Adquisicion y procesamiento de la señal
 
 ### 4.2. Uso de funcion Taquigram
@@ -73,7 +72,7 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
    - Significado: Representa la actividad del PNS, particularmente la respiración.
 
 4. **Ratio LF/HF:**
-   - Significado: Utilizado para evaluar el equilibrio simpático-vagal (SNS/PNS). Un aumento en el ratio LF/HF indica una mayor actividad simpática en relación con la parasimpática [1].
+   - Significado: Utilizado para evaluar el equilibrio simpático-vagal (SNS/PNS). Un aumento en el ratio LF/HF indica una mayor actividad simpática en relación con la parasimpática.
 
 #### Parámetros No Lineales
 
@@ -96,8 +95,8 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 
 La selección de características de HRV para el análisis tiene una base sólida en la fisiología del sistema nervioso autónomo. Cada parámetro proporciona información específica sobre diferentes aspectos del control autonómico del corazón:
 
-- **SDNN**: Proporciona una visión general de la variabilidad de la frecuencia cardíaca, esencial para evaluar la salud cardiovascular general y la respuesta del cuerpo al estrés [2].
-- **RMSSD y pNN50**: Son más sensibles a la actividad parasimpática, siendo útiles para estudiar condiciones que afectan el sistema nervioso parasimpático, como el estrés y la recuperación física [2].
+- **SDNN**: Proporciona una visión general de la variabilidad de la frecuencia cardíaca, esencial para evaluar la salud cardiovascular general y la respuesta del cuerpo al estrés.
+- **RMSSD y pNN50**: Son más sensibles a la actividad parasimpática, siendo útiles para estudiar condiciones que afectan el sistema nervioso parasimpático, como el estrés y la recuperación física.
 - **Parámetros de frecuencia (VLF, LF, HF)**: Permiten diferenciar entre las influencias simpáticas y parasimpáticas sobre el corazón, siendo críticos para entender el equilibrio autonómico y sus cambios en diferentes estados de salud y actividad.
 - **Parámetros no lineales (SD1, SD2, ApEn)**: Capturan la complejidad y la dinámica a corto y largo plazo de la frecuencia cardíaca, proporcionando una visión más completa y matizada del control autonómico.
 
