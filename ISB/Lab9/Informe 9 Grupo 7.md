@@ -32,7 +32,7 @@ En este estudio se utilizó una frecuencia de muestreo de 1000 Hz para la adquis
 
 Sin embargo, en este trabajo no se aplicará el filtro pasabanda Butterworth debido a observaciones específicas en los datos analizados. Los otros dos métodos combinados, la DWT y el filtro notch, han demostrado ser suficientes para eliminar el ruido de alta frecuencia y la interferencia de la línea de alimentación sin alterar la morfología de la señal. Estos métodos son suficientes para el análisis de la variabilidad de la frecuencia cardíaca (HRV) ya que permiten limpiar la señal de ruido e interferencia sin comprometer la detección de los picos R. Esto asegura la preservación de la calidad de la señal y la precisión del análisis de HRV.
 
-### 4.2. Uso de funcion Taquigram
+### 4.2. Uso de funcion Taquigram[2][3]
 Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta útil.  Est se debe a las siguientes razones.
 1. Alta precisión: Se tienen los tiempos exactos de cada latido.
    
@@ -45,7 +45,7 @@ Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro
 5. Visualización: Permite poder ver la variabilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalías.
 Para facilitar la complejidad del código, se utilizará la librería biosignalnotebooks que ya incluye funciones para simplificar la ubicación de los picos R y utilizarlos para crear un tacograma del cual extraeremos los parametros HRV. 
    
-### 4.3 Extracción de características de HRV [2][3]
+### 4.3 Extracción de características de HRV [3][4]
 
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
 
@@ -310,7 +310,9 @@ El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto pl
 
 [1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
-[2] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
+[2]M. Janssen, C. A. Swenne, J. de Bie, O. Rompelman, and J. V. van Bemmel, "Methods in heart rate variability analysis: which tachogram should we choose?," Computer Methods and Programs in Biomedicine, vol. 41, no. 1, pp. 1-8, 1993. doi: 10.1016/0169-2607(93)90061-O.
 
-[3] S. Ishaque, Naimul Mefraz Khan, and S. Krishnan, “Trends in Heart-Rate Variability Signal Analysis,” Frontiers in digital health, vol. 3, Feb. 2021, doi: https://doi.org/10.3389/fdgth.2021.639444.
+[3] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
+
+[4] S. Ishaque, Naimul Mefraz Khan, and S. Krishnan, “Trends in Heart-Rate Variability Signal Analysis,” Frontiers in digital health, vol. 3, Feb. 2021, doi: https://doi.org/10.3389/fdgth.2021.639444.
 ‌
