@@ -227,7 +227,7 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 * SD2: 0.0279 segundos
 * SD1/SD2: 0.558
   
-- El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 representativo de la actividad parasimpática y SD2 de la actividad simpática y parasimpática combinada. El ratio SD1/SD2 menor a 1 indica una predominancia del sistema simpático.
+El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 representativo de la actividad parasimpática y SD2 de la actividad simpática y parasimpática combinada. El ratio SD1/SD2 menor a 1 indica una predominancia del sistema simpático.
   
 #### Estado Ejercicio:
 
@@ -238,6 +238,22 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 * RMSSD: 0.0142 segundos
 
 Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. Los valores de SD1 y SD2 siguen mostrando una baja variabilidad, y el ratio SD1/SD2 (0.374) sugiere una dominancia simpática más pronunciada que en estado basal.
+
+#### PNN20 y PNN50: 
+#### Estado Basal:
+
+* PNN20: 42%
+* PNN50: 0%
+  
+Un PNN20 del 42% indica que el 42% de los intervalos RR difieren en más de 20 ms, lo cual es un buen indicador de variabilidad a corto plazo. Sin embargo, el PNN50 del 0% muestra que no hay intervalos con diferencias mayores a 50 ms, sugiriendo una menor actividad parasimpática.
+  
+#### Estado Ejercicio:
+
+* PNN20: 18%
+* PNN50: 0%
+
+El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto plazo durante el ejercicio. El PNN50 sigue siendo 0%, lo cual es consistente con la baja variabilidad observada durante el ejercicio.
+
 
 ## 7. Bibliografía
 
