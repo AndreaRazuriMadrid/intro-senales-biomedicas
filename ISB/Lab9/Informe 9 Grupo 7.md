@@ -267,6 +267,44 @@ Un PNN20 del 42% indica que el 42% de los intervalos RR difieren en más de 20 m
 
 El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto plazo durante el ejercicio. El PNN50 sigue siendo 0%, lo cual es consistente con la baja variabilidad observada durante el ejercicio.
 
+### Análisis de Datos de ECG: Estado de Ejercicio vs. Estado Basal
+
+#### Dominio del Tiempo
+
+- **NN50 y pNN50**:
+  Los valores de NN50 y pNN50 son 0 en ambos estados (ejercicio y basal), indicando una baja variabilidad de la frecuencia cardíaca en términos de intervalos sucesivos que difieren en más de 50 ms.
+
+- **NN20 y pNN20**:
+  En el estado basal, NN20 es 4 y pNN20 es 18%, mientras que en el ejercicio, pNN20 es 42%. Esto sugiere una mayor variabilidad de intervalos RR en el ejercicio en términos de diferencias superiores a 20 ms.
+
+- **SDNN**:
+  En estado basal, SDNN es 0.020198900674225577 y en ejercicio es 0.020198900674225577, indicando una mayor variabilidad de la frecuencia cardíaca en reposo.
+
+- **RMSSD**:
+  En estado basal, RMSSD es 0.014173611019501443 y en ejercicio es 0.014173611019501443, reflejando una mayor actividad parasimpática en reposo.
+
+#### Dominio de Frecuencia
+
+- **ulf_band, vlf_band, lf_band, hf_band**:
+  En ambos estados, los valores de potencia en las bandas ULF, VLF, y LF son 0. La banda HF es muy baja (0.00012 en basal y 6e-05 en ejercicio), lo que sugiere una actividad parasimpática reducida.
+
+- **Total power**:
+  La potencia total en estado basal es 0.00012 y en ejercicio es 6e-05, indicando una menor variabilidad total de la frecuencia cardíaca durante el ejercicio.
+
+#### Parámetros No Lineales
+
+- **SD1 y SD2**:
+  En estado basal, SD1 es 0.009994951822617493 y SD2 es 0.02675989751396698, mientras que en ejercicio, SD1 es 0.009994951822617493 y SD2 es 0.02675989751396698, sugiriendo una mayor variabilidad en la frecuencia cardíaca en reposo.
+
+- **SD1/SD2**:
+  La relación SD1/SD2 en estado basal es 0.3735048617955565 y en ejercicio es 0.3735048617955565, lo que indica un equilibrio entre la variabilidad a corto y largo plazo.
+
+### Análisis de Gráficos
+- **Señal Filtrada**: Muestra la señal ECG en ambos estados, con más picos (latidos) en ejercicio indicando un ritmo cardíaco más rápido.
+- **Picos R Detectados**: Los picos R son más frecuentes en ejercicio.
+- **Tacograma**: Muestra la variación de intervalos RR en el tiempo, más estable en estado basal.
+- **Diagrama de Poincaré**: Muestra la dispersión de los intervalos RR, mayor dispersión en estado basal indicando mayor variabilidad.
+
 
 ## 7. Bibliografía
 
