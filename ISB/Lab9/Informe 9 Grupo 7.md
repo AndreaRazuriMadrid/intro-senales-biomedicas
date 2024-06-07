@@ -104,7 +104,7 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 
 | Señales              | ECG Ejercicio | ECG Estado Basal | 
 |----------------------|---------------|------------------|
-| Sin filtrar          |  <img src="Resultados/1_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
+| Señal Filtrada       |  <img src="Resultados/1_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
 | Picos R detectados   | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 | Picos definitivos    | <img src="Resultados/3_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/3_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 | Tacograma            | <img src="Resultados/4_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/4_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
