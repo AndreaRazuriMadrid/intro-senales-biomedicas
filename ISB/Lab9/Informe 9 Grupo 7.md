@@ -185,3 +185,42 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | lf_band    | 0.0                          |
 | hf_band    | 6e-05                        |
 | **Total power** | 6e-05                   |
+
+## 6. Discusión
+
+#### RR Intervals: 
+#### Estado Basal:
+
+* Máximo: 0.790 s
+* Mínimo: 0.716 s
+* Promedio: 0.752 s
+
+#### Estado Ejercicio:
+
+* Máximo: 0.614 s
+* Mínimo: 0.547 s
+* Promedio: 0.577 s
+
+Los intervalos RR son el tiempo entre dos picos consecutivos de las ondas R en un ECG, que representan un ciclo completo de latido cardíaco. En estado basal, los valores proemdio de los intervalos RR son más altos, lo que indica una frecuencia cardíaca más baja. Durante el ejercicio, los intervalos RR disminuyen, lo que corresponde a un aumento en la frecuencia cardíaca debido a la mayor demanda de oxígeno y nutrientes por los músculos. 
+
+Los valores de los intervalos RR en estado basal son típicos para una persona en reposo. Un intervalo RR promedio de 0.752 segundos equivale aproximadamente a una frecuencia cardíaca de 80 BPM, que está dentro del rango normal de 60-100 BPM en reposo para adultos.
+
+Durante el ejercicio, los intervalos RR se acortan significativamente, con un promedio de 0.577 segundos, lo que corresponde a una frecuencia cardíaca de aproximadamente 104 BPM. Este valor es adecuado y esperado durante la actividad física, ya que el corazón debe bombear más rápido para satisfacer las necesidades metabólicas aumentadas.
+
+#### BPM: 
+#### Estado Basal:
+
+* Máximo: 83.79 BPM
+* Mínimo: 75.94 BPM
+* Promedio: 79.76 BPM
+
+#### Estado Ejercicio:
+
+* Máximo: 109.68 BPM
+* Mínimo: 97.71 BPM
+* Promedio: 104.00 BPM
+
+La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del sistema cardiovascular. En estado basal, la frecuencia cardíaca promedio de 79.76 BPM está dentro del rango normal para un adulto en reposo (60-100 BPM). Esto sugiere que el sujeto tiene un ritmo cardíaco saludable cuando está en reposo.
+
+Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada al incremento en la demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo.
+
