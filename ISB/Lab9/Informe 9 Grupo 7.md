@@ -47,28 +47,38 @@ Para facilitar la complejidad del codigo se utilizara la libreria biosignalnoteb
    
 ### 4.3 Extracción de características de HRV [2][3]
 
-
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
 
 #### Dominio de Tiempo
 
 1. **SDNN (Desviación estándar de los intervalos NN):**
-   - Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado
+   - Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado.
 
      $$\text{SDNN} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_j - \overline{RR})^2}$$
+     
+   - Valores normales de SDNN son típicamente mayores a 50 ms.
 
 2. **RMSSD (Raíz cuadrada de la media de las diferencias al cuadrado entre intervalos NN sucesivos):**
    - Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca.
      
      $$\text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_{j+1} - RR_j)^2}$$
      
+   - Valores normales de RMSSD son típicamente mayores a 20 ms.
 
 3. **pNN50 (Porcentaje de intervalos NN con diferencias superiores a 50 ms):**
    - Indica la variabilidad de la frecuencia cardíaca en respuesta a la actividad del PNS.
    
      $$\text{pNN50} = \frac{\text{Número de intervalos NN > 50 ms}}{\text{Número total de intervalos NN}}$$
      
+   - Valores normales de pNN50 son típicamente mayores a 3%.
 
+4. **NN50 (Número de intervalos NN con diferencias superiores a 50 ms):**
+   - Indica la cantidad absoluta de intervalos NN con diferencias mayores a 50 ms.
+   
+     $$\text{NN50} = \sum_{i=1}^{N-1} \Theta(|RR_{i+1} - RR_i| - 50 \text{ ms})$$
+     
+   - Donde $\(\Theta(x)\)$ es la función escalón de Heaviside, que vale 1 si \(x \geq 0\) y 0 en caso contrario.
+   - Valores normales de NN50 varían dependiendo de la población y las condiciones del estudio, pero suelen estar en el rango de varios cientos en registros de 24 horas.
 
 #### Dominio de Frecuencia
 
@@ -90,17 +100,17 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
    - **SD1**: Correlacionado con la variabilidad a corto plazo (actividad parasimpática).
    - **SD2**: Correlacionado con la variabilidad a largo plazo (actividad simpática y parasimpática combinada).
   
-     
      $$\text{SD1} = \sqrt{\frac{1}{2} \text{RMSSD}^2}$$
   
-     
      $$\text{SD2} = \sqrt{2 \cdot \text{SDNN}^2 - \frac{1}{2} \text{RMSSD}^2}$$
      
+   - Valores normales de SD1/SD2 son típicamente entre 0.5 y 1.5.
 
 2. **ApEn (Entropía aproximada):**
    - Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
 
 En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
+
 
 ## 5. Resultados
 
