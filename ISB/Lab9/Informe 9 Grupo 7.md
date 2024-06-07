@@ -27,7 +27,12 @@
 
 ## 4. Metodología
 
-### Extracción de características de HRV [4][5]
+
+### 4.1. Adquisicion y procesamiento de la señal
+
+### 4.2. Uso de funcion Taquigram
+
+### 4.3 Extracción de características de HRV [4][5]
 
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
 
@@ -36,28 +41,22 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 1. **SDNN (Desviación estándar de los intervalos NN):**
    - Fórmula:
 
-     $$
-     \text{SDNN} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_j - \overline{RR})^2}
-     $$
+     $$\text{SDNN} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_j - \overline{RR})^2}$$
    
    - Significado: Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado [1].
 
 2. **RMSSD (Raíz cuadrada de la media de las diferencias al cuadrado entre intervalos NN sucesivos):**
    - Fórmula:
      
-     $$
-     \text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_{j+1} - RR_j)^2}
-     $$
+     $$\text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_{j+1} - RR_j)^2}$$
      
-   - Significado: Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca [1].
+   - Significado: Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca.
 
 3. **pNN50 (Porcentaje de intervalos NN con diferencias superiores a 50 ms):**
    - Fórmula:
 
    
-     $$
-     \text{pNN50} = \frac{\text{Número de intervalos NN > 50 ms}}{\text{Número total de intervalos NN}}
-     $$
+     $$\text{pNN50} = \frac{\text{Número de intervalos NN > 50 ms}}{\text{Número total de intervalos NN}}$$
      
      
    - Significado: Indica la variabilidad de la frecuencia cardíaca en respuesta a la actividad del PNS.
@@ -84,14 +83,10 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
    - Fórmulas:
   
      
-     $$
-     \text{SD1} = \sqrt{\frac{1}{2} \text{RMSSD}^2}
-     $$
+     $$\text{SD1} = \sqrt{\frac{1}{2} \text{RMSSD}^2}$$
   
      
-     $$
-     \text{SD2} = \sqrt{2 \cdot \text{SDNN}^2 - \frac{1}{2} \text{RMSSD}^2}
-     $$
+     $$\text{SD2} = \sqrt{2 \cdot \text{SDNN}^2 - \frac{1}{2} \text{RMSSD}^2}$$
      
 
 2. **ApEn (Entropía aproximada):**
@@ -108,9 +103,5 @@ La selección de características de HRV para el análisis tiene una base sólid
 
 En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
-
-### 4.1. Adquisicion y procesamiento de la señal
-
-### 4.2. Uso de funcion Taquigram
 
 
