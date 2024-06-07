@@ -77,7 +77,7 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
    
      $$\text{NN50} = \sum_{i=1}^{N-1} \Theta(|RR_{i+1} - RR_i| - 50 \text{ ms})$$
      
-   - Donde $\(\Theta(x)\)$ es la función escalón de Heaviside, que vale 1 si \(x \geq 0\) y 0 en caso contrario.
+   - Donde $\(\Theta(x)\)$ es la función escalón de Heaviside, que vale 1 si $\(x \geq 0\)$ y 0 en caso contrario.
    - Valores normales de NN50 varían dependiendo de la población y las condiciones del estudio, pero suelen estar en el rango de varios cientos en registros de 24 horas.
 
 #### Dominio de Frecuencia
