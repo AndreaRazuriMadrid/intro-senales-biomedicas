@@ -30,11 +30,18 @@
 ### 4.1. Adquisicion y procesamiento de la señal
 
 ### 4.2. Uso de funcion Taquigram
-
+Para el estudio de las caracteristicas HRV de un ecg necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta util.  Est se debe a las siguientes razones.
+1. alta precision: se tienen los tiempos exactos de cada latido.
+   
+2. Permite extraer directamente las caracteristicas del dominio de tiempo
+   
+3. Usando metodos como FFT se pueden extraer las caracteristicas del dominio de la frecuencia
+4. Analisis no linear: permiten el analisis no linear del ritmo cardiaco, incluye a los parametros:
+   -Graficas Poincaré
+   -Mediciones de entropia
+Para facilitar la complejidad del codigo se utilizara la libreria biosignalnotebooks que ya incluye funciones para simplificar la ubicacion de los picos R y utilizarlos para crear un tacograma del cual extraer los parametros HRV.
+   
 ### 4.3 Extracción de características de HRV [4][5]
-
-## 5. Resultados
-
 
 
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
