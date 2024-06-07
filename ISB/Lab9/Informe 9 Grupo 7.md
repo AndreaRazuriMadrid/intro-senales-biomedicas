@@ -38,48 +38,42 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 #### Dominio de Tiempo
 
 1. **SDNN (Desviación estándar de los intervalos NN):**
-   - Fórmula:
+   - Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado
 
      $$\text{SDNN} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_j - \overline{RR})^2}$$
-   
-   - Significado: Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado [1].
 
 2. **RMSSD (Raíz cuadrada de la media de las diferencias al cuadrado entre intervalos NN sucesivos):**
-   - Fórmula:
+   - Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca.
      
      $$\text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_{j+1} - RR_j)^2}$$
      
-   - Significado: Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca.
 
 3. **pNN50 (Porcentaje de intervalos NN con diferencias superiores a 50 ms):**
-   - Fórmula:
-
+   - Indica la variabilidad de la frecuencia cardíaca en respuesta a la actividad del PNS.
    
      $$\text{pNN50} = \frac{\text{Número de intervalos NN > 50 ms}}{\text{Número total de intervalos NN}}$$
      
-     
-   - Significado: Indica la variabilidad de la frecuencia cardíaca en respuesta a la actividad del PNS.
+
 
 #### Dominio de Frecuencia
 
 1. **VLF (Very Low Frequency, 0.0033-0.04 Hz):**
-   - Significado: Asociada con la actividad del sistema nervioso simpático (SNS) y procesos de regulación a largo plazo.
+   - Asociada con la actividad del sistema nervioso simpático (SNS) y procesos de regulación a largo plazo.
 
 2. **LF (Low Frequency, 0.04-0.15 Hz):**
-   - Significado: Refleja tanto la actividad del SNS como del PNS. Es una medida de la actividad simpática y parasimpática combinada.
+   - Refleja tanto la actividad del SNS como del PNS. Es una medida de la actividad simpática y parasimpática combinada.
 
 3. **HF (High Frequency, 0.15-0.4 Hz):**
-   - Significado: Representa la actividad del PNS, particularmente la respiración.
+   - Representa la actividad del PNS, particularmente la respiración.
 
 4. **Ratio LF/HF:**
-   - Significado: Utilizado para evaluar el equilibrio simpático-vagal (SNS/PNS). Un aumento en el ratio LF/HF indica una mayor actividad simpática en relación con la parasimpática.
+   - Utilizado para evaluar el equilibrio simpático-vagal (SNS/PNS). Un aumento en el ratio LF/HF indica una mayor actividad simpática en relación con la parasimpática.
 
 #### Parámetros No Lineales
 
 1. **SD1 y SD2 (Parámetros de la trama de Poincaré):**
    - **SD1**: Correlacionado con la variabilidad a corto plazo (actividad parasimpática).
    - **SD2**: Correlacionado con la variabilidad a largo plazo (actividad simpática y parasimpática combinada).
-   - Fórmulas:
   
      
      $$\text{SD1} = \sqrt{\frac{1}{2} \text{RMSSD}^2}$$
@@ -89,7 +83,7 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
      
 
 2. **ApEn (Entropía aproximada):**
-   - Significado: Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
+   - Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
 
 ### Justificación de las Características del HRV
 
