@@ -33,17 +33,17 @@ En este estudio se utilizó una frecuencia de muestreo de 1000 Hz para la adquis
 Sin embargo, en este trabajo no se aplicará el filtro pasabanda Butterworth debido a observaciones específicas en los datos analizados. Los otros dos métodos combinados, la DWT y el filtro notch, han demostrado ser suficientes para eliminar el ruido de alta frecuencia y la interferencia de la línea de alimentación sin alterar la morfología de la señal. Estos métodos son suficientes para el análisis de la variabilidad de la frecuencia cardíaca (HRV) ya que permiten limpiar la señal de ruido e interferencia sin comprometer la detección de los picos R. Esto asegura la preservación de la calidad de la señal y la precisión del análisis de HRV.
 
 ### 4.2. Uso de funcion Taquigram
-Para el estudio de las caracteristicas HRV de un ecg necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta util.  Est se debe a las siguientes razones.
-1. alta precision: se tienen los tiempos exactos de cada latido.
+Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta útil.  Est se debe a las siguientes razones.
+1. Alta precisión: Se tienen los tiempos exactos de cada latido.
    
-2. Permite extraer directamente las caracteristicas del dominio de tiempo
+2. Permite extraer directamente las caracteristicas del dominio de tiempo.
    
-3. Usando metodos como FFT se pueden extraer las caracteristicas del dominio de la frecuencia
-4. Analisis no linear: permiten el analisis no linear del ritmo cardiaco, incluye a los parametros:
-   -Graficas Poincaré
-   -Mediciones de entropia
-5. Visualizacion: permite poder ver la varaibilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalias.
-Para facilitar la complejidad del codigo se utilizara la libreria biosignalnotebooks que ya incluye funciones para simplificar la ubicacion de los picos R y utilizarlos para crear un tacograma del cual extraer los parametros HRV. 
+3. Usando métodos como FFT se pueden extraer las características del dominio de la frecuencia.
+4. Análisis no linear: Permiten el analisis no linear del ritmo cardiaco, incluye a los parámetros:
+   -Gráficas Poincaré
+   -Mediciones de entropía
+5. Visualización: Permite poder ver la variabilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalías.
+Para facilitar la complejidad del código, se utilizará la librería biosignalnotebooks que ya incluye funciones para simplificar la ubicación de los picos R y utilizarlos para crear un tacograma del cual extraeremos los parametros HRV. 
    
 ### 4.3 Extracción de características de HRV [2][3]
 
