@@ -105,7 +105,41 @@ En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluaci
 | Señales              | ECG Ejercicio | ECG Estado Basal | 
 |----------------------|---------------|------------------|
 | Sin filtrar          |  <img src="Resultados/1_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
-| Picos detectados     | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Picos R detectados   | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 | Picos definitivos    | <img src="Resultados/3_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/3_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 | Tacograma            | <img src="Resultados/4_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/4_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 | Diagrama de Poincaré |<img src="Resultados/7_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/7_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+
+1. **HRV de ECG en Estado Basal**
+
+# RR Intervals and BPM
+
+| Parameter  | Value                        |
+|------------|------------------------------|
+| **RR Intervals** |                          |
+| Maximum    | 0.7901197151083501           |
+| Minimum    | 0.7161085012880739           |
+| Average    | 0.752238975602364            |
+| **BPM**    |                              |
+| Maximum    | 83.78618588115795            |
+| Minimum    | 75.93785960874565            |
+| Average    | 79.76188677534863            |
+
+# Heart Rate Variability (HRV)
+
+| Parameter  | Value                        |
+|------------|------------------------------|
+| SDNN       | 0.022633263020065457         |
+| SD1        | 0.015601945296498526         |
+| SD2        | 0.027948318247007147         |
+| SD1/SD2    | 0.5582427235373729           |
+| NN20       | 3                            |
+| PNN20      | 42%                          |
+| NN50       | 0                            |
+| PNN50      | 0%                           |
+| **Power values** |                        |
+| ulf_band   | 0.0                          |
+| vlf_band   | 0.0                          |
+| lf_band    | 0.0                          |
+| hf_band    | 0.00012                      |
+| **Total power** | 0.00012                 |
