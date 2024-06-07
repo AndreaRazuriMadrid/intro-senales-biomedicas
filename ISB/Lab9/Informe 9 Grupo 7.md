@@ -97,15 +97,6 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 2. **ApEn (Entropía aproximada):**
    - Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
 
-### Justificación de las Características del HRV
-
-La selección de características de HRV para el análisis tiene una base sólida en la fisiología del sistema nervioso autónomo. Cada parámetro proporciona información específica sobre diferentes aspectos del control autonómico del corazón:
-
-- **SDNN**: Proporciona una visión general de la variabilidad de la frecuencia cardíaca, esencial para evaluar la salud cardiovascular general y la respuesta del cuerpo al estrés.
-- **RMSSD y pNN50**: Son más sensibles a la actividad parasimpática, siendo útiles para estudiar condiciones que afectan el sistema nervioso parasimpático, como el estrés y la recuperación física.
-- **Parámetros de frecuencia (VLF, LF, HF)**: Permiten diferenciar entre las influencias simpáticas y parasimpáticas sobre el corazón, siendo críticos para entender el equilibrio autonómico y sus cambios en diferentes estados de salud y actividad.
-- **Parámetros no lineales (SD1, SD2, ApEn)**: Capturan la complejidad y la dinámica a corto y largo plazo de la frecuencia cardíaca, proporcionando una visión más completa y matizada del control autonómico.
-
 En conjunto, estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
 ## 5. Resultados
