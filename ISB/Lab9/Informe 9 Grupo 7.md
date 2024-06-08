@@ -13,8 +13,7 @@
 2. [Metodología](#4-metodología)
 3. [Resultados](#5-resultados)
 4. [Discusión](#6-discusión)
-5. [Conclusiones](#7-conclusiones)
-6. [Bibliografía](#8-bibliografía)
+5. [Bibliografía](#8-bibliografía)
 
 
 ## 1. Introducción
