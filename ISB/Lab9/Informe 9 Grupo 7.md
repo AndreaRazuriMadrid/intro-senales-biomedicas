@@ -260,16 +260,16 @@ El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto pl
 
 - **Potencia en ULF, VLF y LF:**
 
-Las bandas ULF y VLF capturan variaciones de la frecuencia cardíaca que ocurren a lo largo de periodos más largos. La banda ULF (0.0 - 0.003 Hz) requiere señales de varias horas para ser adecuadamente evaluada, mientras que la banda VLF (0.003 - 0.04 Hz) requiere señales de al menos 5 minutos para capturar las variaciones correspondientes [3].
+Las bandas ULF y VLF capturan variaciones de la frecuencia cardíaca que ocurren a lo largo de periodos más largos. La banda ULF (0.0 - 0.003 Hz) requiere señales de varias horas para ser adecuadamente evaluada, mientras que la banda VLF (0.003 - 0.04 Hz) requiere señales de al menos 5 minutos para capturar las variaciones correspondientes [4].
 Dado que nuestras señales tienen una duración máxima de 1 minuto, es comprensible que no se observe potencia en estas bandas en ninguna de las 2 pruebas, ya sea en reposo o en ejercicio. En el caso de la banda LF (0.04 - 0.15Hz) también captura variaciones que ocurren en un rango de tiempo mayor al que se trabajó en este estudio. Necesitaríamos mayor resolución temporal y señales de mayor duración.
 
 - **Potencia en banda HF:**
 
 Esta banda está relacionada con la actividad parasimpática (vagal) y la respiración. En estado basal, la potencia en la banda HF fue de 0.00012, mientras que durante el ejercicio disminuyó a 6e-05.
 
-  - En estado basal, una mayor potencia en la banda HF indica una mayor actividad del nervio vago, que es responsable de la regulación del sistema nervioso parasimpático. La reducción observada durante el ejercicio es consistente con la respuesta fisiológica esperada, donde la actividad simpática aumenta y la parasimpática disminuye para acomodar la demanda física del ejercicio​​[2][3].
+  - En estado basal, una mayor potencia en la banda HF indica una mayor actividad del nervio vago, que es responsable de la regulación del sistema nervioso parasimpático. La reducción observada durante el ejercicio es consistente con la respuesta fisiológica esperada, donde la actividad simpática aumenta y la parasimpática disminuye para acomodar la demanda física del ejercicio​​[3][4].
 
-  - La literatura indica que la banda HF está directamente modulada por la respiración. Durante el ejercicio, la frecuencia y el patrón respiratorio cambian, lo que también puede contribuir a la reducción de la potencia en la banda HF​​ [2].
+  - La literatura indica que la banda HF está directamente modulada por la respiración. Durante el ejercicio, la frecuencia y el patrón respiratorio cambian, lo que también puede contribuir a la reducción de la potencia en la banda HF​​ [3].
 
 #### Parámetros No Lineales
 
