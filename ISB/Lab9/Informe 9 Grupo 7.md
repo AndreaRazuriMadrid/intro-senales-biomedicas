@@ -195,14 +195,14 @@ Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y m
 
 ## 4. Discusión
 
-#### RR Intervals: 
-#### Estado Basal:
+#### 4.1. RR Intervals: 
+##### Estado Basal:
 
 * Máximo: 0.790 s
 * Mínimo: 0.716 s
 * Promedio: 0.752 s
 
-#### Estado Ejercicio:
+##### Estado Ejercicio:
 
 * Máximo: 0.614 s
 * Mínimo: 0.547 s
@@ -214,14 +214,14 @@ Los valores de los intervalos RR en estado basal son típicos para una persona e
 
 Durante el ejercicio, los intervalos RR se acortan significativamente, con un promedio de 0.577 segundos, lo que corresponde a una frecuencia cardíaca de aproximadamente 104 BPM. Este valor es adecuado y esperado durante la actividad física, ya que el corazón debe bombear más rápido para satisfacer las necesidades metabólicas aumentadas.
 
-#### BPM: 
-#### Estado Basal:
+#### 4.2 BPM: 
+##### Estado Basal:
 
 * Máximo: 83.79 BPM
 * Mínimo: 75.94 BPM
 * Promedio: 79.76 BPM
 
-#### Estado Ejercicio:
+##### Estado Ejercicio:
 
 * Máximo: 109.68 BPM
 * Mínimo: 97.71 BPM
@@ -231,7 +231,7 @@ La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del siste
 
 Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada al incremento en la demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo.
 
-#### Parámetros de HRV: 
+#### 4.3 Parámetros de HRV: 
 #### Estado Basal:
 
 * SDNN: 0.0226 segundos
