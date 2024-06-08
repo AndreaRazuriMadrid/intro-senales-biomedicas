@@ -13,7 +13,8 @@
 2. [Metodología](#4-metodología)
 3. [Resultados](#5-resultados)
 4. [Discusión](#6-discusión)
-5. [Bibliografía](#8-bibliografía)
+5. [Conclusión] (#7-conclusion)
+6. [Bibliografía](#8-bibliografía)
 
 
 ## 1. Introducción
@@ -294,8 +295,11 @@ Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 repr
 - **Tacograma**: Muestra la variación de intervalos RR en el tiempo, más estable en estado basal.
 - **Diagrama de Poincaré**: Muestra la dispersión de los intervalos RR, mayor dispersión en estado basal indicando mayor variabilidad.
 
+## 5. Conclusión
 
-## 5. Bibliografía
+El análisis de la variabilidad de la frecuencia cardíaca (HRV) a partir de una señal ECG ofrece información sobre el funcionamiento del sistema nervioso autónomo. En estado basal, la HRV muestra mayor variabilidad, reflejando un tono autónomo equilibrado con predominio parasimpático. Durante el ejercicio, la HRV disminuye debido al aumento de la actividad del sistema nervioso simpático para satisfacer las demandas del cuerpo. Esta reducción en la HRV indica un cambio hacia el predominio simpático, proporcionando información valiosa sobre la salud cardiovascular y las respuestas al estrés.
+
+## 6. Bibliografía
 
 [1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
