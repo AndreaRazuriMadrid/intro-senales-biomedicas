@@ -10,29 +10,24 @@
 ## Tabla de Contenidos
 
 1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
-3. [Materiales y equipos](#3-materiales-y-equipos)
-4. [Metodología](#4-metodología)
-5. [Resultados](#5-resultados)
-6. [Discusión](#6-discusión)
-7. [Conclusiones](#7-conclusiones)
-8. [Bibliografía](#8-bibliografía)
+2. [Metodología](#4-metodología)
+3. [Resultados](#5-resultados)
+4. [Discusión](#6-discusión)
+5. [Conclusiones](#7-conclusiones)
+6. [Bibliografía](#8-bibliografía)
 
 
 ## 1. Introducción
 
-## 2. Objetivos
 
-## 3. Materiales y equipos
+## 2. Metodología
 
-## 4. Metodología
-
-### 4.1. Adquisicion y procesamiento de la señal
+### 2.1. Adquisicion y procesamiento de la señal
 En este estudio se utilizó una frecuencia de muestreo de 1000 Hz para la adquisición de las señales ECG. Se ha seguido la metodología descrita en el artículo "Application of Artificial Intelligence for ECG Classification" [1]. Esta metodología incluye la aplicación de un filtro pasabanda Butterworth de tercer orden (rango de frecuencias: 5 Hz a 150 Hz) para eliminar el ruido de alta frecuencia. Posteriormente, se aplicó una transformada wavelet discreta (DWT) utilizando el wavelet Daubechies 4 (Db4) con umbralización dura, además de un filtro notch a 60 Hz para suprimir la interferencia de la línea de alimentación.
 
 Sin embargo, en este trabajo no se aplicará el filtro pasabanda Butterworth debido a observaciones específicas en los datos analizados. Los otros dos métodos combinados, la DWT y el filtro notch, han demostrado ser suficientes para eliminar el ruido de alta frecuencia y la interferencia de la línea de alimentación sin alterar la morfología de la señal. Estos métodos son suficientes para el análisis de la variabilidad de la frecuencia cardíaca (HRV) ya que permiten limpiar la señal de ruido e interferencia sin comprometer la detección de los picos R. Esto asegura la preservación de la calidad de la señal y la precisión del análisis de HRV.
 
-### 4.2. Uso de funcion Taquigram[2][3]
+### 2.2. Uso de funcion Taquigram[2][3]
 Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta útil.  Est se debe a las siguientes razones.
 1. Alta precisión: Se tienen los tiempos exactos de cada latido.
    
@@ -45,7 +40,7 @@ Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro
 5. Visualización: Permite poder ver la variabilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalías.
 Para facilitar la complejidad del código, se utilizará la librería biosignalnotebooks que ya incluye funciones para simplificar la ubicación de los picos R y utilizarlos para crear un tacograma del cual extraeremos los parametros HRV. 
    
-### 4.3 Extracción de características de HRV [3][4]
+### 2.3 Extracción de características de HRV [3][4]
 
 Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
 
@@ -112,7 +107,7 @@ Existen diferentes características de HRV que se pueden extraer y analizar para
 Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
 
-## 5. Resultados
+## 3. Resultados
 
 | Señales              | ECG Ejercicio | ECG Estado Basal | 
 |----------------------|---------------|------------------|
@@ -192,7 +187,7 @@ Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y m
 | hf_band    | 6e-05                        |
 | **Total power** | 6e-05                   |
 
-## 6. Discusión
+## 4. Discusión
 
 #### RR Intervals: 
 #### Estado Basal:
@@ -312,7 +307,7 @@ Esta banda está relacionada con la actividad parasimpática (vagal) y la respir
 - **Diagrama de Poincaré**: Muestra la dispersión de los intervalos RR, mayor dispersión en estado basal indicando mayor variabilidad.
 
 
-## 7. Bibliografía
+## 5. Bibliografía
 
 [1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
