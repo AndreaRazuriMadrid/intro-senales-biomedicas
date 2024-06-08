@@ -234,20 +234,6 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 #### 4.3 Parámetros de HRV: 
 
 
-#### PNN20 y PNN50: 
-#### Estado Basal:
-
-* PNN20: 42%
-* PNN50: 0%
-  
-Un PNN20 del 42% indica que el 42% de los intervalos RR difieren en más de 20 ms, lo cual es un buen indicador de variabilidad a corto plazo. Sin embargo, el PNN50 del 0% muestra que no hay intervalos con diferencias mayores a 50 ms, sugiriendo una menor actividad parasimpática.
-  
-#### Estado Ejercicio:
-
-* PNN20: 18%
-* PNN50: 0%
-
-El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto plazo durante el ejercicio. El PNN50 sigue siendo 0%, lo cual es consistente con la baja variabilidad observada durante el ejercicio.
 
 ### Análisis de Datos de ECG: Estado de Ejercicio vs. Estado Basal
 
@@ -257,16 +243,22 @@ El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto pl
 
 * SDNN: 0.0226 segundos
 * RMSS: 0.0224 segundos
+* PNN20: 42%
+* PNN50: 0%
   
 El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Se puede considerar que en el estado de reposo, el cuerpo no está sometido a estrés físico, por lo que la variabilidad de los intervalos RR tiende a ser mayor. 
 Por otro lado, el valor del RMSS sugiere una buena variabilidad de la frecuencia cardíaca, lo cual es típico en un individuo en reposo, ya que, la influencia del sistema nervioso parasimpático es mayor, lo que resulta en una mayor variabilidad de los intervalos RR [3].
+Un PNN20 del 42% indica que el 42% de los intervalos RR difieren en más de 20 ms, lo cual es un buen indicador de variabilidad a corto plazo. Sin embargo, el PNN50 del 0% muestra que no hay intervalos con diferencias mayores a 50 ms, sugiriendo una menor actividad parasimpática.
   
 ##### Estado Ejercicio:
 
 * SDNN: 0.0202 segundos
 * RMSSD: 0.0142 segundos
+* PNN20: 18%
+* PNN50: 0%
 
 Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. La disminución en SDNN durante el ejercicio refleja la respuesta normal del cuerpo al estrés físico, donde el ritmo cardíaco se vuelve más regular y controlado principalmente por el sistema nervioso simpático para satisfacer las demandas del ejercicio. De acuerdo al valor del RMSS podemos ver que su disminución durante el ejercicio indica una menor influencia del sistema nervioso parasimpático y una mayor regularidad en los intervalos RR [3].
+El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto plazo durante el ejercicio. El PNN50 sigue siendo 0%, lo cual es consistente con la baja variabilidad observada durante el ejercicio.
 
 #### Dominio de Frecuencia
 
