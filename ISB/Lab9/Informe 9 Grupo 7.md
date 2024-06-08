@@ -24,7 +24,7 @@ El electrocardiograma (ECG) y los parámetros de variabilidad de la frecuencia c
 
 La combinación del ECG y la HRV proporciona una visión comprensiva de la salud cardiovascular, útil en la detección temprana de enfermedades, monitorización de pacientes y evaluación de intervenciones terapéuticas. El preprocesamiento de la señal es crucial para eliminar el ruido y las interferencias, mejorando así la precisión de los análisis. Esto incluye técnicas como el filtrado de alta y baja frecuencia, la eliminación de artefactos y la normalización de la señal.[1]
 
-Los avances tecnológicos, como los dispositivos portátiles y los algoritmos de inteligencia artificial, están mejorando la precisión y aplicabilidad de estas herramientas, revolucionando su uso en la práctica clínica y la investigación biomédica. En este informe, se explorarán los métodos para medir y analizar el ECG y la HRV, el preprocesamiento de la señal y su importancia y aplicaciones actuales.[2]
+Los avances tecnológicos, como los dispositivos portátiles y los algoritmos de inteligencia artificial, están mejorando la precisión y aplicabilidad de estas herramientas, revolucionando su uso en la práctica clínica y la investigación biomédica. En este informe, se explorarán los métodos para medir y analizar el ECG y la HRV, el preprocesamiento de la señal y su importancia y aplicaciones actuales.[3]
 
 ## 2. Metodología
 
