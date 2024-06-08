@@ -270,7 +270,7 @@ El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto pl
 
 ### Análisis de Datos de ECG: Estado de Ejercicio vs. Estado Basal
 
-#### Dominio del Tiempo
+#### Dominio del Tiempo: SDNN, RMSSD, pNN50, NN50, pNN20, NN20
 
 - **NN50 y pNN50**:
   Los valores de NN50 y pNN50 son 0 en ambos estados (ejercicio y basal), indicando una baja variabilidad de la frecuencia cardíaca en términos de intervalos sucesivos que difieren en más de 50 ms.
