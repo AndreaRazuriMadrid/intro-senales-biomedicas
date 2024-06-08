@@ -232,26 +232,7 @@ La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del siste
 Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada a la mayor demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo​ [6].
 
 #### 4.3 Parámetros de HRV: 
-##### Estado Basal:
 
-* SDNN: 0.0226 segundos
-* SD1: 0.0156 segundos
-* SD2: 0.0279 segundos
-* SD1/SD2: 0.558
-* RMSS: 0.0224 segundos
-  
-El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Se puede considerar que en el estado de reposo, el cuerpo no está sometido a estrés físico, por lo que la variabilidad de los intervalos RR tiende a ser mayor. Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 representativo de la actividad parasimpática y SD2 de la actividad simpática y parasimpática combinada. El ratio SD1/SD2 menor a 1 indica una predominancia del sistema simpático.
-Por otro lado, el valor del RMSS sugiere una buena variabilidad de la frecuencia cardíaca, lo cual es típico en un individuo en reposo, ya que, la influencia del sistema nervioso parasimpático es mayor, lo que resulta en una mayor variabilidad de los intervalos RR [3].
-  
-##### Estado Ejercicio:
-
-* SDNN: 0.0202 segundos
-* SD1: 0.0100 segundos
-* SD2: 0.0268 segundos
-* SD1/SD2: 0.374
-* RMSSD: 0.0142 segundos
-
-Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. La disminución en SDNN durante el ejercicio refleja la respuesta normal del cuerpo al estrés físico, donde el ritmo cardíaco se vuelve más regular y controlado principalmente por el sistema nervioso simpático para satisfacer las demandas del ejercicio. Los valores de SD1 y SD2 siguen mostrando una baja variabilidad, y el ratio SD1/SD2 (0.374) sugiere una dominancia simpática más pronunciada que en estado basal. De acuerdo al valor del RMSS podemos ver que su disminución durante el ejercicio indica una menor influencia del sistema nervioso parasimpático y una mayor regularidad en los intervalos RR [3].
 
 #### PNN20 y PNN50: 
 #### Estado Basal:
@@ -272,17 +253,20 @@ El PNN20 disminuye a 18%, indicando una reducción en la variabilidad a corto pl
 
 #### Dominio del Tiempo: SDNN, RMSSD, pNN50, NN50, pNN20, NN20
 
-- **NN50 y pNN50**:
-  Los valores de NN50 y pNN50 son 0 en ambos estados (ejercicio y basal), indicando una baja variabilidad de la frecuencia cardíaca en términos de intervalos sucesivos que difieren en más de 50 ms.
+##### Estado Basal:
 
-- **NN20 y pNN20**:
-  En el estado basal, NN20 es 4 y pNN20 es 18%, mientras que en el ejercicio, pNN20 es 42%. Esto sugiere una mayor variabilidad de intervalos RR en el ejercicio en términos de diferencias superiores a 20 ms.
+* SDNN: 0.0226 segundos
+* RMSS: 0.0224 segundos
+  
+El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Se puede considerar que en el estado de reposo, el cuerpo no está sometido a estrés físico, por lo que la variabilidad de los intervalos RR tiende a ser mayor. 
+Por otro lado, el valor del RMSS sugiere una buena variabilidad de la frecuencia cardíaca, lo cual es típico en un individuo en reposo, ya que, la influencia del sistema nervioso parasimpático es mayor, lo que resulta en una mayor variabilidad de los intervalos RR [3].
+  
+##### Estado Ejercicio:
 
-- **SDNN**:
-  En estado basal, SDNN es 0.020198900674225577 y en ejercicio es 0.020198900674225577, indicando una mayor variabilidad de la frecuencia cardíaca en reposo.
+* SDNN: 0.0202 segundos
+* RMSSD: 0.0142 segundos
 
-- **RMSSD**:
-  En estado basal, RMSSD es 0.014173611019501443 y en ejercicio es 0.014173611019501443, reflejando una mayor actividad parasimpática en reposo.
+Durante el ejercicio, el valor de SDNN disminuye aún más (0.0202 segundos), lo cual es consistente con una disminución de la variabilidad de la frecuencia cardíaca debido al aumento del tono simpático. La disminución en SDNN durante el ejercicio refleja la respuesta normal del cuerpo al estrés físico, donde el ritmo cardíaco se vuelve más regular y controlado principalmente por el sistema nervioso simpático para satisfacer las demandas del ejercicio. De acuerdo al valor del RMSS podemos ver que su disminución durante el ejercicio indica una menor influencia del sistema nervioso parasimpático y una mayor regularidad en los intervalos RR [3].
 
 #### Dominio de Frecuencia
 
@@ -300,11 +284,20 @@ Esta banda está relacionada con la actividad parasimpática (vagal) y la respir
 
 #### Parámetros No Lineales
 
-- **SD1 y SD2**:
-  En estado basal, SD1 es 0.009994951822617493 y SD2 es 0.02675989751396698, mientras que en ejercicio, SD1 es 0.009994951822617493 y SD2 es 0.02675989751396698, sugiriendo una mayor variabilidad en la frecuencia cardíaca en reposo.
+##### Estado Basal:
+* SD1: 0.0156 segundos
+* SD2: 0.0279 segundos
+* SD1/SD2: 0.558
 
-- **SD1/SD2**:
-  La relación SD1/SD2 en estado basal es 0.3735048617955565 y en ejercicio es 0.3735048617955565, lo que indica un equilibrio entre la variabilidad a corto y largo plazo.
+Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 representativo de la actividad parasimpática y SD2 de la actividad simpática y parasimpática combinada. El ratio SD1/SD2 menor a 1 indica una predominancia del sistema simpático [3].
+
+##### Estado Ejercicio:
+* SD1: 0.0100 segundos
+* SD2: 0.0268 segundos
+* SD1/SD2: 0.374
+
+ Los valores de SD1 y SD2 siguen mostrando una baja variabilidad, y el ratio SD1/SD2 (0.374) sugiere una dominancia simpática más pronunciada que en estado basal [3].
+
 
 ### Análisis de Gráficos
 - **Señal Filtrada**: Muestra la señal ECG en ambos estados, con más picos (latidos) en ejercicio indicando un ritmo cardíaco más rápido.
