@@ -232,7 +232,7 @@ La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del siste
 Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada al incremento en la demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo.
 
 #### 4.3 Parámetros de HRV: 
-#### Estado Basal:
+##### Estado Basal:
 
 * SDNN: 0.0226 segundos
 * SD1: 0.0156 segundos
@@ -243,7 +243,7 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 El valor de SDNN (0.0226 segundos) está por debajo del valor típico normal (>50 ms), lo que sugiere una menor variabilidad de la frecuencia cardíaca en estado basal. Esto puede indicar un tono simpático predominante o una baja actividad parasimpática. Se puede considerar que en el estado de reposo, el cuerpo no está sometido a estrés físico, por lo que la variabilidad de los intervalos RR tiende a ser mayor. Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 representativo de la actividad parasimpática y SD2 de la actividad simpática y parasimpática combinada. El ratio SD1/SD2 menor a 1 indica una predominancia del sistema simpático.
 Por otro lado, el valor del RMSS sugiere una buena variabilidad de la frecuencia cardíaca, lo cual es típico en un individuo en reposo, ya que, la influencia del sistema nervioso parasimpático es mayor, lo que resulta en una mayor variabilidad de los intervalos RR [3].
   
-#### Estado Ejercicio:
+##### Estado Ejercicio:
 
 * SDNN: 0.0202 segundos
 * SD1: 0.0100 segundos
