@@ -233,10 +233,6 @@ Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BP
 
 #### 4.3 Parámetros de HRV: 
 
-
-
-### Análisis de Datos de ECG: Estado de Ejercicio vs. Estado Basal
-
 #### Dominio del Tiempo: SDNN, RMSSD, pNN50, NN50, pNN20, NN20
 
 ##### Estado Basal:
@@ -268,6 +264,7 @@ Las bandas ULF y VLF capturan variaciones de la frecuencia cardíaca que ocurren
 Dado que nuestras señales tienen una duración máxima de 1 minuto, es comprensible que no se observe potencia en estas bandas en ninguna de las 2 pruebas, ya sea en reposo o en ejercicio. En el caso de la banda LF (0.04 - 0.15Hz) también captura variaciones que ocurren en un rango de tiempo mayor al que se trabajó en este estudio. Necesitaríamos mayor resolución temporal y señales de mayor duración.
 
 - **Potencia en banda HF:**
+- 
 Esta banda está relacionada con la actividad parasimpática (vagal) y la respiración. En estado basal, la potencia en la banda HF fue de 0.00012, mientras que durante el ejercicio disminuyó a 6e-05.
 
  	- En estado basal, una mayor potencia en la banda HF indica una mayor actividad del nervio vago, que es responsable de la regulación del sistema nervioso parasimpático. La reducción observada durante el ejercicio es consistente con la respuesta fisiológica esperada, donde la actividad simpática aumenta y la parasimpática disminuye para acomodar la demanda física del ejercicio​​[2][3].
