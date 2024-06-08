@@ -17,7 +17,14 @@
 
 
 ## 1. Introducción
+### Introducción[1]
 
+
+El electrocardiograma (ECG) y los parámetros de variabilidad de la frecuencia cardíaca (HRV) son herramientas fundamentales para evaluar la salud cardiovascular. El ECG registra la actividad eléctrica del corazón, permitiendo detectar arritmias, infartos y otros trastornos cardíacos. Por su parte, la HRV mide la variación en el tiempo entre latidos consecutivos del corazón, reflejando el equilibrio entre el sistema nervioso simpático y parasimpático. 
+
+La combinación del ECG y la HRV proporciona una visión comprensiva de la salud cardiovascular, útil en la detección temprana de enfermedades, monitorización de pacientes y evaluación de intervenciones terapéuticas. El preprocesamiento de la señal es crucial para eliminar el ruido y las interferencias, mejorando así la precisión de los análisis. Esto incluye técnicas como el filtrado de alta y baja frecuencia, la eliminación de artefactos y la normalización de la señal.[1]
+
+Los avances tecnológicos, como los dispositivos portátiles y los algoritmos de inteligencia artificial, están mejorando la precisión y aplicabilidad de estas herramientas, revolucionando su uso en la práctica clínica y la investigación biomédica. En este informe, se explorarán los métodos para medir y analizar el ECG y la HRV, el preprocesamiento de la señal y su importancia y aplicaciones actuales.[2]
 
 ## 2. Metodología
 
@@ -310,7 +317,7 @@ Esta banda está relacionada con la actividad parasimpática (vagal) y la respir
 
 [1] Mouna Benchekroun, B. Chevallier, D. Istrate, V. Zalc, and D. Lenne, “Preprocessing Methods for Ambulatory HRV Analysis Based on HRV Distribution, Variability and Characteristics (DVC),” Sensors, vol. 22, no. 5, pp. 1984–1984, Mar. 2022, doi: https://doi.org/10.3390/s22051984.
 
-[2]M. Janssen, C. A. Swenne, J. de Bie, O. Rompelman, and J. V. van Bemmel, "Methods in heart rate variability analysis: which tachogram should we choose?," Computer Methods and Programs in Biomedicine, vol. 41, no. 1, pp. 1-8, 1993. doi: 10.1016/0169-2607(93)90061-O.
+[2] M. Janssen, C. A. Swenne, J. de Bie, O. Rompelman, and J. V. van Bemmel, "Methods in heart rate variability analysis: which tachogram should we choose?," Computer Methods and Programs in Biomedicine, vol. 41, no. 1, pp. 1-8, 1993. doi: 10.1016/0169-2607(93)90061-O.
 
 [3] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
 
