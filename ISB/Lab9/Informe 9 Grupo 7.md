@@ -13,7 +13,7 @@
 2. [Metodología](#4-metodología)
 3. [Resultados](#5-resultados)
 4. [Discusión](#6-discusión)
-5. [Conclusión] (#7-conclusion)
+5. [Conclusión]
 6. [Bibliografía](#8-bibliografía)
 
 
@@ -297,7 +297,7 @@ Los valores de SD1 y SD2 también indican una baja variabilidad, siendo SD1 repr
 
 ## 5. Conclusión
 
-El análisis de la variabilidad de la frecuencia cardíaca (HRV) a partir de una señal ECG ofrece información sobre el funcionamiento del sistema nervioso autónomo. En estado basal, la HRV muestra mayor variabilidad, reflejando un tono autónomo equilibrado con predominio parasimpático. Durante el ejercicio, la HRV disminuye debido al aumento de la actividad del sistema nervioso simpático para satisfacer las demandas del cuerpo. Esta reducción en la HRV indica un cambio hacia el predominio simpático, proporcionando información valiosa sobre la salud cardiovascular y las respuestas al estrés.
+El análisis de la variabilidad de la frecuencia cardíaca (HRV) a partir de una señal ECG ofrece información sobre el funcionamiento del sistema nervioso autónomo. En estado basal, la HRV muestra mayor variabilidad, reflejando un tono autónomo equilibrado con predominio parasimpático. Durante el ejercicio, la HRV disminuye debido al aumento de la actividad del sistema nervioso simpático para satisfacer las demandas del cuerpo. Esta reducción en la HRV indica un cambio hacia el predominio simpático, proporcionando información valiosa sobre la salud cardiovascular y las respuestas al estrés [7].
 
 ## 6. Bibliografía
 
@@ -313,3 +313,5 @@ El análisis de la variabilidad de la frecuencia cardíaca (HRV) a partir de una
 [5] "Assessment of Cardiovascular Function," Medicine LibreTexts, Feb. 2023. [Online]. Available: https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Labs%3A_A_Mixed_Course_Based_Research_Approach_to_Human_Physiology_(Whitmer)/02%3A_Labs/2.11%3A_Assessment_of_Cardiovascular_Function. 
 
 [6] "Heart rate: What's normal?" Mayo Clinic, Oct. 2022. [Online]. Available: https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979. 
+
+[7] Tiwari R, Kumar R, Malik S, Raj T, Kumar P. Analysis of Heart Rate Variability and Implication of Different Factors on Heart Rate Variability. Curr Cardiol Rev. 2021;17(5):e160721189770. doi: 10.2174/1573403X16999201231203854.
