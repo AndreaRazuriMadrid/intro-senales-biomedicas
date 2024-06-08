@@ -210,9 +210,9 @@ Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y m
 
 Los intervalos RR son el tiempo entre dos picos consecutivos de las ondas R en un ECG, que representan un ciclo completo de latido cardíaco. En estado basal, los valores proemdio de los intervalos RR son más altos, lo que indica una frecuencia cardíaca más baja. Durante el ejercicio, los intervalos RR disminuyen, lo que corresponde a un aumento en la frecuencia cardíaca debido a la mayor demanda de oxígeno y nutrientes por los músculos. 
 
-Los valores de los intervalos RR en estado basal son típicos para una persona en reposo. Un intervalo RR promedio de 0.752 segundos equivale aproximadamente a una frecuencia cardíaca de 80 BPM, que está dentro del rango normal de 60-100 BPM en reposo para adultos.
+Los valores de los intervalos RR en estado basal (promedio de 0.752 segundos) corresponden a una frecuencia cardíaca de aproximadamente 80 BPM, lo cual está dentro del rango normal de 60-100 BPM en reposo para adultos​ [a].
 
-Durante el ejercicio, los intervalos RR se acortan significativamente, con un promedio de 0.577 segundos, lo que corresponde a una frecuencia cardíaca de aproximadamente 104 BPM. Este valor es adecuado y esperado durante la actividad física, ya que el corazón debe bombear más rápido para satisfacer las necesidades metabólicas aumentadas.
+Durante el ejercicio, los intervalos RR se acortan significativamente, con un promedio de 0.577 segundos, correspondiente a una frecuencia cardíaca de aproximadamente 104 BPM. Este valor es adecuado y esperado durante la actividad física, reflejando una respuesta normal del sistema cardiovascular a la actividad aumentada​ [a].
 
 #### 4.2 BPM: 
 ##### Estado Basal:
@@ -227,9 +227,9 @@ Durante el ejercicio, los intervalos RR se acortan significativamente, con un pr
 * Mínimo: 97.71 BPM
 * Promedio: 104.00 BPM
 
-La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del sistema cardiovascular. En estado basal, la frecuencia cardíaca promedio de 79.76 BPM está dentro del rango normal para un adulto en reposo (60-100 BPM). Esto sugiere que el sujeto tiene un ritmo cardíaco saludable cuando está en reposo.
+La frecuencia cardíaca (BPM) es una medida crucial del funcionamiento del sistema cardiovascular. En estado basal, la frecuencia cardíaca promedio de 79.76 BPM está dentro del rango normal para un adulto en reposo (60-100 BPM). Esto sugiere que el sujeto tiene un ritmo cardíaco saludable cuando está en reposo [b].
 
-Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada al incremento en la demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo.
+Durante el ejercicio, el aumento de la frecuencia cardíaca promedio a 104.00 BPM es una respuesta normal y esperada a la mayor demanda física. Este rango es típico para una intensidad de ejercicio moderada a intensa, dependiendo de la condición física del individuo. Un aumento adecuado en la frecuencia cardíaca durante el ejercicio indica que el sistema cardiovascular está respondiendo apropiadamente a las necesidades aumentadas de oxígeno y nutrientes del cuerpo​ [b].
 
 #### 4.3 Parámetros de HRV: 
 ##### Estado Basal:
@@ -323,3 +323,6 @@ Esta banda está relacionada con la actividad parasimpática (vagal) y la respir
 
 [4] S. Ishaque, Naimul Mefraz Khan, and S. Krishnan, “Trends in Heart-Rate Variability Signal Analysis,” Frontiers in digital health, vol. 3, Feb. 2021, doi: https://doi.org/10.3389/fdgth.2021.639444.
 ‌
+[a] "Assessment of Cardiovascular Function," Medicine LibreTexts, Feb. 2023. [Online]. Available: https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Labs%3A_A_Mixed_Course_Based_Research_Approach_to_Human_Physiology_(Whitmer)/02%3A_Labs/2.11%3A_Assessment_of_Cardiovascular_Function. 
+
+[b] "Heart rate: What's normal?" Mayo Clinic, Oct. 2022. [Online]. Available: https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979. 
