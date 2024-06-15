@@ -80,7 +80,9 @@ Siguiendo los 3 criterios establecidos en la metodología, se eligió las ICAs 6
  - ICA009: debido a la poca expansión del punto de fuente.
  - ICA014: debido a la poca expansión del punto de fuente y el pico en el espectro de poder entre el rango de 7 a 75 Hz.
 
+Además, se usó la función de find_band_muscles para obtener de forma automática las ICAs a eliminar:
 
+<img src="resultados_ICA/scores.png"> 
 
 ### 3.2. Señal procesada
 
