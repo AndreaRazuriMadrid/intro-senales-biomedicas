@@ -1,4 +1,4 @@
-# INFORME LABORATORIO 9
+# INFORME LABORATORIO 10
 ## Lista de Participantes - Grupo 9
 
 - Andrea Razuri Madrid
@@ -18,100 +18,13 @@
 
 
 ## 1. Introducción
-### Introducción[1]
-
-
-El electrocardiograma (ECG) y los parámetros de variabilidad de la frecuencia cardíaca (HRV) son herramientas fundamentales para evaluar la salud cardiovascular. El ECG registra la actividad eléctrica del corazón, permitiendo detectar arritmias, infartos y otros trastornos cardíacos. Por su parte, la HRV mide la variación en el tiempo entre latidos consecutivos del corazón, reflejando el equilibrio entre el sistema nervioso simpático y parasimpático. 
-
-La combinación del ECG y la HRV proporciona una visión comprensiva de la salud cardiovascular, útil en la detección temprana de enfermedades, monitorización de pacientes y evaluación de intervenciones terapéuticas. El preprocesamiento de la señal es crucial para eliminar el ruido y las interferencias, mejorando así la precisión de los análisis. Esto incluye técnicas como el filtrado de alta y baja frecuencia, la eliminación de artefactos y la normalización de la señal.[1]
-
-Los avances tecnológicos, como los dispositivos portátiles y los algoritmos de inteligencia artificial, están mejorando la precisión y aplicabilidad de estas herramientas, revolucionando su uso en la práctica clínica y la investigación biomédica. En este informe, se explorarán los métodos para medir y analizar el ECG y la HRV, el preprocesamiento de la señal y su importancia y aplicaciones actuales.[3]
 
 ## 2. Metodología
 
 ### 2.1. Adquisicion y procesamiento de la señal
-En este estudio se utilizó una frecuencia de muestreo de 1000 Hz para la adquisición de las señales ECG. Se ha seguido la metodología descrita en el artículo "Application of Artificial Intelligence for ECG Classification" [1]. Esta metodología incluye la aplicación de un filtro pasabanda Butterworth de tercer orden (rango de frecuencias: 5 Hz a 150 Hz) para eliminar el ruido de alta frecuencia. Posteriormente, se aplicó una transformada wavelet discreta (DWT) utilizando el wavelet Daubechies 4 (Db4) con umbralización dura, además de un filtro notch a 60 Hz para suprimir la interferencia de la línea de alimentación.
-
-Sin embargo, en este trabajo no se aplicará el filtro pasabanda Butterworth debido a observaciones específicas en los datos analizados. Los otros dos métodos combinados, la DWT y el filtro notch, han demostrado ser suficientes para eliminar el ruido de alta frecuencia y la interferencia de la línea de alimentación sin alterar la morfología de la señal. Estos métodos son suficientes para el análisis de la variabilidad de la frecuencia cardíaca (HRV) ya que permiten limpiar la señal de ruido e interferencia sin comprometer la detección de los picos R. Esto asegura la preservación de la calidad de la señal y la precisión del análisis de HRV.
-
 ### 2.2. Uso de funcion Taquigram[2][3]
-Para el estudio de las caracteristicas HRV de un ECG necesitamos ver el registro de los intervalos entre latidos, estos no son constantes por lo que un tacograma, serie de intervalos RR, es una herramienta útil.  Est se debe a las siguientes razones.
-1. Alta precisión: Se tienen los tiempos exactos de cada latido.
-   
-2. Permite extraer directamente las caracteristicas del dominio de tiempo.
-   
-3. Usando métodos como FFT se pueden extraer las características del dominio de la frecuencia.
-4. Análisis no linear: Permiten el analisis no linear del ritmo cardiaco, incluye a los parámetros:
-   -Gráficas Poincaré
-   -Mediciones de entropía
-5. Visualización: Permite poder ver la variabilidad en el ritmo cardiaco. Para ver patrones tendencias o anomalías.
-Para facilitar la complejidad del código, se utilizará la librería biosignalnotebooks que ya incluye funciones para simplificar la ubicación de los picos R y utilizarlos para crear un tacograma del cual extraeremos los parametros HRV. 
-   
+
 ### 2.3 Extracción de características de HRV [3][4]
-
-Existen diferentes características de HRV que se pueden extraer y analizar para estudiar diversas condiciones de salud y estados fisiológicos.
-
-#### Dominio de Tiempo
-
-1. **SDNN (Desviación estándar de los intervalos NN):**
-   - Mide la variabilidad general de los intervalos de tiempo entre latidos cardíacos consecutivos. Un SDNN alto indica buena salud cardiovascular y un sistema ANS equilibrado.
-
-     $$\text{SDNN} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_j - \overline{RR})^2}$$
-     
-   - Valores normales de SDNN son típicamente mayores a 50 ms.
-
-2. **RMSSD (Raíz cuadrada de la media de las diferencias al cuadrado entre intervalos NN sucesivos):**
-   - Refleja la actividad del sistema nervioso parasimpático (PNS). Es sensible a los cambios rápidos en la frecuencia cardíaca.
-     
-     $$\text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{j=1}^N (RR_{j+1} - RR_j)^2}$$
-     
-   - Valores normales de RMSSD son típicamente mayores a 20 ms.
-
-3. **pNN50 (Porcentaje de intervalos NN con diferencias superiores a 50 ms):**
-   - Indica la variabilidad de la frecuencia cardíaca en respuesta a la actividad del PNS.
-   
-     $$\text{pNN50} = \frac{\text{Número de intervalos NN > 50 ms}}{\text{Número total de intervalos NN}}$$
-     
-   - Valores normales de pNN50 son típicamente mayores a 3%.
-
-4. **NN50 (Número de intervalos NN con diferencias superiores a 50 ms):**
-   - Indica la cantidad absoluta de intervalos NN con diferencias mayores a 50 ms.
-   
-     $$\text{NN50} = \sum_{i=1}^{N-1} \Theta(|RR_{i+1} - RR_i| - 50 \text{ ms})$$
-     
-   - Donde $\(\Theta(x)\)$ es la función escalón de Heaviside, que vale 1 si $\(x \geq 0\)$ y 0 en caso contrario.
-   - Valores normales de NN50 varían dependiendo de la población y las condiciones del estudio, pero suelen estar en el rango de varios cientos en registros de 24 horas.
-
-#### Dominio de Frecuencia
-
-1. **VLF (Very Low Frequency, 0.0033-0.04 Hz):**
-   - Asociada con la actividad del sistema nervioso simpático (SNS) y procesos de regulación a largo plazo.
-
-2. **LF (Low Frequency, 0.04-0.15 Hz):**
-   - Refleja tanto la actividad del SNS como del PNS. Es una medida de la actividad simpática y parasimpática combinada.
-
-3. **HF (High Frequency, 0.15-0.4 Hz):**
-   - Representa la actividad del PNS, particularmente la respiración.
-
-4. **Ratio LF/HF:**
-   - Utilizado para evaluar el equilibrio simpático-vagal (SNS/PNS). Un aumento en el ratio LF/HF indica una mayor actividad simpática en relación con la parasimpática.
-
-#### Parámetros No Lineales
-
-1. **SD1 y SD2 (Parámetros de la trama de Poincaré):**
-   - **SD1**: Correlacionado con la variabilidad a corto plazo (actividad parasimpática).
-   - **SD2**: Correlacionado con la variabilidad a largo plazo (actividad simpática y parasimpática combinada).
-  
-     $$\text{SD1} = \sqrt{\frac{1}{2} \text{RMSSD}^2}$$
-  
-     $$\text{SD2} = \sqrt{2 \cdot \text{SDNN}^2 - \frac{1}{2} \text{RMSSD}^2}$$
-     
-   - Valores normales de SD1/SD2 son típicamente entre 0.5 y 1.5.
-
-2. **ApEn (Entropía aproximada):**
-   - Mide la regularidad y complejidad de la serie temporal de la frecuencia cardíaca. Un valor más bajo indica mayor regularidad y menor complejidad.
-
-Todos estos parámetros ofrecen una herramienta poderosa para la evaluación y monitorización de la salud cardiovascular, la detección de condiciones patológicas y la gestión de estados de estrés y recuperación.
 
 
 ## 3. Resultados
