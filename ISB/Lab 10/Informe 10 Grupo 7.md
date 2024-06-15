@@ -74,7 +74,9 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
   </tr>
 </table>
 
-
+Siguiendo los 3 criterios establecidos en la metodología, se eligió las ICAs 6, 8, 9 y 14:
+ - ICA006: debido a la posición muy cerca del contorno puede considerarse un artefacto o una combinación de esto y una señal.
+ - ICA008: debido a su posición cerca del borde, la poca expansión del punto de fuente y el pulso en el espectro de poder dentro del rango de 7 a 75 Hz.
 
 
 
