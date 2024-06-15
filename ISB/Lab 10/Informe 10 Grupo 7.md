@@ -55,6 +55,7 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 
 
+
 ### 3.2. Señal procesada
 
 ### 3.3 Extracción de características
