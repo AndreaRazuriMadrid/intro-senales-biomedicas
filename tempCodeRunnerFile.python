@@ -1,0 +1,54 @@
+import biosignalsnotebooks as bsnb
+
+# Scientific packages
+#!pip install pyedflib
+from pyedflib import EdfReader
+from numpy import zeros, arange
+import numpy as np
+import pyedflib
+
+# Cargar el archivo .edf desde la ruta donde se ha subido
+edf_file_path = 'Subject00_1.edf'
+edf_reader = pyedflib.EdfReader(edf_file_path)
+
+# Obtener y mostrar información básica del archivo
+n_signals = edf_reader.signals_in_file
+signal_labels = edf_reader.getSignalLabels()
+sample_frequencies = edf_reader.getSampleFrequencies()
+
+print(f"Number of signals: {n_signals}")
+print(f"Signal labels: {signal_labels}")
+print(f"Sample frequencies: {sample_frequencies}")
+
+# Leer una señal específica, por ejemplo, la primera señal
+signal_index = 0
+signal_data = edf_reader.readSignal(signal_index)
+
+print(f"First few samples of signal '{signal_labels[signal_index]}': {signal_data[:10]}")
+
+signals = []
+for i in range(n_signals):
+    signals.append(edf_reader.readSignal(i))
+
+# Convertir las señales en un array de NumPy
+signals = np.array(signals)
+
+# Cerrar el archivo después de la lectura
+edf_reader.close()
+
+#convertir a formato .fif para usar en MNE
+
+# Trasponer las señales para que las señales estén en columnas
+signals = signals.T
+
+# Crear un objeto Info de MNE
+info = mne.create_info(ch_names=signal_labels, sfreq=sample_frequencies[0], ch_types='eeg')
+
+# Crear el objeto RawArray
+raw = mne.io.RawArray(signals, info)
+
+# Guardar en formato .fif
+fif_file_path = 'Subject00_1_raw.fif'
+raw.save(fif_file_path, overwrite=True)
+
+print(f"Archivo .fif guardado en: {fif_file_path}")
