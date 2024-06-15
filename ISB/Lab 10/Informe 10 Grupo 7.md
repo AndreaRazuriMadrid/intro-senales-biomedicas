@@ -21,11 +21,13 @@
 
 ## 2. Metodología
 
-### 2.1. Adquisicion y procesamiento de la señal
-### 2.2. Uso de funcion Taquigram[2][3]
+### 2.1. Dataset
 
-### 2.3 Extracción de características de HRV [3][4]
+### 2.2. Análisis de componentes independientes (ICA)
 
+### 2.3 Preprocesamiento: normalización y alineamiento de la señal
+
+### 2.4 Extracción de características
 
 ## 3. Resultados
 
