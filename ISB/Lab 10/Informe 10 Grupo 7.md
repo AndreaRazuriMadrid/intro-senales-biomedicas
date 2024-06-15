@@ -46,7 +46,7 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 ### 3.1. Filtrado espacial
 
 | ICA's |
-|-----------------|------------|------------|
+|-----------------|
 | <img src="resultados_ICA/ICA0.png" alt="Imagen 1" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA1.png" alt="Imagen 2" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA2.png" alt="Imagen 3" style="width:300px; height:200px;"> |
 | <img src="resultados_ICA/ICA3.png" alt="Imagen 4" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA4.png" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA5.png" alt="Imagen 6" style="width:300px; height:200px;"> |
 | <img src="ruta/imagen7.png" alt="Imagen 7" style="width:300px; height:200px;"> | <img src="ruta/imagen8.png" alt="Imagen 8" style="width:300px; height:200px;"> | <img src="ruta/imagen9.png" alt="Imagen 9" style="width:300px; height:200px;"> |
