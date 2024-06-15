@@ -48,29 +48,29 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 <table>
   <tr>
-    <td><img src="resultados_ICA/ICA0.png" alt="Imagen 1" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA1.png" alt="Imagen 2" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA2.png" alt="Imagen 3" style="width:300px; height:200px;"></td>
+    <td><img src="resultados_ICA/ICA0.png" alt="Imagen 1" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA1.png" alt="Imagen 2" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA2.png" alt="Imagen 3" style="width:350px; height:250px;"></td>
   </tr>
   <tr>
-    <td><img src="resultados_ICA/ICA3.png" alt="Imagen 4" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA4.png" alt="Imagen 5" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA5.png" alt="Imagen 6" style="width:300px; height:200px;"></td>
+    <td><img src="resultados_ICA/ICA3.png" alt="Imagen 4" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA4.png" alt="Imagen 5" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA5.png" alt="Imagen 6" style="width:350px; height:250px;"></td>
   </tr>
   <tr>
-    <td><img src="resultados_ICA/ICA6.png" alt="Imagen 7" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA7.png" alt="Imagen 8" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA8.png" alt="Imagen 9" style="width:300px; height:200px;"></td>
+    <td><img src="resultados_ICA/ICA6.png" alt="Imagen 7" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA7.png" alt="Imagen 8" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA8.png" alt="Imagen 9" style="width:350px; height:250px;"></td>
   </tr>
   <tr>
-    <td><img src="resultados_ICA/ICA9.png" alt="Imagen 10" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA10.png" alt="Imagen 11" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA11.png" alt="Imagen 12" style="width:300px; height:200px;"></td>
+    <td><img src="resultados_ICA/ICA9.png" alt="Imagen 10" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA10.png" alt="Imagen 11" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA11.png" alt="Imagen 12" style="width:350px; height:250px;"></td>
   </tr>
   <tr>
-    <td><img src="resultados_ICA/ICA12.png" alt="Imagen 13" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA13.png" alt="Imagen 14" style="width:300px; height:200px;"></td>
-    <td><img src="resultados_ICA/ICA14.png" alt="Imagen 15" style="width:300px; height:200px;"></td>
+    <td><img src="resultados_ICA/ICA12.png" alt="Imagen 13" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA13.png" alt="Imagen 14" style="width:350px; height:250px;"></td>
+    <td><img src="resultados_ICA/ICA14.png" alt="Imagen 15" style="width:350px; height:250px;"></td>
   </tr>
 </table>
 
