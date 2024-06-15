@@ -31,14 +31,19 @@
 
 ## 3. Resultados
 
+### 3.1. Filtrado espacial
+
+### 3.2. Señal procesada
+
+### 3.3 Extracción de características
+
 ## 4. Discusión
 
-#### 4.1. RR Intervals: 
+### 4.1. Análisis de filtrado espacial y procesamiento 
 
 
-#### 4.2 BPM: 
+### 4.2 Análisis de características extraídas
 
-#### 4.3 Parámetros de HRV: 
 
 
 ## 5. Conclusión
