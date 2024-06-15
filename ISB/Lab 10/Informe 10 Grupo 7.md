@@ -49,8 +49,8 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 | <img src="resultados_ICA/ICA0.png" alt="Imagen 1" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA1.png" alt="Imagen 2" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA2.png" alt="Imagen 3" style="width:300px; height:200px;"> |
 | <img src="resultados_ICA/ICA3.png" alt="Imagen 4" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA4.png" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA5.png" alt="Imagen 6" style="width:300px; height:200px;"> |
 | <img src="resultados_ICA/ICA6.png" alt="Imagen 7" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA7.png" alt="Imagen 8" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA8.png" alt="Imagen 9" style="width:300px; height:200px;"> |
-| <img src="resultados_ICA/ICA9.png" alt="Imagen 10" style="width:300px; height:200px;"> | <img src="ruta/imagen11.png" alt="Imagen 11" style="width:300px; height:200px;"> | <img src="ruta/imagen12.png" alt="Imagen 12" style="width:300px; height:200px;"> |
-| <img src="ruta/imagen13.png" alt="Imagen 13" style="width:300px; height:200px;"> | <img src="ruta/imagen14.png" alt="Imagen 14" style="width:300px; height:200px;"> | <img src="ruta/imagen15.png" alt="Imagen 15" style="width:300px; height:200px;"> |
+| <img src="resultados_ICA/ICA9.png" alt="Imagen 10" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA 10.png" alt="Imagen 11" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA 11.png" alt="Imagen 12" style="width:300px; height:200px;"> |
+| <img src="resultados_ICA/ICA 12.png" alt="Imagen 13" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA 13.png" alt="Imagen 14" style="width:300px; height:200px;"> | <img src="resultados_ICA/ICA 14.png" alt="Imagen 15" style="width:300px; height:200px;"> |
 
 
 ### 3.2. Señal procesada
