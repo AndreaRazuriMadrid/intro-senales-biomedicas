@@ -40,6 +40,32 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 ### 2.3 Preprocesamiento: normalización y alineamiento de la señal
 
+1. **Carga de Datos EEG**:
+    - Los datos EEG fueron cargados desde un archivo en formato EDF utilizando la biblioteca MNE-Python. Este proceso involucró la lectura completa del archivo en memoria para facilitar su posterior manipulación y análisis.
+
+2. **Filtrado de la Señal**:
+    - Se aplicó un filtro de paso banda con frecuencias de corte en 1 Hz y 40 Hz. Este paso es crucial para limpiar la señal de EEG, eliminando componentes de baja frecuencia (como el ruido de desplazamiento de la línea base) y de alta frecuencia (como el ruido de la red eléctrica y otros artefactos no neuronales).
+
+3. **Aplicación de ICA (Análisis de Componentes Independientes)**:
+    - Se utilizó el Análisis de Componentes Independientes (ICA) para identificar y corregir artefactos presentes en la señal EEG. El número de componentes independientes se ajustó a 19, correspondiente al número de canales disponibles en los datos. Este ajuste es esencial para garantizar que el modelo ICA tenga una cantidad adecuada de componentes para trabajar.
+
+4. **Exclusión de Componentes de Artefactos**:
+    - Dado que no se encontraron canales específicos para la detección de movimientos oculares (EOG) ni puntos de digitización de electrodos en los datos, se optó por un enfoque manual. Se identificaron y excluyeron los componentes principales con mayor varianza, que generalmente están asociados a artefactos. En este caso, se excluyeron los primeros dos componentes.
+
+5. **Aplicación de ICA a la Señal**:
+    - Posteriormente, se aplicaron las correcciones derivadas del ICA a la señal original. Esto permitió limpiar la señal eliminando las contribuciones de los componentes de artefactos identificados.
+
+6. **Normalización de la Señal**:
+    - Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos.
+
+7. **Alineación de la Señal**:
+    - Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Este paso asegura que la señal tenga una tasa de muestreo uniforme, lo cual es importante para muchos métodos de análisis que asumen una temporalidad constante en los datos.
+
+8. **Visualización y Guardado de los Datos Preprocesados**:
+    - Finalmente, se visualizó la señal preprocesada para verificar la efectividad de los pasos anteriores y se dejó abierta la posibilidad de guardar los datos preprocesados en un nuevo archivo, ya sea en formato EDF o FIF, para su uso posterior.
+
+Esta metodología proporciona una forma estructurada y detallada para el preprocesamiento de señales EEG, asegurando que los datos estén limpios y listos para el análisis posterior. Si necesitas más detalles o ajustes específicos, no dudes en pedírmelo.
+
 ### 2.4 Extracción de características
 
 ## 3. Resultados
@@ -89,6 +115,21 @@ Finalmente, después de esto se decidió eliminar ICA006 y ICA014, ya que la pri
 
 ### 3.2. Señal procesada
 
+Según los resultados que se muestran en la imagen de las señales EEG después del preprocesamiento. Cada línea horizontal representa un canal de EEG diferente, etiquetado según el sistema internacional 10-20 (Fp1, Fp2, F3, F4, F7, F8, T7, T8, C3, C4).
+
+#### Visualización de las Épocas (epochs.plot())
+1. Eje Y (Vertical):
+   * Representa los distintos canales de EEG (Fp1, Fp2, F3, F4, etc)
+   * Cada línea corresponde a la señal registrada por un canal específico.
+2. Eje X (Horizontal):
+   * Reresenta el tiempo en segundos.
+   * La escala va desde 0 hasta 50 segundos.
+3. Señal EEG:
+   * Las oscilaciones en las líneas muestran la actividad eléctrica cerebral registrada por los electrodos en el tiempo
+   * Se observan patrones rítmicos y oscilaciones regulares, lo que es típico de las señales EEG 
+4. Escala de Amplitud:
+   *Indica por el valor en microvoltios (µV) en la parte superior izquierda del gráfico.
+
 ### 3.3 Extracción de características
 
 ## 4. Discusión
@@ -96,9 +137,14 @@ Finalmente, después de esto se decidió eliminar ICA006 y ICA014, ya que la pri
 ### 4.1. Análisis de filtrado espacial y procesamiento 
 
 
+
 ### 4.2 Análisis de características extraídas
 
+* Actividad Cerebral: Las señales muestran una actividad continua y rítmica a lo largo del tiempo registrado.
+* Diferencias entre los Canales: Se observan diferencias en la amplitud y la frecuencia de las oscilaciones entre los diferentes canales, lo que sugiere diferencias en la actividad cerebral subyacente en diferentes regiones.
+* Patrones Temporales: Algunas señales, como Fp1 y Fp2, muestran una actividad más prominente en las frecuencias más bajas (ondas lentas), mientras que otras, como F7 y F8, exhiben oscilaciones más rápidas y de mayor frecuencias.
 
+Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cerebral durante tareas de aritmética mental, cada época puede corresponder a un segmento donde los sujetos estaban realizando cálculos. El filtro paso alto y el uso de ICA para eliminar artefactos son técnicas estándar para limpiar los datos y asegurar que las señales que estás analizando representen la actividad cerebral relevante.
 
 ## 5. Conclusión
 
