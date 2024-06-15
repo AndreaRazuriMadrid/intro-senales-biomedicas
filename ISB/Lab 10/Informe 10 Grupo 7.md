@@ -45,6 +45,15 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 ### 3.1. Filtrado espacial
 
+| ICA's |
+|-----------------|------------|------------|
+| <img src="ruta/imagen1.png" alt="Imagen 1" style="width:300px; height:200px;"> | <img src="ruta/imagen2.png" alt="Imagen 2" style="width:300px; height:200px;"> | <img src="ruta/imagen3.png" alt="Imagen 3" style="width:300px; height:200px;"> |
+| <img src="ruta/imagen4.png" alt="Imagen 4" style="width:300px; height:200px;"> | <img src="ruta/imagen5.png" alt="Imagen 5" style="width:300px; height:200px;"> | <img src="ruta/imagen6.png" alt="Imagen 6" style="width:300px; height:200px;"> |
+| <img src="ruta/imagen7.png" alt="Imagen 7" style="width:300px; height:200px;"> | <img src="ruta/imagen8.png" alt="Imagen 8" style="width:300px; height:200px;"> | <img src="ruta/imagen9.png" alt="Imagen 9" style="width:300px; height:200px;"> |
+| <img src="ruta/imagen10.png" alt="Imagen 10" style="width:300px; height:200px;"> | <img src="ruta/imagen11.png" alt="Imagen 11" style="width:300px; height:200px;"> | <img src="ruta/imagen12.png" alt="Imagen 12" style="width:300px; height:200px;"> |
+| <img src="ruta/imagen13.png" alt="Imagen 13" style="width:300px; height:200px;"> | <img src="ruta/imagen14.png" alt="Imagen 14" style="width:300px; height:200px;"> | <img src="ruta/imagen15.png" alt="Imagen 15" style="width:300px; height:200px;"> |
+
+
 ### 3.2. Señal procesada
 
 ### 3.3 Extracción de características
