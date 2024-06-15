@@ -84,6 +84,8 @@ Además, se usó la función de find_band_muscles para obtener de forma automát
 
 <img src="resultados_ICA/scores.png"> 
 
+Finalmente, después de esto se decidió eliminar ICA006 y ICA014, ya que la primera coincide con la inspección visual y la determinación automática, y la segunda visualmente es la que más probailidad tiene de ser un artefacto.
+
 ### 3.2. Señal procesada
 
 ### 3.3 Extracción de características
