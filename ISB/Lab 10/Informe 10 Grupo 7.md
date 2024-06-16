@@ -134,6 +134,7 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
    * Se observan patrones rítmicos y oscilaciones regulares, lo que es típico de las señales EEG 
 4. Escala de Amplitud:
    *Indica por el valor en microvoltios (µV) en la parte superior izquierda del gráfico.
+   <td><img src="resultados_ICA/escala_de_amplitud.jpeg" alt="Imagen 15" style="width:700px; height:500px;"></td>
 
 ### 3.3 Extracción de características
 
