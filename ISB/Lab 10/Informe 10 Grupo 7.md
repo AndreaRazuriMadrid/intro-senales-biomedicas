@@ -71,7 +71,44 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 Esta metodología proporciona una forma estructurada y detallada para el preprocesamiento de señales EEG, asegurando que los datos estén limpios y listos para el análisis posterior. Si necesitas más detalles o ajustes específicos, no dudes en pedírmelo.
 
-### 2.4 Extracción de características
+### 2.4 Extracción de características [h]
+
+Extraer características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT).
+
+#### Paso 1: Preprocesamiento de Datos
+- **Filtrado**: Aplicar un filtro de paso banda para eliminar el ruido y retener las frecuencias de interés (1-40 Hz).
+- **Eliminación de Artefactos**: Usar Análisis de Componentes Independientes (ICA) para eliminar artefactos de los datos EEG.
+
+#### Paso 2: Descomposición Wavelet
+- **Transformada Wavelet**: Aplicar la Transformada Discreta de Wavelet (DWT) utilizando la wavelet Daubechies 2 (db2).
+- **Niveles de Descomposición**: Descomponer la señal en 4 niveles para capturar diferentes bandas de frecuencia:
+  - Nivel 1 (D1): Gamma (30-100 Hz)
+  - Nivel 2 (D2): Beta (12-30 Hz)
+  - Nivel 3 (D3): Alfa (8-12 Hz)
+  - Nivel 4 (D4): Theta (4-7 Hz)
+  - Aproximación del Nivel 4 (A4): Delta (0.1-3 Hz)
+
+#### Paso 3: Extracción de Características
+Extraer características estadísticas de los coeficientes de detalle y aproximación en cada nivel:
+- Mínimo
+- Máximo
+- Media
+- Desviación Estándar (Std)
+- Mediana
+- Varianza
+- Raíz Cuadrada Media (RMS)
+- Asimetría (Skewness)
+- Curtosis (Kurtosis)
+- Entropía
+- Cruces por Cero
+- Cruces por la Media
+- Percentiles (5º, 25º, 75º, 95º)
+
+#### Paso 4: Agregación
+- Agregar las características a través de todos los canales para el análisis.
+
+#### Paso 5: Visualización
+- Crear gráficos de caja y bigotes para visualizar la distribución de las características en diferentes condiciones (por ejemplo, sanos vs. epilépticos).
 
 ## 3. Resultados
 
