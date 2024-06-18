@@ -73,7 +73,7 @@ Esta metodología proporciona una forma estructurada y detallada para el preproc
 
 ### 2.4 Extracción de características [h]
 
-Extraer características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT).
+Se extrae las características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT).
 
 #### Paso 1: Preprocesamiento de Datos
 - **Filtrado**: Aplicar un filtro de paso banda para eliminar el ruido y retener las frecuencias de interés (1-40 Hz).
