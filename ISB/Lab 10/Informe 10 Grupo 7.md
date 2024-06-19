@@ -28,7 +28,7 @@ Posterior a esto se realiza la extraccion de caracteristicas para mejorar la int
 ## 2. Metodología
 
 ### 2.1. Dataset
-La señal con la que se trabajó pertenece a PhysioNet de acuerdo a registros de EEG de sujetos antes y durante la realización de tareas de artimética mental. Los EEG se registraron de forma monopolar usando el sistema internacional 10/20 de 23 cananles. Se utilizó un filtro paso alto con una frecuencia de corte de 30 Hz para obtener una señal sin artefactos de 60 segundos de duración. En la etapa de procesamiento, se utilizó el Análisis de Componentes Independientes (ICA) para eliminar artefactos (músculos, ojos, superposición cardíaca, ect.). La tarea aritmética constaba de realizar la resta en serie de dos números, en donde cada prueba comenzó con la comunicación oral de número de 4 dígitos y 2 dígitos. 
+La señal con la que se trabajó pertenece a PhysioNet de acuerdo a registros de EEG de sujetos antes y durante la realización de tareas de artimética mental. Los EEG se registraron de forma monopolar usando el sistema internacional 10/20 de 23 cananles. Se utilizó un filtro paso alto con una frecuencia de corte de 30 Hz para obtener una señal sin artefactos de 60 segundos de duración. En la etapa de procesamiento, se utilizó el Análisis de Componentes Independientes (ICA) para eliminar artefactos (músculos, ojos, superposición cardíaca, ect.). La tarea aritmética constaba de realizar la resta en serie de dos números, en donde cada prueba comenzó con la comunicación oral de número de 4 dígitos y 2 dígitos [8]. 
 
 ### 2.2. Análisis de componentes independientes (ICA)
 
@@ -234,6 +234,9 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 [6] C. Brunner, M. Naeem, R. Leeb, B. Graimann, and G. Pfurtscheller, "Spatial filtering and selection of optimized components in four class motor imagery EEG data using independent components analysis," Pattern Recognition Letters, vol. 28, no. 8, pp. 957-964, 2007, doi: 10.1016/j.patrec.2007.01.002.
 
 [7] L. Wang, Q. Han, P. Wang, and B. Wen, "Wavelet package frequency-band energy ratios of human EEG signals in sleeping," Proc. SPIE 6040, International Conference on Intelligent Computing: Theory and Applications III, vol. 6040, pp. 1-10, 2005, doi: 10.1117/12.664236
+
+[8] Igor Zyma, I. Seleznov, A. Popov, Mariia Chernykh, and Oleksii Shpenkov, “EEG During Mental Arithmetic Tasks,” Physionet.org, Dec. 17, 2018. https://physionet.org/content/eegmat/1.0.0/ (accessed Jun. 19, 2024).
+‌
 
 [x]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
 ‌
