@@ -175,6 +175,9 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 ### 3.3 Extracción de características
 - Mean
 <td><img src="features_extraction/isb_mean.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+
+
+
 - Median
 <td><img src="features_extraction/isb_median.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
 - GFP
