@@ -45,31 +45,19 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 ### 2.3 Preprocesamiento: normalización y alineamiento de la señal
 
-1. **Carga de Datos EEG**:
-    - Los datos EEG fueron cargados desde un archivo en formato EDF utilizando la biblioteca MNE-Python. Este proceso involucró la lectura completa del archivo en memoria para facilitar su posterior manipulación y análisis.
 
-2. **Filtrado de la Señal**:
-    - Se aplicó un filtro de paso banda con frecuencias de corte en 1 Hz y 40 Hz. Este paso es crucial para limpiar la señal de EEG, eliminando componentes de baja frecuencia (como el ruido de desplazamiento de la línea base) y de alta frecuencia (como el ruido de la red eléctrica y otros artefactos no neuronales).
 
-3. **Aplicación de ICA (Análisis de Componentes Independientes)**:
-    - Se utilizó el Análisis de Componentes Independientes (ICA) para identificar y corregir artefactos presentes en la señal EEG. El número de componentes independientes se ajustó a 19, correspondiente al número de canales disponibles en los datos. Este ajuste es esencial para garantizar que el modelo ICA tenga una cantidad adecuada de componentes para trabajar.
 
-4. **Exclusión de Componentes de Artefactos**:
-    - Dado que no se encontraron canales específicos para la detección de movimientos oculares (EOG) ni puntos de digitización de electrodos en los datos, se optó por un enfoque manual. Se identificaron y excluyeron los componentes principales con mayor varianza, que generalmente están asociados a artefactos. En este caso, se excluyeron los primeros dos componentes.
 
-5. **Aplicación de ICA a la Señal**:
-    - Posteriormente, se aplicaron las correcciones derivadas del ICA a la señal original. Esto permitió limpiar la señal eliminando las contribuciones de los componentes de artefactos identificados.
+#### 2.3.1 Normalización de la Señal:
 
-6. **Normalización de la Señal**:
-    - Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos.
+Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos, eliminando sesgos debido a diferentes escalas o unidades de medida. Además, la normalización z-score ayuda a detectar outliers y mejora el rendimiento de muchos algoritmos de análisis que suponen que los datos están normalizados.
 
-7. **Alineación de la Señal**:
-    - Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Este paso asegura que la señal tenga una tasa de muestreo uniforme, lo cual es importante para muchos métodos de análisis que asumen una temporalidad constante en los datos.
+#### 2.3.2 Alineación de la Señal:
 
-8. **Visualización y Guardado de los Datos Preprocesados**:
-    - Finalmente, se visualizó la señal preprocesada para verificar la efectividad de los pasos anteriores y se dejó abierta la posibilidad de guardar los datos preprocesados en un nuevo archivo, ya sea en formato EDF o FIF, para su uso posterior.
+Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Este paso asegura que la señal tenga una tasa de muestreo uniforme, lo cual es importante para muchos métodos de análisis que asumen una temporalidad constante en los datos. El resampleo permite la sincronización precisa de eventos en los datos, mejora la comparabilidad entre señales y facilita la aplicación de técnicas de procesamiento y análisis que requieren una frecuencia de muestreo constante.
 
-Esta metodología proporciona una forma estructurada y detallada para el preprocesamiento de señales EEG, asegurando que los datos estén limpios y listos para el análisis posterior. Si necesitas más detalles o ajustes específicos, no dudes en pedírmelo.
+
 
 ### 2.4 Extracción de características [h]
 
