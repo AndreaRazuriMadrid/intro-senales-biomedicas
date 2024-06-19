@@ -105,6 +105,14 @@ Se extraen las características estadísticas de los coeficientes de detalle y a
 En este análisis, hemos procesado datos de EEG (Electroencefalografía) para estudiar las respuestas evocadas bajo diferentes condiciones experimentales mientras un sujeto resuelve ejercicios de matemáticas. El objetivo es comprender cómo el cerebro responde a distintos tipos de estímulos presentados durante la tarea de resolución de problemas matemáticos. A continuación, se detallan los pasos principales realizados en el análisis:
 - Se han generado intervalos regulares (cada 2 segundos) para segmentar los datos continuos en épocas (epochs)
 - Se han definido cuatro condiciones experimentales que simulan diferentes tipos de estímulos que el sujeto podría experimentar mientras resuelve ejercicios de matemáticas: estímulos auditivos y visuales presentados en los lados izquierdo y derecho (aud/left, aud/right, vis/left, vis/right).
+
+| ID de Evento | Condición                                                        |
+|--------------|------------------------------------------------------------------|
+| 1            | estímulo auditivo (tono) al oído izquierdo                      |
+| 2            | estímulo auditivo (tono) al oído derecho                        |
+| 3            | estímulo visual (tablero de ajedrez) al campo visual izquierdo  |
+| 4            | estímulo visual (tablero de ajedrez) al campo visual derecho    |
+
 - Para cada condición, se ha calculado una respuesta evocada promediada (Evoked). Esto implica promediar las épocas correspondientes a cada condición para obtener una representación limpia de la respuesta cerebral a ese tipo de estímulo
 
 El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas [aa].
@@ -212,7 +220,7 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 
 Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cerebral durante tareas de aritmética mental, cada época puede corresponder a un segmento donde los sujetos estaban realizando cálculos. El filtro paso alto y el uso de ICA para eliminar artefactos son técnicas estándar para limpiar los datos y asegurar que las señales que estás analizando representen la actividad cerebral relevante.
 
-* Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos.
+* Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos [bb].
 
 ## 5. Conclusión
 
@@ -233,10 +241,11 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 [c] C. Brunner, M. Naeem, R. Leeb, B. Graimann, and G. Pfurtscheller, "Spatial filtering and selection of optimized components in four class motor imagery EEG data using independent components analysis," Pattern Recognition Letters, vol. 28, no. 8, pp. 957-964, 2007, doi: 10.1016/j.patrec.2007.01.002.
 
 [x]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
-‌
 
 [y] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
 ‌
 [h] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
 ‌
 [aa]Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
+
+[bb] MNE. “Overview of MEG/EEG analysis with MNE-Python”. MNE Tools. Accedido el 19 de junio de 2024. [En línea]. Disponible: https://mne.tools/dev/auto_tutorials/intro/10_overview.html
