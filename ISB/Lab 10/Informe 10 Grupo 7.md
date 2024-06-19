@@ -215,7 +215,7 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 * Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos.
 
-
+Esta metodologia aplicada nos permitio obtener una señal mas limpia, libre de artefactos y ruido derivados del metodo de captura de los datos, nos permite tener esta señal limpia y extraer sus caracteristicas para posterior uso ya sea en investigacion como en aplicaciones de control, por ultimo tambien permite la normalizacion de los datos para futuros estudios mas amplios, con datos de diferentes personas.
 
 
 ## 5. Bibliografía
