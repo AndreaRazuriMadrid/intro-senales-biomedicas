@@ -23,6 +23,7 @@ El analisis de señales EEG es esencial en la investigacion en neurociencia, sin
 Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [p][q].
 
 El análisis de componentes independientes (ICA, por sus siglas en inglés) es una poderosa técnica utilizada para transformar vectores aleatorios multidimensionales observados en componentes que son estadísticamente lo más independientes posible entre sí, siendo aplicada en diversos campos como la separación ciega de fuentes y la extracción de características [a]. Esto se debe a el metodo tiene una ventaja por encima de otros tipos de filtrado espacial para separar los compnentes independientes y artefactos de la señal deseada ademas de ser facil de personalizar para la señal que se esta trabajando [b] [c].
+Posterior a esto se realiza la extraccion de caracteristicas para mejorar la interpretacion y aplicacion de los datos. Los niveles de descomposicion de la transformada Wavelet se pueden utilizar para separar las principales bandas de frecuencia de las señales eeg para tomar sus caracteristicas relacionadas a cada una de estas. Esto nos permite su analisis individual ya que hay diferentes activaciones dependiendo del tipoo de trabajo mental que se realiza 
 
 ## 2. Metodología
 
@@ -57,7 +58,7 @@ Se llevó a cabo una normalización de la señal mediante la técnica de normali
 
 Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Este paso asegura que la señal tenga una tasa de muestreo uniforme, lo cual es importante para muchos métodos de análisis que asumen una temporalidad constante en los datos. El resampleo permite la sincronización precisa de eventos en los datos, mejora la comparabilidad entre señales y facilita la aplicación de técnicas de procesamiento y análisis que requieren una frecuencia de muestreo constante.
 
-
+Se realiza este procedimiento para poder hacer una comparacion con señales tomadas de diferentes individuos en estudios de mayor tamaño.
 
 ### 2.4 Extracción de características [h]
 
