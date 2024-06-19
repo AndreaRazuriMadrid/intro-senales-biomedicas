@@ -174,7 +174,12 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
    <td><img src="resultados_ICA/escala_de_amplitud.jpeg" alt="Imagen 15" style="width:700px; height:500px;"></td>
 
 ### 3.3 Extracción de características
-
+- Mean
+<td><img src="features_extraction/mean.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+- Median
+<td><img src="features_extraction/median.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+- GFP
+<td><img src="features_extraction/GFP_2.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
 ## 4. Discusión
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
