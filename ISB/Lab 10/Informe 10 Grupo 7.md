@@ -102,12 +102,12 @@ Se extraen las características estadísticas de los coeficientes de detalle y a
 
 
 #### 2.4.1 Análisis por valores evocados
-En este análisis, hemos procesado datos de EEG (Electroencefalografía) para estudiar las respuestas evocadas bajo diferentes condiciones experimentales. El objetivo es comprender cómo el cerebro responde a distintos tipos de estímulos presentados durante el experimento. A continuación, se detallan los pasos principales realizados en el análisis:
+En este análisis, hemos procesado datos de EEG (Electroencefalografía) para estudiar las respuestas evocadas bajo diferentes condiciones experimentales mientras un sujeto resuelve ejercicios de matemáticas. El objetivo es comprender cómo el cerebro responde a distintos tipos de estímulos presentados durante la tarea de resolución de problemas matemáticos. A continuación, se detallan los pasos principales realizados en el análisis:
 - Se han generado intervalos regulares (cada 2 segundos) para segmentar los datos continuos en épocas (epochs)
-- Se han definido cuatro condiciones experimentales que simulan diferentes tipos de estímulos: auditivos y visuales presentados en los lados izquierdo y derecho (aud/left, aud/right, vis/left, vis/right).
+- Se han definido cuatro condiciones experimentales que simulan diferentes tipos de estímulos que el sujeto podría experimentar mientras resuelve ejercicios de matemáticas: estímulos auditivos y visuales presentados en los lados izquierdo y derecho (aud/left, aud/right, vis/left, vis/right).
 - Para cada condición, se ha calculado una respuesta evocada promediada (Evoked). Esto implica promediar las épocas correspondientes a cada condición para obtener una representación limpia de la respuesta cerebral a ese tipo de estímulo
 
-El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas
+El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas.
 
 
 ## 3. Resultados
@@ -158,7 +158,7 @@ Finalmente, después de esto se decidió eliminar ICA006 y ICA014, ya que la pri
 
 Según los resultados que se muestran en la imagen de las señales EEG después del preprocesamiento. Cada línea horizontal representa un canal de EEG diferente, etiquetado según el sistema internacional 10-20 (Fp1, Fp2, F3, F4, F7, F8, T7, T8, C3, C4).
 
-#### Visualización de las Épocas (epochs.plot())
+#### Visualización de señal normalizada
 1. Eje Y (Vertical):
    * Representa los distintos canales de EEG (Fp1, Fp2, F3, F4, etc)
    * Cada línea corresponde a la señal registrada por un canal específico.
