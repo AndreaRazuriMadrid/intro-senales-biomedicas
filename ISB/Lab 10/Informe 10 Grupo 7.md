@@ -186,7 +186,7 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 
 - A continuación se muuestran las gráficas de caja y bigote por cada nivel.
   
-<img src="graficas/niveles.png" alt="Imagen 15" style="width:1600px; height:350px;"></td>
+<img src="graficas/niveles.png" alt="Imagen 15" style="width:1800px; height:250px;"></td>
 
 
 ## 4. Discusión
