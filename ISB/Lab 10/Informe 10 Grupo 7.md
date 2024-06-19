@@ -241,9 +241,9 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 [10] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
 ‌
+
 [11] A. Apicella, F. Isgrò, A. Pollastro, and R. Prevete, “On the effects of data normalization for domain adaptation on EEG data,” Engineering applications of artificial intelligence, vol. 123, pp. 106205–106205, Aug. 2023, doi: https://doi.org/10.1016/j.engappai.2023.106205.
 ‌
-
 
 [12] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
 ‌
