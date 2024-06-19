@@ -79,7 +79,7 @@ Se extrae las características de las señales EEG utilizando la Transformada Di
 
 ##### Paso 1: Preprocesamiento de Datos
 - **Filtrado**: Se aplica un filtro de paso banda para eliminar el ruido y retener las frecuencias de interés (1-40 Hz).
-- **Eliminación de Artefactos**: Emplear Análisis de Componentes Independientes (ICA) para eliminar artefactos de los datos EEG.
+- **Eliminación de Artefactos**: Se empleaa la señal previamente filtrada por Análisis de Componentes Independientes (ICA).
 
 ##### Paso 2: Descomposición Wavelet
 - **Transformada Wavelet**: Se aplica la Transformada Discreta de Wavelet (DWT) utilizando la wavelet Daubechies 2 (db2).
@@ -111,7 +111,7 @@ Se extraen las características estadísticas de los coeficientes de detalle y a
 
 ##### Paso 5: Visualización
 - Se crea gráficos de caja y bigotes para visualizar la distribución de las características en diferentes condiciones (por ejemplo, sanos vs. epilépticos).
-- 
+
 
 #### 2.4.1 Análisis por valores evocados
 
