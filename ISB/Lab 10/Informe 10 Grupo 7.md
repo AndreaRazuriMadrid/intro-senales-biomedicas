@@ -182,6 +182,13 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 - GFP
 <td><img src="features_extraction/GFP_2.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
 
+### 3.4 Extracción de características Wavelet
+
+- A continuación se muuestran las gráficas de caja y bigote por cada nivel.
+  
+<img src="graficas/niveles.png" alt="Imagen 15" style="width:1600px; height:350px;"></td>
+
+
 ## 4. Discusión
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
