@@ -221,7 +221,7 @@ La normalización por z-score mejora la precisión de los clasificadores en estu
 
 Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cerebral durante tareas de aritmética mental, cada época puede corresponder a un segmento donde los sujetos estaban realizando cálculos. El filtro paso alto y el uso de ICA para eliminar artefactos son técnicas estándar para limpiar los datos y asegurar que las señales que estás analizando representen la actividad cerebral relevante.
 
-* Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos [bb].
+* Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos [14].
 
 Esta metodologia aplicada nos permitio obtener una señal mas limpia, libre de artefactos y ruido derivados del metodo de captura de los datos, nos permite tener esta señal limpia y extraer sus caracteristicas para posterior uso ya sea en investigacion como en aplicaciones de control, por ultimo tambien permite la normalizacion de los datos para futuros estudios mas amplios, con datos de diferentes personas.
 
@@ -242,29 +242,17 @@ Esta metodologia aplicada nos permitio obtener una señal mas limpia, libre de a
 
 [7] L. Wang, Q. Han, P. Wang, and B. Wen, "Wavelet package frequency-band energy ratios of human EEG signals in sleeping," Proc. SPIE 6040, International Conference on Intelligent Computing: Theory and Applications III, vol. 6040, pp. 1-10, 2005, doi: 10.1117/12.664236
 
-<<<<<<< HEAD
-[x]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
-=======
 [8] Igor Zyma, I. Seleznov, A. Popov, Mariia Chernykh, and Oleksii Shpenkov, “EEG During Mental Arithmetic Tasks,” Physionet.org, Dec. 17, 2018. https://physionet.org/content/eegmat/1.0.0/ (accessed Jun. 19, 2024).
 ‌
->>>>>>> 2ada3224ff9169f150994defe8c69ba7f6d73fbf
-
 [9]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
 ‌
-
 [10] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
-‌
-<<<<<<< HEAD
-[aa]Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
-
-[bb] MNE. “Overview of MEG/EEG analysis with MNE-Python”. MNE Tools. Accedido el 19 de junio de 2024. [En línea]. Disponible: https://mne.tools/dev/auto_tutorials/intro/10_overview.html
-=======
 
 [11] A. Apicella, F. Isgrò, A. Pollastro, and R. Prevete, “On the effects of data normalization for domain adaptation on EEG data,” Engineering applications of artificial intelligence, vol. 123, pp. 106205–106205, Aug. 2023, doi: https://doi.org/10.1016/j.engappai.2023.106205.
-‌
 
 [12] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
 ‌
-
 [13] Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
->>>>>>> 2ada3224ff9169f150994defe8c69ba7f6d73fbf
+
+[14] MNE. “Overview of MEG/EEG analysis with MNE-Python”. MNE Tools. Accedido el 19 de junio de 2024. [En línea]. Disponible: https://mne.tools/dev/auto_tutorials/intro/10_overview.html
+
