@@ -197,11 +197,11 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 <img src="graficas/niveles.png" alt="Imagen 15" style="width:1800px; height:250px;"></td>
 
 
-## 4. Discusión
+## 4. Discusión y conclusión
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
 
-
+Esta técnica no solo mejora la precisión de los clasificadores en estudios donde sea necesario su uso. Si bien la normalización adecuada puede mitigar la variabilidad intrínseca de las señales EEG entre diferentes sujetos y sesiones. La implementación de una normalización z-score adecuada simplifica el modelo y lo hace más eficiente, lo que es especialmente relevante en aplicaciones prácticas donde los recursos de hardware y tiempo son limitados. Por lo tanto, al considerar la normalización z-score como un paso esencial en el preprocesamiento de datos, se puede lograr una mejora sustancial en la adaptabilidad y precisión de los sistemas de clasificación basados en EEG [ ]; sin embargo, en este caso en donde solo se utiliza la data de un sujeto la normalización no es necesaria.
 
 ### 4.2 Análisis de características extraídas
 
@@ -213,11 +213,10 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 * Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos.
 
-## 5. Conclusión
 
 
 
-## 6. Bibliografía
+## 5. Bibliografía
 
 [1] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
 
