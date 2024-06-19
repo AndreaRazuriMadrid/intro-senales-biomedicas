@@ -73,13 +73,15 @@ Esta metodología proporciona una forma estructurada y detallada para el preproc
 
 ### 2.4 Extracción de características [h]
 
-Se extrae las características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT).
+Se extrae las características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT) y por valores evocados obtenidos.
 
-#### Paso 1: Preprocesamiento de Datos
+#### 2.4.1 Análisis por descomposición Wavelet
+
+##### Paso 1: Preprocesamiento de Datos
 - **Filtrado**: Se aplica un filtro de paso banda para eliminar el ruido y retener las frecuencias de interés (1-40 Hz).
 - **Eliminación de Artefactos**: Emplear Análisis de Componentes Independientes (ICA) para eliminar artefactos de los datos EEG.
 
-#### Paso 2: Descomposición Wavelet
+##### Paso 2: Descomposición Wavelet
 - **Transformada Wavelet**: Se aplica la Transformada Discreta de Wavelet (DWT) utilizando la wavelet Daubechies 2 (db2).
 - **Niveles de Descomposición**: Se descompone la señal en 4 niveles para capturar diferentes bandas de frecuencia:
   - Nivel 1 (D1): Gamma (30-100 Hz)
@@ -88,7 +90,7 @@ Se extrae las características de las señales EEG utilizando la Transformada Di
   - Nivel 4 (D4): Theta (4-7 Hz)
   - Aproximación del Nivel 4 (A4): Delta (0.1-3 Hz)
 
-#### Paso 3: Extracción de Características
+##### Paso 3: Extracción de Características
 Se extraen las características estadísticas de los coeficientes de detalle y aproximación en cada nivel:
 - Mínimo
 - Máximo
@@ -104,11 +106,18 @@ Se extraen las características estadísticas de los coeficientes de detalle y a
 - Cruces por la Media
 - Percentiles (5º, 25º, 75º, 95º)
 
-#### Paso 4: Agregación
+##### Paso 4: Agregación
 - Se agrega las características a través de todos los canales para el análisis.
 
-#### Paso 5: Visualización
+##### Paso 5: Visualización
 - Se crea gráficos de caja y bigotes para visualizar la distribución de las características en diferentes condiciones (por ejemplo, sanos vs. epilépticos).
+- 
+
+#### 2.4.1 Análisis por valores evocados
+
+
+
+
 
 ## 3. Resultados
 
