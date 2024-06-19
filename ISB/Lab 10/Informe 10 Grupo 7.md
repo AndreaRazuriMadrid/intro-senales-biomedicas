@@ -23,7 +23,7 @@ El analisis de señales EEG es esencial en la investigacion en neurociencia, sin
 Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [p][q].
 
 El análisis de componentes independientes (ICA, por sus siglas en inglés) es una poderosa técnica utilizada para transformar vectores aleatorios multidimensionales observados en componentes que son estadísticamente lo más independientes posible entre sí, siendo aplicada en diversos campos como la separación ciega de fuentes y la extracción de características [a]. Esto se debe a el metodo tiene una ventaja por encima de otros tipos de filtrado espacial para separar los compnentes independientes y artefactos de la señal deseada ademas de ser facil de personalizar para la señal que se esta trabajando [b] [c].
-Posterior a esto se realiza la extraccion de caracteristicas para mejorar la interpretacion y aplicacion de los datos. Los niveles de descomposicion de la transformada Wavelet se pueden utilizar para separar las principales bandas de frecuencia de las señales eeg para tomar sus caracteristicas relacionadas a cada una de estas. Esto nos permite su analisis individual ya que hay diferentes activaciones dependiendo del tipoo de trabajo mental que se realiza 
+Posterior a esto se realiza la extraccion de caracteristicas para mejorar la interpretacion y aplicacion de los datos. Los niveles de descomposicion de la transformada Wavelet se pueden utilizar para separar las principales bandas de frecuencia de las señales eeg para tomar sus caracteristicas relacionadas a cada una de estas. Esto nos permite su analisis individual ya que hay diferentes activaciones dependiendo del tipoo de trabajo mental que se realiza [d]. 
 
 ## 2. Metodología
 
@@ -232,6 +232,8 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 [b] M. Divjak, D. Zazula, and A. Holobar, "Assessment of artefact suppression by ICA and spatial filtering on reduced sets of EEG signals," in 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2011, pp. 4422-4425, doi: 10.1109/IEMBS.2011.6091097.
 
 [c] C. Brunner, M. Naeem, R. Leeb, B. Graimann, and G. Pfurtscheller, "Spatial filtering and selection of optimized components in four class motor imagery EEG data using independent components analysis," Pattern Recognition Letters, vol. 28, no. 8, pp. 957-964, 2007, doi: 10.1016/j.patrec.2007.01.002.
+
+[d] L. Wang, Q. Han, P. Wang, and B. Wen, "Wavelet package frequency-band energy ratios of human EEG signals in sleeping," Proc. SPIE 6040, International Conference on Intelligent Computing: Theory and Applications III, vol. 6040, pp. 1-10, 2005, doi: 10.1117/12.664236
 
 [x]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
 ‌
