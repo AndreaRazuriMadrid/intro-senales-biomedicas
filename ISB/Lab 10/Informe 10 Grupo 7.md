@@ -19,19 +19,20 @@
 
 ## 1. Introducción
 
-El analisis de señales EEG es esencial en la investigacion en neurociencia, sin embargo EEG mullticanal presenta a menudo resultados difusos de la actividad cerebral, dificultando el analisis de estos datos [o]. El filtrado espacial es usado para separar la señal deseada de las fuentes de ruido y artefactos.
-Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [p][q].
+El analisis de señales EEG es esencial en la investigacion en neurociencia, sin embargo EEG mullticanal presenta a menudo resultados difusos de la actividad cerebral, dificultando el analisis de estos datos [1]. El filtrado espacial es usado para separar la señal deseada de las fuentes de ruido y artefactos.
+Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [2][3].
 
-El análisis de componentes independientes (ICA, por sus siglas en inglés) es una poderosa técnica utilizada para transformar vectores aleatorios multidimensionales observados en componentes que son estadísticamente lo más independientes posible entre sí, siendo aplicada en diversos campos como la separación ciega de fuentes y la extracción de características [a]. Esto se debe a el metodo tiene una ventaja por encima de otros tipos de filtrado espacial para separar los compnentes independientes y artefactos de la señal deseada ademas de ser facil de personalizar para la señal que se esta trabajando [b] [c].
+El análisis de componentes independientes (ICA, por sus siglas en inglés) es una poderosa técnica utilizada para transformar vectores aleatorios multidimensionales observados en componentes que son estadísticamente lo más independientes posible entre sí, siendo aplicada en diversos campos como la separación ciega de fuentes y la extracción de características [4]. Esto se debe a el metodo tiene una ventaja por encima de otros tipos de filtrado espacial para separar los compnentes independientes y artefactos de la señal deseada ademas de ser facil de personalizar para la señal que se esta trabajando [5] [6].
+Posterior a esto se realiza la extraccion de caracteristicas para mejorar la interpretacion y aplicacion de los datos. Los niveles de descomposicion de la transformada Wavelet se pueden utilizar para separar las principales bandas de frecuencia de las señales eeg para tomar sus caracteristicas relacionadas a cada una de estas. Esto nos permite su analisis individual ya que hay diferentes activaciones dependiendo del tipoo de trabajo mental que se realiza [7]. 
 
 ## 2. Metodología
 
 ### 2.1. Dataset
-La señal con la que se trabajó pertenece a PhysioNet de acuerdo a registros de EEG de sujetos antes y durante la realización de tareas de artimética mental. Los EEG se registraron de forma monopolar usando el sistema internacional 10/20 de 23 cananles. Se utilizó un filtro paso alto con una frecuencia de corte de 30 Hz para obtener una señal sin artefactos de 60 segundos de duración. En la etapa de procesamiento, se utilizó el Análisis de Componentes Independientes (ICA) para eliminar artefactos (músculos, ojos, superposición cardíaca, ect.). La tarea aritmética constaba de realizar la resta en serie de dos números, en donde cada prueba comenzó con la comunicación oral de número de 4 dígitos y 2 dígitos. 
+La señal con la que se trabajó pertenece a PhysioNet de acuerdo a registros de EEG de sujetos antes y durante la realización de tareas de artimética mental. Los EEG se registraron de forma monopolar usando el sistema internacional 10/20 de 23 cananles. Se utilizó un filtro paso alto con una frecuencia de corte de 30 Hz para obtener una señal sin artefactos de 60 segundos de duración. En la etapa de procesamiento, se utilizó el Análisis de Componentes Independientes (ICA) para eliminar artefactos (músculos, ojos, superposición cardíaca, ect.). La tarea aritmética constaba de realizar la resta en serie de dos números, en donde cada prueba comenzó con la comunicación oral de número de 4 dígitos y 2 dígitos [8]. 
 
 ### 2.2. Análisis de componentes independientes (ICA)
 
-Para el análisis de los datos de EEG, se utilizó el método de Análisis de Componentes Independientes (ICA) con el objetivo de identificar y eliminar componentes artefactuales. Inicialmente, se realizó una evaluación visual de los componentes ICA utilizando tres criterios principales: pendiente espectral, perifericidad y suavidad espacial, tal como se describe en la literatura [x].
+Para el análisis de los datos de EEG, se utilizó el método de Análisis de Componentes Independientes (ICA) con el objetivo de identificar y eliminar componentes artefactuales. Inicialmente, se realizó una evaluación visual de los componentes ICA utilizando tres criterios principales: pendiente espectral, perifericidad y suavidad espacial, tal como se describe en la literatura [9].
 
 - Pendiente Espectral: Este criterio mide la pendiente del espectro de potencia de un componente independiente en el rango de frecuencias de 7 a 75 Hz. Los componentes de origen muscular tienden a tener pendientes positivas debido a la alta potencia en frecuencias típicas de EMG, mientras que los componentes de origen neural muestran pendientes negativas.
 
@@ -39,7 +40,7 @@ Para el análisis de los datos de EEG, se utilizó el método de Análisis de Co
 
 - Suavidad Espacial: Este criterio calcula la diferencia relativa en magnitud entre pares de electrodos ponderados por la distancia entre ellos. Los componentes que representan una mezcla de varias fuentes tienden a tener grandes variaciones locales y, por lo tanto, altos valores de suavidad espacial.
 
-Después de la evaluación visual, se implementó un proceso de detección automática de artefactos utilizando el método find_bads_muscle de la librería mne [y]. Este método proporciona una identificación automática de componentes contaminados por EMG, basándose en un análisis más robusto de las características espectrales y espaciales.
+Después de la evaluación visual, se implementó un proceso de detección automática de artefactos utilizando el método find_bads_muscle de la librería mne [10]. Este método proporciona una identificación automática de componentes contaminados por EMG, basándose en un análisis más robusto de las características espectrales y espaciales.
 
 Finalmente, se decidió tomar en cuenta el método automático para la exclusión de componentes debido a su mayor precisión en la identificación de artefactos; además, se añadió uno de los identificados en la inspección visual. Los componentes identificados como artefactos fueron excluidos del conjunto de datos utilizando la función apply de mne, y los datos corregidos se almacenaron en un nuevo archivo en formato .edf para su posterior análisis.
 
@@ -47,19 +48,17 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 
 
-
-
 #### 2.3.1 Normalización de la Señal:
 
-Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos, eliminando sesgos debido a diferentes escalas o unidades de medida. Además, la normalización z-score ayuda a detectar outliers y mejora el rendimiento de muchos algoritmos de análisis que suponen que los datos están normalizados.
+Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos, eliminando sesgos debido a diferentes escalas o unidades de medida. Además, la normalización z-score ayuda a detectar outliers y mejora el rendimiento de muchos algoritmos de análisis que suponen que los datos están normalizados [11].
 
 #### 2.3.2 Alineación de la Señal:
 
 Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Este paso asegura que la señal tenga una tasa de muestreo uniforme, lo cual es importante para muchos métodos de análisis que asumen una temporalidad constante en los datos. El resampleo permite la sincronización precisa de eventos en los datos, mejora la comparabilidad entre señales y facilita la aplicación de técnicas de procesamiento y análisis que requieren una frecuencia de muestreo constante.
 
+Se realiza este procedimiento para poder hacer una comparacion con señales tomadas de diferentes individuos en estudios de mayor tamaño.
 
-
-### 2.4 Extracción de características [h]
+### 2.4 Extracción de características [12]
 
 Se extrae las características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT) y por valores evocados obtenidos.
 
@@ -115,7 +114,7 @@ En este análisis, hemos procesado datos de EEG (Electroencefalografía) para es
 
 - Para cada condición, se ha calculado una respuesta evocada promediada (Evoked). Esto implica promediar las épocas correspondientes a cada condición para obtener una representación limpia de la respuesta cerebral a ese tipo de estímulo
 
-El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas [aa].
+El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas [13].
 
 
 ## 3. Resultados
@@ -206,11 +205,13 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 <img src="graficas/niveles.png" alt="Imagen 15" style="width:1800px; height:250px;"></td>
 
 
-## 4. Discusión
+## 4. Discusión y conclusión
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
 
+En el caso del filtrado espacial para la eliminación de artefactos, el método de procesamiento por Análisis de Componentes Independientes (ICA) incluyó la detección de componentes mediante inspección visual. Aunque algunas componentes identificadas cumplían parcialmente con los criterios establecidos en la literatura [9], la inspección visual puede ser subjetiva. Para mejorar la precisión de la selección, se complementó con un proceso automatizado. Así, la decisión final sobre las componentes ICA a eliminar se basó en una combinación de ambos enfoques: visual y automatizado.
 
+La normalización por z-score mejora la precisión de los clasificadores en estudios donde sea necesario su uso. Si bien la normalización adecuada puede mitigar la variabilidad intrínseca de las señales EEG entre diferentes sujetos y sesiones. La implementación de una normalización z-score adecuada simplifica el modelo y lo hace más eficiente, lo que es especialmente relevante en aplicaciones prácticas donde los recursos de hardware y tiempo son limitados. Por lo tanto, al considerar la normalización z-score como un paso esencial en el preprocesamiento de datos, se puede lograr una mejora sustancial en la adaptabilidad y precisión de los sistemas de clasificación basados en EEG [11]; sin embargo, en este caso en donde solo se utiliza la data de un sujeto la normalización no es necesaria.
 
 ### 4.2 Análisis de características extraídas
 
@@ -222,30 +223,48 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 * Evoked Responses: Las condiciones vis/right (estímulos visuales en el lado derecho) y vis/left (estímulos visuales en el lado izquierdo) presentan una mayor amplitud en comparación con las condiciones auditivas. Esto se observa en los picos más altos y las variaciones más amplias de la señal en estas condiciones. La mayor amplitud en las condiciones visuales puede indicar una mayor carga cognitiva o un procesamiento más complejo de los estímulos visuales mientras el sujeto resuelve ejercicios de matemáticas, esto podría estar relacionado a que la señal de EEG analizada es después de resolver los cálculos matemáticos [bb].
 
-## 5. Conclusión
+Esta metodologia aplicada nos permitio obtener una señal mas limpia, libre de artefactos y ruido derivados del metodo de captura de los datos, nos permite tener esta señal limpia y extraer sus caracteristicas para posterior uso ya sea en investigacion como en aplicaciones de control, por ultimo tambien permite la normalizacion de los datos para futuros estudios mas amplios, con datos de diferentes personas.
 
 
+## 5. Bibliografía
 
-## 6. Bibliografía
+[1] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
 
-[o] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
+[2] S. Boudet, L. Peyrodie, G. Forzy, A. Pinti, H. Toumi, and P. Gallois, "Improvements of Adaptive Filtering by Optimal Projection to filter different artifact types on long duration EEG recordings," Computer Methods and Programs in Biomedicine, vol. 108, no. 1, pp. 234-249, 2012, doi: 10.1016/j.cmpb.2012.04.005. Enlace
 
-[p] S. Boudet, L. Peyrodie, G. Forzy, A. Pinti, H. Toumi, and P. Gallois, "Improvements of Adaptive Filtering by Optimal Projection to filter different artifact types on long duration EEG recordings," Computer Methods and Programs in Biomedicine, vol. 108, no. 1, pp. 234-249, 2012, doi: 10.1016/j.cmpb.2012.04.005. Enlace
+[3] A. Napoli and I. Obeid, "Combined Common Spatial Pattern and spectral filtering for EEG-based BCIs," in 2011 5th International IEEE/EMBS Conference on Neural Engineering, 2011, pp. 449-452, doi: 10.1109/NER.2011.5910583. Enlace
 
-[q] A. Napoli and I. Obeid, "Combined Common Spatial Pattern and spectral filtering for EEG-based BCIs," in 2011 5th International IEEE/EMBS Conference on Neural Engineering, 2011, pp. 449-452, doi: 10.1109/NER.2011.5910583. Enlace
+[4] A. Hyvärinen, "Fast and robust fixed-point algorithms for independent component analysis," IEEE Transactions on Neural Networks, vol. 10, no. 3, pp. 626-634, 1999, doi: 10.1109/72.761722.
 
-[a] A. Hyvärinen, "Fast and robust fixed-point algorithms for independent component analysis," IEEE Transactions on Neural Networks, vol. 10, no. 3, pp. 626-634, 1999, doi: 10.1109/72.761722.
+[5] M. Divjak, D. Zazula, and A. Holobar, "Assessment of artefact suppression by ICA and spatial filtering on reduced sets of EEG signals," in 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2011, pp. 4422-4425, doi: 10.1109/IEMBS.2011.6091097.
 
-[b] M. Divjak, D. Zazula, and A. Holobar, "Assessment of artefact suppression by ICA and spatial filtering on reduced sets of EEG signals," in 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2011, pp. 4422-4425, doi: 10.1109/IEMBS.2011.6091097.
+[6] C. Brunner, M. Naeem, R. Leeb, B. Graimann, and G. Pfurtscheller, "Spatial filtering and selection of optimized components in four class motor imagery EEG data using independent components analysis," Pattern Recognition Letters, vol. 28, no. 8, pp. 957-964, 2007, doi: 10.1016/j.patrec.2007.01.002.
 
-[c] C. Brunner, M. Naeem, R. Leeb, B. Graimann, and G. Pfurtscheller, "Spatial filtering and selection of optimized components in four class motor imagery EEG data using independent components analysis," Pattern Recognition Letters, vol. 28, no. 8, pp. 957-964, 2007, doi: 10.1016/j.patrec.2007.01.002.
+[7] L. Wang, Q. Han, P. Wang, and B. Wen, "Wavelet package frequency-band energy ratios of human EEG signals in sleeping," Proc. SPIE 6040, International Conference on Intelligent Computing: Theory and Applications III, vol. 6040, pp. 1-10, 2005, doi: 10.1117/12.664236
 
+<<<<<<< HEAD
 [x]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
+=======
+[8] Igor Zyma, I. Seleznov, A. Popov, Mariia Chernykh, and Oleksii Shpenkov, “EEG During Mental Arithmetic Tasks,” Physionet.org, Dec. 17, 2018. https://physionet.org/content/eegmat/1.0.0/ (accessed Jun. 19, 2024).
+‌
+>>>>>>> 2ada3224ff9169f150994defe8c69ba7f6d73fbf
 
-[y] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
+[9]  Dhani Dharmaprani, H. K. Nguyen, T. W. Lewis, D. DeLosAngeles, J. O. Willoughby, and K. J. Pope, “A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components,” PubMed, Aug. 2016, doi: https://doi.org/10.1109/embc.2016.7590828.
 ‌
-[h] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
+
+[10] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
 ‌
+<<<<<<< HEAD
 [aa]Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
 
 [bb] MNE. “Overview of MEG/EEG analysis with MNE-Python”. MNE Tools. Accedido el 19 de junio de 2024. [En línea]. Disponible: https://mne.tools/dev/auto_tutorials/intro/10_overview.html
+=======
+
+[11] A. Apicella, F. Isgrò, A. Pollastro, and R. Prevete, “On the effects of data normalization for domain adaptation on EEG data,” Engineering applications of artificial intelligence, vol. 123, pp. 106205–106205, Aug. 2023, doi: https://doi.org/10.1016/j.engappai.2023.106205.
+‌
+
+[12] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
+‌
+
+[13] Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
+>>>>>>> 2ada3224ff9169f150994defe8c69ba7f6d73fbf
