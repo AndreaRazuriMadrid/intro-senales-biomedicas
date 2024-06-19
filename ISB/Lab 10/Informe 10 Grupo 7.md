@@ -50,7 +50,7 @@ Finalmente, se decidió tomar en cuenta el método automático para la exclusió
 
 #### 2.3.1 Normalización de la Señal:
 
-Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos, eliminando sesgos debido a diferentes escalas o unidades de medida. Además, la normalización z-score ayuda a detectar outliers y mejora el rendimiento de muchos algoritmos de análisis que suponen que los datos están normalizados.
+Se llevó a cabo una normalización de la señal mediante la técnica de normalización z-score. Este proceso consistió en restar la media y dividir por la desviación estándar de cada canal, lo que permite estandarizar los datos y hacer que tengan media cero y desviación estándar uno. Esta normalización facilita la comparación entre diferentes canales y sujetos, eliminando sesgos debido a diferentes escalas o unidades de medida. Además, la normalización z-score ayuda a detectar outliers y mejora el rendimiento de muchos algoritmos de análisis que suponen que los datos están normalizados [11].
 
 #### 2.3.2 Alineación de la Señal:
 
@@ -58,7 +58,7 @@ Se realizó un resampleo de la señal a una frecuencia de muestreo de 100 Hz. Es
 
 Se realiza este procedimiento para poder hacer una comparacion con señales tomadas de diferentes individuos en estudios de mayor tamaño.
 
-### 2.4 Extracción de características [11]
+### 2.4 Extracción de características [12]
 
 Se extrae las características de las señales EEG utilizando la Transformada Discreta de Wavelet (DWT) y por valores evocados obtenidos.
 
@@ -106,7 +106,7 @@ En este análisis, hemos procesado datos de EEG (Electroencefalografía) para es
 - Se han definido cuatro condiciones experimentales que simulan diferentes tipos de estímulos que el sujeto podría experimentar mientras resuelve ejercicios de matemáticas: estímulos auditivos y visuales presentados en los lados izquierdo y derecho (aud/left, aud/right, vis/left, vis/right).
 - Para cada condición, se ha calculado una respuesta evocada promediada (Evoked). Esto implica promediar las épocas correspondientes a cada condición para obtener una representación limpia de la respuesta cerebral a ese tipo de estímulo
 
-El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas [12].
+El análisis revela cómo el cerebro responde de manera diferenciada a los estímulos auditivos y visuales presentados en diferentes lados mientras el sujeto está involucrado en la tarea cognitiva de resolver problemas matemáticos. Las respuestas evocadas proporcionan información valiosa sobre los patrones de activación cerebral asociados con cada tipo de estímulo, facilitando la identificación de diferencias significativas en las respuestas neurológicas [13].
 
 
 ## 3. Resultados
@@ -241,8 +241,11 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 [10] “mne.preprocessing.ICA — MNE 1.8.0.dev67+g69f7d88f2 documentation,” Mne.tools, Jun. 13, 2024. https://mne.tools/dev/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.find_bads_ecg (accessed Jun. 15, 2024).
 ‌
-
-[11] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
+[11] A. Apicella, F. Isgrò, A. Pollastro, and R. Prevete, “On the effects of data normalization for domain adaptation on EEG data,” Engineering applications of artificial intelligence, vol. 123, pp. 106205–106205, Aug. 2023, doi: https://doi.org/10.1016/j.engappai.2023.106205.
 ‌
 
-[12]Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
+
+[12] Ibrahim Aliyu and Chang Gyoon Lim, “Selection of optimal wavelet features for epileptic EEG signal classification with LSTM,” Neural computing & applications, vol. 35, no. 2, pp. 1077–1097, Jan. 2021, doi: https://doi.org/10.1007/s00521-020-05666-0.
+‌
+
+[13] Sakkalis, Vangelis & Zervakis, Michalis & Sifis, Micheloyannis. (2006). Significant EEG Features Involved in Mathematical Reasoning: Evidence from Wavelet Analysis. Brain topography. 19. 53-60. 10.1007/s10548-006-0012-z. 
