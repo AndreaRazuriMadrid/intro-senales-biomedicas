@@ -19,8 +19,8 @@
 
 ## 1. Introducción
 
-El analisis de señales EEG es esencial en la investigacion en neurociencia, sin embargo EEG mullticanal presenta a menudo resultados difusos de la actividad cerebral, dificultando el analisis de estos datos [o]. El filtrado espacial es usado para separar la señal deseada de las fuentes de ruido y artefactos.
-Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [p][q].
+El analisis de señales EEG es esencial en la investigacion en neurociencia, sin embargo EEG mullticanal presenta a menudo resultados difusos de la actividad cerebral, dificultando el analisis de estos datos [1]. El filtrado espacial es usado para separar la señal deseada de las fuentes de ruido y artefactos.
+Los principales beneficios son la mejora de la relacion SNR (signal-noise ratio) en reduccion de artefactos [2][3].
 
 El análisis de componentes independientes (ICA, por sus siglas en inglés) es una poderosa técnica utilizada para transformar vectores aleatorios multidimensionales observados en componentes que son estadísticamente lo más independientes posible entre sí, siendo aplicada en diversos campos como la separación ciega de fuentes y la extracción de características [a]. Esto se debe a el metodo tiene una ventaja por encima de otros tipos de filtrado espacial para separar los compnentes independientes y artefactos de la señal deseada ademas de ser facil de personalizar para la señal que se esta trabajando [b] [c].
 Posterior a esto se realiza la extraccion de caracteristicas para mejorar la interpretacion y aplicacion de los datos. Los niveles de descomposicion de la transformada Wavelet se pueden utilizar para separar las principales bandas de frecuencia de las señales eeg para tomar sus caracteristicas relacionadas a cada una de estas. Esto nos permite su analisis individual ya que hay diferentes activaciones dependiendo del tipoo de trabajo mental que se realiza [d]. 
@@ -221,11 +221,11 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 ## 6. Bibliografía
 
-[o] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
+[1] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
 
-[p] S. Boudet, L. Peyrodie, G. Forzy, A. Pinti, H. Toumi, and P. Gallois, "Improvements of Adaptive Filtering by Optimal Projection to filter different artifact types on long duration EEG recordings," Computer Methods and Programs in Biomedicine, vol. 108, no. 1, pp. 234-249, 2012, doi: 10.1016/j.cmpb.2012.04.005. Enlace
+[2] S. Boudet, L. Peyrodie, G. Forzy, A. Pinti, H. Toumi, and P. Gallois, "Improvements of Adaptive Filtering by Optimal Projection to filter different artifact types on long duration EEG recordings," Computer Methods and Programs in Biomedicine, vol. 108, no. 1, pp. 234-249, 2012, doi: 10.1016/j.cmpb.2012.04.005. Enlace
 
-[q] A. Napoli and I. Obeid, "Combined Common Spatial Pattern and spectral filtering for EEG-based BCIs," in 2011 5th International IEEE/EMBS Conference on Neural Engineering, 2011, pp. 449-452, doi: 10.1109/NER.2011.5910583. Enlace
+[3] A. Napoli and I. Obeid, "Combined Common Spatial Pattern and spectral filtering for EEG-based BCIs," in 2011 5th International IEEE/EMBS Conference on Neural Engineering, 2011, pp. 449-452, doi: 10.1109/NER.2011.5910583. Enlace
 
 [a] A. Hyvärinen, "Fast and robust fixed-point algorithms for independent component analysis," IEEE Transactions on Neural Networks, vol. 10, no. 3, pp. 626-634, 1999, doi: 10.1109/72.761722.
 
