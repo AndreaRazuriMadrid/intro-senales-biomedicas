@@ -10,11 +10,11 @@
 ## Tabla de Contenidos
 
 1. [Introducción](#1-introducción)
-2. [Metodología](#4-metodología)
-3. [Resultados](#5-resultados)
-4. [Discusión](#6-discusión)
+2. [Metodología](#2-metodología)
+3. [Resultados](#3-resultados)
+4. [Discusión](#4-discusión)
 5. [Conclusión](#5-conclusión)
-6. [Bibliografía](#8-bibliografía)
+6. [Bibliografía](#6-bibliografía)
 
 
 ## 1. Introducción
@@ -114,7 +114,6 @@ Extraer características estadísticas de los coeficientes de detalle y aproxima
 
 ### 3.1. Filtrado espacial
 
-
 <table>
   <tr>
     <td><img src="resultados_ICA/ICA0.png" alt="Imagen 1" style="width:350px; height:250px;"></td>
@@ -176,10 +175,13 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 ### 3.3 Extracción de características
 - Mean
 <td><img src="features_extraction/mean.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+
 - Median
 <td><img src="features_extraction/median.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+
 - GFP
 <td><img src="features_extraction/GFP_2.png" alt="Imagen 15" style="width:700px; height:500px;"></td>
+
 ## 4. Discusión
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
