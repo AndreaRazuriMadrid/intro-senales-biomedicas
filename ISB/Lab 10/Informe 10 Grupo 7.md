@@ -205,7 +205,7 @@ Según los resultados que se muestran en la imagen de las señales EEG después 
 <img src="graficas/niveles.png" alt="Imagen 15" style="width:1800px; height:250px;"></td>
 
 
-## 4. Discusión y conclusión
+## 4. Discusión 
 
 ### 4.1. Análisis de filtrado espacial y procesamiento 
 
