@@ -231,7 +231,7 @@ El Análisis de Componentes Independientes (ICA) consiste en una técnica utiliz
 
 Además, el uso de "mne.Evoked" nos ayudó a calcular el promedio de las respuestas evocadas por cada tipo de estímulo (visual y sonoro). Esto nos ayuda a reducir el ruido aleatorio y a resaltar las características consistentes de la respuesta cerebral a cada estímulo, lo cual nos proporciona una comprensión más profunda del procesamiento sensorial y cognitivo, que es esencial para estudios sobre la percepción y la integración sensorial en tareas cognitivas como la resolución de ejercicios matemáticos [13].
 
-## 5. Bibliografía
+## 6. Bibliografía
 
 [1] H. Cecotti, M. Eckstein, and B. Giesbrecht, "Single-Trial Classification of Event-Related Potentials in Rapid Serial Visual Presentation Tasks Using Supervised Spatial Filtering," IEEE Transactions on Neural Networks and Learning Systems, vol. 25, no. 11, pp. 2030-2042, 2014, doi: 10.1109/TNNLS.2014.2302898.
 
