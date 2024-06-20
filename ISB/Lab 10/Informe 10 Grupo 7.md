@@ -225,6 +225,11 @@ Dado que tus datos provienen de un estudio en PhysioNet sobre la actividad cereb
 
 Esta metodologia aplicada nos permitio obtener una señal mas limpia, libre de artefactos y ruido derivados del metodo de captura de los datos, nos permite tener esta señal limpia y extraer sus caracteristicas para posterior uso ya sea en investigacion como en aplicaciones de control, por ultimo tambien permite la normalizacion de los datos para futuros estudios mas amplios, con datos de diferentes personas.
 
+## 5. Conclusión
+
+El Análisis de Componentes Independientes (ICA) consiste en una técnica utilizada en el procesamiento de señales EEG, en donde una de las aplicaciones más comunes es la eliminación de artefactos, como los movimientos oculares, el parpadeo, la actividad muscular y el ruido eléctrico. Esto mejora significativamente la calidad de la señal EEG. Con este método se ha logrado separar las señales en componentes independientes, lo cual facilita la interpretación de los datos EEG. Esto nos ayuda a identificar patrones específicos de actividad cerebral que podrían estar con ruido o artefactos en la señal mezclada.
+
+Además, el uso de "mne.Evoked" nos ayudó a calcular el promedio de las respuestas evocadas por cada tipo de estímulo (visual y sonoro). Esto nos ayuda a reducir el ruido aleatorio y a resaltar las características consistentes de la respuesta cerebral a cada estímulo, lo cual nos proporciona una comprensión más profunda del procesamiento sensorial y cognitivo, que es esencial para estudios sobre la percepción y la integración sensorial en tareas cognitivas como la resolución de ejercicios matemáticos [13].
 
 ## 5. Bibliografía
 
