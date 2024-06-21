@@ -67,10 +67,12 @@ for file_path in csv_files:
 
 #### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
 
-### Foto de reposo
+### Señal de Ojo abriendo y Cerrandose
+
+![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2011%20-%20Edge%20Impulsion/Archivos_Claudia/EEG/EEG_OJO_CERRADO_ABIERTO.jpg?raw=true)
+
+### Señal de Ojo en reposo
 
 ![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2011%20-%20Edge%20Impulsion/Archivos_Claudia/EEG/EEG_REPOSO.jpg?raw=true)
 
 ```
-
-
