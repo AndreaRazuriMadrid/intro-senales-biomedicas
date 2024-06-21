@@ -1,3 +1,4 @@
+```markdown
 ### Código para EEG
 
 ```python
@@ -30,7 +31,6 @@ api_key = 'ei_b1e23dd418efa92456f8bcf1c9644d5d1c0918be2c4a6e7475e143964b2f6a0c'
 
 csv_files = [
     'C:\\Users\\claro\\Downloads\\eeg_señal_intro\\EEG_REPOSO.csv',
-
 ]
 
 # Reemplaza la etiqueta con la tuya propia.
@@ -61,14 +61,14 @@ def upload_file(file_path, label, api_key):
 # Subir cada archivo de la lista
 for file_path in csv_files:
     upload_file(file_path, label, api_key)
-
-
-
-#### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
-
-
-
-
-
+```
 
 #### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
+```
+
+Asegúrate de:
+
+1. Usar tres backticks sin espacios al inicio de la línea para cerrar el bloque de código.
+2. Tener una línea en blanco entre el cierre del bloque de código y el siguiente texto.
+
+Intenta copiar y pegar este contenido en tu archivo Markdown y verifica si se muestra correctamente en GitHub.
