@@ -1,3 +1,5 @@
+#### EEG
+
 ```markdown
 ### Código para EEG
 
@@ -64,11 +66,12 @@ for file_path in csv_files:
 ```
 
 #### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
+
+### Foto de reposo
+<p align="center">
+    <img src="EEG_REPOSO.jpg" alt="Image" width="300" height="300">
+</p>
+
 ```
 
-Asegúrate de:
 
-1. Usar tres backticks sin espacios al inicio de la línea para cerrar el bloque de código.
-2. Tener una línea en blanco entre el cierre del bloque de código y el siguiente texto.
-
-Intenta copiar y pegar este contenido en tu archivo Markdown y verifica si se muestra correctamente en GitHub.
