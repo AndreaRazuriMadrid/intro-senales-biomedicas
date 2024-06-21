@@ -1,7 +1,6 @@
 ### Código para EEG
 
 ```python
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -61,6 +60,15 @@ def upload_file(file_path, label, api_key):
 
 # Subir cada archivo de la lista
 for file_path in csv_files:
-    upload_file(file_path, label, api_key)```
+    upload_file(file_path, label, api_key)
+
+
+
+#### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
+
+
+
+
+
 
 #### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
