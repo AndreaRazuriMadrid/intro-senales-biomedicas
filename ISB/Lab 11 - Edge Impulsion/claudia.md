@@ -61,7 +61,6 @@ def upload_file(file_path, label, api_key):
 
 # Subir cada archivo de la lista
 for file_path in csv_files:
-    upload_file(file_path, label, api_key)
+    upload_file(file_path, label, api_key)```
 
-
-hola
+    hola
