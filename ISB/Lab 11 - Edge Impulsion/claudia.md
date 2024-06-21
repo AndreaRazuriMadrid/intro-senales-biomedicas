@@ -68,9 +68,8 @@ for file_path in csv_files:
 #### Link del repositorio: https://studio.edgeimpulse.com/public/431463/live
 
 ### Foto de reposo
-<p align="center">
-    <img src="[EEG_REPOSO.jpg](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2011%20-%20Edge%20Impulsion/Archivos_Claudia/EEG/EEG_REPOSO.jpg?raw=true)" alt="Image" width="300" height="300">
-</p>
+
+![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2011%20-%20Edge%20Impulsion/Archivos_Claudia/EEG/EEG_REPOSO.jpg?raw=true)
 
 ```
 
