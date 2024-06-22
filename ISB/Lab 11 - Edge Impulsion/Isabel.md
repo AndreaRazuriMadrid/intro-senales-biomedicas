@@ -22,7 +22,7 @@
 #### Señal EMG: 
 | Señal EMG                   | Imagen                                                                                 |
 |-----------------------------|----------------------------------------------------------------------------------------|
-| Estado Basal                | ![Imagen 15](EI%20-%20Isabel/EMG_EstadoBasal.png)                                      |
+| Estado Basal                | ![Imagen 15](EI%20-%20Isabel/EMG_Reposo.png)                                      |
 | Durante Extensión           | ![Imagen 15](EI%20-%20Isabel/EMG_Extension.png)                                 |
-| Durante Flexión           | ![Imagen 15](EI%20-%20Isabel/EMG_Flexion.png)                                 |
+| Durante Extensión           | ![Imagen 15](EI%20-%20Isabel/EMG_Extension.png)                                 |
 | Durante Oposición al movimiento     | ![Imagen 15](EI%20-%20Isabel/EMG_Oposicion.png)                               |
