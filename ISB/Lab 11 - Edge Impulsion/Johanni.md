@@ -43,7 +43,7 @@ else:
     print('Failed to upload file(s) to Edge Impulse\n',
           res.status_code, res.content)
 
-
+```
 
 ### 1.2 Señales
 
