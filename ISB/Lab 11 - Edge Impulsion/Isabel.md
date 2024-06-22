@@ -29,6 +29,7 @@
 
 ### Código EMG
 
+```python
 import requests
 import os
 
