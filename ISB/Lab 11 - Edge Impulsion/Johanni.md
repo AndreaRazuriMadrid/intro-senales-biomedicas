@@ -17,13 +17,10 @@
 
 ### 1.2 Señales
 
-| Señales              | ECG Ejercicio | ECG Estado Basal | 
-|----------------------|---------------|------------------|
-| Señal Filtrada       |  <img src="Resultados/1_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
-| Picos R detectados   | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
-| Picos definitivos    | <img src="Resultados/3_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/3_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
-| Tacograma            | <img src="Resultados/4_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/4_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
-| Diagrama de Poincaré |<img src="Resultados/7_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/7_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Extensión       |  <img src="ArchivosJohanni/EMG/Extensión.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
+| Flexión   | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Oposición    | <img src="Resultados/3_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/3_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+
 
 ## 2. Repositorio ECG
 
