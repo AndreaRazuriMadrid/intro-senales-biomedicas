@@ -17,9 +17,9 @@
 
 ### 1.2 Señales
 
-| Extensión       |  <img src="ArchivosJohanni/EMG/Extensión.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/1_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> | 
-| Flexión   | <img src="Resultados/2_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/2_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
-| Oposición    | <img src="Resultados/3_ejercicio.png" alt="Ejercicio" style="width:500px; height:200px;"> | <img src="Resultados/3_basal.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Extensión       |  <img src="ArchivosJohanni/EMG/Extensión.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Flexión   | <img src="ArchivosJohanni/EMG/Flexión.png" alt="Ejercicio" style="width:500px; height:200px;"> |
+| Oposición    | <img src="ArchivosJohanni/EMG/Oposición.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 
 
 ## 2. Repositorio ECG
