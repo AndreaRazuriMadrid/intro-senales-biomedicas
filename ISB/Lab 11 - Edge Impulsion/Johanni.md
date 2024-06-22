@@ -7,6 +7,8 @@
 3. [Repositorio EEG](#3-RepositorioEEG)
 
 
+<img src="ArchivosJohanni/Proyectos.png"> 
+
 
 ## 1. Repositorio EMG
 
