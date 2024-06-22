@@ -10,4 +10,11 @@
 |-----------------------------|----------------------------------------------------------------------------------------|
 | Abrir y cerrar ojos         | ![Imagen 15](EI%20-%20Isabel/EEG_AbrirYCerrar.png)                                      |
 | Preguntas de Matemática     | ![Imagen 15](EI%20-%20Isabel/EEG_Preguntas.png)                                         |
-| Estado de reposo            | ![Imagen 15](EI%20-%20Isabel/EEG_Reposo.png)      
+| Estado de reposo            | ![Imagen 15](EI%20-%20Isabel/EEG_Reposo.png)                                           |
+
+#### Señal EEG: 
+| Señal EEG                   | Imagen                                                                                 |
+|-----------------------------|----------------------------------------------------------------------------------------|
+| Estado Basal                | ![Imagen 15](EI%20-%20Isabel/ECG_EstadoBasal.png)                                      |
+| Durante Ejercicio           | ![Imagen 15](EI%20-%20Isabel/ECG_DuranteEjercicio.png)                                 |
+| Aguantando la Respiración     | ![Imagen 15](EI%20-%20Isabel/ECG_AguantarRespiracion.png)                               |
