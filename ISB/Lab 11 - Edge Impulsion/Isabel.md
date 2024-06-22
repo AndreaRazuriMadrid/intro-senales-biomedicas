@@ -8,13 +8,21 @@
 #### Señal EEG: 
 | Señal EEG                   | Imagen                                                                                 |
 |-----------------------------|----------------------------------------------------------------------------------------|
-| Abrir y cerrar ojos         | ![Imagen 15](EI%20-%20Isabel/EEG_AbrirYCerrar.png)                                      |
+| Estado de reposo            | ![Imagen 15](EI%20-%20Isabel/EEG_Reposo.png)                                   |
 | Preguntas de Matemática     | ![Imagen 15](EI%20-%20Isabel/EEG_Preguntas.png)                                         |
-| Estado de reposo            | ![Imagen 15](EI%20-%20Isabel/EEG_Reposo.png)                                           |
+| Abrir y cerrar ojos         | ![Imagen 15](EI%20-%20Isabel/EEG_AbrirYCerrar.png)                                              |
 
-#### Señal EEG: 
-| Señal EEG                   | Imagen                                                                                 |
+#### Señal ECG: 
+| Señal ECG                   | Imagen                                                                                 |
 |-----------------------------|----------------------------------------------------------------------------------------|
 | Estado Basal                | ![Imagen 15](EI%20-%20Isabel/ECG_EstadoBasal.png)                                      |
 | Durante Ejercicio           | ![Imagen 15](EI%20-%20Isabel/ECG_DuranteEjercicio.png)                                 |
 | Aguantando la Respiración     | ![Imagen 15](EI%20-%20Isabel/ECG_AguantarRespiracion.png)                               |
+
+#### Señal EMG: 
+| Señal EMG                   | Imagen                                                                                 |
+|-----------------------------|----------------------------------------------------------------------------------------|
+| Estado Basal                | ![Imagen 15](EI%20-%20Isabel/EMG_EstadoBasal.png)                                      |
+| Durante Extensión           | ![Imagen 15](EI%20-%20Isabel/EMG_Extension.png)                                 |
+| Durante Flexión           | ![Imagen 15](EI%20-%20Isabel/EMG_Flexion.png)                                 |
+| Durante Oposición al movimiento     | ![Imagen 15](EI%20-%20Isabel/EMG_Oposicion.png)                               |
