@@ -15,16 +15,16 @@
 ### 1.1 Código
 
 ```python
-# Install requests via: `pip3 install requests`
+
 import requests
 import os
 
 api_key = 'ei_7c1bc6149d3e9151a694c1064b9bab7d7f5f5013e600c9b2fa63bedd51f67224'
-# Add the files you want to upload to Edge Impulse
+
 files = [
     'Flexion.csv',
 ]
-# # Replace the label with your own.
+
 label = 'EMG-Flexion'
 # Upload the file to Edge Impulse using the API, and print the response.
 res = requests.post(url='https://ingestion.edgeimpulse.com/api/training/files',
