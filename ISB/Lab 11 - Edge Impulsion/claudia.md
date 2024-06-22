@@ -166,7 +166,6 @@ for file_path in csv_files:
 
 ### ECG
 
-```
 ```markdown
 ### Código para EMG
 
