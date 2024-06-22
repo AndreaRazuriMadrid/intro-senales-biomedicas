@@ -5,6 +5,9 @@
 - (EMG): https://studio.edgeimpulse.com/public/431132/live
 - (EEG): https://studio.edgeimpulse.com/public/431133/live
 
-#### Señal EEG: Abrir y cerrar ojos
-
-![Descripción de la Imagen](<img src="EI - Isabel/EEG_AbrirYCerrar.png" alt="Imagen 15" style="width:1800px; height:250px;"></td>)
+#### Señal EEG: 
+| Señal EEG                   | Imagen                                                                                 |
+|-----------------------------|----------------------------------------------------------------------------------------|
+| Abrir y cerrar ojos         | ![Imagen 15](EI%20-%20Isabel/EEG_AbrirYCerrar.png)                                      |
+| Preguntas de Matemática     | ![Imagen 15](EI%20-%20Isabel/EEG_Preguntas.png)                                         |
+| Estado de reposo            | ![Imagen 15](EI%20-%20Isabel/EEG_Reposo.png)      
