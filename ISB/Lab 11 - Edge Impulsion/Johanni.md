@@ -22,6 +22,13 @@
 | Oposición    | <img src="ArchivosJohanni/EMG/Oposición.png" alt="Ejercicio" style="width:500px; height:200px;"> |
 
 
+| Señal   | Imagen                                                                                         |
+|-------------|------------------------------------------------------------------------------------------------|
+| Extensión   | <img src="ArchivosJohanni/EMG/Extensión.png" alt="Ejercicio" style="width:500px; height:200px;">|
+| Flexión     | <img src="ArchivosJohanni/EMG/Flexión.png" alt="Ejercicio" style="width:500px; height:200px;">  |
+| Oposición   | <img src="ArchivosJohanni/EMG/Oposición.png" alt="Ejercicio" style="width:500px; height:200px;">|
+
+
 ## 2. Repositorio ECG
 
 ### 2.1 Código
