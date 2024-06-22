@@ -1,4 +1,4 @@
-![image](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/127904104/270d22c1-0778-4482-81c5-72f0febf65da)![image](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/127904104/7eaaf719-88a1-405a-b313-5dce4dc9076b)![image](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/127904104/4022425f-4d1f-4bd9-bb99-35ca7342a3e7)![image](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/assets/127904104/b88afcee-1f58-4c0a-af75-20ead6bf0066)### EEG
+### EEG
 
 ```markdown
 ### Código para EEG
