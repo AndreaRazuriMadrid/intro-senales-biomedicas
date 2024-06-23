@@ -12,6 +12,8 @@
 
 ## 1. Repositorio EMG
 
+LINK: https://studio.edgeimpulse.com/public/431123/live 
+
 ### 1.1 Código
 
 ```python
@@ -57,6 +59,8 @@ else:
 
 ## 2. Repositorio ECG
 
+LINK: https://studio.edgeimpulse.com/public/431126/live
+
 ### 2.1 Código
 
 ```python
@@ -99,6 +103,8 @@ else:
 
 
 ## 3. Repositorio EEG
+
+LINK: https://studio.edgeimpulse.com/public/431131/live
 
 ### 3.1 Código
 
