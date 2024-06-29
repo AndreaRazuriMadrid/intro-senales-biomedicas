@@ -115,3 +115,13 @@ for file_path in test_csv_files:
     upload_file_from_dataframe(df, test_label, api_key, file_name)
 
 ```
+#### Link del repositorio: https://studio.edgeimpulse.com/public/435749/live
+
+#### Señal de Oposición - Training 
+
+![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2012%20-%20Edge%20Impulse%202%20/Archivos_Claudia/EMG_training_oposicion.jpg)
+
+#### Señal de Oposición - Test 
+
+![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2012%20-%20Edge%20Impulse%202%20/Archivos_Claudia/EMG_test_oposicion.jpg)
+
