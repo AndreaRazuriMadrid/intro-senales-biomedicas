@@ -117,11 +117,11 @@ for file_path in test_csv_files:
 ```
 #### Link del repositorio: https://studio.edgeimpulse.com/public/435749/live
 
-#### Señal de Oposición - Training 
+#### Señal de Oposición - Training (80%)
 
 ![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2012%20-%20Edge%20Impulse%202%20/Archivos_Claudia/EMG_training_oposicion.jpg)
 
-#### Señal de Oposición - Test 
+#### Señal de Oposición - Test (20%)
 
 ![Descripción de la Imagen](https://github.com/AndreaRazuriMadrid/intro-senales-biomedicas/blob/main/ISB/Lab%2012%20-%20Edge%20Impulse%202%20/Archivos_Claudia/EMG_test_oposicion.jpg)
 
