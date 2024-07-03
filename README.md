@@ -19,21 +19,12 @@ Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biom
 
 ## Tabla de contenidos:
 
-- [¿Qué es una bioseñal?](#qué-es-una-bioseñal)
 - [Resumen](#resumen)
 - [Motivación](#motivación)
 - [Principales hallazgos](#principales-hallazgos)
 - [Participantes](#participantes)
 - [Docentes del curso](#docentes-del-curso)
 - [Referencia Bibliográfica](#referencia-bibliográfica)
-
-## ¿Qué es una bioseñal?
-
-Contenido de ¿Qué es una bioseñal?
-
-<img src="https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg" alt="Imagen de bioseñal" width="400" height="250">
-
- *Fig. 1 .Imagen de sondas cerebrales [1]*
 
 
 ## Resumen
