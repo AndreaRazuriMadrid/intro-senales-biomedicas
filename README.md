@@ -38,16 +38,25 @@ Contenido de ¿Qué es una bioseñal?
 
 ## Resumen
 
-Contenido de Temática del proyecto
+La lumbalgia (LBP) es una condición prevalente que afecta a una parte significativa de la población global y es una de las principales causas de incapacidad física. En Perú, aproximadamente el 70% de la población sufre de LBP, principalmente debido a esfuerzos físicos pesados, posturas forzadas y posturas prolongadas incorrectas, especialmente entre los estudiantes universitarios que pasan largas horas sentados. Este estudio tiene como objetivo analizar las señales de electromiografía (EMG) de los músculos multífidos utilizando el dispositivo BiTalino para evaluar la LBP crónica en estudiantes universitarios.
+
+Seis estudiantes (cinco mujeres y un hombre) de la Universidad Peruana Cayetano Heredia (UPCH) participaron voluntariamente. Las evaluaciones de electromiografía de superficie (SEMG) se realizaron con electrodos colocados en los niveles de las vértebras L3 y L5. Los participantes realizaron movimientos de pie, flexión hacia adelante, máxima flexión voluntaria y extensión. Las señales SEMG fueron filtradas, rectificadas, suavizadas usando RMS y normalizadas para la comparación.
+
+El estudio también incluyó una encuesta para explorar la relación entre la LBP y el consumo de café. Los resultados destacaron el Índice de Relajación en Flexión (FRR) FLEX/MVF y EXT/MVF como índices efectivos para evaluar la LBP crónica. Esta investigación subraya la importancia de la conciencia postural y la intervención temprana en la gestión de la LBP entre los estudiantes universitarios.
 
 ## Motivación
 
-Contenido 
-
+La lumbalgia es una condición ampliamente extendida que afecta a una gran parte de la población, causando una significativa incapacidad física y afectando la calidad de vida. Entre los estudiantes universitarios, la lumbalgia es especialmente prevalente debido a las largas horas que pasan sentados en posiciones estáticas y a la falta de ergonomía adecuada. El objetivo de este estudio es abordar esta problemática mediante el análisis de señales de electromiografía (EMG) para identificar patrones de actividad muscular que puedan contribuir a la LBP y explorar la relación entre el consumo de café y la incidencia de la lumbalgia. Esta investigación busca proporcionar insights que puedan guiar intervenciones preventivas y terapéuticas para reducir la incidencia de LBP en esta población vulnerable.
 
 ## Principales hallazgos
 
-Contenido
+* Evaluación de SEMG: La colocación de electrodos en los niveles de las vértebras L3 y L5 permitió capturar señales EMG detalladas durante diferentes fases de movimiento (de pie, flexión, máxima flexión y extensión).
+
+* Índices de Relajación en Flexión (FRR): Los índices FLEX/MVF y EXT/MVF fueron identificados como medidas efectivas para evaluar la LBP crónica. Los valores promedio y máximos de EMG mostraron diferencias significativas entre las fases de movimiento, indicando variabilidad en la actividad muscular que podría estar relacionada con la LBP.
+
+* Relación con el Consumo de Café: La encuesta reveló una correlación entre la frecuencia de consumo de café y la incidencia de LBP, destacando la importancia de los hábitos de vida en la gestión de la lumbalgia.
+
+* ANOVA: Los análisis de varianza mostraron que el tiempo sentado y la posición adoptada tienen un impacto significativo en la actividad muscular y, por ende, en la LBP. Estos hallazgos sugieren que la modificación de estos factores podría ayudar a reducir la incidencia de lumbalgia en estudiantes universitarios.
 
 ## Participantes
 
