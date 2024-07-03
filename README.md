@@ -100,5 +100,3 @@ La lumbalgia es una condición ampliamente extendida que afecta a una gran parte
 | Lic.  | Cáceres del Aguila José A. | jose.caceres.d@upch.pe |
 
 
-%%## Referencia Bibliográfica
-%*
