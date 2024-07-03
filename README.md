@@ -100,6 +100,5 @@ La lumbalgia es una condición ampliamente extendida que afecta a una gran parte
 | Lic.  | Cáceres del Aguila José A. | jose.caceres.d@upch.pe |
 
 
-## Referencia Bibliográfica
-*[1]Psicoactiva.com, 2024. https://www.psicoactiva.com/wp-content/uploads/2021/01/ondas-cerebrales.jpg (accessed Mar. 22, 2024).
-‌*
+%%## Referencia Bibliográfica
+%*
