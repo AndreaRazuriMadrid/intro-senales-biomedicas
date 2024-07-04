@@ -41,11 +41,11 @@ La lumbalgia es una condición ampliamente extendida que afecta a una gran parte
 
 ## Principales hallazgos
 
-* Evaluación de SEMG: La colocación de electrodos en los niveles de las vértebras L3 y L5 permitió capturar señales EMG detalladas durante diferentes fases de movimiento (de pie, flexión, máxima flexión y extensión).
+* Evaluación de SEMG: La colocación de electrodos en los niveles de las vértebras L3 y L5 permitió capturar señales EMG detalladas durante diferentes fases de movimiento realizadas(de pie, flexión, máxima flexión y extensión) con la finalidad de analizar la posibilidad de la presencia de lumbalgia en los aprticpantes.
 
 * Índices de Relajación en Flexión (FRR): Los índices FLEX/MVF y EXT/MVF fueron identificados como medidas efectivas para evaluar la LBP crónica. Los valores promedio y máximos de EMG mostraron diferencias significativas entre las fases de movimiento, indicando variabilidad en la actividad muscular que podría estar relacionada con la LBP.
 
-* Relación con el Consumo de Café: La encuesta reveló una correlación entre la frecuencia de consumo de café y la incidencia de LBP, destacando la importancia de los hábitos de vida en la gestión de la lumbalgia.
+* Relación con el Consumo de Café: No se pudo concluir algo debido a la poca cantidad de sujetos participantes del estudio.
 
 * ANOVA: Los análisis de varianza mostraron que el tiempo sentado y la posición adoptada tienen un impacto significativo en la actividad muscular y, por ende, en la LBP. Estos hallazgos sugieren que la modificación de estos factores podría ayudar a reducir la incidencia de lumbalgia en estudiantes universitarios.
 * 
