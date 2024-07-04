@@ -28,15 +28,13 @@ Bienvenidos al repositorio del Grupo 7 del curso *"Introducción a Señales Biom
 
 La lumbalgia (LBP) es una condición prevalente que afecta a una parte significativa de la población global y es una de las principales causas de incapacidad física. En Perú, aproximadamente el 70% de la población sufre de LBP, principalmente debido a esfuerzos físicos pesados, posturas forzadas y posturas prolongadas incorrectas, especialmente entre los estudiantes universitarios que pasan largas horas sentados [1]. Este estudio tiene como objetivo analizar las señales de electromiografía (EMG) de los músculos multífidos utilizando el dispositivo BiTalino para evaluar la LBP crónica en estudiantes universitarios.
 
-Seis estudiantes (cinco mujeres y un hombre) de la Universidad Peruana Cayetano Heredia (UPCH) participaron voluntariamente. Las evaluaciones de electromiografía de superficie (SEMG) se realizaron siguiendo el protocolo emppleado en "Flexion-relaxation and Clinical Features Associated With Chronic Low
-Back Pain: A Comparison of Different Methods of Quantifying Flexion-
-relaxation,”" con electrodos colocados en los niveles de las vértebras L3 y L5. Los participantes realizaron movimientos de pie, flexión hacia adelante, máxima flexión voluntaria y extensión. Las señales SEMG fueron filtradas, rectificadas, suavizadas usando RMS y normalizadas para la comparación.
+Seis estudiantes (cinco mujeres y un hombre) de la Universidad Peruana Cayetano Heredia (UPCH) participaron voluntariamente. Las evaluaciones de electromiografía de superficie (SEMG) se realizaron siguiendo el protocolo emppleado en "Flexion-relaxation and Clinical Features Associated With Chronic Low Back Pain: A Comparison of Different Methods of Quantifying Flexion-relaxation" [2] con electrodos colocados en los niveles de las vértebras L3 y L5. Los participantes realizaron movimientos de pie, flexión hacia adelante, máxima flexión voluntaria y extensión. Las señales SEMG fueron filtradas, rectificadas, suavizadas usando RMS y normalizadas para la comparación.
 
 El estudio también incluyó una encuesta para explorar la relación entre la LBP y el consumo de café. Los resultados destacaron el Índice de Relajación en Flexión (FRR) FLEX/MVF y EXT/MVF como índices efectivos para evaluar la LBP crónica. Esta investigación subraya la importancia de la conciencia postural y la intervención temprana en la gestión de la LBP entre los estudiantes universitarios.
 
 ## Motivación
 
-La lumbalgia es una condición ampliamente extendida que afecta a una gran parte de la población, causando una significativa incapacidad física y afectando la calidad de vida. Entre los estudiantes universitarios, la lumbalgia es especialmente prevalente debido a las largas horas que pasan sentados en posiciones estáticas y a la falta de ergonomía adecuada. El objetivo de este estudio es abordar esta problemática mediante el análisis de señales de electromiografía (EMG) para identificar patrones de actividad muscular que puedan contribuir a la LBP y explorar la relación entre el consumo de café y la incidencia de la lumbalgia. Esta investigación busca proporcionar insights que puedan guiar intervenciones preventivas y terapéuticas para reducir la incidencia de LBP en esta población vulnerable.
+La lumbalgia es una condición ampliamente extendida que afecta a una gran parte de la población, causando una significativa incapacidad física y afectando la calidad de vida. Entre los estudiantes universitarios, la lumbalgia es especialmente prevalente debido a las largas horas que pasan sentados en posiciones estáticas y a la falta de ergonomía adecuada. El objetivo de este estudio es abordar esta problemática mediante el análisis de señales de electromiografía (EMG) para identificar patrones de actividad muscular que puedan contribuir a la LBP y explorar la relación entre el consumo de café y la incidencia de la lumbalgia. Esta investigación busca proporcionar insights que puedan guiar intervenciones preventivas y terapéuticas para reducir la incidencia de LBP en esta población vulnerable [1] [3].
 
 ## Principales hallazgos
 
@@ -58,6 +56,10 @@ https://paperswithcode.com/paper/a-cross-sectional-study-to-analyse-the
 ## Referencias
 
 [1] A. J. Cervantes-Soto, A. R. García-Saaib, X. Y. Torres-Bonilla, G. Castellanos-Magdaleno, y G. Mercado-Mercado, "Diagnóstico de lumbalgia en estudiantes universitarios del área de salud en Tepic, Nayarit," Medicina Legal de Costa Rica, vol. 36, no. 1, pp. 149-162, Jan.-Mar. 2019. [En línea]. Disponible: https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S1409-00152019000100043.
+
+[2] K. N. Alschuler, R. Neblett, E. Wiggert, A. J. Haig, and M. E. Geisser, “Flexion-relaxation and Clinical Features Associated With Chronic Low Back Pain: A Comparison of Different Methods of Quantifying Flexion- relaxation,” Clinical Journal of Pain, vol. 25, no. 9, pp. 760–766, Nov. 2009, doi: 10.1097/AJP.0b013e3181b014c8
+
+[3] S. Bravo-Cucci, Liliana Gaspar Llana, Daniela Sepulveda Ravines, Benji Sotomayor Palacios, and Fernando Ore Puma, “Dolor lumbar crónico y la conducta sedentaria en estudiantes universitarios de medicina,” Revista Ciencias de la Salud, vol. 22, no. 1, pp. 1–12, Mar. 2024, doi: https://doi.org/10.12804/revistas.urosario.edu.co/revsalud/a.12020.
 
 
 
