@@ -48,6 +48,11 @@ La lumbalgia es una condición ampliamente extendida que afecta a una gran parte
 * Relación con el Consumo de Café: La encuesta reveló una correlación entre la frecuencia de consumo de café y la incidencia de LBP, destacando la importancia de los hábitos de vida en la gestión de la lumbalgia.
 
 * ANOVA: Los análisis de varianza mostraron que el tiempo sentado y la posición adoptada tienen un impacto significativo en la actividad muscular y, por ende, en la LBP. Estos hallazgos sugieren que la modificación de estos factores podría ayudar a reducir la incidencia de lumbalgia en estudiantes universitarios.
+* 
+
+## Repositorio
+
+https://paperswithcode.com/paper/a-cross-sectional-study-to-analyse-the 
 
 ## Participantes
 
